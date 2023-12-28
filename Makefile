@@ -13,6 +13,7 @@ build:
 publish: build
 	@echo "Uploading files to server"
 	cd content/devops/k8s2; git add -A . ; git commit -m 'Updating notes'; git push origin main; cd -
+	exit 0
 	git submodule init
 	git submodule update
 	git add -A . ; git commit -m 'Updating blog'; git push origin main
