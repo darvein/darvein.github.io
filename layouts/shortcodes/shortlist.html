@@ -1,0 +1,29 @@
+{{ $regexp := .Get "regexp" }}
+{{- $pathURL := .Get "pathURL" -}}
+{{- $path := .Get "path" -}}
+{{- $files := readDir $path -}}
+
+<div class="table-container">
+  <table class="styled-table">
+    <caption>{{ .Get "title" }}</caption>
+    <thead>
+      <tr>
+        <th>Filename</th>
+        <th>Last Modified</th>
+        <th>Size</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{- range sort $files "ModTime" "desc" }}
+
+        {{ if (findRE $regexp .Name) }}
+          <tr>
+            <td><a href="{{ $pathURL }}{{ .Name | relURL }}" target="_blank"> {{ .Name }}</a></td>
+            <td>{{ .ModTime.Format "2006-01-02" }}</td>
+            <td>{{ .Size | mul 0.0009765625 | printf "%.2f" }} Kb</td>
+          </tr>
+        {{- end }}
+      {{- end }}
+    </tbody>
+  </table>
+</div>

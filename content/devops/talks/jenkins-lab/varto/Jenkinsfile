@@ -1,0 +1,52 @@
+pipeline {
+  agent {
+    label 'slave'
+  }
+
+  options {
+    throttleJobProperty(
+        categories: ['throttle'],
+        throttleEnabled: true,
+        throttleOption: 'category'
+        )
+  }
+
+  tools {
+    nodejs 'node14'
+  }
+
+  stages {
+    stage('Hello') {
+      steps {
+        sh 'npm install'
+          sh 'sleep 120'
+      }
+    }
+
+    stage('Server') {
+      environment {
+        MYTOKEN = credentials('mytoken')
+      }
+
+      steps {
+        sh 'echo "THIS IS SECRET: $MYTOKEN" | tee -a output.txt'
+          sh 'hostname'
+          sh 'pwd'
+          sh 'echo $BRANCH_NAME'
+      }
+    }
+
+    stage('Bye') {
+      steps {
+        sh 'ping google.com -c 1 | tee -a output.txt'
+      }
+    }
+  }
+
+  post {
+    always{
+      archiveArtifacts artifacts: 'output.txt'
+        cleanWs()
+    }
+  }
+}

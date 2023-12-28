@@ -1,0 +1,12 @@
+<figure class="image-container">
+    <a href="{{ .Get 0 }}">
+        {{ $src := .Get 0 }}
+        {{ if not (strings.HasPrefix $src "/i/") }}
+            {{ $src = printf "/i/%s" $src }}
+        {{ end }}
+        <img width="{{ with .Get 2 }}{{ . }}%{{ else }}100%{{ end }}" src="{{ $src }}" alt="{{ .Get 1 }}" />
+    </a>
+    {{ with .Get 1 }}
+        <figcaption>&#x2015; {{ . }} &#x2015;</figcaption>
+    {{ end }}
+</figure>

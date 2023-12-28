@@ -1,0 +1,25 @@
+# Generated files by hugo
+public/
+/resources/_gen/
+/assets/jsconfig.json
+hugo_stats.json
+
+# Temporary lock file while building
+**/.hugo_build.lock
+
+**/.terraform.lock.hcl
+**/terraform.tfstate.backup
+**/terraform.tfstate
+**/.terraform
+**/.mp4
+**/.bk
+
+**/*_todos.md
+static/
+bookmarks*.html
+./hugo
+./recents*
+**/*p82*
+**/*w8*
+**/*p82*/
+**/*0emv*/

@@ -1,0 +1,53 @@
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: mypv
+spec:
+  storageClassName: demo
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Delete
+  hostPath:
+    path: /data
+
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: mypvc
+spec:
+  storageClassName: demo
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mydeployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: mypod
+  template:
+    metadata:
+      labels:
+        app: mypod
+    spec:
+      volumes:
+      - name: pvc-sample
+        persistentVolumeClaim:
+          claimName: mypvc
+      containers:
+        - name: container1
+          image: nginx:latest
+          volumeMounts:
+          - name: pvc-sample
+            mountPath: /opt/cnt

@@ -1,0 +1,6 @@
+#ignorefiles = [ "content/p82/.*", "p82/.*", "p8/.*" ]
+#ignorefiles = [ "p8/.*", "p82/.*" ]
+
+# If you want to use Google Tag Manager(https://analytics.google.com/) for analytics, add this section
+[params.googleTagManager]
+id = "G-6CQZY8W0WD"

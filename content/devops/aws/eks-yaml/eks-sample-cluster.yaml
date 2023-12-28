@@ -1,0 +1,101 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: sample-eks
+  region: us-west-2
+  version: "1.20.4"
+
+nodeGroups:
+  - name: ng-admin-5
+    labels: { role: admin }
+    minSize: 1
+    maxSize: 4
+    desiredCapacity: 2
+    instancesDistribution:
+      spotInstancePools: 2
+      instanceTypes: ["t3.medium", "t2.medium"]
+      onDemandBaseCapacity: 0
+      onDemandPercentageAboveBaseCapacity: 0
+    availabilityZones: ["us-west-2a"]
+    iam:
+      withAddonPolicies:
+        imageBuilder: true
+        autoScaler: true
+        externalDNS: true
+        certManager: true
+        appMesh: false
+        ebs: true
+        fsx: false
+        efs: false
+        albIngress: false
+        xRay: false
+        cloudWatch: false
+      attachPolicyARNs:
+        - arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy
+        - arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy
+        - arn:aws:iam::668000696589:policy/s3_zrrr-admin-full
+        - arn:aws:iam::668000696589:policy/cloudfront-zrrr-invalidations
+        - arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryPowerUser
+    privateNetworking: true
+    ssh:
+      allow: true
+      publicKeyName: zrrr.pem
+
+  - name: ng-dev-5
+    labels: { role: dev }
+    tags:
+      k8s.io/cluster-autoscaler/enabled: "true"
+      k8s.io/cluster-autoscaler/sample-eks: "owned"
+    minSize: 1
+    maxSize: 6
+    desiredCapacity: 2
+    instancesDistribution:
+      spotInstancePools: 2
+      instanceTypes: ["t3.medium", "t2.medium"]
+      onDemandBaseCapacity: 0
+      onDemandPercentageAboveBaseCapacity: 0
+    availabilityZones: ["us-west-2a", "us-west-2b", "us-west-2c"]
+    iam:
+      attachPolicyARNs:
+        - arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy
+        - arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy
+        - arn:aws:iam::668000696589:policy/s3_zrrr-admin-full
+        - arn:aws:iam::668000696589:policy/cloudfront-zrrr-invalidations
+        - arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryPowerUser
+    privateNetworking: true
+    ssh:
+      allow: true
+      publicKeyName: zrrr.pem
+
+  - name: ng-prod-5
+    labels: { role: prod }
+    taints:
+      ProdOnly: "true:NoSchedule"
+    tags:
+      k8s.io/cluster-autoscaler/enabled: "true"
+      k8s.io/cluster-autoscaler/sample-eks: "owned"
+    minSize: 2
+    maxSize: 12
+    desiredCapacity: 2
+    instancesDistribution:
+      spotInstancePools: 2
+      instanceTypes: ["t3.xlarge", "t2.xlarge"]
+      onDemandBaseCapacity: 0
+      onDemandPercentageAboveBaseCapacity: 0
+    availabilityZones: ["us-west-2a", "us-west-2b", "us-west-2c"]
+    iam:
+      attachPolicyARNs:
+        - arn:aws:iam::aws:policy/AmazonEKSWorkerNodePolicy
+        - arn:aws:iam::aws:policy/AmazonEKS_CNI_Policy
+        - arn:aws:iam::668000696589:policy/s3_zrrr-admin-full
+        - arn:aws:iam::668000696589:policy/cloudfront-zrrr-invalidations
+        - arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryPowerUser
+      # See https://eksctl.io/usage/iam-policies/#adding-a-custom-instance-role
+      #instanceProfileARN:
+      #instanceRoleARN:
+    privateNetworking: true
+    ssh:
+      allow: true
+      publicKeyName: zrrr.pem
+

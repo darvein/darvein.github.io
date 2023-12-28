@@ -1,0 +1,6 @@
+{{ $url := .Get "url"}}
+
+
+<a href="{{ (printf "%s%s" $url "=w2400") }}">
+  <img class="google-cimg" referrerPolicy="no-referrer" src="{{ (printf "%s%s" $url "=w800") }}" referrerpolicy="no-referrer" defer>
+</a>

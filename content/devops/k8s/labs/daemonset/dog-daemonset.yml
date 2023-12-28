@@ -1,0 +1,57 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: dog-script
+data:
+  script.sh: |
+    #!/bin/sh
+    while true; do
+      cnt=$(ps -e -o comm= | sort -u | egrep -v 'scsi|kworker' | tr '\n' ',' | sed 's/,$//')
+      echo "$(date) - Running binaries: $cnt" >> /var/log/dog.txt
+      sleep 2
+    done
+
+---
+
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: dog-daemonset
+spec:
+  selector:
+    matchLabels:
+      name: dog-daemonset
+  template:
+    metadata:
+      labels:
+        name: dog-daemonset
+    spec:
+      hostPID: true
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+            - matchExpressions:
+              - key: kubernetes.io/hostname
+                operator: In
+                values:
+                - minikube-m02
+                - minikube-m03
+      containers:
+      - name: dog-container
+        image: busybox
+        securityContext:
+          privileged: true
+        command: ["sh", "/etc/script/script.sh"]
+        volumeMounts:
+        - name: varlog
+          mountPath: /var/log
+        - name: script-volume
+          mountPath: /etc/script
+      volumes:
+      - name: varlog
+        hostPath:
+          path: /var/log
+      - name: script-volume
+        configMap:
+          name: dog-script

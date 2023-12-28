@@ -1,0 +1,7 @@
+<div class="containergrid">
+  {{ range split .Inner "<--->" }}
+    {{ printf "<div class=\"col markdown-inner\">" | htmlUnescape | safeHTML }}
+      {{ printf . | safeHTML | markdownify }}
+      {{ printf "</div>" | htmlUnescape | safeHTML }}
+    {{ end }}
+</div>

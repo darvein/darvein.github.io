@@ -1,0 +1,94 @@
+{{- $notIn := split (.Get "notIn") " " -}}
+{{- $pathURL := .Get "pathURL" -}}
+{{- $path := print "/content" $pathURL -}} <!-- Prepend "/content" to the pathURL -->
+{{- $files := readDir $path -}}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<ul>
+   <li><div><input class="FilterSearch" type="text" placeholder="S34rch smth br0..." /></div></li>
+
+   {{- range $files }}
+      {{ if and .IsDir (not (in $notIn .Name)) }} <!--- first level -->
+         <li>
+            &#x1F4C1; {{ .Name }} 
+            <ul>
+               {{- $subdir1 := (printf "%s/%s" $path .Name ) -}}
+               {{- range readDir $subdir1 }} 
+
+
+                  {{- $filterDir := replace (print $subdir1 "/" .Name) (print $path "/") "" -}}
+                  {{ if and .IsDir (not (in $notIn $filterDir)) }} <!--- second level -->
+                     <li>
+                        &#x1F4C1; {{ .Name }}
+                        <ul>
+                           {{- $subdir2 := (printf "%s/%s" $subdir1 .Name ) -}}
+                           {{- range readDir $subdir2 }} 
+
+
+                              {{- $filterDir := replace (print $subdir2 "/" .Name) (print $path "/") "" -}}
+                              {{ if and .IsDir (not (in $notIn $filterDir)) }} <!--- third level -->
+                                 <li>
+                                    &#x1F4C1; {{ .Name }}
+                                    <ul>
+                                       {{- $subdir3 := (printf "%s/%s" $subdir2 .Name ) -}}
+                                       {{- range readDir $subdir3 }} 
+
+
+                                          {{- $filterDir := replace (print $subdir3 "/" .Name) (print $path "/") "" -}}
+                                          {{ if and .IsDir (not (in $notIn $filterDir)) }} <!--- fourth level -->
+                                             <li>
+                                                &#x1F4C1; {{ .Name }}
+                                                <ul>
+                                                   {{- $subdir4 := (printf "%s/%s" $subdir3 .Name ) -}}
+                                                   {{- range readDir $subdir4 }} 
+
+
+                                                      {{- $filterDir := replace (print $subdir4 "/" .Name) (print $path "/") "" -}}
+                                                      {{ if and .IsDir (not (in $notIn $filterDir)) }} <!--- fifth level -->
+                                                         <li>
+                                                            &#x1F4C1; {{ .Name }}
+                                                            <ul>
+                                                               {{- $subdir5 := (printf "%s/%s" $subdir4 .Name ) -}}
+                                                               {{- range readDir $subdir5 }} 
+                                                               <li>&#x1F5D2; <a href="{{ $pathURL }}{{ .Name | relURL }}"> {{ .Name }}</a> </li>
+                                                               {{ end }}
+                                                            </ul>
+                                                         </li>
+                                                      {{ else }}
+                                                         {{ if and (strings.HasSuffix .Name "md") (not (in .Name "_index.md") ) }}<li>&#x1F5D2; <a href="{{ replace $subdir4 $path $pathURL }}{{ replace .Name ".md" "" | relURL }}">{{ strings.TrimPrefix "# " (delimit (first 1 (after 0 (split (readFile (printf "%s/%s" $subdir4 .Name)) "\n"))) "\n") }}</a></i>{{ end }}
+                                                      {{ end }} <!--- fourth level -->
+
+
+                                                   {{ end }}
+                                                </ul>
+                                             </li>
+                                          {{ else }}
+                                             {{ if and (strings.HasSuffix .Name "md") (not (in .Name "_index.md") ) }}<li>&#x1F5D2; <a href="{{ replace $subdir3 $path $pathURL }}{{ replace .Name ".md" "" | relURL }}">{{ strings.TrimPrefix "# " (delimit (first 1 (after 0 (split (readFile (printf "%s/%s" $subdir3 .Name)) "\n"))) "\n") }}</a></i>{{ end }}
+                                          {{ end }} <!--- fourth level -->
+
+
+                                       {{ end }}
+                                    </ul>
+                                 </li>
+                              {{ else }}
+                                 {{ if and (strings.HasSuffix .Name "md") (not (in .Name "_index.md") ) }}<li>&#x1F5D2; <a href="{{ replace $subdir2 $path $pathURL }}{{ replace .Name ".md" "" | relURL }}">{{ strings.TrimPrefix "# " (delimit (first 1 (after 0 (split (readFile (printf "%s/%s" $subdir2 .Name)) "\n"))) "\n") }}</a></i>{{ end }}
+                              {{ end }} <!--- third level -->
+
+
+                           {{ end }}
+                        </ul>
+                     </li>
+                  {{ else }}
+                  {{ if and (strings.HasSuffix .Name "md") (not (in .Name "_index.md") ) }}<li>&#x1F5D2; <a href="{{ replace $subdir1 $path $pathURL }}{{ replace .Name ".md" "" | relURL }}">{{ strings.TrimPrefix "# " (delimit (first 1 (after 0 (split (readFile (printf "%s/%s" $subdir1 .Name)) "\n"))) "\n") }}</a></i>{{ end }}
+                  {{ end }} <!--- second level -->
+
+
+               {{ end }}
+            </ul>
+         </li>
+      {{ else }}
+         {{ if and (strings.HasSuffix .Name "md") (not (in .Name "_index.md") ) }}<li>&#x1F5D2; <a href="{{ $pathURL }}{{ replace .Name ".md" "" | relURL }}">{{ strings.TrimPrefix "# " (delimit (first 1 (after 0 (split (readFile (printf "%s/%s" $path .Name)) "\n"))) "\n") }}</a></i>{{ end }}
+      {{ end }} <!--- first level -->
+   {{- end }}
+</ul>
+

@@ -1,0 +1,13 @@
+<div class="blog-sidebar">
+    <aside>
+        <h4>Recently updated</h4>
+        <ul>
+            {{ $recent := getJSON "recents.json" }}
+            {{ range $recent }}
+            <li>
+                <a class="categories-list" href="{{ .filename }}">{{ .title }}</a><span class="blog-post-date ">@ {{ .modtime }} on <a href="/{{ .category }}">{{ .category }}</a></span>
+            </li>
+            {{ end }}
+        </ul>
+    </aside>
+</div>

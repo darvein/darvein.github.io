@@ -1,0 +1,10 @@
+{{ $tag := .Get "tag" }}
+<ul>
+{{ range .Site.RegularPages  }}
+    {{ if in .Params.tags $tag }}
+        <li>
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </li>
+    {{ end }}
+{{ end }}
+</ul>

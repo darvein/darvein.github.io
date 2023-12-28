@@ -1,0 +1,83 @@
+{{ $posts := .Site.RegularPages.ByDate.Reverse }}
+{{ $recentPosts := first 3 $posts }}
+{{ $sidebarRecentPosts := first 10 $posts }}
+<div class="blog-container">
+  <div class="blog-main-content blog-main-content-mobile">
+      {{ range $recentPosts }}
+          {{ if eq .Section "posts" }}
+            <section class="container post">
+              <article>
+                <header>
+                  <div class="post-title">
+                    <h1 class="title">
+                      <a class="title-link" href="{{ .Permalink | safeURL }}">
+                        {{ .Title }}
+                      </a>
+                    </h1>
+                  </div>
+                  <div class="post-meta">
+                    <div class="date">
+                      <span class="posted-on">
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+                          {{ .Date | time.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}
+                        </time>
+                      </span>
+                      <span class="reading-time">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                        {{ i18n "reading_time" .ReadingTime }}
+                      </span>
+                    </div>
+                    {{ with .Page.Params.Authors }}{{ partial "taxonomy/authors.html" . }}{{ end }}
+                    {{ with .Page.Params.Categories }}{{ partial "taxonomy/categories.html" . }}{{ end }}
+                    {{ with .Page.Params.Tags }}{{ partial "taxonomy/tags.html" . }}{{ end }}
+                  </div>
+                </header>
+
+                <div>
+                  {{ if .Params.featuredImage }}
+                    <img src="{{ .Params.featuredImage | relURL }}" alt="Featured image"/>
+                  {{ end }}
+                  {{ .Content }}
+                </div>
+
+              </article>
+
+              {{ partial "posts/math.html" . }}
+            </section>
+          {{ end }}
+      {{ end }}
+  </div>
+
+  <div class="blog-sidebar blog-sidebar-sticky">
+    <aside>
+        <h3>Recent Posts</h3>
+        <ul>
+            {{ range $sidebarRecentPosts }}
+                {{ if eq .Section "posts" }}
+                    <li>
+                        <a href="{{ .Permalink }}">{{ .Title }}</a>
+                        <span class="blog-post-date">{{ .Date.Format "January 2, 2006" }}</span>
+                    </li>
+                {{ end }}
+            {{ end }}
+            <li> <a href="/posts">[ Ver todos los posts ]</a> </li>
+        </ul>
+    </aside>
+
+    <div class="category-list">
+        <h3>Categories</h3>
+        <ul>
+            {{ range $index, $category := .Site.Taxonomies.categories.Alphabetical }}
+                <li>
+                    <a class="categories-list" href="{{ printf "categories/%s" $category.Name | relURL }}">{{ $category.Name }}</a>
+                    <span class="blog-post-date ">({{ $category.Count }})</span>
+                </li>
+            {{ end }}
+        </ul>
+    </div>
+
+  </div>
+</div>
+
+

@@ -1,0 +1,22 @@
+<ul id="breadcrumbs">
+    {{- $currentPage := . }}
+    {{- $delimiter := " > " }}
+    {{- range .Ancestors.Reverse }}
+        <li>
+            <a href="{{ .RelPermalink }}">
+                {{ if .Title }}
+                    {{ .Title }}
+                {{ else }}
+                    {{ .RelPermalink  }}
+                {{ end }}
+            </a>{{ $delimiter }}
+        </li>
+    {{- end }}
+    <li>
+        {{ if $currentPage.Title }}
+            {{ $currentPage.Title }}
+        {{ else }}
+            {{ $currentPage.RelPermalink }}
+        {{ end }}
+    </li>
+</ul>

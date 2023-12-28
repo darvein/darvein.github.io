@@ -1,0 +1,49 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mydeployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: mypod
+  template:
+    metadata:
+      labels:
+        app: mypod
+        type: web
+        role: backend
+    spec:
+      containers:
+        - name: democnt
+          image: nginx:latest
+          ports:
+          - containerPort: 8080
+
+---
+# kubectl create namespace staging
+# kubectl label namespace staging namespace=staging
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mydeploymentstg
+  namespace: staging
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mypod
+  template:
+    metadata:
+      labels:
+        app: mypod
+        role: frontend
+    spec:
+      containers:
+        - name: democnt
+          image: nginx:latest
+          ports:
+          - containerPort: 8080
+        fdsa: fdsa
+

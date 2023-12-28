@@ -1,0 +1,3 @@
+[submodule "content/nx"]
+	path = content/nx
+	url = git@github.com:nextbrave/nx.git

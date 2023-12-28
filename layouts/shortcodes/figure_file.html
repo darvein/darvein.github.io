@@ -1,0 +1,35 @@
+{{ $file := .Get "file" }}
+{{ $file := $file | readFile }}
+{{ $content := split $file "\n" }}
+
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope="" itemtype="http://schema.org/ImageGallery">
+
+{{ range $content }}
+{{ $line := split . "---" }}
+
+  {{ if (index $line 0) }}
+    {{ $tsrc := (index $line 0) }}
+    {{ $tsrc := trim $tsrc " " }}
+    {{ $tcaption := (index $line 1) }}
+
+    {{- if not ($.Page.Scratch.Get "figurecount") }}<link rel="stylesheet" href={{ "css/hugo-easy-gallery.css" | relURL }} />{{ end }}
+    {{- $.Page.Scratch.Add "figurecount" 1 -}}
+    <!-- use either src or link-thumb for thumbnail image -->
+    {{- $thumb := $tsrc | default (printf "%s." $tsrc | replace $tsrc ".") }}
+
+
+    <div class="box">
+      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <div class="img" style="background-image: url('{{ $tsrc | relURL }}');">
+          <img referrerpolicy="no-referrer" itemprop="thumbnail" src="{{ $tsrc | relURL }}" referrerpolicy="no-referrer" alt="{{ $tcaption}}" />
+        </div>
+        <a href="{{ (printf "%s%s" $tsrc "=w2400") | relURL }}" target="_blank" itemprop="contentUrl"></a>
+          <figcaption>
+            <p>{{ $tcaption }}</p>
+          </figcaption>
+      </figure>
+    </div>
+  {{ end }}
+
+{{ end }}
+</div>
