@@ -12,5 +12,7 @@ build:
 
 publish: build
 	@echo "Uploading files to server"
+	git submodule init
+	git submodule update
 	git add -A . ; git commit -m 'updating blog'; git push origin main
 	cd public && rsync -avz . darveinnet-static:/var/www/darvein.net/html/

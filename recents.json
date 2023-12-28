@@ -1,8 +1,14 @@
 [
   {
-    "modtime": "12-28-2023 18:19",
-    "filename": "/devops/k8s2/hello",
-    "title": "Another hello",
+    "modtime": "12-28-2023 18:34",
+    "filename": "/devops/k8s2/readme",
+    "title": "Kubernetes Notes",
+    "category": "devops"
+  },
+  {
+    "modtime": "12-28-2023 18:28",
+    "filename": "/devops/k8s2/mastering-kubernetes",
+    "title": "Mastering Kubernetes - Gigi Sayfan 1st Edition",
     "category": "devops"
   },
   {
@@ -52,11 +58,5 @@
     "filename": "/travel/bo/lapaz/coroico",
     "title": "Coroico",
     "category": "travel"
-  },
-  {
-    "modtime": "12-20-2023 12:05",
-    "filename": "/devops/linux/archlinux",
-    "title": "Arch Linux Notes",
-    "category": "devops"
   }
 ]

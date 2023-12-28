@@ -1,6 +1,6 @@
 [submodule "content/nx"]
 	path = content/nx
 	url = git@github.com:nextbrave/nx.git
-[submodule "content/devops/content/devops/k8s2"]
-	path = content/devops/content/devops/k8s2
+[submodule "content/devops/k8s2"]
+	path = content/devops/k8s2
 	url = git@github.com:darvein/kubernetes-notes.git
