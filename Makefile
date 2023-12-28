@@ -12,7 +12,8 @@ build:
 
 publish: build
 	@echo "Uploading files to server"
+	cd content/devops/k8s2; git add -A . ; git commit -m 'Updating notes'; git push origin main; cd -
 	git submodule init
 	git submodule update
-	git add -A . ; git commit -m 'updating blog'; git push origin main
+	git add -A . ; git commit -m 'Updating blog'; git push origin main
 	cd public && rsync -avz . darveinnet-static:/var/www/darvein.net/html/
