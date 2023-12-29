@@ -1,33 +1,5 @@
 # Workloads
 
-This is a brief of documentation from https://kubernetes.io/docs/concepts/
-
-# Content
-
-- [Kubernetes Notes](#kubernetes-notes)
-- [Content](#content)
-    - [Concepts](#concepts)
-        - [Objects in kubernetes](#objects-in-kubernetes)
-        - [Kubernetes components](#kubernetes-components)
-        - [On-prem scenarios](#on-prem-scenarios)
-        - [Containers](#containers)
-        - [Workloads](#workloads)
-            - [Pods](#pods)
-            - [Workload resources](#workload-resources)
-                - [Deployments](#deployments)
-                - [ReplicaSet](#replicaset)
-                - [StatefulSet](#statefulset)
-                - [DaemonSet](#daemonset)
-                - [Jobs](#jobs)
-                - [Cronjob](#cronjob)
-                - [ReplicationController](#replicationcontroller)
-    - [Topics to review](#topics-to-review)
-    - [Random notes](#random-notes)
-    - [TODOs](#todos)
-
-## Concepts
-Kubernetes solves problem of resource allocation
-
 ### Objects in kubernetes
 - Pods have unique name
 - All k8s objects have an UID
