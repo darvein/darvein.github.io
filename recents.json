@@ -1,6 +1,24 @@
 [
   {
-    "modtime": "12-28-2023 18:56",
+    "modtime": "12-28-2023 21:19",
+    "filename": "/devops/linux/archlinux",
+    "title": "Arch Linux Notes",
+    "category": "devops"
+  },
+  {
+    "modtime": "12-28-2023 21:19",
+    "filename": "/infosec/ctf-notes/h1/easy-h1-theormostat",
+    "title": "Easy - H1 Thermostat",
+    "category": "infosec"
+  },
+  {
+    "modtime": "12-28-2023 21:10",
+    "filename": "/infosec/ctf-notes/readme",
+    "title": "Capture The Flag Notes Index",
+    "category": "infosec"
+  },
+  {
+    "modtime": "12-28-2023 19:04",
     "filename": "/devops/k8s2/mastering-kubernetes",
     "title": "Mastering Kubernetes - Gigi Sayfan 1st Edition",
     "category": "devops"
@@ -40,23 +58,5 @@
     "filename": "/lang/en/english-notes",
     "title": "English notes :us:",
     "category": "lang"
-  },
-  {
-    "modtime": "12-20-2023 12:29",
-    "filename": "/posts/journey-martial-arts",
-    "title": " Journey to Martial Arts",
-    "category": "posts"
-  },
-  {
-    "modtime": "12-20-2023 12:24",
-    "filename": "/self/urban/fight",
-    "title": "Martial Arts",
-    "category": "self"
-  },
-  {
-    "modtime": "12-20-2023 12:07",
-    "filename": "/travel/bo/lapaz/coroico",
-    "title": "Coroico",
-    "category": "travel"
   }
 ]
