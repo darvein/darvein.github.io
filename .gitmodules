@@ -7,3 +7,6 @@
 [submodule "content/infosec/ctf-notes"]
 	path = content/infosec/ctf-notes
 	url = git@github.com:darvein/ctf-notes.git
+[submodule "content/coding/python"]
+	path = content/coding/python
+	url = git@github.com:darvein/python-notes.git

@@ -1,0 +1,6 @@
+<!-- layouts/_default/_markup/render-link.html -->
+{{ $url := .Destination }}
+{{ if not (strings.HasPrefix $url "http") }}
+    {{ $url = printf "../%s" $url }}
+{{ end }}
+<a href="{{ $url }}">{{ .Text }}</a>
