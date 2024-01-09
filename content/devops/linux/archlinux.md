@@ -23,4 +23,6 @@ patat-bin lolcat glow
 gron
 ffmpegthumbnailer tumbler nomacs
 android-apktool jadx
+mycli
+nnn
 ```

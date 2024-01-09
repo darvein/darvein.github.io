@@ -16,4 +16,4 @@ Life is about living in a City and/or a Countryside.
 - Rural: Nature, Farming, Brickwork
 
 ## Files
-{{< directoryindex path="/content/self" pathURL="/self" notIn="self/bible" >}}
+{{< directoryindex path="/content/self" pathURL="/self" notIn="self/bible self/dreams-pics" >}}
