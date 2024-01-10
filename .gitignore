@@ -23,3 +23,5 @@ bookmarks*.html
 **/*w8*
 **/*p8*/
 **/*0emv*/
+
+**/venv

@@ -11,6 +11,7 @@ pygmentsOptions = "tabWidth=2"
 enableEmoji = true
 disqusShortname = "drv21"
 DisqusShortname = "drv21"
+ignorefiles = [ "venv", ".git" ]
 
 [params]
 author = "Dennis Ruiz"

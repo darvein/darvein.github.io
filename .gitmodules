@@ -10,3 +10,6 @@
 [submodule "content/coding/python"]
 	path = content/coding/python
 	url = git@github.com:darvein/python-notes.git
+[submodule "content/coding/pytorch"]
+	path = content/coding/pytorch
+	url = git@github.com:darvein/pytorch-notes.git

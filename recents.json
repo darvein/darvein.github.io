@@ -1,14 +1,26 @@
 [
   {
-    "modtime": "01-09-2024 15:14",
-    "filename": "/coding/python/python-tutorial/python-tutorial",
-    "title": "Python Tutorial",
+    "modtime": "01-10-2024 12:36",
+    "filename": "/coding/pytorch/readme",
+    "title": "Pytorch Learning Notes",
     "category": "coding"
   },
   {
-    "modtime": "01-09-2024 14:51",
+    "modtime": "01-10-2024 12:31",
     "filename": "/coding/python/readme",
     "title": "Python notes index",
+    "category": "coding"
+  },
+  {
+    "modtime": "01-10-2024 11:56",
+    "filename": "/coding/deeplearning",
+    "title": "Deep learning notes",
+    "category": "coding"
+  },
+  {
+    "modtime": "01-09-2024 15:58",
+    "filename": "/coding/python/python-tutorial/python-tutorial",
+    "title": "Python Tutorial",
     "category": "coding"
   },
   {
@@ -46,17 +58,5 @@
     "filename": "/devops/k8s/workloads",
     "title": "Workloads",
     "category": "devops"
-  },
-  {
-    "modtime": "12-29-2023 14:44",
-    "filename": "/creativity/music_movies",
-    "title": "Music and Movies",
-    "category": "creativity"
-  },
-  {
-    "modtime": "12-28-2023 21:19",
-    "filename": "/infosec/ctf-notes/h1/easy-h1-theormostat",
-    "title": "Easy - H1 Thermostat",
-    "category": "infosec"
   }
 ]

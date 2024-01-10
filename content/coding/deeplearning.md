@@ -20,3 +20,8 @@ Keys:
 {{< limg "/i/2023-08-27_10-32.png" "ML vs DL" >}}
 
 LLMs: GPT (openai), BERT (google), Roberta (facebook)
+
+**Models**:
+- Bert for undesratndinc a context in a text
+- GPTs (2, 3, etc) generates texts
+- T5 for translations and summarization
