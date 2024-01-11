@@ -13,3 +13,6 @@
 [submodule "content/coding/pytorch"]
 	path = content/coding/pytorch
 	url = git@github.com:darvein/pytorch-notes.git
+[submodule "content/devops/aws-notes"]
+	path = content/devops/aws-notes
+	url = git@github.com:darvein/aws-notes.git
