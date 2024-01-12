@@ -1,5 +1,17 @@
 [
   {
+    "modtime": "01-11-2024 15:55",
+    "filename": "/devops/aws-notes/readme",
+    "title": "AWS Notes",
+    "category": "devops"
+  },
+  {
+    "modtime": "01-11-2024 15:55",
+    "filename": "/devops/aws-notes/ec2",
+    "title": "EC2 Notes",
+    "category": "devops"
+  },
+  {
     "modtime": "01-10-2024 12:36",
     "filename": "/coding/pytorch/readme",
     "title": "Pytorch Learning Notes",
@@ -45,18 +57,6 @@
     "modtime": "01-03-2024 18:04",
     "filename": "/devops/linux/archlinux",
     "title": "Arch Linux Notes",
-    "category": "devops"
-  },
-  {
-    "modtime": "12-29-2023 23:11",
-    "filename": "/devops/k8s2/k8s-doc/02.workloads",
-    "title": "Workloads",
-    "category": "devops"
-  },
-  {
-    "modtime": "12-29-2023 15:30",
-    "filename": "/devops/k8s/workloads",
-    "title": "Workloads",
     "category": "devops"
   }
 ]
