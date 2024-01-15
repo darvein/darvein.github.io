@@ -24,5 +24,6 @@ gron
 ffmpegthumbnailer tumbler nomacs
 android-apktool jadx
 mycli
-nnn
+mediainfo
+pirate-get
 ```

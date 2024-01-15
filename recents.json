@@ -1,15 +1,27 @@
 [
   {
-    "modtime": "01-12-2024 16:58",
+    "modtime": "01-14-2024 21:22",
     "filename": "/coding/python/python-tutorial/python-tutorial",
     "title": "Python Tutorial",
     "category": "coding"
   },
   {
-    "modtime": "01-12-2024 16:04",
+    "modtime": "01-14-2024 20:56",
     "filename": "/coding/python/readme",
     "title": "Python notes index",
     "category": "coding"
+  },
+  {
+    "modtime": "01-14-2024 20:56",
+    "filename": "/posts/less-is-more",
+    "title": " Less is more",
+    "category": "posts"
+  },
+  {
+    "modtime": "01-14-2024 20:24",
+    "filename": "/devops/linux/archlinux",
+    "title": "Arch Linux Notes",
+    "category": "devops"
   },
   {
     "modtime": "01-11-2024 15:55",
@@ -46,17 +58,5 @@
     "filename": "/self/self/dreams",
     "title": "My dreams",
     "category": "self"
-  },
-  {
-    "modtime": "01-04-2024 09:59",
-    "filename": "/devops/k8s2/k8s-doc/01.architecture",
-    "title": "Kubernetes Architecture",
-    "category": "devops"
-  },
-  {
-    "modtime": "01-03-2024 18:04",
-    "filename": "/devops/linux/archlinux",
-    "title": "Arch Linux Notes",
-    "category": "devops"
   }
 ]
