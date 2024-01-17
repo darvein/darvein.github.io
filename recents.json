@@ -1,9 +1,27 @@
 [
   {
-    "modtime": "01-14-2024 21:22",
+    "modtime": "01-17-2024 12:06",
     "filename": "/coding/python/python-tutorial/python-tutorial",
     "title": "Python Tutorial",
     "category": "coding"
+  },
+  {
+    "modtime": "01-17-2024 11:24",
+    "filename": "/self/self/christianity",
+    "title": "Christianity",
+    "category": "self"
+  },
+  {
+    "modtime": "01-15-2024 23:30",
+    "filename": "/infosec/htb-notes/machines/easy/devvortex",
+    "title": "Devvortex - Easy Machine",
+    "category": "infosec"
+  },
+  {
+    "modtime": "01-15-2024 23:28",
+    "filename": "/infosec/htb-notes/machines/easy/codify",
+    "title": "Easy - Codify (machine)",
+    "category": "infosec"
   },
   {
     "modtime": "01-14-2024 20:56",
@@ -40,23 +58,5 @@
     "filename": "/coding/pytorch/readme",
     "title": "Pytorch Learning Notes",
     "category": "coding"
-  },
-  {
-    "modtime": "01-10-2024 11:56",
-    "filename": "/coding/deeplearning",
-    "title": "Deep learning notes",
-    "category": "coding"
-  },
-  {
-    "modtime": "01-09-2024 14:14",
-    "filename": "/coding/blockchain/blockchain-roadmap",
-    "title": "Roadmap blockchain",
-    "category": "coding"
-  },
-  {
-    "modtime": "01-04-2024 10:11",
-    "filename": "/self/self/dreams",
-    "title": "My dreams",
-    "category": "self"
   }
 ]

@@ -16,3 +16,6 @@
 [submodule "content/devops/aws-notes"]
 	path = content/devops/aws-notes
 	url = git@github.com:darvein/aws-notes.git
+[submodule "content/infosec/htb-notes"]
+	path = content/infosec/htb-notes
+	url = git@github.com:darvein/hackthebox-notes.git
