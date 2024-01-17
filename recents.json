@@ -1,6 +1,24 @@
 [
   {
-    "modtime": "01-17-2024 12:06",
+    "modtime": "01-17-2024 13:52",
+    "filename": "/coding/pytorch/pytorch-tutorials/02-quickstart",
+    "title": "Quickstart",
+    "category": "coding"
+  },
+  {
+    "modtime": "01-17-2024 12:56",
+    "filename": "/coding/pytorch/pytorch-tutorials/01-basics",
+    "title": "Basics",
+    "category": "coding"
+  },
+  {
+    "modtime": "01-17-2024 12:37",
+    "filename": "/coding/pytorch/readme",
+    "title": "Pytorch Learning Notes",
+    "category": "coding"
+  },
+  {
+    "modtime": "01-17-2024 12:30",
     "filename": "/coding/python/python-tutorial/python-tutorial",
     "title": "Python Tutorial",
     "category": "coding"
@@ -40,23 +58,5 @@
     "filename": "/devops/linux/archlinux",
     "title": "Arch Linux Notes",
     "category": "devops"
-  },
-  {
-    "modtime": "01-11-2024 15:55",
-    "filename": "/devops/aws-notes/readme",
-    "title": "AWS Notes",
-    "category": "devops"
-  },
-  {
-    "modtime": "01-11-2024 15:55",
-    "filename": "/devops/aws-notes/ec2",
-    "title": "EC2 Notes",
-    "category": "devops"
-  },
-  {
-    "modtime": "01-10-2024 12:36",
-    "filename": "/coding/pytorch/readme",
-    "title": "Pytorch Learning Notes",
-    "category": "coding"
   }
 ]
