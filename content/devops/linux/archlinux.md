@@ -26,4 +26,6 @@ android-apktool jadx
 mycli
 mediainfo
 pirate-get
+copyq
+exploitdb
 ```

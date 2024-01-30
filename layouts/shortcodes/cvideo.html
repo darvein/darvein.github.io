@@ -1,5 +1,5 @@
-{{- $url := .Get "url" -}}
+{{- $url := .Get 0 -}}
 
-<video width="100%" controls="controls">
+<video width="90%" controls="controls">
   <source src="{{ $url }}" type="video/mp4" />
 </video>
