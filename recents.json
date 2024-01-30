@@ -1,5 +1,23 @@
 [
   {
+    "modtime": "01-30-2024 11:21",
+    "filename": "/coding/pytorch/pytorch-tutorials/01-quickstart",
+    "title": "Quickstart",
+    "category": "coding"
+  },
+  {
+    "modtime": "01-30-2024 11:21",
+    "filename": "/coding/pytorch/pytorch-tutorials/02-tensors",
+    "title": "Tensors",
+    "category": "coding"
+  },
+  {
+    "modtime": "01-30-2024 10:47",
+    "filename": "/coding/pytorch/pytorch-tutorials/00-basics",
+    "title": "Basics",
+    "category": "coding"
+  },
+  {
     "modtime": "01-30-2024 09:00",
     "filename": "/posts/improving-now",
     "title": " Improving Everyday",
@@ -16,18 +34,6 @@
     "filename": "/infosec/htb-notes/machines/medium/surveillance",
     "title": "Surveillance - Medium Machine",
     "category": "infosec"
-  },
-  {
-    "modtime": "01-17-2024 13:52",
-    "filename": "/coding/pytorch/pytorch-tutorials/02-quickstart",
-    "title": "Quickstart",
-    "category": "coding"
-  },
-  {
-    "modtime": "01-17-2024 12:56",
-    "filename": "/coding/pytorch/pytorch-tutorials/01-basics",
-    "title": "Basics",
-    "category": "coding"
   },
   {
     "modtime": "01-17-2024 12:37",
@@ -51,12 +57,6 @@
     "modtime": "01-15-2024 23:30",
     "filename": "/infosec/htb-notes/machines/easy/devvortex",
     "title": "Devvortex - Easy Machine",
-    "category": "infosec"
-  },
-  {
-    "modtime": "01-15-2024 23:28",
-    "filename": "/infosec/htb-notes/machines/easy/codify",
-    "title": "Easy - Codify (machine)",
     "category": "infosec"
   }
 ]
