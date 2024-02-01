@@ -1,5 +1,11 @@
 [
   {
+    "modtime": "02-01-2024 11:12",
+    "filename": "/lang/en/english-basic-4-weeks",
+    "title": "English basic in 4 weeks:",
+    "category": "lang"
+  },
+  {
     "modtime": "01-30-2024 11:21",
     "filename": "/coding/pytorch/pytorch-tutorials/01-quickstart",
     "title": "Quickstart",
@@ -52,11 +58,5 @@
     "filename": "/self/self/christianity",
     "title": "Christianity",
     "category": "self"
-  },
-  {
-    "modtime": "01-15-2024 23:30",
-    "filename": "/infosec/htb-notes/machines/easy/devvortex",
-    "title": "Devvortex - Easy Machine",
-    "category": "infosec"
   }
 ]
