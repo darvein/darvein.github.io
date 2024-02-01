@@ -1,5 +1,11 @@
 # English basic in 4 weeks
 
+This is aimed to help you learn english in a fast way 100% intense, designed to be applied for 1 month (4-5 weeks).
+
+Everything will be needed here:
+**Resources**: Chatgpt, Google, Youtube, Instagram, Computer, Pen&Paper
+**Yourself**: Good sleep, healthy food, 100% focus and attention
+
 This is the roadmap:
 
 ## Semana 1: Fundamentos Básicos
