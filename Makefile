@@ -14,11 +14,11 @@ publish: build
 	@echo "Uploading files to server"
 	#git submodule init
 	#git submodule update
-	cd content/coding/aws-notes; git add -A . ; git commit -m 'Updating notes'; git push origin main; cd -
-	cd content/coding/pytorch; git add -A . ; git commit -m 'Updating notes'; git push origin main; cd -
-	cd content/coding/python; git add -A . ; git commit -m 'Updating notes'; git push origin main; cd -
-	cd content/devops/k8s2; git add -A . ; git commit -m 'Updating notes'; git push origin main; cd -
-	cd content/infosec/htb-notes; git add -A . ; git commit -m 'Updating notes'; git push origin main; cd -
-	cd content/infosec/ctf-notes; git add -A . ; git commit -m 'Updating notes'; git push origin main; cd -
+	#cd content/coding/aws-notes; git add -A . ; git commit -m 'Updating notes'; git push origin main; cd -
+	#cd content/coding/pytorch; git add -A . ; git commit -m 'Updating notes'; git push origin main; cd -
+	#cd content/coding/python; git add -A . ; git commit -m 'Updating notes'; git push origin main; cd -
+	#cd content/devops/k8s2; git add -A . ; git commit -m 'Updating notes'; git push origin main; cd -
+	#cd content/infosec/htb-notes; git add -A . ; git commit -m 'Updating notes'; git push origin main; cd -
+	#cd content/infosec/ctf-notes; git add -A . ; git commit -m 'Updating notes'; git push origin main; cd -
 	git add -A . ; git commit -m 'Updating blog'; git push origin main
 	#cd public && rsync -avz . darveinnet-static:/var/www/darvein.net/html/
