@@ -1,5 +1,11 @@
 [
   {
+    "modtime": "02-01-2024 11:40",
+    "filename": "/devops/aws-notes/basic-aws-roadmap",
+    "title": "AWS Basic and Essential Roadmap",
+    "category": "devops"
+  },
+  {
     "modtime": "02-01-2024 11:18",
     "filename": "/lang/en/english-basic-4-weeks",
     "title": "English basic in 4 weeks",
@@ -52,11 +58,5 @@
     "filename": "/coding/python/python-tutorial/python-tutorial",
     "title": "Python Tutorial",
     "category": "coding"
-  },
-  {
-    "modtime": "01-17-2024 11:24",
-    "filename": "/self/self/christianity",
-    "title": "Christianity",
-    "category": "self"
   }
 ]
