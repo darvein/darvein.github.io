@@ -10,11 +10,16 @@ This is the roadmap:
 
 ## Semana 1: Fundamentos Básicos
 - Revisión de adverbios de lugar y preposiciones de lugar en inglés.
-- Repaso de preposiciones de tiempo: for y since.
+    - Repaso de preposiciones de tiempo: for y since.
 - Juegos de vocabulario y ejercicios de pronunciación básica.
+    - 10 Palabras nuevas. Definición en ingles y Pronunciación.
 - 30 minutos de visionado de videos cortos en inglés (como TED Talks, YouTube) para mejorar la comprensión auditiva.
+    - Video o Audio de entre 5min a 10min
+    - Repetir el diálogo en ingles
+    - Resumen del recurso en español
 - Participación en foros en inglés o intercambio lingüístico.
     - https://www.italki.com/en/community/for-you
+        - Crear publicaciones para que la comunidad la corrija
 ## Semana 2: Construcción de Bases
 - Estudio de adjetivos calificativos, demostrativos y comparativos.
 - Lectura y comprensión de textos en inglés con vocabulario de la casa y el restaurante.
