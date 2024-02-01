@@ -13,8 +13,8 @@ This is the roadmap:
     - Repaso de preposiciones de tiempo: for y since.
 - Juegos de vocabulario y ejercicios de pronunciación básica.
     - 10 Palabras nuevas. Definición en ingles y Pronunciación.
-- 30 minutos de visionado de videos cortos en inglés (como TED Talks, YouTube) para mejorar la comprensión auditiva.
-    - Video o Audio de entre 5min a 10min
+- Videos cortos en inglés (como TED Talks, YouTube) para mejorar la comprensión auditiva.
+    - Video o Audio de entre 5min a 10min :clock1:
     - Repetir el diálogo en ingles
     - Resumen del recurso en español
 - Participación en foros en inglés o intercambio lingüístico.
