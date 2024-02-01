@@ -48,3 +48,51 @@ Excessivement triste
 C'est là que j'existe
 Pas d'excuse (pas d'excuse)
 ```
+
+Translation
+```
+I have no excuse
+It's inexplicable
+Even inexorable
+
+It's not for ecstasy
+It is that existence
+Without a little extreme
+Unacceptable
+
+I'm excessive
+I like it when it disorients
+When everything speeds up
+I stay relaxed
+
+I'm excessive
+When everything explodes
+When life shows itself
+It's an exquisite trance
+
+Some people find it annoying, others it annoys
+There are some who demand that I return to the axis
+Some people exclaim that it’s a complex
+There are some who get excited with all these X's in the text
+
+I'm excessive
+I like it when it disorients
+When everything speeds up
+I stay relaxed
+
+I'm excessive
+When everything explodes
+When life shows itself
+It's an exquisite trance, yes
+
+I'm excessive
+I like it when it disorients
+When everything is exaggerated
+I stay relaxed
+
+I'm excessive
+Excessively cheerful
+Excessively sad
+This is where I exist
+No excuse (no excuse)
+```

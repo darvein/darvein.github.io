@@ -12,7 +12,8 @@ This is the roadmap:
 - Revisión de adverbios de lugar y preposiciones de lugar en inglés.
     - Repaso de preposiciones de tiempo: for y since.
 - Juegos de vocabulario y ejercicios de pronunciación básica.
-    - 10 Palabras nuevas. Definición en ingles y Pronunciación.
+    - 5 Palabras nuevas. Definición en ingles y Pronunciación.
+    - Ejemplo con cada palabra
 - Videos cortos en inglés (como TED Talks, YouTube) para mejorar la comprensión auditiva.
     - Video o Audio de entre 5min a 10min :clock1:
     - Repetir el diálogo en ingles
