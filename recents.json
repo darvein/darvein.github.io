@@ -1,62 +1,56 @@
 [
   {
-    "modtime": "02-02-2024 09:39",
+    "modtime": "02-05-2024 10:02",
     "filename": "/devops/aws-notes/basic-aws-roadmap",
     "title": "AWS Basic and Essential Roadmap",
     "category": "devops"
   },
   {
-    "modtime": "02-01-2024 17:26",
-    "filename": "/lang/songs/song-carla-lexcessive",
-    "title": "FR: Carla Bruni - L'excessive",
-    "category": "lang"
-  },
-  {
-    "modtime": "02-01-2024 17:26",
-    "filename": "/lang/en/english-basic-4-weeks",
-    "title": "English basic in 4 weeks",
-    "category": "lang"
-  },
-  {
-    "modtime": "02-01-2024 12:12",
-    "filename": "/lang/fr/french-basic-roadmap",
-    "title": "Bases de la feuille de route française",
-    "category": "lang"
-  },
-  {
-    "modtime": "01-30-2024 11:21",
-    "filename": "/coding/pytorch/pytorch-tutorials/01-quickstart",
-    "title": "Quickstart",
-    "category": "coding"
-  },
-  {
-    "modtime": "01-30-2024 11:21",
-    "filename": "/coding/pytorch/pytorch-tutorials/02-tensors",
-    "title": "Tensors",
-    "category": "coding"
-  },
-  {
-    "modtime": "01-30-2024 10:47",
-    "filename": "/coding/pytorch/pytorch-tutorials/00-basics",
-    "title": "Basics",
-    "category": "coding"
-  },
-  {
-    "modtime": "01-30-2024 09:00",
-    "filename": "/posts/improving-now",
-    "title": " Improving Everyday",
+    "modtime": "02-02-2024 20:19",
+    "filename": "/posts/el-orgullo-de-la-familia",
+    "title": " El orgullo de la familia",
     "category": "posts"
   },
   {
-    "modtime": "01-23-2024 20:05",
-    "filename": "/devops/linux/archlinux",
-    "title": "Arch Linux Notes",
-    "category": "devops"
+    "modtime": "02-02-2024 20:19",
+    "filename": "/posts/yutaka-15teen-night",
+    "title": " Yutaka Ozaki 15 Teens Night",
+    "category": "posts"
   },
   {
-    "modtime": "01-18-2024 09:04",
-    "filename": "/infosec/htb-notes/machines/medium/surveillance",
-    "title": "Surveillance - Medium Machine",
-    "category": "infosec"
+    "modtime": "02-02-2024 20:19",
+    "filename": "/posts/labyrinth-movie",
+    "title": " The Labyrinth",
+    "category": "posts"
+  },
+  {
+    "modtime": "02-02-2024 20:19",
+    "filename": "/posts/eminem-the-way-i-am",
+    "title": " Eminem The Way I am",
+    "category": "posts"
+  },
+  {
+    "modtime": "02-02-2024 20:19",
+    "filename": "/posts/wutangclan-cream",
+    "title": " Wu Tang Clan CREAM",
+    "category": "posts"
+  },
+  {
+    "modtime": "02-02-2024 20:18",
+    "filename": "/posts/journey-martial-arts",
+    "title": " Journey to Martial Arts",
+    "category": "posts"
+  },
+  {
+    "modtime": "02-02-2024 20:18",
+    "filename": "/posts/sushi-de-tiempo",
+    "title": " Sushi de tiempo!",
+    "category": "posts"
+  },
+  {
+    "modtime": "02-02-2024 20:18",
+    "filename": "/posts/la-buena-vida",
+    "title": " La buena vida",
+    "category": "posts"
   }
 ]

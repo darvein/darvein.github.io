@@ -1,6 +1,7 @@
 +++
 title = "La buena vida"
-categories = [ "Food",]
+categories = ["Health",]
+tags = ["food"]
 date = "2022-08-06"
 +++
 

@@ -1,6 +1,7 @@
 +++
 title = "La noche de la Pizza"
-categories = ["Food",]
+categories = ["Health",]
+tags = ["food"]
 date = "2022-07-15"
 +++
 

@@ -1,8 +1,10 @@
-# Eminem
-My favorite rapper.
++++
+title = "Eminem The Way I am"
+categories = ["Music"]
+tags = ["music"]
+date = "2024-02-02"
++++
 
-## Songs
-### The way I Am
 I really like this song, I used to listen it back when I was 16-17, back then I feelt down most of my days for different reasons, but what really bothered me was people talking about me "how I look like, how I walk, how my hair has a different color". I really hated it, people talking about who my girlfriend is, how bad I'm in studies, how bad I am in computer games. I thought, hey, I'm not a weirdo, or am I?, I'm just like everyone else, not exactly the same, but no that different either. 
 
 What is wrong with me?, some how I felt alone myself. Most of the days I spent working at home on afternoons and sometimes just wasting time watching musical videos and then making my homework from 10-11pm til 2-4am, yeah, doing it at the last time. I was somehow not enjoying my life, I felt like trapped in a dark space where the time doesn't exist. So then I've discovered this beautiful dark song from Eminem, The Way I Am.

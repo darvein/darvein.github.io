@@ -21,32 +21,11 @@ A little bit about me..., I'm not a fluent-speaker person although I'm improving
 |---------------------------|---------------------------------------------------------|
 | [Self](/self)             | All related to oneself: mind, physical and spiritual    |
 | [Books](/books)           | All my read books in one single place                   |
-| [Creativity](/creativity) | What is inspirational, what helps to develop creativity |
 | [Langs](/lang)            | My roadmap into becoming Polyglot                       |
 | [Travel](/travel)         | Notes on my traveling experience                        |
+| [Misc](/misc) | Anything. What is inspirational, what helps to develop creativity |
 
-## Some projects I work on
-
-| Project Name        | Project URL                        | Description                                |
-|---------------------|------------------------------------|--------------------------------------------|
-| Nextbrave           | https://www.nextbrave.com/         | DevOps Outsourcing Company                 |
-| Revista Informática | https://www.revistainformatica.com | Sitio de noticias y novedades tecnológicas |
-| TLDR for terminal   | https://github.com/nextbrave/nx    | Snippets navigator with FZF for terminal   |
-
-## Worth to mention :D
-- #1 in HTB :bolivia: https://app.hackthebox.com/rankings/country/BO
-
-## Online :camera:
-
-I have some pics hosted in Google Photos:
-- Darvein: https://photos.app.goo.gl/9PP31bJb9LxPQrAY6
-- Daily: https://photos.app.goo.gl/248mnscgSTkn3S7R6
-- Work: https://photos.app.goo.gl/eKJwr7yAvyBqjAdq7
-- Study: https://photos.app.goo.gl/bhCmyk4QnE8cWBvJA
-- Friends: https://photos.app.goo.gl/LZfPppGmzTKCgwS6A
-- Martial arts: https://photos.app.goo.gl/cJMM1EJMV5w1r28S7
-
-Pics of Places:
-- La Paz, Coroico: https://photos.app.goo.gl/e8q1VzWVYSPc9GU18
-
-Videos: https://www.youtube.com/@darvein/playlists
+## Me online
+- Github: https://github.com/darvein
+- Twitter: https://twitter.com/darvein
+- #3 in HTB :bolivia: https://app.hackthebox.com/rankings/country/BO

@@ -7,9 +7,5 @@ All my notes on traveling.
 
 ## Files
 
-{{< directoryindex 
-   path="/content/travel" 
-   pathURL="/travel" 
-   notIn="foo"
->}}
+{{< directoryindex pathURL="/travel" notIn="foo" >}}
 

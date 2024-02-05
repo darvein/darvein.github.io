@@ -1,6 +1,10 @@
-# Yutaka Ozaki
-## Songs
-### 15-teen's night
++++
+title = "Yutaka Ozaki 15 Teens Night"
+categories = ["Music"]
+tags = ["music"]
+date = "2024-02-02"
++++
+
 Yeah, maybe the song name is incorrect, I'm trying to translate it to english from japanese. It basically talks about a boy who is fifteen years old, it talks about all the feelings he can go through in a single solitary night.
 
 Last year (2022) I've been listening random music in youtube.com and I ended up with Yutaka's music, some people call him the Japanese Kurt Cobain :smile: - dumb people. Firstly I've noticed the emotion on how hi sings and the music melody, that was my style I liked it. 

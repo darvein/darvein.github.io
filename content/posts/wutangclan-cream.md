@@ -1,6 +1,10 @@
-# Wu Tang Clan
++++
+title = "Wu Tang Clan CREAM"
+categories = ["Music"]
+tags = ["music"]
+date = "2024-02-02"
++++
 
-## C.R.E.A.M.
 :memo: Lyrics: [C.R.E.A.M. Lyrics](/lang/en/song-wutangclan-cream)
 
 This song is amazing. Most people relates this song to the Capitalism that we live, people suffering and being treated badly just because they are poor or belongs to a lower social class. What I find on this song personally is something more, they talk about being in jail and comparing it the same hell as living outside of jail, real life and jail life are the same hell, conflicts are present on both lives.

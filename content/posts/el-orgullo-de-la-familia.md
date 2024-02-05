@@ -1,6 +1,7 @@
 +++
 title = "El orgullo de la familia"
-categories = [ "Familia",]
+categories = [ "Social",]
+tags = ["family"]
 date = "2022-08-21"
 +++
 

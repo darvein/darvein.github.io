@@ -1,4 +1,9 @@
-# The Labyrinth
++++
+title = "The Labyrinth"
+categories = ["Movies"]
+tags = ["movies"]
+date = "2024-02-02"
++++
 
 This is a great movie just because I watched when I was a kid (4-5 years old?). I had nightmares with this one.
 

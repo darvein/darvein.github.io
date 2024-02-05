@@ -11,6 +11,9 @@ Here my messy Duolingo profile: https://www.duolingo.com/profile/darvein
    notIn="foo"
 >}}
 
+## Tools:
+- Youtube translation and visual helper like a karaoke: https://youtubetranscript.com
+
 ## Blueprints
 A good start to learn any language is to collect vocabulary on:
 - Numbers
@@ -23,3 +26,4 @@ A good start to learn any language is to collect vocabulary on:
 - School items
 - Home items
 - Fruits
+
