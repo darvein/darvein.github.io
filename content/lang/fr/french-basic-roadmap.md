@@ -1,5 +1,7 @@
 # Bases de la feuille de route française
 
+Listening: https://www.youtube.com/@FrancaisavecPierre
+
 ## Phase 1 : Les Bases (1-3 Mois)
 - Grammaire et Vocabulaire de Base
     - Commencez avec des applications comme Duolingo ou Babbel.

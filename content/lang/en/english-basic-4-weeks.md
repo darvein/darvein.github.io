@@ -9,43 +9,53 @@ Everything will be needed here:
 This is the roadmap:
 
 ## Semana 1: Fundamentos Básicos
-- Revisión de adverbios de lugar y preposiciones de lugar en inglés.
-    - Repaso de preposiciones de tiempo: for y since.
+- Revisión de adverbios y preposiciones en inglés.
     - Ejemplos Adverbios: Lo que sea que responda a: how?, when?, where?, how often?, to what extent?
+        - Adverbios: manera, lugar, tiempo, grado, frecuencia, probabilidad, interrogativos
     - Ejemplos Preposiciones: time, place, direction, showing possession, 
-- Juegos de vocabulario y ejercicios de pronunciación básica.
+        - Preposiciones: lugar, tiempo, direccion, causa/razon
+- Vocabulario y pronunciación: Oficina
     - 5 Palabras nuevas. Definición en ingles y Pronunciación.
     - Ejemplo con cada palabra
 - Videos cortos en inglés (como TED Talks, YouTube) para mejorar la comprensión auditiva.
     - Video o Audio de entre 5min a 10min :clock1:
     - Repetir el diálogo en ingles
-    - Resumen del recurso en español
 - Participación en foros en inglés o intercambio lingüístico.
     - https://www.italki.com/en/community/for-you
         - Crear publicaciones para que la comunidad la corrija
+- Conversacion: Saludos básicos
 ## Semana 2: Construcción de Bases
-- Estudio de adjetivos calificativos, demostrativos y comparativos.
-- Lectura y comprensión de textos en inglés con vocabulario de la casa y el restaurante.
-- 15 minutos de ejercicios de escritura creativa (diarios, historias cortas) usando el vocabulario aprendido.
-- Práctica de escucha con canciones en inglés, enfocándote en entender la letra.
-- Role-playing o simulaciones de situaciones cotidianas (como ir de compras, pedir en un restaurante).
+- Estudio de adjetivos
+    - calificativos, demostrativos y comparativos.
+- Vocabulario y pronunciación: Restaurant
+    - 5 Palabras nuevas. Definición en ingles y Pronunciación.
+    - Ejemplo con cada palabra
+- Lectura comprensiva. 
+    - Preguntas true/false para validar lectura
+- Videos cortos en inglés (como TED Talks, YouTube) para mejorar la comprensión auditiva.
+    - Video o Audio de entre 5min a 10min :clock1:
+    - Repetir el diálogo en ingles
+    - Resumir en español
+- Presente: simple present, present continuous, present perfect, present perfect continuous
 ## Semana 3: Desarrollo Intermedio
-- Profundización en pasado continuo y verbos auxiliares.
-- Práctica de WH Questions y adverbios de frecuencia.
+- Pasado: simple past, past continuous, past perfect, past perfect continuous
+- Verbos auxiliares y modales
+    - be/have/do
+    - can/will/should/must/could/would
 - 30 minutos de práctica de listening con podcasts o audiolibros.
-- Ejercicios interactivos en línea para reforzar gramática.
-- Organiza una sesión de conversación con hablantes nativos (puede ser virtual).
+- Debates y discusiones simples sobre temas random
+- 15 minutos de ejercicios de escritura creativa (diarios, historias cortas) usando el vocabulario aprendido.
 ## Semana 4: Reforzamiento y Aplicación
-- Revisión de preposiciones de tiempo, conectores y artículos en inglés.
+- Futuro: simple future, future continuous, future perfect, future perfect continuous
 - Ejercicios prácticos de verb patterns y diferencias entre palabras similares.
 - 30 minutos de visionado de series o películas en inglés con subtítulos en inglés.
-- Juegos de rol con situaciones más complejas (entrevistas de trabajo, debates).
-- Participa en un grupo de discusión en inglés (online o presencial).
+    - Listening y Speaking de dialogos de series o peliculas
+- Escritura de parrafos
+- Juegos rol: presentaciones, negociaciones
+- Reported speech
 ## Semana 5: Inmersión y Expresión
-- Cambia el idioma de tus dispositivos y redes sociales a inglés.
-- Lee libros o artículos en inglés adaptados a tu nivel.
-- Encuentra oportunidades para hablar en inglés en tu vida diaria.
-- Sesiones de práctica con hablantes nativos o profesores de inglés.
-## Semana 6: Avanzado
-- Conectores avanzados, adjetivos -ed y -ing, verbos "to need" y "to wish", phrasal verbs, pronombres indefinidos, voz activa y pasiva, reported speech y cláusulas relativas.
+- Condicionales: conditional simple, conditional perfect
+- Dialogos cortos o monologos grabados
+- Ensayos cortos, resenias de libros, articulos. Para mejorar escritura y speaking
 - Debates sobre temas actuales para mejorar tus habilidades argumentativas y de expresión.
+    - Escribir reflexiones, temas de actualidad, etc
