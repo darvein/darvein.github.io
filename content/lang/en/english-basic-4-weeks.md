@@ -11,6 +11,8 @@ This is the roadmap:
 ## Semana 1: Fundamentos Básicos
 - Revisión de adverbios de lugar y preposiciones de lugar en inglés.
     - Repaso de preposiciones de tiempo: for y since.
+    - Ejemplos Adverbios: Lo que sea que responda a: how?, when?, where?, how often?, to what extent?
+    - Ejemplos Preposiciones: time, place, direction, showing possession, 
 - Juegos de vocabulario y ejercicios de pronunciación básica.
     - 5 Palabras nuevas. Definición en ingles y Pronunciación.
     - Ejemplo con cada palabra

@@ -22,10 +22,14 @@ zplug zsh
 patat-bin lolcat glow
 gron
 ffmpegthumbnailer tumbler nomacs
-android-apktool jadx
+android-apktool jadx exploitdb evil-winrm
 mycli
 mediainfo
 pirate-get
 copyq
-exploitdb
+```
+
+## Pip
+```sh
+pipx install certipy-ad
 ```
