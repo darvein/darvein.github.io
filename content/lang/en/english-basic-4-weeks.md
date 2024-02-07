@@ -9,6 +9,7 @@ Everything will be needed here:
 This is the roadmap:
 
 ## Semana 1: Fundamentos Básicos
+- Conversacion: Saludos básicos o Introducciones personales
 - Revisión de adverbios y preposiciones en inglés.
     - Ejemplos Adverbios: Lo que sea que responda a: how?, when?, where?, how often?, to what extent?
         - Adverbios: manera, lugar, tiempo, grado, frecuencia, probabilidad, interrogativos
@@ -23,7 +24,6 @@ This is the roadmap:
 - Participación en foros en inglés o intercambio lingüístico.
     - https://www.italki.com/en/community/for-you
         - Crear publicaciones para que la comunidad la corrija
-- Conversacion: Saludos básicos
 ## Semana 2: Construcción de Bases
 - Estudio de adjetivos
     - calificativos, demostrativos y comparativos.
