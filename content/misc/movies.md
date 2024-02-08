@@ -21,6 +21,8 @@
 - :link: [Posession](https://www.imdb.com/title/tt0082933/) 1981
 ### Weird
 - :link: [A clockwork orange](https://www.imdb.com/title/tt0066921/) 1971
+### Kids
+- Totoro, Labyrinth
 
 ## Pending Movies To Watch (Ignore this!)
 
@@ -48,6 +50,7 @@
 - We Bare Bears: An animated sitcom about three bear siblings and their misadventures.
 
 ### Horror
+- The Silence of the Lambs (1991): A psychological horror film featuring a young FBI cadet seeking the help of an imprisoned cannibal to catch another serial killer.
 - Alien (1979): A science fiction horror film about a commercial space crew encountering an aggressive alien creature.
 - Get Out (2017): A horror thriller that explores racism in America through the lens of a young African-American man visiting his white girlfriend's family estate.
 - Haxan (1922): A Swedish-Danish silent horror film that presents witchcraft through the ages.
@@ -55,7 +58,6 @@
 - Possession (1981): A psychological horror drama about a spy who discovers his wife's increasingly bizarre behavior.
 - Ringu (1998): A Japanese horror film about a videotape that curses viewers to die within a week of watching it.
 - Saw 3D: The seventh installment in the Saw franchise, involving a deadly game of survival.
-- The Silence of the Lambs (1991): A psychological horror film featuring a young FBI cadet seeking the help of an imprisoned cannibal to catch another serial killer.
 - The Texas Chainsaw Massacre 1 & 2: Horror films about a family of cannibals and their chainsaw-wielding member, Leatherface.
 - The Thing (1982): A science fiction horror film about a research team in Antarctica being hunted by a shape-shifting alien.
 

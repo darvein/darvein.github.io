@@ -10,6 +10,11 @@
     - [MMA](#mma)
     - [Related posts](#related-posts)
 
+
+## Box
+
+Check this inspirational video: https://www.youtube.com/watch?v=9k4bjNgEOpY
+
 ## Muay-Thai
 Militar martial art (not sport) "Muay Boran". Muaythai means "Thai Boxing": มวยไทย
 
