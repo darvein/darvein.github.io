@@ -15,4 +15,4 @@ Overall I cannot complain, I'm not that lazy anymore, I'm getting better and bet
 
 Nothing is easy I know, specially those dreams and objectives that are bigger than other ones, those are hard to get, those hurts in some way.
 
-Keep it up my bro! :link: https://photos.app.goo.gl/HtPMSswrfzQeEYFv5
+Keep it up my bro!
