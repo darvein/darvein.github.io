@@ -22,10 +22,10 @@
 ### Weird
 - :link: [A clockwork orange](https://www.imdb.com/title/tt0066921/) 1971
 ### Kids
-- Totoro, Labyrinth
+- Everything from Ghiblin Studios
+- The Labyrinth
 
 ## Pending Movies To Watch (Ignore this!)
-
 ### Series
 - Fast and Furious (Series): An action-packed series focusing on illegal street racing, heists, and espionage.
 - Silicon Valley (2014-2019): A comedy series that parodies the tech industry and startup culture in Silicon Valley.

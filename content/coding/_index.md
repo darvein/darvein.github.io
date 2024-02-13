@@ -12,5 +12,5 @@ Code snippets in various languages can be found here: https://github.com/nextbra
 
 {{< directoryindex 
    pathURL="/coding" 
-   notIn="solidity/cryptozombies cpp/lib"
+   notIn="solidity/cryptozombies cpp/lib pytorch/labs pytorch/pytorch-tutorials/labs"
 >}}
