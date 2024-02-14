@@ -21,3 +21,6 @@ Consider these topis: Slangs, Idioms, Colloquialisms, Contractions.
     - Spill the beans: talk the truth
 - Colloquialisms: Y'all, Wanna, Gonna, Buddy
 - Contractions: I'm, you're he'll, we've
+
+## Readings
+- [Kids] Where the Wild Things Are by **Maurice Sendak**: :link: https://addi.ehu.es/bitstream/handle/10810/30027/JT_Where%20the%20Wild%20Things%20Are.pdf

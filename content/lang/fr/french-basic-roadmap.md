@@ -18,6 +18,9 @@
 * Where is the restroom?: Où sont les toilettes? (oo sohn lay twah-let); Où est la salle de bain? (oo eh lah sal duh bahn)
 * How much does this cost?: Combien ça coûte? (kohm-byahn sah koot); Combien est-ce? (kohm-byahn ess)
 
+## Readings
+- [Kids] Le petit prince: :link: https://gutenberg.net.au/ebooks03/0300771h.html https://www.ebooksgratuits.com/pdf/st_exupery_le_petit_prince.pdf
+
 ## Vocabulary
 ### Les vetements
 1:
