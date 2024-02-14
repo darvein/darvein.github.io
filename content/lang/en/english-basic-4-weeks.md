@@ -6,6 +6,13 @@ Everything will be needed here:
 - **Resources**: Chatgpt, Google, Youtube, Instagram, Computer, Pen&Paper
 - **Yourself**: Good sleep, healthy food, 100% focus and attention
 
+Vocabulary words:
+- Office
+- Movies
+- Restaurant
+- Concert
+- Zoo
+
 This is the roadmap:
 
 ## Semana 1: Fundamentos Básicos
@@ -25,18 +32,21 @@ This is the roadmap:
     - https://www.italki.com/en/community/for-you
         - Crear publicaciones para que la comunidad la corrija
 ## Semana 2: Construcción de Bases
-- Estudio de adjetivos
-    - calificativos, demostrativos y comparativos.
-- Vocabulario y pronunciación: Restaurant
-    - 5 Palabras nuevas. Definición en ingles y Pronunciación.
-    - Ejemplo con cada palabra
-- Lectura comprensiva. 
-    - Preguntas true/false para validar lectura
+- Brief greetings and self-introduction
+- Presente: simple present, present continuous, present perfect, present perfect continuous
+    - Present simple: habitual actions, general truths
+    - Present continuous: happening right now, future planned action
+    - Present perfect: actions that started in the past and maybe continue to the present
+    - Present perfect continuous: actions that started in the past and ended before the present moment
+- Vocabulario y pronunciación
+    - 1 párrafo con una o más palabras relacionadas al tópico definido
+    - Lectura y comprensión del tópico
 - Videos cortos en inglés (como TED Talks, YouTube) para mejorar la comprensión auditiva.
     - Video o Audio de entre 5min a 10min :clock1:
-    - Repetir el diálogo en ingles
     - Resumir en español
-- Presente: simple present, present continuous, present perfect, present perfect continuous
+    - Repetir el diálogo en ingles
+- Estudio de adjetivos
+    - calificativos, demostrativos y comparativos.
 ## Semana 3: Desarrollo Intermedio
 - Pasado: simple past, past continuous, past perfect, past perfect continuous
 - Verbos auxiliares y modales
