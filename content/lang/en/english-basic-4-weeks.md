@@ -69,3 +69,9 @@ This is the roadmap:
 - Ensayos cortos, resenias de libros, articulos. Para mejorar escritura y speaking
 - Debates sobre temas actuales para mejorar tus habilidades argumentativas y de expresión.
     - Escribir reflexiones, temas de actualidad, etc
+
+## Resources
+### Videos
+- https://www.youtube.com/shorts/pxOI0SnfsWE
+- https://www.youtube.com/shorts/KqLAClwXaEA
+- https://www.youtube.com/shorts/QUEPGlQxh8Y
