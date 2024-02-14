@@ -1,14 +1,14 @@
 # English notes :us:
 
 ## Resources to learn
-Learn grammar: https://www.essentialenglish.review/apps/english-grammar-in-use-with-answers/
+- Learn grammar: https://www.essentialenglish.review/apps/english-grammar-in-use-with-answers/
+- Online resource: :link: https://www.essentialenglish.review/apps/english-grammar-in-use-with-answers
 
 ## Tools
 - Youglish, learn how to pronunce something: https://youglish.com/
 
 ## Informal English
 Consider these topis: Slangs, Idioms, Colloquialisms, Contractions.
-
 - Slangs
     - Ghost: to ignore someone on purpose
     - Salty: Being upset about anything
