@@ -7,6 +7,12 @@
 - https://francaisfacile.rfi.fr/en/exercices/
 - Listening: https://www.youtube.com/@FrancaisavecPierre
 - CLI Examples: `trans -b -p en:fr 'french basics'`
+- Apprendre la grammaire française et s’exercer: :link: [francais.lingolia.com](https://francais.lingolia.com/fr/grammaire) (read, document)
+- https://www.lepointdufle.net/p/grammaire.htm
+- https://www.gymglish.com/fr/frantastique-orthographe/grammaire-francaise
+- https://open.spotify.com/show/6YqgG1UezfW9khCvLh8rvw?si=d6799e9926d64c5f
+- Breathless (1960), Jean-Luc Godard
+- Movie: The 400 Blows (1959), by François Truffaut
 
 ## General Basic Roadmap
 Consider these points:

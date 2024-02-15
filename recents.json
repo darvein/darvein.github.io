@@ -1,20 +1,50 @@
 [
   {
-    "modtime": "02-14-2024 11:45",
-    "filename": "/lang/fr/french-basic-roadmap",
-    "title": "Bases de la feuille de route française",
-    "category": "lang"
+    "modtime": "02-15-2024 09:53",
+    "filename": "/coding/python/python-tutorial/python-tutorial",
+    "title": "Python Tutorial",
+    "category": "coding"
   },
   {
-    "modtime": "02-14-2024 11:43",
+    "modtime": "02-14-2024 21:32",
+    "filename": "/coding/python/readme",
+    "title": "Python notes index",
+    "category": "coding"
+  },
+  {
+    "modtime": "02-14-2024 21:30",
     "filename": "/lang/en/english-notes",
     "title": "English notes :us:",
     "category": "lang"
   },
   {
-    "modtime": "02-14-2024 11:28",
+    "modtime": "02-14-2024 21:30",
+    "filename": "/travel/bo/lapaz/coroico",
+    "title": "Coroico",
+    "category": "travel"
+  },
+  {
+    "modtime": "02-14-2024 21:21",
+    "filename": "/lang/jp/basic-japanese",
+    "title": "日本",
+    "category": "lang"
+  },
+  {
+    "modtime": "02-14-2024 21:20",
+    "filename": "/lang/ru/basic-russian",
+    "title": "Russian Basics :ru:",
+    "category": "lang"
+  },
+  {
+    "modtime": "02-14-2024 21:20",
     "filename": "/lang/fr/french-notes",
     "title": "Notes de langue française :fr:",
+    "category": "lang"
+  },
+  {
+    "modtime": "02-14-2024 12:14",
+    "filename": "/lang/fr/french-basic-roadmap",
+    "title": "Bases de la feuille de route française",
     "category": "lang"
   },
   {
@@ -28,35 +58,5 @@
     "filename": "/posts/family-bond",
     "title": " Family Bonds",
     "category": "posts"
-  },
-  {
-    "modtime": "02-12-2024 11:30",
-    "filename": "/misc/movies",
-    "title": "Movies",
-    "category": "misc"
-  },
-  {
-    "modtime": "02-08-2024 17:16",
-    "filename": "/coding/pytorch/pytorch-tutorials/02-tensors",
-    "title": "Tensors",
-    "category": "coding"
-  },
-  {
-    "modtime": "02-08-2024 16:55",
-    "filename": "/coding/pytorch/pytorch-tutorials/00-basics",
-    "title": "Basics",
-    "category": "coding"
-  },
-  {
-    "modtime": "02-08-2024 10:03",
-    "filename": "/devops/aws-notes/basic-aws-roadmap",
-    "title": "AWS Basic and Essential Roadmap",
-    "category": "devops"
-  },
-  {
-    "modtime": "02-07-2024 14:44",
-    "filename": "/self/urban/fight",
-    "title": "Martial Arts",
-    "category": "self"
   }
 ]

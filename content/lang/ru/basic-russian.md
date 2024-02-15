@@ -1,5 +1,12 @@
 # Russian Basics :ru:
 
+## Resources
+- Movie: Battleship Potemkin (1925) - Directed by Sergei Eisenstein
+- Solaris (1972) - Directed by Andrei Tarkovsky
+- Moscow Does Not Believe in Tears (1980) - Directed by Vladimir Menshov
+- Come and See (1985) - Directed by Elem Klimov
+- Stalker (1979) - Directed by Andrei Tarkovsky
+
 ### Greetings
 
 `trans -b -p en:zh-CN hello`
