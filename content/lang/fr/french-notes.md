@@ -14,6 +14,18 @@
 - Breathless (1960), Jean-Luc Godard
 - Movie: The 400 Blows (1959), by François Truffaut
 
+## Readings
+- [Kids] Le petit prince: :link: [pdf1](https://gutenberg.net.au/ebooks03/0300771h.html), [pdf2](https://www.ebooksgratuits.com/pdf/st_exupery_le_petit_prince.pdf)
+
+## Movies
+- La haine, 1995 [imdb](https://www.imdb.com/title/tt0113247/)
+
+## Music
+- Stromae ([spotify](https://open.spotify.com/playlist/37i9dQZF1DZ06evO37wTNS))
+- Louane ([spotify](https://open.spotify.com/artist/7wjeXCtRND2ZdKfMJFu6JC))
+- Zez
+- Christophe Maé
+
 ## General Basic Roadmap
 Consider these points:
 - Greetings

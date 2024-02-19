@@ -15,3 +15,10 @@
 ├── Genki - Elementary Japanese II.pdf
 ├── Genki I - textboock.pdf
 ```
+
+## Readings
+- Death Note: [JP Bookwalker](https://viewer.bookwalker.jp/03/25/viewer.html?cid=f969976c-5c45-4199-8400-33f2afeed05b&cty=2)
+## Movies
+- Anything from Ghibli
+## Music
+- Yutaka Ozaki: [spotify](https://open.spotify.com/playlist/0G4CBxgo3xfGLJUGzgYL3e)
