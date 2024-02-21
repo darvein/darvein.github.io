@@ -1,9 +1,3 @@
-+++
-title = "Me"
-description = "About Darvein"
-slug = "me"
-+++
-
 # Darvein space!
 
 Welcome to my personal blog!!1

@@ -2,17 +2,14 @@
   {{ .Title }} · {{ .Site.Title }}
 {{ end }}
 
-
 {{ define "content" }}
 
 {{ $posts := .Site.RegularPages.ByDate.Reverse }}
 {{ $recentPosts := first 3 $posts }}
 {{ $sidebarRecentPosts := first 10 $posts }}
 
-
 <section class="container page">
 <article>
-
 
 <div class="blog-container blog-container-full">
   <div class="blog-main-content">
@@ -33,10 +30,6 @@
                         <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
                           {{ .Date | time.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}
                         </time>
-                      </span>
-                      <span class="reading-time">
-                        <i class="fa fa-clock-o" aria-hidden="true"></i>
-                        {{ i18n "reading_time" .ReadingTime }}
                       </span>
                     </div>
                     {{ with .Page.Params.Authors }}{{ partial "taxonomy/authors.html" . }}{{ end }}
@@ -72,6 +65,5 @@
 
 </article>
 </section>
-
 
 {{ end }}

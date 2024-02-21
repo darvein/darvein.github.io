@@ -1,0 +1,36 @@
+<section class="container page">
+  <div class="blog-container">
+    <div class="blog-posts">
+      {{ range first 10 .Site.RegularPages.ByDate.Reverse }}
+      <article class="post-item">
+        <img class="post-thumbnail" src="{{ with .Params.thumbnail }}{{ . }}{{ else }}/i/default-thumbnail.png{{ end }}" alt="{{ .Title }}">
+        <div class="post-details">
+          <h1 class="post-title"><a class="title-link" href="{{ .Permalink }}">{{ .Title }}</a></h1>
+          <div class="post-meta">
+            <div class="date">
+              <span class="posted-on">
+                <i class="fa fa-calendar" aria-hidden="true"></i>
+                <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+                  {{ .Date | time.Format (.Site.Params.dateFormat | default "January 2, 2006") }}
+                </time>
+              </span>
+            </div>
+            {{ with .Page.Params.Categories }}{{ partial "taxonomy/categories.html" . }}{{ end }}
+          </div>
+          <p class="post-summary">{{ .Summary | plainify | truncate 150 }}</p>
+        </div>
+      </article>
+      {{ else }}
+      <div>No posts found.</div>
+      {{ end }}
+    </div>
+    <div class="sidebar">
+      <h3>Categories</h3>
+      <ul>
+        {{ range .Site.Taxonomies.categories }}
+        <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</section>

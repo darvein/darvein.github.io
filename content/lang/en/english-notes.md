@@ -45,7 +45,9 @@ Consider these topis: Slangs, Idioms, Colloquialisms, Contractions.
 - [Comic] The Amazing Spider-Man Collection
 
 ## Movies
-- Beavis & Butthead
+- Beavis & Butthead ([imdb](https://www.imdb.com/title/tt0105950/))
+- The Scene (2004-2006) ([imdb](https://www.imdb.com/title/tt2201890/))
+- The Simpsons ([imdb](https://www.imdb.com/title/tt0096697/))
 
 ## Music
 - Eminem
