@@ -1,13 +1,25 @@
 # English notes :us:
 
 ## Resources to learn
-- Learn grammar: https://www.essentialenglish.review/apps/english-grammar-in-use-with-answers/
 - Online resource: :link: https://www.essentialenglish.review/apps/english-grammar-in-use-with-answers
 - English Grammar lessons: :link: [essentialenglish.review](https://www.essentialenglish.review/apps/english-grammar-in-use-with-answers/) (read, document)
 - Advanced english vocabulary: https://open.spotify.com/playlist/68XG5ir68L5IMzwDUKj9ui
 - Study english for free: https://www.englisch-hilfen.de/en/
 - English free online: https://www.englishpage.com/
 - Song: clean eastwood song
+
+## Readings
+- [Kids] Where the Wild Things Are by **Maurice Sendak**: :link: https://addi.ehu.es/bitstream/handle/10810/30027/JT_Where%20the%20Wild%20Things%20Are.pdf
+- [Comic] The Amazing Spider-Man Collection
+
+## Movies
+- Beavis & Butthead ([imdb](https://www.imdb.com/title/tt0105950/))
+- The Scene (2004-2006) ([imdb](https://www.imdb.com/title/tt2201890/)), [youtube](https://www.youtube.com/watch?v=xIs_5nfJKu4&list=PLC2FCB2871C396459)
+- The Simpsons ([imdb](https://www.imdb.com/title/tt0096697/))
+- Mind your language: [imdb](https://www.imdb.com/title/tt0075537/)
+
+## Music
+- Eminem
 
 ## Reading local
 ```bash
@@ -40,14 +52,3 @@ Consider these topis: Slangs, Idioms, Colloquialisms, Contractions.
 - Colloquialisms: Y'all, Wanna, Gonna, Buddy
 - Contractions: I'm, you're he'll, we've
 
-## Readings
-- [Kids] Where the Wild Things Are by **Maurice Sendak**: :link: https://addi.ehu.es/bitstream/handle/10810/30027/JT_Where%20the%20Wild%20Things%20Are.pdf
-- [Comic] The Amazing Spider-Man Collection
-
-## Movies
-- Beavis & Butthead ([imdb](https://www.imdb.com/title/tt0105950/))
-- The Scene (2004-2006) ([imdb](https://www.imdb.com/title/tt2201890/))
-- The Simpsons ([imdb](https://www.imdb.com/title/tt0096697/))
-
-## Music
-- Eminem

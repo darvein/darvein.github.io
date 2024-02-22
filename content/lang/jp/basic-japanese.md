@@ -10,12 +10,6 @@
 - https://www.youtube.com/watch?v=6p9Il_j0zjc&list=WL&index=212
 - https://www.youtube.com/watch?v=6p9Il_j0zjc&list=WL&index=175&t=297s
 
-## Reading local
-```bash
-├── Genki - Elementary Japanese II.pdf
-├── Genki I - textboock.pdf
-```
-
 ## Readings
 - 鬼滅の刃 [bookwalker](https://bookwalker.jp/series/74558/list/)
 - Death Note: [JP Bookwalker](https://viewer.bookwalker.jp/03/25/viewer.html?cid=f969976c-5c45-4199-8400-33f2afeed05b&cty=2)
@@ -24,3 +18,10 @@
     - かぐや姫の物語 ([ghibli](https://www.ghibli.jp/kaguyahime/))
 ## Music
 - Yutaka Ozaki: [spotify](https://open.spotify.com/playlist/0G4CBxgo3xfGLJUGzgYL3e)
+
+## Reading local
+```bash
+├── Genki - Elementary Japanese II.pdf
+├── Genki I - textboock.pdf
+```
+
