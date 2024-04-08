@@ -14,6 +14,8 @@ Here is what I need ASAP:
 - Study:
     - Read 5 books (I've been procastinating this)
     - Clean HTB boxes
+    - Learn Tensorflow and Pytorch basics
+    - Learn Django, Vuejs
 - Work:
     - Nextbrave 1 customer
     - Binrav 1+ customer(s)
