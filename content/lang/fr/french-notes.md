@@ -1,8 +1,9 @@
 # Notes de langue française :fr:
 
 ## Resources
-- https://www.thoughtco.com/french-4133079
+- Duolingo!
 - https://francais.lingolia.com/en/
+- https://www.thoughtco.com/french-4133079
 - https://langue-francaise.tv5monde.com/
 - https://francaisfacile.rfi.fr/en/exercices/
 - Listening: https://www.youtube.com/@FrancaisavecPierre

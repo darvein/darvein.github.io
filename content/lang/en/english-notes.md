@@ -1,7 +1,10 @@
 # English notes :us:
 
 ## Resources to learn
+- Duolingo!
 - Online resource: :link: https://www.essentialenglish.review/apps/english-grammar-in-use-with-answers
+- https://www.esl-lab.com/easy/
+- https://www.bbc.co.uk/learningenglish/english/
 - English Grammar lessons: :link: [essentialenglish.review](https://www.essentialenglish.review/apps/english-grammar-in-use-with-answers/) (read, document)
 - Advanced english vocabulary: https://open.spotify.com/playlist/68XG5ir68L5IMzwDUKj9ui
 - Study english for free: https://www.englisch-hilfen.de/en/

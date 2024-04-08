@@ -1,5 +1,47 @@
 [
   {
+    "modtime": "04-08-2024 08:16",
+    "filename": "/posts/2nd-quarter-objs",
+    "title": " Objetives for the 2nd Quarter!",
+    "category": "posts"
+  },
+  {
+    "modtime": "03-26-2024 13:13",
+    "filename": "/devops/linux/battery",
+    "title": "Linux Battery Administration",
+    "category": "devops"
+  },
+  {
+    "modtime": "03-14-2024 13:00",
+    "filename": "/infosec/ctfs",
+    "title": "Capture the flag CTFs",
+    "category": "infosec"
+  },
+  {
+    "modtime": "02-29-2024 11:32",
+    "filename": "/books/infosec/the-web-application-hackers-handbook",
+    "title": "The web application Hackers Handbook",
+    "category": "books"
+  },
+  {
+    "modtime": "02-29-2024 10:20",
+    "filename": "/lang/en/english-notes",
+    "title": "English notes :us:",
+    "category": "lang"
+  },
+  {
+    "modtime": "02-29-2024 09:25",
+    "filename": "/lang/fr/french-notes",
+    "title": "Notes de langue française :fr:",
+    "category": "lang"
+  },
+  {
+    "modtime": "02-29-2024 09:00",
+    "filename": "/lang/jp/basic-japanese",
+    "title": "日本",
+    "category": "lang"
+  },
+  {
     "modtime": "02-27-2024 16:21",
     "filename": "/coding/pytorch/pytorch-tutorials/02-tensors",
     "title": "Tensors",
@@ -12,45 +54,9 @@
     "category": "coding"
   },
   {
-    "modtime": "02-22-2024 13:48",
-    "filename": "/lang/jp/basic-japanese",
-    "title": "日本",
-    "category": "lang"
-  },
-  {
-    "modtime": "02-22-2024 13:48",
-    "filename": "/lang/en/english-notes",
-    "title": "English notes :us:",
-    "category": "lang"
-  },
-  {
     "modtime": "02-21-2024 17:10",
     "filename": "/posts/keeping-up",
     "title": " Keeping it up!",
     "category": "posts"
-  },
-  {
-    "modtime": "02-21-2024 16:59",
-    "filename": "/posts/journey-martial-arts",
-    "title": " Journey to Martial Arts",
-    "category": "posts"
-  },
-  {
-    "modtime": "02-21-2024 16:40",
-    "filename": "/posts/family-bond",
-    "title": " Family Bonds",
-    "category": "posts"
-  },
-  {
-    "modtime": "02-19-2024 11:57",
-    "filename": "/lang/fr/french-notes",
-    "title": "Notes de langue française :fr:",
-    "category": "lang"
-  },
-  {
-    "modtime": "02-15-2024 11:18",
-    "filename": "/lang/fr/french-basic-roadmap",
-    "title": "Bases de la feuille de route française",
-    "category": "lang"
   }
 ]

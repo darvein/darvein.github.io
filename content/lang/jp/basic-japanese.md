@@ -1,7 +1,7 @@
 # 日本
 
 ## Resources
-- Song: Forget me not, Yutaka
+- Duolingo!
 - https://www.nhk.or.jp/lesson/ja/
 - https://open.spotify.com/playlist/2grEO8M5oo1xsjNU9LRyqW
 - https://www.tofugu.com/learn-japanese/
@@ -18,6 +18,7 @@
     - かぐや姫の物語 ([ghibli](https://www.ghibli.jp/kaguyahime/))
 ## Music
 - Yutaka Ozaki: [spotify](https://open.spotify.com/playlist/0G4CBxgo3xfGLJUGzgYL3e)
+    - Song: Forget me not, Yutaka. [lyrics](https://lyricstranslate.com/en/forget-me-not-forget-me-not.html) - [youtube](https://www.youtube.com/watch?v=djA_CP5DYJQ)
 
 ## Reading local
 ```bash
