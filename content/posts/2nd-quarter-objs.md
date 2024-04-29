@@ -2,7 +2,7 @@
 title = "Objetives for the 2nd Quarter!"
 categories = ["Planning"]
 tags = ["planning"]
-date = "2024-02-21"
+date = "2024-03-21"
 thumbnail = "/i/imageworkking.jpg"
 +++
 

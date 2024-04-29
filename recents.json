@@ -1,6 +1,12 @@
 [
   {
-    "modtime": "04-08-2024 08:18",
+    "modtime": "04-29-2024 14:49",
+    "filename": "/posts/comfort-disconfort",
+    "title": " Comfort through discomfort",
+    "category": "posts"
+  },
+  {
+    "modtime": "04-29-2024 14:39",
     "filename": "/posts/2nd-quarter-objs",
     "title": " Objetives for the 2nd Quarter!",
     "category": "posts"
@@ -52,11 +58,5 @@
     "filename": "/coding/python/python-tutorial/python-tutorial",
     "title": "Python Tutorial",
     "category": "coding"
-  },
-  {
-    "modtime": "02-21-2024 17:10",
-    "filename": "/posts/keeping-up",
-    "title": " Keeping it up!",
-    "category": "posts"
   }
 ]
