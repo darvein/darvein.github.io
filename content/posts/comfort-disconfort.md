@@ -18,3 +18,5 @@ Here is a list of what is my new comfort now:
 - No more social media. Only 10-15 minutes on sundays.
 - Hit the gym by 5AM.
 - 4-day martial arts training 3 hours every day.
+
+I like the new me, still there is room for more improvement. So far I'm proud of what I'm doing.
