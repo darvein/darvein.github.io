@@ -1,7 +1,7 @@
 run:
 	@echo "Running hugo server"
 	bash recents.sh
-	./hugo serve --watch  -c content -v -s .
+	./hugo serve --watch --noHTTPCache --disableFastRender -c content -D -E -F -v -s .
 	#./hugo serve --watch  --ignoreCache  --noHTTPCache --disableFastRender -c content -D -E -F -v -s .
 
 build:

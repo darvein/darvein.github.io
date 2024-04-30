@@ -144,3 +144,8 @@ name = "Devops"
 url = "devops/"
 weight = 30
 
+[[languages.en.menu.main]]
+name = "Digital"
+url = "digital/"
+weight = 40
+

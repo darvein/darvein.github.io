@@ -1,0 +1,286 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta http-equiv=Content-Security-Policy content="upgrade-insecure-requests; block-all-mixed-content; default-src 'self' https://www.dropbox.com https://*.dl.dropboxusercontent.com https://photos.app.goo.gl https://drive.google.com https://photos.google.com https://video-downloads.googleusercontent.com https://*.googleusercontent.com https://*.googlevideo.com https://youtube.googleapis.com; child-src 'self'; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net/; form-action 'self'; frame-src 'self' https://w.soundcloud.com https://www.youtube.com https://www.youtube-nocookie.com https://www.dropbox.com http://localhost https://www.dropbox.com http://darvein.local https://disqus.com; img-src 'self' https://photos.google.com https://lh3.googleusercontent.com https://www.dropbox.com https://*.dl.dropboxusercontent.com https://*.disqus.com https://c.disquscdn.com; object-src https://lh3.googleusercontent.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://cdn.jsdelivr.net/ https://c.disquscdn.com; script-src 'self' 'unsafe-inline' https://www.google-analytics.com https://cdnjs.cloudflare.com https://www.googletagmanager.com https://www.dropbox.com http://localhost http://darvein.local https://drv21.disqus.com https://c.disquscdn.com; prefetch-src 'self' https://youtube.googleapis.com; connect-src 'self' https://www.google-analytics.com https://links.services.disqus.com;"><meta name=author content="Dennis Ruiz"><meta name=description content="Elasticsearch cheatsheet export HST=https://elasticsearch.devbox-apps.acme.com # see why not allocate shareds curl -s -XGET localhost:9200/_cluster/allocation/explain?pretty # check unallocated shareds curl -s -XGET localhost:9200/_cat/shards? # check installed plugins curl -X GET &#34;localhost:9200/_cat/plugins?v&amp;s=component&amp;h=name,component,version,description&amp;pretty&#34; # check ES health curl -sX GET &#34;$HST/_cluster/health&#34; | jq curl -sX GET &#34;https://vpc-msops-es-cluster-edwk7ppi4dw5gkcpqbqangmbvm.us-west-2.es.amazonaws.com/_cluster/health&#34; | jq # stats curl -X GET &#34;localhost:9200/_nodes/stats&#34; | jq curl -X GET &#34;localhost:9200/_nodes/stats/indices&#34; | jq curl -X GET &#34;http://localhost:9200/_stats?all=true&#34; | jq # List indexes curl -s &#34;$HST/_aliases?"><meta name=keywords content="blog,developer,personal"><meta name=twitter:card content="summary"><meta name=twitter:title content><meta name=twitter:description content="Elasticsearch cheatsheet export HST=https://elasticsearch.devbox-apps.acme.com # see why not allocate shareds curl -s -XGET localhost:9200/_cluster/allocation/explain?pretty # check unallocated shareds curl -s -XGET localhost:9200/_cat/shards? # check installed plugins curl -X GET &#34;localhost:9200/_cat/plugins?v&amp;s=component&amp;h=name,component,version,description&amp;pretty&#34; # check ES health curl -sX GET &#34;$HST/_cluster/health&#34; | jq curl -sX GET &#34;https://vpc-msops-es-cluster-edwk7ppi4dw5gkcpqbqangmbvm.us-west-2.es.amazonaws.com/_cluster/health&#34; | jq # stats curl -X GET &#34;localhost:9200/_nodes/stats&#34; | jq curl -X GET &#34;localhost:9200/_nodes/stats/indices&#34; | jq curl -X GET &#34;http://localhost:9200/_stats?all=true&#34; | jq # List indexes curl -s &#34;$HST/_aliases?"><meta property="og:title" content><meta property="og:description" content="Elasticsearch cheatsheet export HST=https://elasticsearch.devbox-apps.acme.com # see why not allocate shareds curl -s -XGET localhost:9200/_cluster/allocation/explain?pretty # check unallocated shareds curl -s -XGET localhost:9200/_cat/shards? # check installed plugins curl -X GET &#34;localhost:9200/_cat/plugins?v&amp;s=component&amp;h=name,component,version,description&amp;pretty&#34; # check ES health curl -sX GET &#34;$HST/_cluster/health&#34; | jq curl -sX GET &#34;https://vpc-msops-es-cluster-edwk7ppi4dw5gkcpqbqangmbvm.us-west-2.es.amazonaws.com/_cluster/health&#34; | jq # stats curl -X GET &#34;localhost:9200/_nodes/stats&#34; | jq curl -X GET &#34;localhost:9200/_nodes/stats/indices&#34; | jq curl -X GET &#34;http://localhost:9200/_stats?all=true&#34; | jq # List indexes curl -s &#34;$HST/_aliases?"><meta property="og:type" content="article"><meta property="og:url" content="https://www.darvein.net/devops/others/elasticsearch/"><meta property="article:section" content="devops"><title>Elasticsearch cheatsheet </title><link rel=canonical href=https://www.darvein.net/devops/others/elasticsearch/><link rel=preload href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as=font type=font/woff2 crossorigin><link rel=stylesheet href=/css/coder.min.a1a7e7e7bd8b6629931805334fd6cf056ee6f154702847e6d597bbfe80446a0d.css integrity="sha256-oafn572LZimTGAUzT9bPBW7m8VRwKEfm1Ze7/oBEag0=" crossorigin=anonymous media=screen><link rel=stylesheet href=/css/coder-dark.min.39e41a7f16bdf8cb16e43cae7d714fa1016f1d2d2898a5b3f27f42c9979204e2.css integrity="sha256-OeQafxa9+MsW5DyufXFPoQFvHS0omKWz8n9CyZeSBOI=" crossorigin=anonymous media=screen><link rel=stylesheet href=/css/custom.min.7cf8a329bb485491ed5be45bd286916c655bf66e11e3fe4d82649437eae8b51b.css integrity="sha256-fPijKbtIVJHtW+Rb0oaRbGVb9m4R4/5NgmSUN+rotRs=" crossorigin=anonymous media=screen><link rel=icon type=image/png href=/images/favicon-32x32.png sizes=32x32><link rel=icon type=image/png href=/images/favicon-16x16.png sizes=16x16><link rel=apple-touch-icon href=/images/apple-touch-icon.png><link rel=apple-touch-icon sizes=180x180 href=/images/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/images/safari-pinned-tab.svg color=#5bbad5><meta name=generator content="Hugo 0.120.4"></head><body class="preload-transitions colorscheme-dark"><main class=wrapper><nav class=navigation><section class=container><a class=navigation-title href=/>Darvein
+</a><input type=checkbox id=menu-toggle>
+<label class="menu-button float-right" for=menu-toggle><i class="fa fa-bars fa-fw" aria-hidden=true></i></label><ul class=navigation-list><li class=navigation-item><a class=navigation-link href=/infosec/>Infosec</a></li><li class=navigation-item><a class=navigation-link href=/coding/>Coding</a></li><li class=navigation-item><a class=navigation-link href=/devops/>Devops</a></li></ul></section></nav><div class=content><section class="container page"><article><h1 id=elasticsearch-cheatsheet>Elasticsearch cheatsheet
+<a class=heading-link href=#elasticsearch-cheatsheet><i class="fa fa-link" aria-hidden=true></i></a></h1><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>export <span style=color:#fb660a>HST</span>=https://elasticsearch.devbox-apps.acme.com
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#080;background-color:#0f140f;font-style:italic># see why not allocate shareds</span>
+</span></span><span style=display:flex><span>curl -s -XGET localhost:9200/_cluster/allocation/explain?pretty
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#080;background-color:#0f140f;font-style:italic># check unallocated shareds</span>
+</span></span><span style=display:flex><span>curl -s -XGET localhost:9200/_cat/shards?
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#080;background-color:#0f140f;font-style:italic># check installed plugins</span>
+</span></span><span style=display:flex><span>curl -X GET <span style=color:#0086d2>&#34;localhost:9200/_cat/plugins?v&amp;s=component&amp;h=name,component,version,description&amp;pretty&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#080;background-color:#0f140f;font-style:italic># check ES health</span>
+</span></span><span style=display:flex><span>curl -sX GET <span style=color:#0086d2>&#34;</span><span style=color:#fb660a>$HST</span><span style=color:#0086d2>/_cluster/health&#34;</span> | jq
+</span></span><span style=display:flex><span>curl -sX GET <span style=color:#0086d2>&#34;https://vpc-msops-es-cluster-edwk7ppi4dw5gkcpqbqangmbvm.us-west-2.es.amazonaws.com/_cluster/health&#34;</span> | jq
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#080;background-color:#0f140f;font-style:italic># stats</span>
+</span></span><span style=display:flex><span>curl -X GET <span style=color:#0086d2>&#34;localhost:9200/_nodes/stats&#34;</span> | jq
+</span></span><span style=display:flex><span>curl -X GET <span style=color:#0086d2>&#34;localhost:9200/_nodes/stats/indices&#34;</span> | jq
+</span></span><span style=display:flex><span>curl -X GET <span style=color:#0086d2>&#34;http://localhost:9200/_stats?all=true&#34;</span> | jq
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#080;background-color:#0f140f;font-style:italic># List indexes</span>
+</span></span><span style=display:flex><span>curl -s <span style=color:#0086d2>&#34;</span><span style=color:#fb660a>$HST</span><span style=color:#0086d2>/_aliases?pretty=true&#34;</span> | jq
+</span></span><span style=display:flex><span>curl -s <span style=color:#0086d2>&#34;</span><span style=color:#fb660a>$HST</span><span style=color:#0086d2>/_cat/indices?v&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#080;background-color:#0f140f;font-style:italic># Snapshots</span>
+</span></span><span style=display:flex><span>curl -sX GET <span style=color:#0086d2>&#34;</span><span style=color:#fb660a>$HST</span><span style=color:#0086d2>/_snapshot/_all?pretty&#34;</span> | jq
+</span></span><span style=display:flex><span>curl -sX GET <span style=color:#0086d2>&#34;</span><span style=color:#fb660a>$HST</span><span style=color:#0086d2>/_snapshot/_status&#34;</span> | jq
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#080;background-color:#0f140f;font-style:italic># List taken snapshots from a repository &#34;s3_repository</span>
+</span></span><span style=display:flex><span>curl -sX GET <span style=color:#0086d2>&#34;</span><span style=color:#fb660a>$HST</span><span style=color:#0086d2>/_snapshot/s3_repository/_all?pretty&#34;</span> | jq
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#080;background-color:#0f140f;font-style:italic># Check existing snapshots from the repo &#34;backups&#34;</span>
+</span></span><span style=display:flex><span>curl -sX GET <span style=color:#0086d2>&#34;</span><span style=color:#fb660a>$HST</span><span style=color:#0086d2>/_snapshot/backups/_all&#34;</span> | jq
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#080;background-color:#0f140f;font-style:italic># Check if data re-indexing is needed</span>
+</span></span><span style=display:flex><span>curl -sX GET <span style=color:#0086d2>&#34;</span><span style=color:#fb660a>$HST</span><span style=color:#0086d2>/_xpack/migration/deprecations&#34;</span> | jq
+</span></span></code></pre></div><p>Troubleshooting</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>k delete pod <span style=color:#fb660a;font-weight:700>$(</span>k get pods | grep elastic | cut -d <span style=color:#0086d2>&#39; &#39;</span> -f1<span style=color:#fb660a;font-weight:700>)</span>
+</span></span><span style=display:flex><span>k logs -f <span style=color:#fb660a;font-weight:700>$(</span>k get pods | grep elastic | cut -d <span style=color:#0086d2>&#39; &#39;</span> -f1<span style=color:#fb660a;font-weight:700>)</span>
+</span></span><span style=display:flex><span>k exec -it <span style=color:#fb660a;font-weight:700>$(</span>k get pods | grep elastic | cut -d <span style=color:#0086d2>&#39; &#39;</span> -f1<span style=color:#fb660a;font-weight:700>)</span> -- cat /usr/share/elasticsearch/config/elasticsearch.yml
+</span></span></code></pre></div><h4 id=delete-indexes>Delete indexes
+<a class=heading-link href=#delete-indexes><i class="fa fa-link" aria-hidden=true></i></a></h4><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#080;background-color:#0f140f;font-style:italic># look for indexes</span>
+</span></span><span style=display:flex><span>curl -s <span style=color:#0086d2>&#39;localhost:9200/_cat/indices?v&#39;</span> | awk <span style=color:#0086d2>&#39;{print $3}&#39;</span> | sort | uniq | grep <span style=color:#0086f7;font-weight:700>2019</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#080;background-color:#0f140f;font-style:italic># delete them</span>
+</span></span><span style=display:flex><span>curl -X DELETE localhost:9200/fluentd.service.nginx.conaff.201904w13
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>curl -X DELETE localhost:9200/
+</span></span></code></pre></div><p>Sample</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>druiz@drweb0:~/infra-mainsite/containers/elastic$ curl -xX GET <span style=color:#0086d2>&#34;localhost:9200/_cluster/health&#34;</span> | jq
+</span></span><span style=display:flex><span>{
+</span></span><span style=display:flex><span>  <span style=color:#0086d2>&#34;cluster_name&#34;</span>: <span style=color:#0086d2>&#34;logstorage&#34;</span>,
+</span></span><span style=display:flex><span>  <span style=color:#0086d2>&#34;status&#34;</span>: <span style=color:#0086d2>&#34;green&#34;</span>,
+</span></span><span style=display:flex><span>  <span style=color:#0086d2>&#34;timed_out&#34;</span>: false,
+</span></span><span style=display:flex><span>  <span style=color:#0086d2>&#34;number_of_nodes&#34;</span>: 4,
+</span></span><span style=display:flex><span>  <span style=color:#0086d2>&#34;number_of_data_nodes&#34;</span>: 4,
+</span></span><span style=display:flex><span>  <span style=color:#0086d2>&#34;active_primary_shards&#34;</span>: 275,
+</span></span><span style=display:flex><span>  <span style=color:#0086d2>&#34;active_shards&#34;</span>: 550,
+</span></span><span style=display:flex><span>  <span style=color:#0086d2>&#34;relocating_shards&#34;</span>: 0,
+</span></span><span style=display:flex><span>  <span style=color:#0086d2>&#34;initializing_shards&#34;</span>: 0,
+</span></span><span style=display:flex><span>  <span style=color:#0086d2>&#34;unassigned_shards&#34;</span>: 0,
+</span></span><span style=display:flex><span>  <span style=color:#0086d2>&#34;delayed_unassigned_shards&#34;</span>: 0,
+</span></span><span style=display:flex><span>  <span style=color:#0086d2>&#34;number_of_pending_tasks&#34;</span>: 0,
+</span></span><span style=display:flex><span>  <span style=color:#0086d2>&#34;number_of_in_flight_fetch&#34;</span>: 0,
+</span></span><span style=display:flex><span>  <span style=color:#0086d2>&#34;task_max_waiting_in_queue_millis&#34;</span>: 0,
+</span></span><span style=display:flex><span>  <span style=color:#0086d2>&#34;active_shards_percent_as_number&#34;</span>: <span style=color:#0086f7;font-weight:700>100</span>
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><h4 id=es-migration-to-aws-s3>ES migration to AWS S3
+<a class=heading-link href=#es-migration-to-aws-s3><i class="fa fa-link" aria-hidden=true></i></a></h4><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>docker exec -it elastic elasticsearch-plugin install -b repository-s3
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>curl -X PUT <span style=color:#0086d2>&#34;localhost:9200/_snapshot/msops_s3_repository&#34;</span> -H <span style=color:#0086d2>&#39;Content-Type: application/json&#39;</span> -d <span style=color:#0086d2>&#39;
+</span></span></span><span style=display:flex><span><span style=color:#0086d2>{
+</span></span></span><span style=display:flex><span><span style=color:#0086d2>  &#34;type&#34;: &#34;s3&#34;,
+</span></span></span><span style=display:flex><span><span style=color:#0086d2>  &#34;settings&#34;: {
+</span></span></span><span style=display:flex><span><span style=color:#0086d2>	&#34;bucket&#34;: &#34;msops-es-snaphosts&#34;,
+</span></span></span><span style=display:flex><span><span style=color:#0086d2>	&#34;region&#34;: &#34;us-west-2&#34;,
+</span></span></span><span style=display:flex><span><span style=color:#0086d2>	&#34;role_arn&#34;: &#34;arn:aws:iam::539374710386:role/msops-msops-es-snapshot&#34;
+</span></span></span><span style=display:flex><span><span style=color:#0086d2>  }
+</span></span></span><span style=display:flex><span><span style=color:#0086d2>}&#39;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>curl -X PUT <span style=color:#0086d2>&#34;localhost:9200/_snapshot/msops_s3_repository&#34;</span> -H <span style=color:#0086d2>&#39;Content-Type: application/json&#39;</span> -d <span style=color:#0086d2>&#39;
+</span></span></span><span style=display:flex><span><span style=color:#0086d2>{
+</span></span></span><span style=display:flex><span><span style=color:#0086d2>  &#34;type&#34;: &#34;s3&#34;,
+</span></span></span><span style=display:flex><span><span style=color:#0086d2>  &#34;settings&#34;: {
+</span></span></span><span style=display:flex><span><span style=color:#0086d2>	&#34;bucket&#34;: &#34;msops-es-snaphosts&#34;,
+</span></span></span><span style=display:flex><span><span style=color:#0086d2>	&#34;region&#34;: &#34;us-west-2&#34;
+</span></span></span><span style=display:flex><span><span style=color:#0086d2>  }
+</span></span></span><span style=display:flex><span><span style=color:#0086d2>}&#39;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>export <span style=color:#fb660a>AWS_ACCESS_KEY_ID</span>=XXX
+</span></span><span style=display:flex><span>export <span style=color:#fb660a>AWS_SECRET_ACCESS_KEY</span>=XXXt
+</span></span><span style=display:flex><span>export <span style=color:#fb660a>AWS_DEFAULT_REGION</span>=us-west-2
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>aws sts assume-role --role-arn arn:aws:iam::539374710386:role/msops-msops-es-snapshot --role-session-name es-access-snapshots
+</span></span></code></pre></div><h4 id=import-s3-data-into-aws-es>Import s3 data into AWS ES
+<a class=heading-link href=#import-s3-data-into-aws-es><i class="fa fa-link" aria-hidden=true></i></a></h4><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#080;background-color:#0f140f;font-style:italic># 1. Confirm ES cluster is healthy</span>
+</span></span><span style=display:flex><span>curl -sX GET <span style=color:#0086d2>&#34;https://vpc-msops-es-cluster-edwk7ppi4dw5gkcpqbqangmbvm.us-west-2.es.amazonaws.com/_cluster/health&#34;</span> | jq
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#080;background-color:#0f140f;font-style:italic># 2. Register a s3 repository with this python script</span>
+</span></span><span style=display:flex><span>import boto3
+</span></span><span style=display:flex><span>import requests
+</span></span><span style=display:flex><span>from requests_aws4auth import AWS4Auth
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#fb660a>service</span> = <span style=color:#0086d2>&#39;es&#39;</span>
+</span></span><span style=display:flex><span><span style=color:#fb660a>region</span> = <span style=color:#0086d2>&#39;us-west-2&#39;</span>
+</span></span><span style=display:flex><span><span style=color:#fb660a>host</span> = <span style=color:#0086d2>&#39;https://vpc-msops-es-cluster-edwk7ppi4dw5gkcpqbqangmbvm.us-west-2.es.amazonaws.com/&#39;</span>
+</span></span><span style=display:flex><span><span style=color:#fb660a>credentials</span> = boto3.Session().get_credentials()
+</span></span><span style=display:flex><span><span style=color:#fb660a>awsauth</span> = AWS4Auth(credentials.access_key, credentials.secret_key, region, service, <span style=color:#fb660a>session_token</span>=credentials.token)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#fb660a>path</span> = <span style=color:#0086d2>&#39;_snapshot/msops_s3_repository&#39;</span>
+</span></span><span style=display:flex><span><span style=color:#fb660a>url</span> = host + path
+</span></span><span style=display:flex><span><span style=color:#fb660a>payload</span> = {
+</span></span><span style=display:flex><span>  <span style=color:#0086d2>&#34;type&#34;</span>: <span style=color:#0086d2>&#34;s3&#34;</span>,
+</span></span><span style=display:flex><span>  <span style=color:#0086d2>&#34;settings&#34;</span>: {
+</span></span><span style=display:flex><span>    <span style=color:#0086d2>&#34;bucket&#34;</span>: <span style=color:#0086d2>&#34;msops-es-snaphosts&#34;</span>,
+</span></span><span style=display:flex><span>    <span style=color:#0086d2>&#34;region&#34;</span>: <span style=color:#0086d2>&#34;us-west-2&#34;</span>,
+</span></span><span style=display:flex><span>    <span style=color:#0086d2>&#34;role_arn&#34;</span>: <span style=color:#0086d2>&#34;arn:aws:iam::539374710386:role/msops-msops-es-snapshot&#34;</span>
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#fb660a>headers</span> = {<span style=color:#0086d2>&#34;Content-Type&#34;</span>: <span style=color:#0086d2>&#34;application/json&#34;</span>}
+</span></span><span style=display:flex><span><span style=color:#fb660a>r</span> = requests.put(url, <span style=color:#fb660a>auth</span>=awsauth, <span style=color:#fb660a>json</span>=payload, <span style=color:#fb660a>headers</span>=headers)
+</span></span><span style=display:flex><span>print(r.status_code)
+</span></span><span style=display:flex><span>print(r.text)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#080;background-color:#0f140f;font-style:italic># 3. Get a list of snapshots</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>curl -sXGET <span style=color:#0086d2>&#39;https://vpc-msops-es-cluster-edwk7ppi4dw5gkcpqbqangmbvm.us-west-2.es.amazonaws.com/_snapshot/msops_s3_repository/_all&#39;</span> | jq <span style=color:#0086d2>&#39;.snapshots[] | .snapshot&#39;</span> | sort | uniq
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#0086d2>&#34;ulelasticsearch-4k1ph9setpipm1sjt932lw&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#0086d2>&#34;ulelasticsearch-5mlthcq2qmmggwyr-bok9g&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#0086d2>&#34;ulelasticsearch-h4ufg-krqek5teqak8-jqg&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#0086d2>&#34;ulelasticsearch-hitvacvrtbmydy5uoa9goq&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#0086d2>&#34;ulelasticsearch-hwjyw-qtq02iafhbhlfdxq&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#0086d2>&#34;ulelasticsearch-km9yfbsrq3-3ph5xufoxzq&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#0086d2>&#34;ulelasticsearch-rwckzs5-rcoslwww9eahtw&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#0086d2>&#34;ulelasticsearch-vy9slvnhqvimssdqu1wy9q&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#0086d2>&#34;ulelasticsearch-wmsnb1a1t-q-ko25l2i3ia&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#0086d2>&#34;ulelasticsearch-wnmr6o6gsqgkitreaqdvsq&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#0086d2>&#34;ulelasticsearch-wsk_7lwzt1ckwcvy6-agkw&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#0086d2>&#34;ulelasticsearch-xekf645gqoa2l6bprc9gla&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#0086d2>&#34;ulelasticsearch-y1qzbanqscuq3i9emren_g&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#0086d2>&#34;ulelasticsearch-yynzapuwq4edw7ab24f_gq&#34;&#34;
+</span></span></span><span style=display:flex><span><span style=color:#0086d2>
+</span></span></span><span style=display:flex><span><span style=color:#0086d2># 4. Restore each snapshot version
+</span></span></span><span style=display:flex><span><span style=color:#0086d2>
+</span></span></span><span style=display:flex><span><span style=color:#0086d2>curl -sXPOST &#39;https://vpc-msops-es-cluster-edwk7ppi4dw5gkcpqbqangmbvm.us-west-2.es.amazonaws.com/_snapshot/msops_s3_repository/ulelasticsearch-xekf645gqoa2l6bprc9gla/_restore&#39; -d &#39;{&#34;</span>indices<span style=color:#0086d2>&#34;: &#34;</span>-.kibana*,-.reporting*,fluentd*<span style=color:#0086d2>&#34;, &#34;</span>ignore_unavailable<span style=color:#0086d2>&#34;: true, &#34;</span>include_global_state<span style=color:#0086d2>&#34;: false, &#34;</span>include_aliases<span style=color:#0086d2>&#34;: false}&#39; -H &#39;Content-Type: application/json&#39;
+</span></span></span><span style=display:flex><span><span style=color:#0086d2>
+</span></span></span><span style=display:flex><span><span style=color:#0086d2># 5. Check status
+</span></span></span><span style=display:flex><span><span style=color:#0086d2>curl -sX GET &#34;</span>https://vpc-msops-es-cluster-edwk7ppi4dw5gkcpqbqangmbvm.us-west-2.es.amazonaws.com/_snapshot/_all<span style=color:#0086d2>&#34; | jq
+</span></span></span><span style=display:flex><span><span style=color:#0086d2>curl -sX GET &#34;</span>https://vpc-msops-es-cluster-edwk7ppi4dw5gkcpqbqangmbvm.us-west-2.es.amazonaws.com/_snapshot/_status<span style=color:#0086d2>&#34; | jq
+</span></span></span><span style=display:flex><span><span style=color:#0086d2>
+</span></span></span><span style=display:flex><span><span style=color:#0086d2># 6. Check indices are there and have data
+</span></span></span><span style=display:flex><span><span style=color:#0086d2>curl &#34;</span>https://vpc-msops-es-cluster-edwk7ppi4dw5gkcpqbqangmbvm.us-west-2.es.amazonaws.com/_aliases<span style=color:#0086d2>&#34; | jq
+</span></span></span><span style=display:flex><span><span style=color:#0086d2>
+</span></span></span><span style=display:flex><span><span style=color:#0086d2>curl &#34;</span>https://vpc-msops-es-cluster-edwk7ppi4dw5gkcpqbqangmbvm.us-west-2.es.amazonaws.com/fluentd.service.nginx.bm2.202002w07/_search<span style=color:#0086d2>&#34; | jq
+</span></span></span><span style=display:flex><span><span style=color:#0086d2>
+</span></span></span><span style=display:flex><span><span style=color:#0086d2>
+</span></span></span><span style=display:flex><span><span style=color:#0086d2># CHECK PROBLEMS
+</span></span></span><span style=display:flex><span><span style=color:#0086d2>https://aws.amazon.com/premiumsupport/knowledge-center/elasticsearch-kibana-error/
+</span></span></span><span style=display:flex><span><span style=color:#0086d2>https://www.elastic.co/guide/en/elasticsearch/reference/current/snapshots-restore-snapshot.html
+</span></span></span></code></pre></div><h2 id=send-ca-django-logs-to-es>Send CA django logs to ES
+<a class=heading-link href=#send-ca-django-logs-to-es><i class="fa fa-link" aria-hidden=true></i></a></h2><ol><li>Update logforwarder and logaggregator in order to receive and process django logs</li><li>Parse logs format in logforwarder</li><li>Register the new fluentd index in Kibana</li></ol><p>Experiments</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>docker run <span style=color:#0086d2>\
+</span></span></span><span style=display:flex><span><span style=color:#0086d2></span>	--log-driver=fluentd <span style=color:#0086d2>\
+</span></span></span><span style=display:flex><span><span style=color:#0086d2></span>	--log-opt <span style=color:#fb660a>tag</span>=<span style=color:#0086d2>&#39;docker.{{.ID}}&#39;</span> <span style=color:#0086d2>\
+</span></span></span><span style=display:flex><span><span style=color:#0086d2></span>	--log-opt fluentd-address=localhost:24224 <span style=color:#0086d2>\
+</span></span></span><span style=display:flex><span><span style=color:#0086d2></span>	ubuntu echo <span style=color:#0086d2>&#39;PArt 12&#39;</span>
+</span></span><span style=display:flex><span>	
+</span></span></code></pre></div><h2 id=in-the-logforwarder-on-fluentd-side>in the logforwarder on fluentd side
+<a class=heading-link href=#in-the-logforwarder-on-fluentd-side><i class="fa fa-link" aria-hidden=true></i></a></h2><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#080;background-color:#0f140f;font-style:italic># gem install fluent-plugin-concat</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>&lt;source&gt;
+</span></span><span style=display:flex><span>  @type forward
+</span></span><span style=display:flex><span>  port <span style=color:#0086f7;font-weight:700>24224</span>
+</span></span><span style=display:flex><span>  bind 0.0.0.0
+</span></span><span style=display:flex><span>&lt;/source&gt;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>&lt;filter docker.**&gt;
+</span></span><span style=display:flex><span>  @type concat
+</span></span><span style=display:flex><span>  key log
+</span></span><span style=display:flex><span>  stream_identity_key container_id
+</span></span><span style=display:flex><span>  use_first_timestamp true
+</span></span><span style=display:flex><span>  multiline_start_regexp /^(<span style=color:#0086d2>\d</span>{4})-(<span style=color:#0086d2>\d</span>{2})-(<span style=color:#0086d2>\d</span>{2}) (<span style=color:#0086d2>\d</span>{2}):(<span style=color:#0086d2>\d</span>{2}):(<span style=color:#0086d2>\d</span>{2})[^<span style=color:#0086d2>\s</span>]+/
+</span></span><span style=display:flex><span>  <span style=color:#080;background-color:#0f140f;font-style:italic>#flush_interval 1s</span>
+</span></span><span style=display:flex><span>  <span style=color:#080;background-color:#0f140f;font-style:italic>#timeout_label @NORMAL</span>
+</span></span><span style=display:flex><span>&lt;/filter&gt;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>&lt;match docker.**&gt;
+</span></span><span style=display:flex><span>  @type forward
+</span></span><span style=display:flex><span>  @id out_aggregator_docker
+</span></span><span style=display:flex><span>  transport                          tls
+</span></span><span style=display:flex><span>  tls_version                        TLSv1_2
+</span></span><span style=display:flex><span>  tls_cert_path                      /fluentd/etc/ssl/ca.crt
+</span></span><span style=display:flex><span>  tls_client_cert_path               /fluentd/etc/ssl/client.crt
+</span></span><span style=display:flex><span>  tls_client_private_key_path        /fluentd/etc/ssl/client.key
+</span></span><span style=display:flex><span>  tls_client_private_key_passphrase  XczdNe]2EKiQhAh/4WfxwH7vpvP8sFMx3TWPCTpFjmv7.Qt2EvN
+</span></span><span style=display:flex><span>  tls_verify_hostname                false
+</span></span><span style=display:flex><span>  &lt;server&gt;
+</span></span><span style=display:flex><span>    host 10.200.36.10
+</span></span><span style=display:flex><span>    port <span style=color:#0086f7;font-weight:700>23300</span>
+</span></span><span style=display:flex><span>  &lt;/server&gt;
+</span></span><span style=display:flex><span>  &lt;server&gt;
+</span></span><span style=display:flex><span>    host 10.200.36.12
+</span></span><span style=display:flex><span>    port <span style=color:#0086f7;font-weight:700>23300</span>
+</span></span><span style=display:flex><span>    standby
+</span></span><span style=display:flex><span>  &lt;/server&gt;
+</span></span><span style=display:flex><span>&lt;/match&gt;
+</span></span></code></pre></div><h2 id=django-ca-qa>django ca qa
+<a class=heading-link href=#django-ca-qa><i class="fa fa-link" aria-hidden=true></i></a></h2><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>docker run <span style=color:#0086d2>\
+</span></span></span><span style=display:flex><span><span style=color:#0086d2></span>	--log-driver=fluentd <span style=color:#0086d2>\
+</span></span></span><span style=display:flex><span><span style=color:#0086d2></span>	--log-opt <span style=color:#fb660a>tag</span>=<span style=color:#0086d2>&#39;docker.{{.ID}}&#39;</span> <span style=color:#0086d2>\
+</span></span></span><span style=display:flex><span><span style=color:#0086d2></span>	--log-opt fluentd-address=localhost:24224 <span style=color:#0086d2>\
+</span></span></span><span style=display:flex><span><span style=color:#0086d2></span>	-d --label=label.dd-important=true --init --restart=unless-stopped -e <span style=color:#fb660a>DISABLE_NEWRELIC</span>=true --ip=172.22.0.50 --publish 8000:8000 --add-host www.cnsmeraffs.com:10.192.38.101 --add-host docsim.ca:10.192.36.102 -h django-ca-qa-qa0 --net=web --name django-ca-qa -e <span style=color:#fb660a>NEW_RELIC_LICENSE_KEY</span>=a5f3704c3045218f30dd6d899aa97e25b143862d -e <span style=color:#fb660a>NEW_RELIC_ENVIRONMENT</span>=qa -e <span style=color:#fb660a>NEW_RELIC_CONFIG_FILE</span>=/etc/newrelic/newrelic.ini -e <span style=color:#fb660a>MYSQL_CONFIG</span>=qa -e <span style=color:#fb660a>REDIS_CONFIG</span>=qa -e <span style=color:#fb660a>STATSD_SERVER</span>=10.192.38.101 -e <span style=color:#fb660a>CONTAINER_ENVIRONMENT</span>=qa -v /nfsshare02/conaff:/var/www/conaff -v /nfsshare02/exports:/var/www/exports -v logvolume:/var/log/ harbor.cnsmeraffs.com/ca/django-ca:br-qa-3bb4dac-py3 django
+</span></span><span style=display:flex><span>	
+</span></span><span style=display:flex><span>	
+</span></span><span style=display:flex><span>docker stop django-ca-qa
+</span></span><span style=display:flex><span>docker rm django-ca-qa
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>docker run -d --label=label.dd-important=true --init --restart=unless-stopped -e <span style=color:#fb660a>DISABLE_NEWRELIC</span>=true --ip=172.22.0.50 --publish 8000:8000 --add-host www.cnsmeraffs.com:10.192.38.101 --add-host docsim.ca:10.192.36.102 -h django-ca-qa-qa0 --net=web --name django-ca-qa -e <span style=color:#fb660a>NEW_RELIC_LICENSE_KEY</span>=a5f3704c3045218f30dd6d899aa97e25b143862d -e <span style=color:#fb660a>NEW_RELIC_ENVIRONMENT</span>=qa -e <span style=color:#fb660a>NEW_RELIC_CONFIG_FILE</span>=/etc/newrelic/newrelic.ini -e <span style=color:#fb660a>MYSQL_CONFIG</span>=qa -e <span style=color:#fb660a>REDIS_CONFIG</span>=qa -e <span style=color:#fb660a>STATSD_SERVER</span>=10.192.38.101 -e <span style=color:#fb660a>CONTAINER_ENVIRONMENT</span>=qa -v /nfsshare02/conaff:/var/www/conaff -v /nfsshare02/exports:/var/www/exports -v logvolume:/var/log/ harbor.cnsmeraffs.com/ca/django-ca:br-qa-3bb4dac-py3 django
+</span></span></code></pre></div><h3 id=logging-to-aws-es>logging to AWS ES
+<a class=heading-link href=#logging-to-aws-es><i class="fa fa-link" aria-hidden=true></i></a></h3><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#080;background-color:#0f140f;font-style:italic># fluentd forwarder fluent.conf</span>
+</span></span><span style=display:flex><span>&lt;source&gt;
+</span></span><span style=display:flex><span>  @type forward
+</span></span><span style=display:flex><span>  port <span style=color:#0086f7;font-weight:700>24224</span>
+</span></span><span style=display:flex><span>  bind 0.0.0.0
+</span></span><span style=display:flex><span>&lt;/source&gt;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>&lt;filter docker.**&gt;
+</span></span><span style=display:flex><span>  @type concat
+</span></span><span style=display:flex><span>  key log
+</span></span><span style=display:flex><span>  stream_identity_key container_id
+</span></span><span style=display:flex><span>  use_first_timestamp true
+</span></span><span style=display:flex><span>  multiline_start_regexp /^(<span style=color:#0086d2>\d</span>{4})-(<span style=color:#0086d2>\d</span>{2})-(<span style=color:#0086d2>\d</span>{2}) (<span style=color:#0086d2>\d</span>{2}):(<span style=color:#0086d2>\d</span>{2}):(<span style=color:#0086d2>\d</span>{2})[^<span style=color:#0086d2>\s</span>]+/
+</span></span><span style=display:flex><span>  <span style=color:#080;background-color:#0f140f;font-style:italic>#flush_interval 1s</span>
+</span></span><span style=display:flex><span>  <span style=color:#080;background-color:#0f140f;font-style:italic>#timeout_label @NORMAL</span>
+</span></span><span style=display:flex><span>&lt;/filter&gt;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>&lt;match **&gt;
+</span></span><span style=display:flex><span>  @type elasticsearch
+</span></span><span style=display:flex><span>  type_name fluentd
+</span></span><span style=display:flex><span>  logstash_format true
+</span></span><span style=display:flex><span>  logstash_prefix staging
+</span></span><span style=display:flex><span>  include_tag_key true
+</span></span><span style=display:flex><span>  tag_key @log_name
+</span></span><span style=display:flex><span>  host vpc-global-es-vj2klfzx4acdwvtw6sjwacapsi.us-west-2.es.amazonaws.com
+</span></span><span style=display:flex><span>  port <span style=color:#0086f7;font-weight:700>443</span>
+</span></span><span style=display:flex><span>  scheme https
+</span></span><span style=display:flex><span>  ssl_version TLSv1_2
+</span></span><span style=display:flex><span>  reload_connections false
+</span></span><span style=display:flex><span>  log_es_400_reason true
+</span></span><span style=display:flex><span>&lt;/match&gt;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#080;background-color:#0f140f;font-style:italic># fluentd container</span>
+</span></span><span style=display:flex><span>docker stop fluentd
+</span></span><span style=display:flex><span>docker rm fluentd
+</span></span><span style=display:flex><span>docker run <span style=color:#0086d2>\
+</span></span></span><span style=display:flex><span><span style=color:#0086d2></span>	--name fluentd <span style=color:#0086d2>\
+</span></span></span><span style=display:flex><span><span style=color:#0086d2></span>	-d <span style=color:#0086d2>\
+</span></span></span><span style=display:flex><span><span style=color:#0086d2></span>	-p 24224:24224 -p 24224:24224/udp <span style=color:#0086d2>\
+</span></span></span><span style=display:flex><span><span style=color:#0086d2></span>	-v /home/ubuntu/fluentd:/fluentx <span style=color:#0086d2>\
+</span></span></span><span style=display:flex><span><span style=color:#0086d2></span>	-v /home/ubuntu/datacnt:/fluentx/log <span style=color:#0086d2>\
+</span></span></span><span style=display:flex><span><span style=color:#0086d2></span>	32c0c555eb19 <span style=color:#0086d2>\
+</span></span></span><span style=display:flex><span><span style=color:#0086d2></span>	/fluentx/etc/start.sh
+</span></span><span style=display:flex><span>	
+</span></span><span style=display:flex><span><span style=color:#080;background-color:#0f140f;font-style:italic># fluentd command</span>
+</span></span><span style=display:flex><span><span style=color:#080;background-color:#0f140f;font-style:italic>#!/bin/sh</span>
+</span></span><span style=display:flex><span>gem install fluent-plugin-elasticsearch
+</span></span><span style=display:flex><span>gem install fluent-plugin-aws-elasticsearch-service
+</span></span><span style=display:flex><span>exec fluentd -c /fluentx/etc/<span style=color:#fb660a>$FLUENTD_CONF</span> -p /fluentx/plugins <span style=color:#fb660a>$FLUENTD_OPT</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#080;background-color:#0f140f;font-style:italic># test ES</span>
+</span></span><span style=display:flex><span>curl -sX GET <span style=color:#0086d2>&#34;https://vpc-global-es-vj2klfzx4acdwvtw6sjwacapsi.us-west-2.es.amazonaws.com/_cluster/health&#34;</span>
+</span></span></code></pre></div></article></section></div><footer class=footer><section class=container>©
+2021 -
+2024
+Dennis Ruiz
+·
+Powered by <a href=https://gohugo.io/>Hugo</a> & <a href=https://github.com/luizdepra/hugo-coder/>Coder</a>.</section></footer></main><script src=/js/coder.min.236049395dc3682fb2719640872958e12f1f24067bb09c327b233e6290c7edac.js integrity="sha256-I2BJOV3DaC+ycZZAhylY4S8fJAZ7sJwyeyM+YpDH7aw="></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-6CQZY8W0WD"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-6CQZY8W0WD")</script><script>$(document).on("input propertychange paste change",".FilterSearch",function(){var n=$(this).val().toLowerCase(),s=$(this).closest("ul"),t=s.find("li:gt(0)");t.hide(),t.filter(function(){var e=$(this).text().toLowerCase();return e.indexOf(n)>=0}).show()})</script></body></html>

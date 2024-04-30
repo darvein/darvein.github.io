@@ -1,0 +1,96 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta http-equiv=Content-Security-Policy content="upgrade-insecure-requests; block-all-mixed-content; default-src 'self' https://www.dropbox.com https://*.dl.dropboxusercontent.com https://photos.app.goo.gl https://drive.google.com https://photos.google.com https://video-downloads.googleusercontent.com https://*.googleusercontent.com https://*.googlevideo.com https://youtube.googleapis.com; child-src 'self'; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net/; form-action 'self'; frame-src 'self' https://w.soundcloud.com https://www.youtube.com https://www.youtube-nocookie.com https://www.dropbox.com http://localhost https://www.dropbox.com http://darvein.local https://disqus.com; img-src 'self' https://photos.google.com https://lh3.googleusercontent.com https://www.dropbox.com https://*.dl.dropboxusercontent.com https://*.disqus.com https://c.disquscdn.com; object-src https://lh3.googleusercontent.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://cdn.jsdelivr.net/ https://c.disquscdn.com; script-src 'self' 'unsafe-inline' https://www.google-analytics.com https://cdnjs.cloudflare.com https://www.googletagmanager.com https://www.dropbox.com http://localhost http://darvein.local https://drv21.disqus.com https://c.disquscdn.com; prefetch-src 'self' https://youtube.googleapis.com; connect-src 'self' https://www.google-analytics.com https://links.services.disqus.com;"><meta name=author content="Dennis Ruiz"><meta name=description content="Bash training - Day 3 Redirections stdin, stdout, stderr, tee, /dev/null, /dev/fd/0 /dev/stdin, /dev/tcp/host/port Standard intput/output
+$ file /dev/stdin /dev/stdin: symbolic link to /proc/self/fd/0 $ file /dev/stdout /dev/stdout: symbolic link to /proc/self/fd/1 $ file /dev/stderr /dev/stderr: symbolic link to /proc/self/fd/2 Special files being used for pipeping
+$ ls -ltra /proc/self/fd/0 lrwx------ 1 ubuntu ubuntu 64 Oct 13 20:54 /proc/self/fd/0 -> /dev/pts/0 $ ls -ltra /dev/pts/0 crw--w---- 1 ubuntu tty 136, 0 Oct 13 20:54 /dev/pts/0 Sending stdin and stdout to a file"><meta name=keywords content="blog,developer,personal"><meta name=twitter:card content="summary"><meta name=twitter:title content><meta name=twitter:description content="Bash training - Day 3 Redirections stdin, stdout, stderr, tee, /dev/null, /dev/fd/0 /dev/stdin, /dev/tcp/host/port Standard intput/output
+$ file /dev/stdin /dev/stdin: symbolic link to /proc/self/fd/0 $ file /dev/stdout /dev/stdout: symbolic link to /proc/self/fd/1 $ file /dev/stderr /dev/stderr: symbolic link to /proc/self/fd/2 Special files being used for pipeping
+$ ls -ltra /proc/self/fd/0 lrwx------ 1 ubuntu ubuntu 64 Oct 13 20:54 /proc/self/fd/0 -> /dev/pts/0 $ ls -ltra /dev/pts/0 crw--w---- 1 ubuntu tty 136, 0 Oct 13 20:54 /dev/pts/0 Sending stdin and stdout to a file"><meta property="og:title" content><meta property="og:description" content="Bash training - Day 3 Redirections stdin, stdout, stderr, tee, /dev/null, /dev/fd/0 /dev/stdin, /dev/tcp/host/port Standard intput/output
+$ file /dev/stdin /dev/stdin: symbolic link to /proc/self/fd/0 $ file /dev/stdout /dev/stdout: symbolic link to /proc/self/fd/1 $ file /dev/stderr /dev/stderr: symbolic link to /proc/self/fd/2 Special files being used for pipeping
+$ ls -ltra /proc/self/fd/0 lrwx------ 1 ubuntu ubuntu 64 Oct 13 20:54 /proc/self/fd/0 -> /dev/pts/0 $ ls -ltra /dev/pts/0 crw--w---- 1 ubuntu tty 136, 0 Oct 13 20:54 /dev/pts/0 Sending stdin and stdout to a file"><meta property="og:type" content="article"><meta property="og:url" content="https://www.darvein.net/coding/bash/training/day3/"><meta property="article:section" content="coding"><title>Bash training - Day 3 </title><link rel=canonical href=https://www.darvein.net/coding/bash/training/day3/><link rel=preload href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as=font type=font/woff2 crossorigin><link rel=stylesheet href=/css/coder.min.a1a7e7e7bd8b6629931805334fd6cf056ee6f154702847e6d597bbfe80446a0d.css integrity="sha256-oafn572LZimTGAUzT9bPBW7m8VRwKEfm1Ze7/oBEag0=" crossorigin=anonymous media=screen><link rel=stylesheet href=/css/coder-dark.min.39e41a7f16bdf8cb16e43cae7d714fa1016f1d2d2898a5b3f27f42c9979204e2.css integrity="sha256-OeQafxa9+MsW5DyufXFPoQFvHS0omKWz8n9CyZeSBOI=" crossorigin=anonymous media=screen><link rel=stylesheet href=/css/custom.min.7cf8a329bb485491ed5be45bd286916c655bf66e11e3fe4d82649437eae8b51b.css integrity="sha256-fPijKbtIVJHtW+Rb0oaRbGVb9m4R4/5NgmSUN+rotRs=" crossorigin=anonymous media=screen><link rel=icon type=image/png href=/images/favicon-32x32.png sizes=32x32><link rel=icon type=image/png href=/images/favicon-16x16.png sizes=16x16><link rel=apple-touch-icon href=/images/apple-touch-icon.png><link rel=apple-touch-icon sizes=180x180 href=/images/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/images/safari-pinned-tab.svg color=#5bbad5><meta name=generator content="Hugo 0.120.4"></head><body class="preload-transitions colorscheme-dark"><main class=wrapper><nav class=navigation><section class=container><a class=navigation-title href=/>Darvein
+</a><input type=checkbox id=menu-toggle>
+<label class="menu-button float-right" for=menu-toggle><i class="fa fa-bars fa-fw" aria-hidden=true></i></label><ul class=navigation-list><li class=navigation-item><a class=navigation-link href=/infosec/>Infosec</a></li><li class=navigation-item><a class=navigation-link href=/coding/>Coding</a></li><li class=navigation-item><a class=navigation-link href=/devops/>Devops</a></li></ul></section></nav><div class=content><section class="container page"><article><h1 id=bash-training---day-3>Bash training - Day 3
+<a class=heading-link href=#bash-training---day-3><i class="fa fa-link" aria-hidden=true></i></a></h1><h2 id=redirections>Redirections
+<a class=heading-link href=#redirections><i class="fa fa-link" aria-hidden=true></i></a></h2><ul><li>stdin, stdout, stderr, tee, /dev/null, /dev/fd/0</li><li>/dev/stdin, /dev/tcp/host/port</li></ul><p>Standard intput/output</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>$ file /dev/stdin
+</span></span><span style=display:flex><span>/dev/stdin: symbolic link to /proc/self/fd/0
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>$ file /dev/stdout
+</span></span><span style=display:flex><span>/dev/stdout: symbolic link to /proc/self/fd/1
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>$ file /dev/stderr
+</span></span><span style=display:flex><span>/dev/stderr: symbolic link to /proc/self/fd/2
+</span></span></code></pre></div><p>Special files being used for pipeping</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>$ ls -ltra /proc/self/fd/0
+</span></span><span style=display:flex><span>lrwx------ <span style=color:#0086f7;font-weight:700>1</span> ubuntu ubuntu <span style=color:#0086f7;font-weight:700>64</span> Oct <span style=color:#0086f7;font-weight:700>13</span> 20:54 /proc/self/fd/0 -&gt; /dev/pts/0
+</span></span><span style=display:flex><span>$ ls -ltra /dev/pts/0
+</span></span><span style=display:flex><span>crw--w---- <span style=color:#0086f7;font-weight:700>1</span> ubuntu tty 136, <span style=color:#0086f7;font-weight:700>0</span> Oct <span style=color:#0086f7;font-weight:700>13</span> 20:54 /dev/pts/0
+</span></span></code></pre></div><p>Sending stdin and stdout to a file</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>$ find / -name ping &gt; log.out 2&gt;&amp;<span style=color:#0086f7;font-weight:700>1</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>$ cat log.out  | grep -v Permission
+</span></span><span style=display:flex><span>/snap/core18/2566/bin/ping
+</span></span><span style=display:flex><span>/snap/core18/2566/usr/share/bash-completion/completions/ping
+</span></span><span style=display:flex><span>/snap/core18/2538/bin/ping
+</span></span><span style=display:flex><span>/snap/core18/2538/usr/share/bash-completion/completions/ping
+</span></span><span style=display:flex><span>/snap/core20/1623/usr/bin/ping
+</span></span><span style=display:flex><span>/snap/core20/1623/usr/share/bash-completion/completions/ping
+</span></span><span style=display:flex><span>/snap/core20/1611/usr/bin/ping
+</span></span><span style=display:flex><span>/snap/core20/1611/usr/share/bash-completion/completions/ping
+</span></span><span style=display:flex><span>/usr/bin/ping
+</span></span><span style=display:flex><span>/usr/share/bash-completion/completions/ping
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>$ nc -nvlp <span style=color:#0086f7;font-weight:700>55555</span>
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>$ cat &gt; /dev/tcp/127.0.0.1/55555
+</span></span><span style=display:flex><span>hey
+</span></span></code></pre></div><h2 id=functions>Functions
+<a class=heading-link href=#functions><i class="fa fa-link" aria-hidden=true></i></a></h2><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>$ cat test.sh
+</span></span><span style=display:flex><span><span style=color:#080;background-color:#0f140f;font-style:italic>#!/bin/bash</span>
+</span></span><span style=display:flex><span>hello () {
+</span></span><span style=display:flex><span>  <span style=color:#fb660a>yourname</span>=<span style=color:#0086d2>${</span><span style=color:#fb660a>1</span><span style=color:#fb660a;font-weight:700>:-</span><span style=color:#fb660a>none</span><span style=color:#0086d2>}</span>
+</span></span><span style=display:flex><span>  echo <span style=color:#0086d2>&#34;-&gt; Hello: </span><span style=color:#0086d2>${</span><span style=color:#fb660a>yourname</span><span style=color:#0086d2>}</span><span style=color:#0086d2>&#34;</span>
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>hello <span style=color:#0086d2>&#34;Juarez&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>$ ./test.sh
+</span></span><span style=display:flex><span>-&gt; Hello: Juarez
+</span></span></code></pre></div><p>Export function:</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>$ source test.sh
+</span></span><span style=display:flex><span>$ hello foo
+</span></span><span style=display:flex><span>-&gt; Hello: foo
+</span></span></code></pre></div><h2 id=pipes>Pipes
+<a class=heading-link href=#pipes><i class="fa fa-link" aria-hidden=true></i></a></h2><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>$ find . | grep <span style=color:#0086d2>\.</span>tf | xargs -I {} wc -l {} | sort -h -k <span style=color:#0086f7;font-weight:700>1</span> | tail -n <span style=color:#0086f7;font-weight:700>5</span>
+</span></span><span style=display:flex><span><span style=color:#0086f7;font-weight:700>201</span> ./examples/complete-mssql/main.tf
+</span></span><span style=display:flex><span><span style=color:#0086f7;font-weight:700>209</span> ./examples/complete-postgres/main.tf
+</span></span><span style=display:flex><span><span style=color:#0086f7;font-weight:700>225</span> ./examples/cross-region-replica-postgres/main.tf
+</span></span><span style=display:flex><span><span style=color:#0086f7;font-weight:700>375</span> ./modules/db_instance/variables.tf
+</span></span><span style=display:flex><span><span style=color:#0086f7;font-weight:700>513</span> ./variables.tf
+</span></span></code></pre></div><h2 id=error-management-and-debugging>Error management and debugging
+<a class=heading-link href=#error-management-and-debugging><i class="fa fa-link" aria-hidden=true></i></a></h2><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>$ cat test.sh
+</span></span><span style=display:flex><span><span style=color:#080;background-color:#0f140f;font-style:italic>#!/bin/bash</span>
+</span></span><span style=display:flex><span>set -euxo pipefail
+</span></span><span style=display:flex><span>cat foo | wc -l
+</span></span><span style=display:flex><span>ping -c <span style=color:#0086f7;font-weight:700>1</span> google.com
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>$ ./test.sh
+</span></span><span style=display:flex><span>+ wc -l
+</span></span><span style=display:flex><span>+ cat foo
+</span></span><span style=display:flex><span>cat: foo: No such file or directory
+</span></span><span style=display:flex><span><span style=color:#0086f7;font-weight:700>0</span>
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>$ cat test.sh
+</span></span><span style=display:flex><span><span style=color:#080;background-color:#0f140f;font-style:italic>#!/bin/bash</span>
+</span></span><span style=display:flex><span>set -Eeuo pipefail
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>notify() {
+</span></span><span style=display:flex><span>        echo <span style=color:#0086d2>&#34;Something went wrong&#34;</span>
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>trap notify ERR
+</span></span><span style=display:flex><span><span style=color:#fb660a;font-weight:700>function</span> func(){
+</span></span><span style=display:flex><span>        ls /root/
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>func
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>ubuntu@ip-172-31-95-65:~$ ./test.sh
+</span></span><span style=display:flex><span>ls: cannot open directory <span style=color:#0086d2>&#39;/root/&#39;</span>: Permission denied
+</span></span><span style=display:flex><span>Something went wrong
+</span></span></code></pre></div></article></section></div><footer class=footer><section class=container>©
+2021 -
+2024
+Dennis Ruiz
+·
+Powered by <a href=https://gohugo.io/>Hugo</a> & <a href=https://github.com/luizdepra/hugo-coder/>Coder</a>.</section></footer></main><script src=/js/coder.min.236049395dc3682fb2719640872958e12f1f24067bb09c327b233e6290c7edac.js integrity="sha256-I2BJOV3DaC+ycZZAhylY4S8fJAZ7sJwyeyM+YpDH7aw="></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-6CQZY8W0WD"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-6CQZY8W0WD")</script><script>$(document).on("input propertychange paste change",".FilterSearch",function(){var n=$(this).val().toLowerCase(),s=$(this).closest("ul"),t=s.find("li:gt(0)");t.hide(),t.filter(function(){var e=$(this).text().toLowerCase();return e.indexOf(n)>=0}).show()})</script></body></html>

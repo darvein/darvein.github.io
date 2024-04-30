@@ -1,0 +1,89 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta http-equiv=Content-Security-Policy content="upgrade-insecure-requests; block-all-mixed-content; default-src 'self' https://www.dropbox.com https://*.dl.dropboxusercontent.com https://photos.app.goo.gl https://drive.google.com https://photos.google.com https://video-downloads.googleusercontent.com https://*.googleusercontent.com https://*.googlevideo.com https://youtube.googleapis.com; child-src 'self'; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net/; form-action 'self'; frame-src 'self' https://w.soundcloud.com https://www.youtube.com https://www.youtube-nocookie.com https://www.dropbox.com http://localhost https://www.dropbox.com http://darvein.local https://disqus.com; img-src 'self' https://photos.google.com https://lh3.googleusercontent.com https://www.dropbox.com https://*.dl.dropboxusercontent.com https://*.disqus.com https://c.disquscdn.com; object-src https://lh3.googleusercontent.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://cdn.jsdelivr.net/ https://c.disquscdn.com; script-src 'self' 'unsafe-inline' https://www.google-analytics.com https://cdnjs.cloudflare.com https://www.googletagmanager.com https://www.dropbox.com http://localhost http://darvein.local https://drv21.disqus.com https://c.disquscdn.com; prefetch-src 'self' https://youtube.googleapis.com; connect-src 'self' https://www.google-analytics.com https://links.services.disqus.com;"><meta name=author content="Dennis Ruiz"><meta name=description content="Wordpress Content Installation Given an Ubuntu 22.04 Machine
+sudo apt update sudo apt-get upgrade -y sudo apt install -f php-fpm nfs-kernel-server nginx php-mysql sudo apt install -f php8.1-mysql php8.1-mbstring php8.1-xml php8.1-curl sudo apt install -f memcached libmemcached-tools -y Check the nginx config:
+client_max_body_size 50M; server { listen 80; listen [::]:80; root /var/www/acme.com/html; server_name _; index index.php; charset utf-8; access_log /var/log/nginx/wordpress_access.log; error_log /var/log/nginx/wordpress_error.log; location / { try_files $uri $uri/ /index.php?$args; } location ~ \."><meta name=keywords content="blog,developer,personal"><meta name=twitter:card content="summary"><meta name=twitter:title content><meta name=twitter:description content="Wordpress Content Installation Given an Ubuntu 22.04 Machine
+sudo apt update sudo apt-get upgrade -y sudo apt install -f php-fpm nfs-kernel-server nginx php-mysql sudo apt install -f php8.1-mysql php8.1-mbstring php8.1-xml php8.1-curl sudo apt install -f memcached libmemcached-tools -y Check the nginx config:
+client_max_body_size 50M; server { listen 80; listen [::]:80; root /var/www/acme.com/html; server_name _; index index.php; charset utf-8; access_log /var/log/nginx/wordpress_access.log; error_log /var/log/nginx/wordpress_error.log; location / { try_files $uri $uri/ /index.php?$args; } location ~ \."><meta property="og:title" content><meta property="og:description" content="Wordpress Content Installation Given an Ubuntu 22.04 Machine
+sudo apt update sudo apt-get upgrade -y sudo apt install -f php-fpm nfs-kernel-server nginx php-mysql sudo apt install -f php8.1-mysql php8.1-mbstring php8.1-xml php8.1-curl sudo apt install -f memcached libmemcached-tools -y Check the nginx config:
+client_max_body_size 50M; server { listen 80; listen [::]:80; root /var/www/acme.com/html; server_name _; index index.php; charset utf-8; access_log /var/log/nginx/wordpress_access.log; error_log /var/log/nginx/wordpress_error.log; location / { try_files $uri $uri/ /index.php?$args; } location ~ \."><meta property="og:type" content="article"><meta property="og:url" content="https://www.darvein.net/devops/webapps/wordpress/"><meta property="article:section" content="devops"><title>Wordpress </title><link rel=canonical href=https://www.darvein.net/devops/webapps/wordpress/><link rel=preload href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as=font type=font/woff2 crossorigin><link rel=stylesheet href=/css/coder.min.a1a7e7e7bd8b6629931805334fd6cf056ee6f154702847e6d597bbfe80446a0d.css integrity="sha256-oafn572LZimTGAUzT9bPBW7m8VRwKEfm1Ze7/oBEag0=" crossorigin=anonymous media=screen><link rel=stylesheet href=/css/coder-dark.min.39e41a7f16bdf8cb16e43cae7d714fa1016f1d2d2898a5b3f27f42c9979204e2.css integrity="sha256-OeQafxa9+MsW5DyufXFPoQFvHS0omKWz8n9CyZeSBOI=" crossorigin=anonymous media=screen><link rel=stylesheet href=/css/custom.min.7cf8a329bb485491ed5be45bd286916c655bf66e11e3fe4d82649437eae8b51b.css integrity="sha256-fPijKbtIVJHtW+Rb0oaRbGVb9m4R4/5NgmSUN+rotRs=" crossorigin=anonymous media=screen><link rel=icon type=image/png href=/images/favicon-32x32.png sizes=32x32><link rel=icon type=image/png href=/images/favicon-16x16.png sizes=16x16><link rel=apple-touch-icon href=/images/apple-touch-icon.png><link rel=apple-touch-icon sizes=180x180 href=/images/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/images/safari-pinned-tab.svg color=#5bbad5><meta name=generator content="Hugo 0.120.4"></head><body class="preload-transitions colorscheme-dark"><main class=wrapper><nav class=navigation><section class=container><a class=navigation-title href=/>Darvein
+</a><input type=checkbox id=menu-toggle>
+<label class="menu-button float-right" for=menu-toggle><i class="fa fa-bars fa-fw" aria-hidden=true></i></label><ul class=navigation-list><li class=navigation-item><a class=navigation-link href=/infosec/>Infosec</a></li><li class=navigation-item><a class=navigation-link href=/coding/>Coding</a></li><li class=navigation-item><a class=navigation-link href=/devops/>Devops</a></li></ul></section></nav><div class=content><section class="container page"><article><h1 id=wordpress>Wordpress
+<a class=heading-link href=#wordpress><i class="fa fa-link" aria-hidden=true></i></a></h1><h1 id=content>Content
+<a class=heading-link href=#content><i class="fa fa-link" aria-hidden=true></i></a></h1><h2 id=installation>Installation
+<a class=heading-link href=#installation><i class="fa fa-link" aria-hidden=true></i></a></h2><p>Given an Ubuntu 22.04 Machine</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>sudo apt update 
+</span></span><span style=display:flex><span>sudo apt-get upgrade -y
+</span></span><span style=display:flex><span>sudo apt install -f php-fpm nfs-kernel-server nginx php-mysql
+</span></span><span style=display:flex><span>sudo apt install -f php8.1-mysql php8.1-mbstring php8.1-xml php8.1-curl
+</span></span><span style=display:flex><span>sudo apt install -f memcached libmemcached-tools -y
+</span></span></code></pre></div><p>Check the nginx config:</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-nginx data-lang=nginx><span style=display:flex><span><span style=color:#fb660a;font-weight:700>client_max_body_size</span> <span style=color:#0086d2>50M</span>;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#fb660a;font-weight:700>server</span> {
+</span></span><span style=display:flex><span>    <span style=color:#fb660a;font-weight:700>listen</span> <span style=color:#0086f7;font-weight:700>80</span>;
+</span></span><span style=display:flex><span>    <span style=color:#fb660a;font-weight:700>listen</span> <span style=color:#0086d2>[::]:80</span>;
+</span></span><span style=display:flex><span>    <span style=color:#fb660a;font-weight:700>root</span> <span style=color:#0086d2>/var/www/acme.com/html</span>;
+</span></span><span style=display:flex><span>    <span style=color:#fb660a;font-weight:700>server_name</span> <span style=color:#0086d2>_</span>;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#fb660a;font-weight:700>index</span> <span style=color:#0086d2>index.php</span>;
+</span></span><span style=display:flex><span>    <span style=color:#fb660a;font-weight:700>charset</span> <span style=color:#0086d2>utf-8</span>;
+</span></span><span style=display:flex><span>    <span style=color:#fb660a;font-weight:700>access_log</span> <span style=color:#0086d2>/var/log/nginx/wordpress_access.log</span>;
+</span></span><span style=display:flex><span>    <span style=color:#fb660a;font-weight:700>error_log</span> <span style=color:#0086d2>/var/log/nginx/wordpress_error.log</span>;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#fb660a;font-weight:700>location</span> <span style=color:#0086d2>/</span> {
+</span></span><span style=display:flex><span>        <span style=color:#fb660a;font-weight:700>try_files</span> <span style=color:#fb660a>$uri</span> <span style=color:#fb660a>$uri/</span> <span style=color:#0086d2>/index.php?</span><span style=color:#fb660a>$args</span>;
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#fb660a;font-weight:700>location</span> ~ <span style=color:#0086d2>\.php$</span> {
+</span></span><span style=display:flex><span>        <span style=color:#fb660a;font-weight:700>try_files</span> <span style=color:#fb660a>$uri</span> =<span style=color:#0086f7;font-weight:700>404</span>;
+</span></span><span style=display:flex><span>        <span style=color:#fb660a;font-weight:700>fastcgi_split_path_info</span> <span style=color:#0086d2>^(.+\.php)(/.+)</span>$;
+</span></span><span style=display:flex><span>        <span style=color:#fb660a;font-weight:700>fastcgi_pass</span> <span style=color:#0086d2>unix:/var/run/php8.1-fpm-wordpress-site.sock</span>;
+</span></span><span style=display:flex><span>        <span style=color:#fb660a;font-weight:700>fastcgi_index</span> <span style=color:#0086d2>index.php</span>;
+</span></span><span style=display:flex><span>        <span style=color:#fb660a;font-weight:700>include</span> <span style=color:#0086d2>fastcgi.conf</span>;
+</span></span><span style=display:flex><span>        <span style=color:#fb660a;font-weight:700>proxy_connect_timeout</span>      <span style=color:#0086f7;font-weight:700>3600</span>;
+</span></span><span style=display:flex><span>        <span style=color:#fb660a;font-weight:700>proxy_send_timeout</span>         <span style=color:#0086f7;font-weight:700>180</span>;
+</span></span><span style=display:flex><span>        <span style=color:#fb660a;font-weight:700>proxy_read_timeout</span>         <span style=color:#0086f7;font-weight:700>180</span>;
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#fb660a;font-weight:700>location</span> ~ <span style=color:#0086d2>/\.ht</span> {
+</span></span><span style=display:flex><span>        <span style=color:#fb660a;font-weight:700>deny</span> <span style=color:#0086d2>all</span>;
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#fb660a;font-weight:700>location</span> ~ <span style=color:#0086d2>\.(eot|ttf|otf|woff)$</span> {
+</span></span><span style=display:flex><span>      <span style=color:#fb660a;font-weight:700>add_header</span> <span style=color:#0086d2>Access-Control-Allow-Origin</span> <span style=color:#0086d2>*</span>;
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>Create php fpm profile:</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>vim /etc/php/8.1/fpm/pool.d/wordpress.conf
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>[wordpress_site]
+</span></span><span style=display:flex><span><span style=color:#fb660a>user</span> = www-data
+</span></span><span style=display:flex><span><span style=color:#fb660a>group</span> = www-data
+</span></span><span style=display:flex><span><span style=color:#fb660a>listen</span> = /var/run/php8.1-fpm-wordpress-site.sock
+</span></span><span style=display:flex><span>listen.owner = www-data
+</span></span><span style=display:flex><span>listen.group = www-data
+</span></span><span style=display:flex><span>php_admin_value[disable_functions] = exec,passthru,shell_exec,system
+</span></span><span style=display:flex><span>php_admin_flag[allow_url_fopen] = off
+</span></span><span style=display:flex><span>; Choose how the process manager will control the number of child processes.
+</span></span><span style=display:flex><span><span style=color:#fb660a>pm</span> = dynamic
+</span></span><span style=display:flex><span>pm.max_children = <span style=color:#0086f7;font-weight:700>75</span>
+</span></span><span style=display:flex><span>pm.start_servers = <span style=color:#0086f7;font-weight:700>10</span>
+</span></span><span style=display:flex><span>pm.min_spare_servers = <span style=color:#0086f7;font-weight:700>5</span>
+</span></span><span style=display:flex><span>pm.max_spare_servers = <span style=color:#0086f7;font-weight:700>20</span>
+</span></span><span style=display:flex><span>pm.process_idle_timeout = 10s
+</span></span><span style=display:flex><span>;<span style=color:#fb660a>upload_max_filesize</span> = 50M
+</span></span><span style=display:flex><span>;<span style=color:#fb660a>post_max_size</span> = 50M
+</span></span></code></pre></div><p>Modify fpm:</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>sudo sed -i <span style=color:#0086d2>&#39;s/upload_max_filesize = 2M/upload_max_filesize = 64M/g&#39;</span> /etc/php/8.1/fpm/php.ini
+</span></span><span style=display:flex><span>sudo sed -i <span style=color:#0086d2>&#39;s/post_max_size = 8M/post_max_size = 128M/g&#39;</span> /etc/php/8.1/fpm/php.ini
+</span></span></code></pre></div><p>Restart services:</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>sudo nginx -t
+</span></span><span style=display:flex><span>sudo systemctl enable nginx.service
+</span></span><span style=display:flex><span>sudo systemctl enable php8.1-fpm.service
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>sudo systemctl restart nginx.service
+</span></span><span style=display:flex><span>sudo systemctl restart php8.1-fpm.service
+</span></span></code></pre></div><p>Install wordpress</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>wget https://wordpress.org/latest.tar.gz
+</span></span><span style=display:flex><span>tar -xzvf latest.tar.gz
+</span></span></code></pre></div><p>Post configurations</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#080;background-color:#0f140f;font-style:italic># On wp-config.php allow web upload of zip files</span>
+</span></span><span style=display:flex><span>define(<span style=color:#0086d2>&#39;FS_METHOD&#39;</span>, <span style=color:#0086d2>&#39;direct&#39;</span>);
+</span></span></code></pre></div></article></section></div><footer class=footer><section class=container>©
+2021 -
+2024
+Dennis Ruiz
+·
+Powered by <a href=https://gohugo.io/>Hugo</a> & <a href=https://github.com/luizdepra/hugo-coder/>Coder</a>.</section></footer></main><script src=/js/coder.min.236049395dc3682fb2719640872958e12f1f24067bb09c327b233e6290c7edac.js integrity="sha256-I2BJOV3DaC+ycZZAhylY4S8fJAZ7sJwyeyM+YpDH7aw="></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-6CQZY8W0WD"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-6CQZY8W0WD")</script><script>$(document).on("input propertychange paste change",".FilterSearch",function(){var n=$(this).val().toLowerCase(),s=$(this).closest("ul"),t=s.find("li:gt(0)");t.hide(),t.filter(function(){var e=$(this).text().toLowerCase();return e.indexOf(n)>=0}).show()})</script></body></html>

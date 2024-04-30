@@ -1,0 +1,68 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta http-equiv=Content-Security-Policy content="upgrade-insecure-requests; block-all-mixed-content; default-src 'self' https://www.dropbox.com https://*.dl.dropboxusercontent.com https://photos.app.goo.gl https://drive.google.com https://photos.google.com https://video-downloads.googleusercontent.com https://*.googleusercontent.com https://*.googlevideo.com https://youtube.googleapis.com; child-src 'self'; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net/; form-action 'self'; frame-src 'self' https://w.soundcloud.com https://www.youtube.com https://www.youtube-nocookie.com https://www.dropbox.com http://localhost https://www.dropbox.com http://darvein.local https://disqus.com; img-src 'self' https://photos.google.com https://lh3.googleusercontent.com https://www.dropbox.com https://*.dl.dropboxusercontent.com https://*.disqus.com https://c.disquscdn.com; object-src https://lh3.googleusercontent.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://cdn.jsdelivr.net/ https://c.disquscdn.com; script-src 'self' 'unsafe-inline' https://www.google-analytics.com https://cdnjs.cloudflare.com https://www.googletagmanager.com https://www.dropbox.com http://localhost http://darvein.local https://drv21.disqus.com https://c.disquscdn.com; prefetch-src 'self' https://youtube.googleapis.com; connect-src 'self' https://www.google-analytics.com https://links.services.disqus.com;"><meta name=author content="Dennis Ruiz"><meta name=description content="Linux Battery Administration LTP LTP is one of the most commons to analyze and manage battery usage in a laptop computer.
+yay -S ltp systemctl enable ltp
+Here an config example for /etc/ltp.d/01-custom.conf
+# TLP Configuration - Optimized for use with auto-cpufreq # Avoid changing CPU settings to prevent conflicts with auto-cpufreq # CPU_SCALING_GOVERNOR_ON_AC=performance # CPU_SCALING_GOVERNOR_ON_BAT=powersave # CPU_HWP_ON_AC=balance_performance # CPU_HWP_ON_BAT=balance_power # Disk Devices: Set disk APM level on battery to 128 and enable spin down after 10 seconds DISK_APM_LEVEL_ON_BAT=&#34;128&#34; DISK_IDLE_SECS_ON_BAT=10 # SATA aggressive link power management (ALPM): # min_power for battery, medium_power for AC SATA_LINKPWR_ON_AC=medium_power SATA_LINKPWR_ON_BAT=min_power # Runtime Power Management for PCI(e) devices RUNTIME_PM_ON_AC=on RUNTIME_PM_ON_BAT=auto # USB autosuspend feature USB_AUTOSUSPEND=1 # Disable Wake On LAN WOL_DISABLE=Y # Wi-Fi Power Saving mode: 1=disable, 5=enable WIFI_PWR_ON_AC=off WIFI_PWR_ON_BAT=on # Bluetooth power saving BLUETOOTH_DISABLE_ON_BAT=1 # Disable autosuspend for specified devices, e."><meta name=keywords content="blog,developer,personal"><meta name=twitter:card content="summary"><meta name=twitter:title content><meta name=twitter:description content="Linux Battery Administration LTP LTP is one of the most commons to analyze and manage battery usage in a laptop computer.
+yay -S ltp systemctl enable ltp
+Here an config example for /etc/ltp.d/01-custom.conf
+# TLP Configuration - Optimized for use with auto-cpufreq # Avoid changing CPU settings to prevent conflicts with auto-cpufreq # CPU_SCALING_GOVERNOR_ON_AC=performance # CPU_SCALING_GOVERNOR_ON_BAT=powersave # CPU_HWP_ON_AC=balance_performance # CPU_HWP_ON_BAT=balance_power # Disk Devices: Set disk APM level on battery to 128 and enable spin down after 10 seconds DISK_APM_LEVEL_ON_BAT=&#34;128&#34; DISK_IDLE_SECS_ON_BAT=10 # SATA aggressive link power management (ALPM): # min_power for battery, medium_power for AC SATA_LINKPWR_ON_AC=medium_power SATA_LINKPWR_ON_BAT=min_power # Runtime Power Management for PCI(e) devices RUNTIME_PM_ON_AC=on RUNTIME_PM_ON_BAT=auto # USB autosuspend feature USB_AUTOSUSPEND=1 # Disable Wake On LAN WOL_DISABLE=Y # Wi-Fi Power Saving mode: 1=disable, 5=enable WIFI_PWR_ON_AC=off WIFI_PWR_ON_BAT=on # Bluetooth power saving BLUETOOTH_DISABLE_ON_BAT=1 # Disable autosuspend for specified devices, e."><meta property="og:title" content><meta property="og:description" content="Linux Battery Administration LTP LTP is one of the most commons to analyze and manage battery usage in a laptop computer.
+yay -S ltp systemctl enable ltp
+Here an config example for /etc/ltp.d/01-custom.conf
+# TLP Configuration - Optimized for use with auto-cpufreq # Avoid changing CPU settings to prevent conflicts with auto-cpufreq # CPU_SCALING_GOVERNOR_ON_AC=performance # CPU_SCALING_GOVERNOR_ON_BAT=powersave # CPU_HWP_ON_AC=balance_performance # CPU_HWP_ON_BAT=balance_power # Disk Devices: Set disk APM level on battery to 128 and enable spin down after 10 seconds DISK_APM_LEVEL_ON_BAT=&#34;128&#34; DISK_IDLE_SECS_ON_BAT=10 # SATA aggressive link power management (ALPM): # min_power for battery, medium_power for AC SATA_LINKPWR_ON_AC=medium_power SATA_LINKPWR_ON_BAT=min_power # Runtime Power Management for PCI(e) devices RUNTIME_PM_ON_AC=on RUNTIME_PM_ON_BAT=auto # USB autosuspend feature USB_AUTOSUSPEND=1 # Disable Wake On LAN WOL_DISABLE=Y # Wi-Fi Power Saving mode: 1=disable, 5=enable WIFI_PWR_ON_AC=off WIFI_PWR_ON_BAT=on # Bluetooth power saving BLUETOOTH_DISABLE_ON_BAT=1 # Disable autosuspend for specified devices, e."><meta property="og:type" content="article"><meta property="og:url" content="https://www.darvein.net/devops/linux/battery/"><meta property="article:section" content="devops"><title>Linux Battery Administration </title><link rel=canonical href=https://www.darvein.net/devops/linux/battery/><link rel=preload href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as=font type=font/woff2 crossorigin><link rel=stylesheet href=/css/coder.min.a1a7e7e7bd8b6629931805334fd6cf056ee6f154702847e6d597bbfe80446a0d.css integrity="sha256-oafn572LZimTGAUzT9bPBW7m8VRwKEfm1Ze7/oBEag0=" crossorigin=anonymous media=screen><link rel=stylesheet href=/css/coder-dark.min.39e41a7f16bdf8cb16e43cae7d714fa1016f1d2d2898a5b3f27f42c9979204e2.css integrity="sha256-OeQafxa9+MsW5DyufXFPoQFvHS0omKWz8n9CyZeSBOI=" crossorigin=anonymous media=screen><link rel=stylesheet href=/css/custom.min.7cf8a329bb485491ed5be45bd286916c655bf66e11e3fe4d82649437eae8b51b.css integrity="sha256-fPijKbtIVJHtW+Rb0oaRbGVb9m4R4/5NgmSUN+rotRs=" crossorigin=anonymous media=screen><link rel=icon type=image/png href=/images/favicon-32x32.png sizes=32x32><link rel=icon type=image/png href=/images/favicon-16x16.png sizes=16x16><link rel=apple-touch-icon href=/images/apple-touch-icon.png><link rel=apple-touch-icon sizes=180x180 href=/images/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/images/safari-pinned-tab.svg color=#5bbad5><meta name=generator content="Hugo 0.120.4"></head><body class="preload-transitions colorscheme-dark"><main class=wrapper><nav class=navigation><section class=container><a class=navigation-title href=/>Darvein
+</a><input type=checkbox id=menu-toggle>
+<label class="menu-button float-right" for=menu-toggle><i class="fa fa-bars fa-fw" aria-hidden=true></i></label><ul class=navigation-list><li class=navigation-item><a class=navigation-link href=/infosec/>Infosec</a></li><li class=navigation-item><a class=navigation-link href=/coding/>Coding</a></li><li class=navigation-item><a class=navigation-link href=/devops/>Devops</a></li></ul></section></nav><div class=content><section class="container page"><article><h1 id=linux-battery-administration>Linux Battery Administration
+<a class=heading-link href=#linux-battery-administration><i class="fa fa-link" aria-hidden=true></i></a></h1><h2 id=ltp>LTP
+<a class=heading-link href=#ltp><i class="fa fa-link" aria-hidden=true></i></a></h2><p>LTP is one of the most commons to analyze and manage battery usage in a laptop computer.</p><p>yay -S ltp
+systemctl enable ltp</p><p>Here an config example for /etc/ltp.d/01-custom.conf</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span># TLP Configuration - Optimized for use with auto-cpufreq
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span># Avoid changing CPU settings to prevent conflicts with auto-cpufreq
+</span></span><span style=display:flex><span># CPU_SCALING_GOVERNOR_ON_AC=performance
+</span></span><span style=display:flex><span># CPU_SCALING_GOVERNOR_ON_BAT=powersave
+</span></span><span style=display:flex><span># CPU_HWP_ON_AC=balance_performance
+</span></span><span style=display:flex><span># CPU_HWP_ON_BAT=balance_power
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span># Disk Devices: Set disk APM level on battery to 128 and enable spin down after 10 seconds
+</span></span><span style=display:flex><span>DISK_APM_LEVEL_ON_BAT=&#34;128&#34;
+</span></span><span style=display:flex><span>DISK_IDLE_SECS_ON_BAT=10
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span># SATA aggressive link power management (ALPM):
+</span></span><span style=display:flex><span># min_power for battery, medium_power for AC
+</span></span><span style=display:flex><span>SATA_LINKPWR_ON_AC=medium_power
+</span></span><span style=display:flex><span>SATA_LINKPWR_ON_BAT=min_power
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span># Runtime Power Management for PCI(e) devices
+</span></span><span style=display:flex><span>RUNTIME_PM_ON_AC=on
+</span></span><span style=display:flex><span>RUNTIME_PM_ON_BAT=auto
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span># USB autosuspend feature
+</span></span><span style=display:flex><span>USB_AUTOSUSPEND=1
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span># Disable Wake On LAN
+</span></span><span style=display:flex><span>WOL_DISABLE=Y
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span># Wi-Fi Power Saving mode: 1=disable, 5=enable
+</span></span><span style=display:flex><span>WIFI_PWR_ON_AC=off
+</span></span><span style=display:flex><span>WIFI_PWR_ON_BAT=on
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span># Bluetooth power saving
+</span></span><span style=display:flex><span>BLUETOOTH_DISABLE_ON_BAT=1
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span># Disable autosuspend for specified devices, e.g., wireless mouse or keyboard
+</span></span><span style=display:flex><span>#USB_BLACKLIST=&#34;1234:5678&#34;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span># Enable Audio power saving for Intel HDA, AC97 devices after 1 sec
+</span></span><span style=display:flex><span>SOUND_POWER_SAVE_ON_AC=0
+</span></span><span style=display:flex><span>SOUND_POWER_SAVE_ON_BAT=1
+</span></span><span style=display:flex><span>SOUND_POWER_SAVE_CONTROLLER=Y
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span># Power off optical drive in UltraBay/MediaBay when running on battery
+</span></span><span style=display:flex><span>BAY_POWEROFF_ON_BAT=1
+</span></span><span style=display:flex><span>BAY_DEVICE=&#34;sr0&#34;
+</span></span></code></pre></div><h2 id=auto-cpufreq>Auto-cpufreq
+<a class=heading-link href=#auto-cpufreq><i class="fa fa-link" aria-hidden=true></i></a></h2><p>Auto-cpufreq is a tool to manage the CPU frequency and power usage.
+yay -S auto-cpufreq
+systemctl enable auto-cpufreq</p></article></section></div><footer class=footer><section class=container>©
+2021 -
+2024
+Dennis Ruiz
+·
+Powered by <a href=https://gohugo.io/>Hugo</a> & <a href=https://github.com/luizdepra/hugo-coder/>Coder</a>.</section></footer></main><script src=/js/coder.min.236049395dc3682fb2719640872958e12f1f24067bb09c327b233e6290c7edac.js integrity="sha256-I2BJOV3DaC+ycZZAhylY4S8fJAZ7sJwyeyM+YpDH7aw="></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-6CQZY8W0WD"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-6CQZY8W0WD")</script><script>$(document).on("input propertychange paste change",".FilterSearch",function(){var n=$(this).val().toLowerCase(),s=$(this).closest("ul"),t=s.find("li:gt(0)");t.hide(),t.filter(function(){var e=$(this).text().toLowerCase();return e.indexOf(n)>=0}).show()})</script></body></html>

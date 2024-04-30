@@ -1,0 +1,49 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "sns:TagResource",
+                "sns:DeleteTopic",
+                "sns:ListTopics",
+                "sns:Unsubscribe",
+                "sns:CreatePlatformEndpoint",
+                "sns:SetTopicAttributes",
+                "sns:UntagResource",
+                "sns:OptInPhoneNumber",
+                "sns:CheckIfPhoneNumberIsOptedOut",
+                "sns:ListEndpointsByPlatformApplication",
+                "sns:SetEndpointAttributes",
+                "sns:Publish",
+                "sns:DeletePlatformApplication",
+                "sns:SetPlatformApplicationAttributes",
+                "sns:VerifySMSSandboxPhoneNumber",
+                "sns:Subscribe",
+                "sns:ConfirmSubscription",
+                "sns:ListTagsForResource",
+                "sns:DeleteSMSSandboxPhoneNumber",
+                "sns:ListSubscriptionsByTopic",
+                "sns:GetTopicAttributes",
+                "sns:ListSMSSandboxPhoneNumbers",
+                "sns:CreatePlatformApplication",
+                "sns:SetSMSAttributes",
+                "sns:CreateTopic",
+                "sns:GetPlatformApplicationAttributes",
+                "sns:GetSubscriptionAttributes",
+                "sns:ListSubscriptions",
+                "sns:ListOriginationNumbers",
+                "sns:DeleteEndpoint",
+                "sns:ListPhoneNumbersOptedOut",
+                "sns:GetEndpointAttributes",
+                "sns:SetSubscriptionAttributes",
+                "sns:GetSMSSandboxAccountStatus",
+                "sns:CreateSMSSandboxPhoneNumber",
+                "sns:ListPlatformApplications",
+                "sns:GetSMSAttributes"
+            ],
+            "Resource": "*"
+        }
+    ]
+}

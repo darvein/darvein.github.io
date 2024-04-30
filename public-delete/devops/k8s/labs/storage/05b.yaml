@@ -1,0 +1,20 @@
+---
+apiVersion: snapshot.storage.k8s.io/v1
+kind: VolumeSnapshotClass
+metadata:
+  name: my-snapshot-class
+  annotations:
+    snapshot.storage.kubernetes.io/is-default-class: "true"
+driver: ebs.csi.aws.com
+deletionPolicy: Delete
+
+---
+apiVersion: snapshot.storage.k8s.io/v1
+kind: VolumeSnapshot
+metadata:
+  name: my-snapshot
+  namespace: default
+spec:
+  volumeSnapshotClassName: my-snapshot-class
+  source:
+    persistentVolumeClaimName: ebs-claim

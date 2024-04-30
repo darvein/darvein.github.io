@@ -1,0 +1,19 @@
+#compdef eb_instances
+
+# https://unix.stackexchange.com/questions/239528/dynamic-zsh-autocomplete-for-custom-commands
+
+_eb_instances() {
+  local state
+
+  _arguments \
+    '1: :->aws_profile'\
+    '*: :->eb_name'
+
+  case $state in
+    (aws_profile) _arguments '1:profiles:(cuonglm test)' ;;
+              (*) compadd "$@" prod staging dev
+  esac
+}
+
+_eb_instances "$@"
+

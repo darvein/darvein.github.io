@@ -1,0 +1,80 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta http-equiv=Content-Security-Policy content="upgrade-insecure-requests; block-all-mixed-content; default-src 'self' https://www.dropbox.com https://*.dl.dropboxusercontent.com https://photos.app.goo.gl https://drive.google.com https://photos.google.com https://video-downloads.googleusercontent.com https://*.googleusercontent.com https://*.googlevideo.com https://youtube.googleapis.com; child-src 'self'; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net/; form-action 'self'; frame-src 'self' https://w.soundcloud.com https://www.youtube.com https://www.youtube-nocookie.com https://www.dropbox.com http://localhost https://www.dropbox.com http://darvein.local https://disqus.com; img-src 'self' https://photos.google.com https://lh3.googleusercontent.com https://www.dropbox.com https://*.dl.dropboxusercontent.com https://*.disqus.com https://c.disquscdn.com; object-src https://lh3.googleusercontent.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://cdn.jsdelivr.net/ https://c.disquscdn.com; script-src 'self' 'unsafe-inline' https://www.google-analytics.com https://cdnjs.cloudflare.com https://www.googletagmanager.com https://www.dropbox.com http://localhost http://darvein.local https://drv21.disqus.com https://c.disquscdn.com; prefetch-src 'self' https://youtube.googleapis.com; connect-src 'self' https://www.google-analytics.com https://links.services.disqus.com;"><meta name=author content="Dennis Ruiz"><meta name=description content="SSL Cheatsheet # View single certificate echo | openssl s_client -showcerts -servername [gnupg.org](http://gnupg.org) -connect [gnupg.org:443](http://gnupg.org:443) 2>/dev/null | openssl x509 -inform pem -noout -text | tee output.log openssl pkcs7 -print_certs -in old.p7b -out new.crt # openssl pkcs7 -print_certs -in old.p7b -out new.cer # generate RSA public/private key openssl genrsa -des3 -out darvein.pem 2048 # export RSA public key openssl rsa -in private.pem -outform PEM -pubout -out public.pem # export RSA private key openssl rsa -in private."><meta name=keywords content="blog,developer,personal"><meta name=twitter:card content="summary"><meta name=twitter:title content><meta name=twitter:description content="SSL Cheatsheet # View single certificate echo | openssl s_client -showcerts -servername [gnupg.org](http://gnupg.org) -connect [gnupg.org:443](http://gnupg.org:443) 2>/dev/null | openssl x509 -inform pem -noout -text | tee output.log openssl pkcs7 -print_certs -in old.p7b -out new.crt # openssl pkcs7 -print_certs -in old.p7b -out new.cer # generate RSA public/private key openssl genrsa -des3 -out darvein.pem 2048 # export RSA public key openssl rsa -in private.pem -outform PEM -pubout -out public.pem # export RSA private key openssl rsa -in private."><meta property="og:title" content><meta property="og:description" content="SSL Cheatsheet # View single certificate echo | openssl s_client -showcerts -servername [gnupg.org](http://gnupg.org) -connect [gnupg.org:443](http://gnupg.org:443) 2>/dev/null | openssl x509 -inform pem -noout -text | tee output.log openssl pkcs7 -print_certs -in old.p7b -out new.crt # openssl pkcs7 -print_certs -in old.p7b -out new.cer # generate RSA public/private key openssl genrsa -des3 -out darvein.pem 2048 # export RSA public key openssl rsa -in private.pem -outform PEM -pubout -out public.pem # export RSA private key openssl rsa -in private."><meta property="og:type" content="article"><meta property="og:url" content="https://www.darvein.net/devops/others/ssl/"><meta property="article:section" content="devops"><title>SSL Cheatsheet </title><link rel=canonical href=https://www.darvein.net/devops/others/ssl/><link rel=preload href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as=font type=font/woff2 crossorigin><link rel=stylesheet href=/css/coder.min.a1a7e7e7bd8b6629931805334fd6cf056ee6f154702847e6d597bbfe80446a0d.css integrity="sha256-oafn572LZimTGAUzT9bPBW7m8VRwKEfm1Ze7/oBEag0=" crossorigin=anonymous media=screen><link rel=stylesheet href=/css/coder-dark.min.39e41a7f16bdf8cb16e43cae7d714fa1016f1d2d2898a5b3f27f42c9979204e2.css integrity="sha256-OeQafxa9+MsW5DyufXFPoQFvHS0omKWz8n9CyZeSBOI=" crossorigin=anonymous media=screen><link rel=stylesheet href=/css/custom.min.7cf8a329bb485491ed5be45bd286916c655bf66e11e3fe4d82649437eae8b51b.css integrity="sha256-fPijKbtIVJHtW+Rb0oaRbGVb9m4R4/5NgmSUN+rotRs=" crossorigin=anonymous media=screen><link rel=icon type=image/png href=/images/favicon-32x32.png sizes=32x32><link rel=icon type=image/png href=/images/favicon-16x16.png sizes=16x16><link rel=apple-touch-icon href=/images/apple-touch-icon.png><link rel=apple-touch-icon sizes=180x180 href=/images/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/images/safari-pinned-tab.svg color=#5bbad5><meta name=generator content="Hugo 0.120.4"></head><body class="preload-transitions colorscheme-dark"><main class=wrapper><nav class=navigation><section class=container><a class=navigation-title href=/>Darvein
+</a><input type=checkbox id=menu-toggle>
+<label class="menu-button float-right" for=menu-toggle><i class="fa fa-bars fa-fw" aria-hidden=true></i></label><ul class=navigation-list><li class=navigation-item><a class=navigation-link href=/infosec/>Infosec</a></li><li class=navigation-item><a class=navigation-link href=/coding/>Coding</a></li><li class=navigation-item><a class=navigation-link href=/devops/>Devops</a></li></ul></section></nav><div class=content><section class="container page"><article><h1 id=ssl-cheatsheet>SSL Cheatsheet
+<a class=heading-link href=#ssl-cheatsheet><i class="fa fa-link" aria-hidden=true></i></a></h1><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#080;background-color:#0f140f;font-style:italic># View single certificate</span>
+</span></span><span style=display:flex><span>echo | openssl s_client -showcerts -servername  [gnupg.org](http://gnupg.org)  -connect  [gnupg.org:443](http://gnupg.org:443)  2&gt;/dev/null | openssl x509 -inform pem -noout -text | tee output.log
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>openssl pkcs7 -print_certs -in old.p7b -out new.crt
+</span></span><span style=display:flex><span><span style=color:#080;background-color:#0f140f;font-style:italic># openssl pkcs7 -print_certs -in old.p7b -out new.cer</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#080;background-color:#0f140f;font-style:italic># generate RSA public/private key</span>
+</span></span><span style=display:flex><span>openssl genrsa -des3 -out darvein.pem <span style=color:#0086f7;font-weight:700>2048</span>
+</span></span><span style=display:flex><span><span style=color:#080;background-color:#0f140f;font-style:italic># export RSA public key</span>
+</span></span><span style=display:flex><span>openssl rsa -in private.pem -outform PEM -pubout -out public.pem
+</span></span><span style=display:flex><span><span style=color:#080;background-color:#0f140f;font-style:italic># export RSA private key</span>
+</span></span><span style=display:flex><span>openssl rsa -in private.pem -out private_unencrypted.pem -outform PEM
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>openssl s_client -connect  [www.google.com:443](http://www.google.com:443) 
+</span></span><span style=display:flex><span>ncat --ssl localhost <span style=color:#0086f7;font-weight:700>30001</span>
+</span></span><span style=display:flex><span>rts crl newcerts private
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#080;background-color:#0f140f;font-style:italic># generating CA&#39;s keypair with RSA - DES</span>
+</span></span><span style=display:flex><span>openssl genrsa -des3 -out private/root-ca.key <span style=color:#0086f7;font-weight:700>4096</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#080;background-color:#0f140f;font-style:italic># create CSR </span>
+</span></span><span style=display:flex><span>openssl req -new -key private/root-ca.key -out root-ca.csr -config ./openssl.cnf
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#080;background-color:#0f140f;font-style:italic># creating our signing certificate, 1 year</span>
+</span></span><span style=display:flex><span>openssl ca  -config ./openssl.cnf -create_serial -out root-ca.crt -days <span style=color:#0086f7;font-weight:700>365</span> -keyfile private/root-ca.key -selfsign -infiles root-ca.csr
+</span></span></code></pre></div><h1 id=ssl-installation-basics>SSL Installation basics
+<a class=heading-link href=#ssl-installation-basics><i class="fa fa-link" aria-hidden=true></i></a></h1><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#080;background-color:#0f140f;font-style:italic># testing SSL SNI </span>
+</span></span><span style=display:flex><span>openssl s_client -connect verrents.com:443 -showcerts -servername verrents.com 
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#080;background-color:#0f140f;font-style:italic># Show SSL CERT</span>
+</span></span><span style=display:flex><span>openssl s_client -showcerts -connect alumni.hsbc.com:443 &lt;/dev/null
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#080;background-color:#0f140f;font-style:italic># Generate a CSR</span>
+</span></span><span style=display:flex><span>mkdir ~/ssl; cd ~/ssl
+</span></span><span style=display:flex><span>openssl req -new -newkey rsa:2048 -nodes -keyout private.pem -out csr.pem
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#080;background-color:#0f140f;font-style:italic># Verify CSR</span>
+</span></span><span style=display:flex><span>openssl req -noout -text -in test.com.csr
+</span></span><span style=display:flex><span>openssl req -in mycsr.csr -noout -text
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#080;background-color:#0f140f;font-style:italic># Check HTTPS cert of a domain</span>
+</span></span><span style=display:flex><span>export <span style=color:#fb660a>THISHOST</span>=app.avisare.com
+</span></span><span style=display:flex><span>openssl s_client -connect <span style=color:#fb660a>$THISHOST</span>:443 -showcerts -servername <span style=color:#fb660a>$THISHOST</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#080;background-color:#0f140f;font-style:italic># Apply godaddy ssl cert on aws</span>
+</span></span><span style=display:flex><span>aws iam upload-server-certificate --server-certificate-name www.domain.com --certificate-body file://public.pem --private-key file://private.pem --certificate-chain file://gd_bundle-g2-g1.crt
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#080;background-color:#0f140f;font-style:italic># decode der</span>
+</span></span><span style=display:flex><span>openssl x509 -in certificate.der -inform der -text -noout
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#080;background-color:#0f140f;font-style:italic># transform der to pem and pem to der</span>
+</span></span><span style=display:flex><span>openssl x509 -in cert.crt -outform der -out cert.der
+</span></span><span style=display:flex><span>openssl x509 -in cert.crt -inform der -outform pem -out cert.pem
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#080;background-color:#0f140f;font-style:italic># openssl verification of tls 1.2</span>
+</span></span><span style=display:flex><span>openssl s_client -connect google.com:443 -tls1_2
+</span></span></code></pre></div><h1 id=daily-openssl-usage>Daily openssl usage
+<a class=heading-link href=#daily-openssl-usage><i class="fa fa-link" aria-hidden=true></i></a></h1><div class=highlight><pre tabindex=0 style=color:#fff;background-color:#111;-moz-tab-size:2;-o-tab-size:2;tab-size:2><code class=language-bash data-lang=bash><span style=display:flex><span>openssl req -in mycsr.csr -noout -text	<span style=color:#080;background-color:#0f140f;font-style:italic># inspect a CSR info</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#080;background-color:#0f140f;font-style:italic># Encrypt and decrypt</span>
+</span></span><span style=display:flex><span>openssl enc -aes256 -k P3NT35T3RL48 -in /tmp/backup.tgz  -out /tmp/backup.tgz.enc
+</span></span><span style=display:flex><span>openssl enc -aes256 -d  -in /tmp/backup.tgz.enc -out /tmp/backup.tgz
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#080;background-color:#0f140f;font-style:italic># Check domains for a 443 site</span>
+</span></span><span style=display:flex><span>true | openssl s_client -connect nextbrave.com:443 2&gt;/dev/null | openssl x509 -noout -text | perl -l -0777 -ne <span style=color:#0086d2>&#39;@names=/\bDNS:([^\s,]+)/g; print join(&#34;\n&#34;, sort @names);&#39;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#080;background-color:#0f140f;font-style:italic># Check a certificate</span>
+</span></span><span style=display:flex><span>openssl x509 -in server.crt -text -noout
+</span></span></code></pre></div></article></section></div><footer class=footer><section class=container>©
+2021 -
+2024
+Dennis Ruiz
+·
+Powered by <a href=https://gohugo.io/>Hugo</a> & <a href=https://github.com/luizdepra/hugo-coder/>Coder</a>.</section></footer></main><script src=/js/coder.min.236049395dc3682fb2719640872958e12f1f24067bb09c327b233e6290c7edac.js integrity="sha256-I2BJOV3DaC+ycZZAhylY4S8fJAZ7sJwyeyM+YpDH7aw="></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-6CQZY8W0WD"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-6CQZY8W0WD")</script><script>$(document).on("input propertychange paste change",".FilterSearch",function(){var n=$(this).val().toLowerCase(),s=$(this).closest("ul"),t=s.find("li:gt(0)");t.hide(),t.filter(function(){var e=$(this).text().toLowerCase();return e.indexOf(n)>=0}).show()})</script></body></html>

@@ -1,5 +1,11 @@
 [
   {
+    "modtime": "04-30-2024 15:42",
+    "filename": "/digital/digital-tooling",
+    "title": "Digital Tooling",
+    "category": "digital"
+  },
+  {
     "modtime": "04-29-2024 14:52",
     "filename": "/posts/comfort-disconfort",
     "title": " Comfort through discomfort",
@@ -51,12 +57,6 @@
     "modtime": "02-27-2024 16:21",
     "filename": "/coding/pytorch/pytorch-tutorials/02-tensors",
     "title": "Tensors",
-    "category": "coding"
-  },
-  {
-    "modtime": "02-26-2024 16:36",
-    "filename": "/coding/python/python-tutorial/python-tutorial",
-    "title": "Python Tutorial",
     "category": "coding"
   }
 ]
