@@ -19,3 +19,6 @@
 [submodule "content/infosec/htb-notes"]
 	path = content/infosec/htb-notes
 	url = git@github.com:darvein/hackthebox-notes.git
+[submodule "content/coding/codeforces"]
+	path = content/coding/codeforces
+	url = git@github.com:darvein/codeforces-training
