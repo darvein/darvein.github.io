@@ -1,5 +1,23 @@
 [
   {
+    "modtime": "05-14-2024 12:21",
+    "filename": "/coding/python/violent-python/violent-python",
+    "title": "Book - Violent Python",
+    "category": "coding"
+  },
+  {
+    "modtime": "05-14-2024 12:21",
+    "filename": "/coding/python/readme",
+    "title": "Python notes index",
+    "category": "coding"
+  },
+  {
+    "modtime": "05-14-2024 12:21",
+    "filename": "/coding/python/python-crash-course/notes",
+    "title": "Python Crash Course Notes",
+    "category": "coding"
+  },
+  {
     "modtime": "05-14-2024 10:21",
     "filename": "/coding/codeforces/readme",
     "title": "Codeforces practice!",
@@ -40,23 +58,5 @@
     "filename": "/books/infosec/the-web-application-hackers-handbook",
     "title": "The web application Hackers Handbook",
     "category": "books"
-  },
-  {
-    "modtime": "02-29-2024 10:20",
-    "filename": "/lang/en/english-notes",
-    "title": "English notes :us:",
-    "category": "lang"
-  },
-  {
-    "modtime": "02-29-2024 09:25",
-    "filename": "/lang/fr/french-notes",
-    "title": "Notes de langue française :fr:",
-    "category": "lang"
-  },
-  {
-    "modtime": "02-29-2024 09:00",
-    "filename": "/lang/jp/basic-japanese",
-    "title": "日本",
-    "category": "lang"
   }
 ]
