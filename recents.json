@@ -1,5 +1,11 @@
 [
   {
+    "modtime": "05-16-2024 13:39",
+    "filename": "/coding/python/python-crash-course/notes",
+    "title": "Python Crash Course Notes",
+    "category": "coding"
+  },
+  {
     "modtime": "05-14-2024 12:21",
     "filename": "/coding/python/violent-python/violent-python",
     "title": "Book - Violent Python",
@@ -9,12 +15,6 @@
     "modtime": "05-14-2024 12:21",
     "filename": "/coding/python/readme",
     "title": "Python notes index",
-    "category": "coding"
-  },
-  {
-    "modtime": "05-14-2024 12:21",
-    "filename": "/coding/python/python-crash-course/notes",
-    "title": "Python Crash Course Notes",
     "category": "coding"
   },
   {
