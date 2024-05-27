@@ -22,3 +22,9 @@
 [submodule "content/coding/codeforces"]
 	path = content/coding/codeforces
 	url = git@github.com:darvein/codeforces-training
+[submodule "content/coding/codewars"]
+	path = content/coding/codewars
+	url = git@github.com:darvein/codewars.git
+[submodule "content/coding/exercism"]
+	path = content/coding/exercism
+	url = git@github.com:darvein/exercism.git

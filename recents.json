@@ -1,6 +1,30 @@
 [
   {
-    "modtime": "05-16-2024 13:39",
+    "modtime": "05-27-2024 16:55",
+    "filename": "/coding/exercism/readme",
+    "title": "exercism",
+    "category": "coding"
+  },
+  {
+    "modtime": "05-27-2024 16:44",
+    "filename": "/coding/codewars/readme",
+    "title": "codewars practice",
+    "category": "coding"
+  },
+  {
+    "modtime": "05-23-2024 19:35",
+    "filename": "/digital/digital-tooling",
+    "title": "Digital Tooling",
+    "category": "digital"
+  },
+  {
+    "modtime": "05-21-2024 12:57",
+    "filename": "/devops/linux/archlinux",
+    "title": "Arch Linux Notes",
+    "category": "devops"
+  },
+  {
+    "modtime": "05-16-2024 20:09",
     "filename": "/coding/python/python-crash-course/notes",
     "title": "Python Crash Course Notes",
     "category": "coding"
@@ -24,39 +48,9 @@
     "category": "coding"
   },
   {
-    "modtime": "04-30-2024 16:02",
-    "filename": "/digital/digital-tooling",
-    "title": "Digital Tooling",
-    "category": "digital"
-  },
-  {
     "modtime": "04-29-2024 14:52",
     "filename": "/posts/comfort-disconfort",
     "title": " Comfort through discomfort",
     "category": "posts"
-  },
-  {
-    "modtime": "04-29-2024 14:39",
-    "filename": "/posts/2nd-quarter-objs",
-    "title": " Objetives for the 2nd Quarter!",
-    "category": "posts"
-  },
-  {
-    "modtime": "03-26-2024 13:13",
-    "filename": "/devops/linux/battery",
-    "title": "Linux Battery Administration",
-    "category": "devops"
-  },
-  {
-    "modtime": "03-14-2024 13:00",
-    "filename": "/infosec/ctfs",
-    "title": "Capture the flag CTFs",
-    "category": "infosec"
-  },
-  {
-    "modtime": "02-29-2024 11:32",
-    "filename": "/books/infosec/the-web-application-hackers-handbook",
-    "title": "The web application Hackers Handbook",
-    "category": "books"
   }
 ]

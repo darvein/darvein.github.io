@@ -14,6 +14,7 @@ publish: build
 	@echo "Uploading files to server"
 	#git submodule init
 	#git submodule update
+	cd content/coding/codewars; git add -A . ; git commit -m 'Updating notes'; git push origin main; cd -
 	cd content/coding/codeforces; git add -A . ; git commit -m 'Updating notes'; git push origin main; cd -
 	cd content/coding/pytorch; git add -A . ; git commit -m 'Updating notes'; git push origin main; cd -
 	cd content/coding/python; git add -A . ; git commit -m 'Updating notes'; git push origin main; cd -

@@ -19,7 +19,7 @@ nerd-fonts redshift
 
 
 zplug zsh
-patat-bin lolcat glow
+patat-bin lolcat glow grip
 gron
 ffmpegthumbnailer tumbler nomacs
 android-apktool jadx exploitdb evil-winrm
