@@ -4591,6 +4591,8 @@ IOS	content/coding/codeforces/1971/b.cpp	/^#define IOS /;"	d	file:
 IOS	content/coding/codeforces/1971/c.cpp	/^#define IOS /;"	d	file:
 IOS	content/coding/codeforces/1971/d.cpp	/^#define IOS /;"	d	file:
 IOS	public/coding/codeforces/1971/b.cpp	/^#define IOS /;"	d	file:
+IOS	public/coding/codeforces/1971/c.cpp	/^#define IOS /;"	d	file:
+IOS	public/coding/codeforces/1971/d.cpp	/^#define IOS /;"	d	file:
 IPTables cheatsheet	content/devops/linux/iptables_tips.md	/^# IPTables cheatsheet$/;"	c
 IPTables cheatsheet	public-delete/devops/linux/iptables_tips/index.html	/^<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device/;"	j
 IPTables cheatsheet	public-delete/devops/linux/iptables_tips/index.html	/^<a class=heading-link href=#iptables-cheatsheet><i class="fa fa-link" aria-hidden=true><\/i><\/a/;"	h
@@ -5075,6 +5077,7 @@ Mateo	public/self/self/bible/mateo/index.html	/^<!doctype html><html lang=en><he
 Mateo	public/self/self/bible/mateo/index.html	/^<a class=heading-link href=#mateo><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h1><h2 id=/;"	h
 Matomo	themes/hugo-coder/docs/configurations.md	/^#### Matomo$/;"	t	subsection:Configurations""About Hugo Configurations""Analytics
 Me Ranking online	content/me.md	/^## Me Ranking online$/;"	s	chapter:Darvein space!
+Me Ranking online	public/me/index.html	/^<a class=heading-link href=#me-ranking-online><i class="fa fa-link" aria-hidden=true><\/i><\/a></;"	i
 Me online	content/me.md	/^## Me online$/;"	s	chapter:Darvein space!
 Me online	public-delete/me/index.html	/^<a class=heading-link href=#me-online><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><ul/;"	i
 Me online	public/me/index.html	/^<a class=heading-link href=#me-online><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><ul/;"	i
@@ -7559,15 +7562,15 @@ call_cmd	content/coding/runner.py	/^def call_cmd(cmd):$/;"	f
 call_cmd	public-delete/coding/runner.py	/^def call_cmd(cmd):$/;"	f
 call_cmd	public/coding/runner.py	/^def call_cmd(cmd):$/;"	f
 categories	themes/hugo-coder/assets/scss/_content_rtl.scss	/^      .categories {$/;"	c
-category	recents.json	/^    "category": "coding"$/;"	s	object:2
-category	recents.json	/^    "category": "coding"$/;"	s	object:3
+category	recents.json	/^    "category": "coding"$/;"	s	object:0
+category	recents.json	/^    "category": "coding"$/;"	s	object:1
 category	recents.json	/^    "category": "coding"$/;"	s	object:4
 category	recents.json	/^    "category": "coding"$/;"	s	object:5
-category	recents.json	/^    "category": "devops"$/;"	s	object:1
-category	recents.json	/^    "category": "devops"$/;"	s	object:8
-category	recents.json	/^    "category": "digital"$/;"	s	object:0
-category	recents.json	/^    "category": "posts"$/;"	s	object:6
-category	recents.json	/^    "category": "posts"$/;"	s	object:7
+category	recents.json	/^    "category": "coding"$/;"	s	object:6
+category	recents.json	/^    "category": "coding"$/;"	s	object:7
+category	recents.json	/^    "category": "devops"$/;"	s	object:3
+category	recents.json	/^    "category": "digital"$/;"	s	object:2
+category	recents.json	/^    "category": "posts"$/;"	s	object:8
 center_ship	content/coding/python/python-crash-course/game/ship.py	/^    def center_ship(self):$/;"	m	class:Ship
 center_ship	public/coding/python/python-crash-course/game/ship.py	/^    def center_ship(self):$/;"	m	class:Ship
 centered	themes/hugo-coder/assets/scss/_content.scss	/^.centered {$/;"	c
@@ -7640,7 +7643,9 @@ code	public/css/coder.min.a1a7e7e7bd8b6629931805334fd6cf056ee6f154702847e6d597bb
 code	public/css/custom.min.7cf8a329bb485491ed5be45bd286916c655bf66e11e3fe4d82649437eae8b51b.css	/^@import 'https:\/\/fonts.googleapis.com\/css2?family=Merriweather:wght@300;400;700&family=Open+S/;"	s
 code	themes/hugo-coder/assets/scss/css/normalize.css	/^  code,$/;"	s
 code-font-family	themes/hugo-coder/assets/scss/_variables.scss	/^$code-font-family: SFMono-Regular,$/;"	v
-codewars	content/coding/codewars/README.md	/^# codewars/;"	c
+codewars practice	content/coding/codewars/readme.md	/^# codewars practice$/;"	c
+codewars practice	public/coding/codewars/readme/index.html	/^<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device/;"	j
+codewars practice	public/coding/codewars/readme/index.html	/^<a class=heading-link href=#codewars-practice><i class="fa fa-link" aria-hidden=true><\/i><\/a></;"	h
 coding	bookmarks-13-11-2022.html	/^            <DT><H3 ADD_DATE="1616208274" LAST_MODIFIED="1665785315">coding<\/H3>$/;"	j
 coding	bookmarks-23-01-2023.html	/^            <DT><H3 ADD_DATE="1616208274" LAST_MODIFIED="1669996544">coding<\/H3>$/;"	j
 coding	bookmarks.html	/^            <DT><H3 ADD_DATE="1616208274" LAST_MODIFIED="1657632949">coding<\/H3>$/;"	j
@@ -8009,6 +8014,9 @@ example-ingress	public/devops/k8s/labs/network/06.yaml	/^  name: example-ingress
 example-pod-with-init-container	content/devops/k8s2/k8s-doc/manifests/02.lab01.yaml	/^  name: example-pod-with-init-container$/;"	p
 example-pod-with-init-container	public-delete/devops/k8s2/k8s-doc/manifests/02.lab01.yaml	/^  name: example-pod-with-init-container$/;"	p
 example-pod-with-init-container	public/devops/k8s2/k8s-doc/manifests/02.lab01.yaml	/^  name: example-pod-with-init-container$/;"	p
+exercism	content/coding/exercism/readme.md	/^# exercism/;"	c
+exercism	public/coding/exercism/readme/index.html	/^<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device/;"	j
+exercism	public/coding/exercism/readme/index.html	/^<a class=heading-link href=#exercism><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h1><\/a/;"	h
 express	content/devops/k8s/labs/daemonset/backend/app.js	/^const express = require('express');$/;"	C
 express	content/devops/k8s/labs/daemonset/backend/package.json	/^    "express": "^4.17.1",$/;"	s	object:dependencies
 express	content/devops/k8s/labs/deployment/bapp/app.js	/^const express = require('express');$/;"	C
@@ -9024,15 +9032,15 @@ figure	static/css/hugo-easy-gallery.css	/^figure {$/;"	s
 figure a	public-delete/css/hugo-easy-gallery.css	/^figure a {$/;"	s
 figure a	public/css/hugo-easy-gallery.css	/^figure a {$/;"	s
 figure a	static/css/hugo-easy-gallery.css	/^figure a {$/;"	s
-filename	recents.json	/^    "filename": "\/coding\/codeforces\/readme",$/;"	s	object:5
-filename	recents.json	/^    "filename": "\/coding\/python\/python-crash-course\/notes",$/;"	s	object:2
-filename	recents.json	/^    "filename": "\/coding\/python\/readme",$/;"	s	object:4
-filename	recents.json	/^    "filename": "\/coding\/python\/violent-python\/violent-python",$/;"	s	object:3
-filename	recents.json	/^    "filename": "\/devops\/linux\/archlinux",$/;"	s	object:1
-filename	recents.json	/^    "filename": "\/devops\/linux\/battery",$/;"	s	object:8
-filename	recents.json	/^    "filename": "\/digital\/digital-tooling",$/;"	s	object:0
-filename	recents.json	/^    "filename": "\/posts\/2nd-quarter-objs",$/;"	s	object:7
-filename	recents.json	/^    "filename": "\/posts\/comfort-disconfort",$/;"	s	object:6
+filename	recents.json	/^    "filename": "\/coding\/codeforces\/readme",$/;"	s	object:7
+filename	recents.json	/^    "filename": "\/coding\/codewars\/readme",$/;"	s	object:1
+filename	recents.json	/^    "filename": "\/coding\/exercism\/readme",$/;"	s	object:0
+filename	recents.json	/^    "filename": "\/coding\/python\/python-crash-course\/notes",$/;"	s	object:4
+filename	recents.json	/^    "filename": "\/coding\/python\/readme",$/;"	s	object:6
+filename	recents.json	/^    "filename": "\/coding\/python\/violent-python\/violent-python",$/;"	s	object:5
+filename	recents.json	/^    "filename": "\/devops\/linux\/archlinux",$/;"	s	object:3
+filename	recents.json	/^    "filename": "\/digital\/digital-tooling",$/;"	s	object:2
+filename	recents.json	/^    "filename": "\/posts\/comfort-disconfort",$/;"	s	object:8
 first and foremost	content/books/business/4-hour-week.md	/^## first and foremost$/;"	s	chapter:Book: 4 hour week work
 first and foremost	public-delete/books/business/4-hour-week/index.html	/^<a class=heading-link href=#first-and-foremost><i class="fa fa-link" aria-hidden=true><\/i><\/a>/;"	i
 first and foremost	public/books/business/4-hour-week/index.html	/^<a class=heading-link href=#first-and-foremost><i class="fa fa-link" aria-hidden=true><\/i><\/a>/;"	i
@@ -9345,6 +9353,8 @@ input	themes/hugo-coder/assets/scss/css/normalize.css	/^  input,$/;"	s
 input_ids	content/coding/pytorch/labs/lab01.py	/^input_ids = tokenizer.encode('Hey, how are you today? what', return_tensors='pt')$/;"	v
 input_ids	public-delete/coding/pytorch/labs/lab01.py	/^input_ids = tokenizer.encode('Hey, how are you today? what', return_tensors='pt')$/;"	v
 input_ids	public/coding/pytorch/labs/lab01.py	/^input_ids = tokenizer.encode('Hey, how are you today? what', return_tensors='pt')$/;"	v
+is_armstrong_number	content/coding/exercism/python/armstrong_numbers.py	/^def is_armstrong_number(number):$/;"	f
+is_armstrong_number	public/coding/exercism/python/armstrong_numbers.py	/^def is_armstrong_number(number):$/;"	f
 is_millonaire	content/coding/python/python-tutorial/lab07.py	/^        def is_millonaire(self):$/;"	m	class:ex02.Singer
 is_millonaire	public-delete/coding/python/python-tutorial/lab07.py	/^        def is_millonaire(self):$/;"	m	class:ex02.Singer
 is_millonaire	public/coding/python/python-tutorial/lab07.py	/^        def is_millonaire(self):$/;"	m	class:ex02.Singer
@@ -9448,6 +9458,7 @@ list	themes/hugo-coder/assets/scss/_content.scss	/^.list {$/;"	c
 list	themes/hugo-coder/assets/scss/_content_dark.scss	/^    .list {$/;"	c
 list	themes/hugo-coder/assets/scss/_content_rtl.scss	/^  .list {$/;"	c
 ll	content/coding/codeforces/1971/d.cpp	/^typedef long long  ll;$/;"	t	typeref:typename:long long	file:
+ll	public/coding/codeforces/1971/d.cpp	/^typedef long long  ll;$/;"	t	typeref:typename:long long	file:
 loadphotoswipejs	public-delete/js/load-photoswipe.js	/^var loadphotoswipejs = 1$/;"	v
 loadphotoswipejs	public/js/load-photoswipe.js	/^var loadphotoswipejs = 1$/;"	v
 loadphotoswipejs	static/js/load-photoswipe.js	/^var loadphotoswipejs = 1$/;"	v
@@ -9490,6 +9501,8 @@ main	public-delete/devops/k8s/labs/statefulset/fapp/package.json	/^  "main": "in
 main	public-delete/devops/talks/jenkins-lab/varto/package.json	/^  "main": "index.js",$/;"	s
 main	public/coding/codeforces/1971/a.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	public/coding/codeforces/1971/b.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	public/coding/codeforces/1971/c.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	public/coding/codeforces/1971/d.cpp	/^int32_t main() {$/;"	f	typeref:typename:int32_t
 main	public/css/coder.min.a1a7e7e7bd8b6629931805334fd6cf056ee6f154702847e6d597bbfe80446a0d.css	/^@charset "UTF-8";\/*!normalize.css v8.0.1 | MIT License | github.com\/necolas\/normalize.css*\/h/;"	s
 main	public/devops/k8s/labs/daemonset/backend/package.json	/^  "main": "app.js",$/;"	s
 main	public/devops/k8s/labs/deployment/bapp/package.json	/^  "main": "app.js",$/;"	s
@@ -9585,15 +9598,15 @@ model	public-delete/coding/pytorch/labs/lab01.py	/^model = GPT2LMHeadModel.from_
 model	public-delete/coding/pytorch/pytorch-tutorials/labs/01.py	/^model = NeuralNetwork().to(device)$/;"	v
 model	public/coding/pytorch/labs/lab01.py	/^model = GPT2LMHeadModel.from_pretrained('distilgpt2')$/;"	v
 model	public/coding/pytorch/pytorch-tutorials/labs/01.py	/^model = NeuralNetwork().to(device)$/;"	v
-modtime	recents.json	/^    "modtime": "03-26-2024 13:13",$/;"	s	object:8
-modtime	recents.json	/^    "modtime": "04-29-2024 14:39",$/;"	s	object:7
-modtime	recents.json	/^    "modtime": "04-29-2024 14:52",$/;"	s	object:6
-modtime	recents.json	/^    "modtime": "05-14-2024 10:21",$/;"	s	object:5
-modtime	recents.json	/^    "modtime": "05-14-2024 12:21",$/;"	s	object:3
-modtime	recents.json	/^    "modtime": "05-14-2024 12:21",$/;"	s	object:4
-modtime	recents.json	/^    "modtime": "05-16-2024 20:09",$/;"	s	object:2
-modtime	recents.json	/^    "modtime": "05-21-2024 12:57",$/;"	s	object:1
-modtime	recents.json	/^    "modtime": "05-23-2024 19:35",$/;"	s	object:0
+modtime	recents.json	/^    "modtime": "04-29-2024 14:52",$/;"	s	object:8
+modtime	recents.json	/^    "modtime": "05-14-2024 10:21",$/;"	s	object:7
+modtime	recents.json	/^    "modtime": "05-14-2024 12:21",$/;"	s	object:5
+modtime	recents.json	/^    "modtime": "05-14-2024 12:21",$/;"	s	object:6
+modtime	recents.json	/^    "modtime": "05-16-2024 20:09",$/;"	s	object:4
+modtime	recents.json	/^    "modtime": "05-21-2024 12:57",$/;"	s	object:3
+modtime	recents.json	/^    "modtime": "05-23-2024 19:35",$/;"	s	object:2
+modtime	recents.json	/^    "modtime": "05-27-2024 16:44",$/;"	s	object:1
+modtime	recents.json	/^    "modtime": "05-27-2024 16:55",$/;"	s	object:0
 motivation	public-delete/tags/motivation/index.html	/^<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device/;"	j
 motivation	public/tags/motivation/index.html	/^<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device/;"	j
 movies	public-delete/tags/movies/index.html	/^<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device/;"	j
@@ -10112,6 +10125,8 @@ smashthestack.org blackbox	public-delete/infosec/ctfs/smashthestack.org_blackbox
 smashthestack.org blackbox	public/infosec/ctfs/smashthestack.org_blackbox/index.html	/^<a class=heading-link href=#smashthestackorg-blackbox><i class="fa fa-link" aria-hidden=true><\//;"	h
 solve	content/coding/codeforces/1971/c.cpp	/^void solve(){$/;"	f	typeref:typename:void
 solve	content/coding/codeforces/1971/d.cpp	/^void solve(){$/;"	f	typeref:typename:void
+solve	public/coding/codeforces/1971/c.cpp	/^void solve(){$/;"	f	typeref:typename:void
+solve	public/coding/codeforces/1971/d.cpp	/^void solve(){$/;"	f	typeref:typename:void
 source code	content/infosec/ctfs/smashthestack.org_amateria.md	/^### source code$/;"	S	section:Amateria""Level 0
 source code	public-delete/infosec/ctfs/smashthestack.org_amateria/index.html	/^<a class=heading-link href=#source-code><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h3></;"	j
 source code	public/infosec/ctfs/smashthestack.org_amateria/index.html	/^<a class=heading-link href=#source-code><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h3></;"	j
@@ -10136,6 +10151,7 @@ sql-create	public-delete/devops/k8s/labs/daemonset/mysql.yml	/^  name: sql-creat
 sql-create	public-delete/devops/k8s/labs/jobs-cronjobs/mysql.yml	/^  name: sql-create$/;"	p
 sql-create	public/devops/k8s/labs/daemonset/mysql.yml	/^  name: sql-create$/;"	p
 sql-create	public/devops/k8s/labs/jobs-cronjobs/mysql.yml	/^  name: sql-create$/;"	p
+square_digits	content/coding/codewars/python/square-every-digit.py	/^def square_digits(num):$/;"	f
 sr-only	themes/hugo-coder/assets/scss/fork-awesome/_mixins.scss	/^@mixin sr-only {$/;"	m
 sr-only	themes/hugo-coder/assets/scss/fork-awesome/_screen-reader.scss	/^.sr-only { @include sr-only(); }$/;"	c
 sr-only-focusable	themes/hugo-coder/assets/scss/fork-awesome/_mixins.scss	/^@mixin sr-only-focusable {$/;"	m
@@ -10300,15 +10316,15 @@ tiny changes make a big difference	public/books/life/atomic-habits/index.html	/^
 tip	themes/hugo-coder/assets/scss/_notices.scss	/^.notice.tip {$/;"	c
 title	public-delete/js/load-photoswipe.js	/^				title 	: $title,$/;"	p	variable:anonymousFunctionbbf19b490200.item
 title	public/js/load-photoswipe.js	/^				title 	: $title,$/;"	p	variable:anonymousFunctiondbaef6290200.item
-title	recents.json	/^    "title": " Comfort through discomfort",$/;"	s	object:6
-title	recents.json	/^    "title": " Objetives for the 2nd Quarter!",$/;"	s	object:7
-title	recents.json	/^    "title": "Arch Linux Notes",$/;"	s	object:1
-title	recents.json	/^    "title": "Book - Violent Python",$/;"	s	object:3
-title	recents.json	/^    "title": "Codeforces practice!",$/;"	s	object:5
-title	recents.json	/^    "title": "Digital Tooling",$/;"	s	object:0
-title	recents.json	/^    "title": "Linux Battery Administration",$/;"	s	object:8
-title	recents.json	/^    "title": "Python Crash Course Notes",$/;"	s	object:2
-title	recents.json	/^    "title": "Python notes index",$/;"	s	object:4
+title	recents.json	/^    "title": " Comfort through discomfort",$/;"	s	object:8
+title	recents.json	/^    "title": "Arch Linux Notes",$/;"	s	object:3
+title	recents.json	/^    "title": "Book - Violent Python",$/;"	s	object:5
+title	recents.json	/^    "title": "Codeforces practice!",$/;"	s	object:7
+title	recents.json	/^    "title": "Digital Tooling",$/;"	s	object:2
+title	recents.json	/^    "title": "Python Crash Course Notes",$/;"	s	object:4
+title	recents.json	/^    "title": "Python notes index",$/;"	s	object:6
+title	recents.json	/^    "title": "codewars practice",$/;"	s	object:1
+title	recents.json	/^    "title": "exercism",$/;"	s	object:0
 title	static/js/load-photoswipe.js	/^				title 	: $title,$/;"	p	variable:anonymousFunction81a9c1f20200.item
 title	themes/hugo-coder/assets/scss/_content.scss	/^      .title {$/;"	c
 title	themes/hugo-coder/assets/scss/_content_dark.scss	/^          .title {$/;"	c
