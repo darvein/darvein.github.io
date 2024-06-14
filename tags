@@ -17,6 +17,16 @@
 !_TAG_KIND_DESCRIPTION!Ant	i,antfile	/antfiles/
 !_TAG_KIND_DESCRIPTION!Ant	p,project	/projects/
 !_TAG_KIND_DESCRIPTION!Ant	t,target	/targets/
+!_TAG_KIND_DESCRIPTION!C	d,macro	/macro definitions/
+!_TAG_KIND_DESCRIPTION!C	e,enumerator	/enumerators (values inside an enumeration)/
+!_TAG_KIND_DESCRIPTION!C	f,function	/function definitions/
+!_TAG_KIND_DESCRIPTION!C	g,enum	/enumeration names/
+!_TAG_KIND_DESCRIPTION!C	h,header	/included header files/
+!_TAG_KIND_DESCRIPTION!C	m,member	/struct, and union members/
+!_TAG_KIND_DESCRIPTION!C	s,struct	/structure names/
+!_TAG_KIND_DESCRIPTION!C	t,typedef	/typedefs/
+!_TAG_KIND_DESCRIPTION!C	u,union	/union names/
+!_TAG_KIND_DESCRIPTION!C	v,variable	/variable definitions/
 !_TAG_KIND_DESCRIPTION!C++	c,class	/classes/
 !_TAG_KIND_DESCRIPTION!C++	d,macro	/macro definitions/
 !_TAG_KIND_DESCRIPTION!C++	e,enumerator	/enumerators (values inside an enumeration)/
@@ -73,6 +83,14 @@
 !_TAG_KIND_DESCRIPTION!Markdown	s,section	/sections/
 !_TAG_KIND_DESCRIPTION!Markdown	t,subsubsection	/level 3 sections/
 !_TAG_KIND_DESCRIPTION!Markdown	u,l5subsection	/level 5 sections/
+!_TAG_KIND_DESCRIPTION!PHP	a,alias	/aliases/
+!_TAG_KIND_DESCRIPTION!PHP	c,class	/classes/
+!_TAG_KIND_DESCRIPTION!PHP	d,define	/constant definitions/
+!_TAG_KIND_DESCRIPTION!PHP	f,function	/functions/
+!_TAG_KIND_DESCRIPTION!PHP	i,interface	/interfaces/
+!_TAG_KIND_DESCRIPTION!PHP	n,namespace	/namespaces/
+!_TAG_KIND_DESCRIPTION!PHP	t,trait	/traits/
+!_TAG_KIND_DESCRIPTION!PHP	v,variable	/variables/
 !_TAG_KIND_DESCRIPTION!Python	I,namespace	/name referring a module defined in other file/
 !_TAG_KIND_DESCRIPTION!Python	Y,unknown	/name referring a class\/variable\/function\/module defined in other module/
 !_TAG_KIND_DESCRIPTION!Python	c,class	/classes/
@@ -101,6 +119,7 @@
 !_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
 !_TAG_OUTPUT_VERSION	0.0	/current.age/
 !_TAG_PARSER_VERSION!Ant	0.0	/current.age/
+!_TAG_PARSER_VERSION!C	1.1	/current.age/
 !_TAG_PARSER_VERSION!C++	1.1	/current.age/
 !_TAG_PARSER_VERSION!CSS	0.0	/current.age/
 !_TAG_PARSER_VERSION!DTD	0.0	/current.age/
@@ -109,6 +128,7 @@
 !_TAG_PARSER_VERSION!JavaScript	1.1	/current.age/
 !_TAG_PARSER_VERSION!Make	0.0	/current.age/
 !_TAG_PARSER_VERSION!Markdown	1.1	/current.age/
+!_TAG_PARSER_VERSION!PHP	0.0	/current.age/
 !_TAG_PARSER_VERSION!Python	0.0	/current.age/
 !_TAG_PARSER_VERSION!SCSS	0.0	/current.age/
 !_TAG_PARSER_VERSION!SVG	0.0	/current.age/
@@ -122,6 +142,11 @@
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
 !_TAG_PROGRAM_VERSION	6.1.0	/v6.1.0/
 !_TAG_ROLE_DESCRIPTION!Ant!antfile	imported	/imported/
+!_TAG_ROLE_DESCRIPTION!C!function	foreigndecl	/declared in foreign languages/
+!_TAG_ROLE_DESCRIPTION!C!header	local	/local header/
+!_TAG_ROLE_DESCRIPTION!C!header	system	/system header/
+!_TAG_ROLE_DESCRIPTION!C!macro	undef	/undefined/
+!_TAG_ROLE_DESCRIPTION!C!struct	foreigndecl	/declared in foreign languages/
 !_TAG_ROLE_DESCRIPTION!C++!header	local	/local header/
 !_TAG_ROLE_DESCRIPTION!C++!header	system	/system header/
 !_TAG_ROLE_DESCRIPTION!C++!macro	undef	/undefined/
@@ -2626,7 +2651,6 @@
 0	public/devops/aws/policies/s3-bucket-cross-aws-access.json	/^                "s3:GetObject",$/;"	s	array:Statement.0.Action
 0	public/devops/aws/policies/s3-bucket-cross-aws-access.json	/^        {$/;"	o	array:Statement
 0	recents.json	/^  {$/;"	o
-0->1	content/infosec/ctfs/overthewire_leviathan.md	/^## 0->1$/;"	s	chapter:Overthewire Leviathan
 0->1	public-delete/infosec/ctfs/overthewire_leviathan/index.html	/^<a class=heading-link href=#0-1><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div clas/;"	i
 0->1	public/infosec/ctfs/overthewire_leviathan/index.html	/^<a class=heading-link href=#0-1><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div clas/;"	i
 01	content/infosec/pentesterlabs/01-essential-badge.md	/^### 01$/;"	S	section:Essential badge""Authentication
@@ -2847,7 +2871,6 @@
 1	public/devops/aws/policies/s3-bucket-cross-aws-access.json	/^                "s3:GetObjectVersion"$/;"	s	array:Statement.0.Action
 1	public/devops/aws/policies/s3-bucket-cross-aws-access.json	/^        {$/;"	o	array:Statement
 1	recents.json	/^  {$/;"	o
-1->2	content/infosec/ctfs/overthewire_leviathan.md	/^## 1->2$/;"	s	chapter:Overthewire Leviathan
 1->2	public-delete/infosec/ctfs/overthewire_leviathan/index.html	/^<a class=heading-link href=#1-2><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div clas/;"	i
 1->2	public/infosec/ctfs/overthewire_leviathan/index.html	/^<a class=heading-link href=#1-2><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div clas/;"	i
 10	content/devops/aws/ecr/policy-push-pull.json	/^                "ecr:PutImage"$/;"	s	array:Statement.2.Action
@@ -2899,7 +2922,6 @@
 2	public/devops/aws/ecr/policy-push-pull.json	/^      {$/;"	o	array:Statement
 2	public/devops/aws/iam/sns-permissions.json	/^                "sns:ListTopics",$/;"	s	array:Statement.0.Action
 2	recents.json	/^  {$/;"	o
-2->3	content/infosec/ctfs/overthewire_leviathan.md	/^## 2->3$/;"	s	chapter:Overthewire Leviathan
 2->3	public-delete/infosec/ctfs/overthewire_leviathan/index.html	/^<a class=heading-link href=#2-3><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div clas/;"	i
 2->3	public/infosec/ctfs/overthewire_leviathan/index.html	/^<a class=heading-link href=#2-3><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div clas/;"	i
 20	content/devops/aws/iam/sns-permissions.json	/^                "sns:GetTopicAttributes",$/;"	s	array:Statement.0.Action
@@ -3218,7 +3240,6 @@ AlienInvasion	public/coding/python/python-crash-course/game/alien_invasion.py	/^
 Almuerzo: Ensalda de verduras con Pollo	content/self/rural/cocina.md	/^## Almuerzo: Ensalda de verduras con Pollo$/;"	s	chapter:Content
 Almuerzo: Ensalda de verduras con Pollo	public-delete/self/rural/cocina/index.html	/^<a class=heading-link href=#almuerzo-ensalda-de-verduras-con-pollo><i class="fa fa-link" aria-hi/;"	i
 Almuerzo: Ensalda de verduras con Pollo	public/self/rural/cocina/index.html	/^<a class=heading-link href=#almuerzo-ensalda-de-verduras-con-pollo><i class="fa fa-link" aria-hi/;"	i
-Amateria	content/infosec/ctfs/smashthestack.org_amateria.md	/^# Amateria$/;"	c
 Amateria	public-delete/infosec/ctfs/smashthestack.org_amateria/index.html	/^#!\/usr\/bin\/python import socket import cPickle import os import sys import signal PORT = 5432/;"	j
 Amateria	public-delete/infosec/ctfs/smashthestack.org_amateria/index.html	/^<a class=heading-link href=#amateria><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h1><p>U/;"	h
 Amateria	public/infosec/ctfs/smashthestack.org_amateria/index.html	/^#!\/usr\/bin\/python import socket import cPickle import os import sys import signal PORT = 5432/;"	j
@@ -3419,7 +3440,6 @@ Binaries and built-in functions	public/coding/bash/training/day1/index.html	/^<a
 Biographies	content/books/books_todos.md	/^## Biographies$/;"	s	chapter:Books TODOs
 Biographies	public-delete/books/books_todos/index.html	/^<a class=heading-link href=#biographies><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2></;"	i
 Biographies	public/books/books_todos/index.html	/^<a class=heading-link href=#biographies><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2></;"	i
-Blackbox	content/infosec/ctfs/smashthestack.org_blackbox.md	/^# Blackbox$/;"	c
 Blackbox	public-delete/infosec/ctfs/smashthestack.org_blackbox/index.html	/^#bugbounty\/smashthestack"><meta property="og:type" content="article"><meta property="og:url" co/;"	j
 Blackbox	public-delete/infosec/ctfs/smashthestack.org_blackbox/index.html	/^<a class=heading-link href=#blackbox><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h1><h1 /;"	h
 Blackbox	public/infosec/ctfs/smashthestack.org_blackbox/index.html	/^#bugbounty\/smashthestack"><meta property="og:type" content="article"><meta property="og:url" co/;"	j
@@ -4142,6 +4162,8 @@ EN: Wu-Tang Clan	public-delete/lang/songs/song-wutangclan-cream/index.html	/^[Ve
 EN: Wu-Tang Clan	public/lang/songs/song-wutangclan-cream/index.html	/^<a class=heading-link href=#en-wu-tang-clan><i class="fa fa-link" aria-hidden=true><\/i><\/a><\//;"	h
 EN: Wu-Tang Clan	public/lang/songs/song-wutangclan-cream/index.html	/^[Verse 1] I grew up on the crime side, the New York Times side Stayin' alive was no jive Had sec/;"	j
 ES migration to AWS S3	content/devops/others/elasticsearch.md	/^#### ES migration to AWS S3$/;"	t	chapter:Elasticsearch cheatsheet
+EXPECTED_MINUTES_IN_OVEN	content/coding/exercism/javascript/lasagna.js	/^export const EXPECTED_MINUTES_IN_OVEN = 40;$/;"	C
+EXPECTED_MINUTES_IN_OVEN	public/coding/exercism/javascript/lasagna.js	/^export const EXPECTED_MINUTES_IN_OVEN = 40;$/;"	C
 EXTENSION	content/coding/runner.py	/^EXTENSION    = PROGRAM.split(".")[-1]$/;"	v
 EXTENSION	public-delete/coding/runner.py	/^EXTENSION    = PROGRAM.split(".")[-1]$/;"	v
 EXTENSION	public/coding/runner.py	/^EXTENSION    = PROGRAM.split(".")[-1]$/;"	v
@@ -4577,12 +4599,10 @@ IAM roles into EC2 instances	public/devops/aws/aws-sa-assoc/ec2/index.html	/^<a 
 INFILE	content/coding/runner.py	/^INFILE       = PROGRAM.split(".")[0] + ".in"$/;"	v
 INFILE	public-delete/coding/runner.py	/^INFILE       = PROGRAM.split(".")[0] + ".in"$/;"	v
 INFILE	public/coding/runner.py	/^INFILE       = PROGRAM.split(".")[0] + ".in"$/;"	v
-IO NetGarage 2	content/infosec/ctfs/io.netgarage.org.md	/^# IO NetGarage 2$/;"	c
 IO NetGarage 2	public-delete/infosec/ctfs/io.netgarage.org/index.html	/^<a class=heading-link href=#io-netgarage-2><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h/;"	h
 IO NetGarage 2	public-delete/infosec/ctfs/io.netgarage.org/index.html	/^level1@io:\/levels$ objdump -d level01 level01: file format elf32-i386 Disassembly of section .t/;"	j
 IO NetGarage 2	public/infosec/ctfs/io.netgarage.org/index.html	/^<a class=heading-link href=#io-netgarage-2><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h/;"	h
 IO NetGarage 2	public/infosec/ctfs/io.netgarage.org/index.html	/^level1@io:\/levels$ objdump -d level01 level01: file format elf32-i386 Disassembly of section .t/;"	j
-IO Netgarage	content/infosec/ctfs/io.netgarage.org_8064.md	/^# IO Netgarage$/;"	c
 IO Netgarage	public-delete/infosec/ctfs/io.netgarage.org_8064/index.html	/^#bugbounty\/io-netgarage-org"><meta property="og:type" content="article"><meta property="og:url"/;"	j
 IO Netgarage	public-delete/infosec/ctfs/io.netgarage.org_8064/index.html	/^<a class=heading-link href=#io-netgarage><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h1>/;"	h
 IO Netgarage	public/infosec/ctfs/io.netgarage.org_8064/index.html	/^#bugbounty\/io-netgarage-org"><meta property="og:type" content="article"><meta property="og:url"/;"	j
@@ -4809,6 +4829,8 @@ Languages 2023	public-delete/lang/index.html	/^<!doctype html><html lang=en><hea
 Languages 2023	public-delete/lang/index.html	/^<a class=heading-link href=#languages-2023><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h/;"	h
 Languages 2023	public/lang/index.html	/^<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device/;"	j
 Languages 2023	public/lang/index.html	/^<a class=heading-link href=#languages-2023><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h/;"	h
+Lasagna	content/coding/exercism/php/Lasagna.php	/^class Lasagna$/;"	c
+Lasagna	public/coding/exercism/php/Lasagna.php	/^class Lasagna$/;"	c
 Layer_1	themes/hugo-coder/images/logos/favicon.svg	/^	 width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="pr/;"	i
 Layer_1	themes/hugo-coder/images/logos/logomark.svg	/^	 width="1000px" height="1000px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" x/;"	i
 Layer_1	themes/hugo-coder/images/logos/logotype-a.svg	/^	 width="1000px" height="1000px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" x/;"	i
@@ -4838,137 +4860,92 @@ Les vetements	public-delete/lang/fr/french-basic-roadmap/index.html	/^<a class=h
 Les vetements	public/lang/fr/french-basic-roadmap/index.html	/^<a class=heading-link href=#les-vetements><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h3/;"	j
 Less is more	public-delete/posts/less-is-more/index.html	/^<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device/;"	j
 Less is more	public/posts/less-is-more/index.html	/^<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device/;"	j
-Level 0	content/infosec/ctfs/overthewire_bandit.md	/^## Level 0$/;"	s	chapter:Overthewire
-Level 0	content/infosec/ctfs/smashthestack.org_amateria.md	/^## Level 0$/;"	s	chapter:Amateria
 Level 0	public-delete/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-0><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div /;"	i
 Level 0	public-delete/infosec/ctfs/smashthestack.org_amateria/index.html	/^<a class=heading-link href=#level-0><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><h3 i/;"	i
 Level 0	public/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-0><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div /;"	i
 Level 0	public/infosec/ctfs/smashthestack.org_amateria/index.html	/^<a class=heading-link href=#level-0><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><h3 i/;"	i
-Level 1	content/infosec/ctfs/overthewire_bandit.md	/^## Level 1$/;"	s	chapter:Overthewire
-Level 1	content/infosec/ctfs/smashthestack.org_amateria.md	/^## Level 1$/;"	s	chapter:Amateria
 Level 1	public-delete/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-1><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div /;"	i
 Level 1	public-delete/infosec/ctfs/smashthestack.org_amateria/index.html	/^<a class=heading-link href=#level-1><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><h2 i/;"	i
 Level 1	public/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-1><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div /;"	i
 Level 1	public/infosec/ctfs/smashthestack.org_amateria/index.html	/^<a class=heading-link href=#level-1><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><h2 i/;"	i
-Level 10	content/infosec/ctfs/overthewire_bandit.md	/^## Level 10$/;"	s	chapter:Overthewire
-Level 10	content/infosec/ctfs/smashthestack.org_amateria.md	/^## Level 10$/;"	s	chapter:Amateria
 Level 10	public-delete/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-10><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div/;"	i
 Level 10	public-delete/infosec/ctfs/smashthestack.org_amateria/index.html	/^<a class=heading-link href=#level-10><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><\/a/;"	i
 Level 10	public/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-10><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div/;"	i
 Level 10	public/infosec/ctfs/smashthestack.org_amateria/index.html	/^<a class=heading-link href=#level-10><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><\/a/;"	i
-Level 11	content/infosec/ctfs/overthewire_bandit.md	/^## Level 11$/;"	s	chapter:Overthewire
 Level 11	public-delete/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-11><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div/;"	i
 Level 11	public/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-11><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div/;"	i
-Level 12	content/infosec/ctfs/overthewire_bandit.md	/^## Level 12$/;"	s	chapter:Overthewire
 Level 12	public-delete/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-12><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div/;"	i
 Level 12	public/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-12><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div/;"	i
-Level 13	content/infosec/ctfs/overthewire_bandit.md	/^## Level 13$/;"	s	chapter:Overthewire
 Level 13	public-delete/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-13><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div/;"	i
 Level 13	public/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-13><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div/;"	i
-Level 14	content/infosec/ctfs/overthewire_bandit.md	/^## Level 14$/;"	s	chapter:Overthewire
 Level 14	public-delete/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-14><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div/;"	i
 Level 14	public/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-14><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div/;"	i
-Level 15	content/infosec/ctfs/overthewire_bandit.md	/^## Level 15$/;"	s	chapter:Overthewire
 Level 15	public-delete/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-15><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div/;"	i
 Level 15	public/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-15><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div/;"	i
-Level 16	content/infosec/ctfs/overthewire_bandit.md	/^## Level 16$/;"	s	chapter:Overthewire
 Level 16	public-delete/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-16><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div/;"	i
 Level 16	public/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-16><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div/;"	i
-Level 17	content/infosec/ctfs/overthewire_bandit.md	/^## Level 17$/;"	s	chapter:Overthewire
 Level 17	public-delete/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-17><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div/;"	i
 Level 17	public/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-17><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div/;"	i
-Level 18	content/infosec/ctfs/overthewire_bandit.md	/^## Level 18$/;"	s	chapter:Overthewire
 Level 18	public-delete/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-18><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div/;"	i
 Level 18	public/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-18><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div/;"	i
-Level 19	content/infosec/ctfs/overthewire_bandit.md	/^## Level 19$/;"	s	chapter:Overthewire
 Level 19	public-delete/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-19><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div/;"	i
 Level 19	public/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-19><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div/;"	i
-Level 2	content/infosec/ctfs/overthewire_bandit.md	/^## Level 2$/;"	s	chapter:Overthewire
-Level 2	content/infosec/ctfs/smashthestack.org_amateria.md	/^## Level 2$/;"	s	chapter:Amateria
 Level 2	public-delete/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-2><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div /;"	i
 Level 2	public-delete/infosec/ctfs/smashthestack.org_amateria/index.html	/^<a class=heading-link href=#level-2><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><h2 i/;"	i
 Level 2	public/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-2><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div /;"	i
 Level 2	public/infosec/ctfs/smashthestack.org_amateria/index.html	/^<a class=heading-link href=#level-2><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><h2 i/;"	i
-Level 20	content/infosec/ctfs/overthewire_bandit.md	/^## Level 20$/;"	s	chapter:Overthewire
 Level 20	public-delete/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-20><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div/;"	i
 Level 20	public/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-20><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div/;"	i
-Level 21	content/infosec/ctfs/overthewire_bandit.md	/^## Level 21$/;"	s	chapter:Overthewire
 Level 21	public-delete/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-21><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div/;"	i
 Level 21	public/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-21><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div/;"	i
-Level 22	content/infosec/ctfs/overthewire_bandit.md	/^## Level 22$/;"	s	chapter:Overthewire
 Level 22	public-delete/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-22><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div/;"	i
 Level 22	public/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-22><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div/;"	i
-Level 23	content/infosec/ctfs/overthewire_bandit.md	/^## Level 23$/;"	s	chapter:Overthewire
 Level 23	public-delete/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-23><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div/;"	i
 Level 23	public/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-23><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div/;"	i
-Level 24	content/infosec/ctfs/overthewire_bandit.md	/^## Level 24$/;"	s	chapter:Overthewire
 Level 24	public-delete/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-24><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><p>E/;"	i
 Level 24	public/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-24><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><p>E/;"	i
-Level 25	content/infosec/ctfs/overthewire_bandit.md	/^## Level 25$/;"	s	chapter:Overthewire
 Level 25	public-delete/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-25><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><p>L/;"	i
 Level 25	public/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-25><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><p>L/;"	i
-Level 26	content/infosec/ctfs/overthewire_bandit.md	/^## Level 26$/;"	s	chapter:Overthewire
 Level 26	public-delete/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-26><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div/;"	i
 Level 26	public/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-26><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div/;"	i
-Level 27	content/infosec/ctfs/overthewire_bandit.md	/^## Level 27$/;"	s	chapter:Overthewire
 Level 27	public-delete/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-27><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div/;"	i
 Level 27	public/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-27><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div/;"	i
-Level 28	content/infosec/ctfs/overthewire_bandit.md	/^## Level 28$/;"	s	chapter:Overthewire
 Level 28	public-delete/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-28><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div/;"	i
 Level 28	public/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-28><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div/;"	i
-Level 29	content/infosec/ctfs/overthewire_bandit.md	/^## Level 29$/;"	s	chapter:Overthewire
 Level 29	public-delete/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-29><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div/;"	i
 Level 29	public/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-29><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div/;"	i
-Level 3	content/infosec/ctfs/overthewire_bandit.md	/^## Level 3$/;"	s	chapter:Overthewire
-Level 3	content/infosec/ctfs/smashthestack.org_amateria.md	/^## Level 3$/;"	s	chapter:Amateria
 Level 3	public-delete/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-3><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div /;"	i
 Level 3	public-delete/infosec/ctfs/smashthestack.org_amateria/index.html	/^<a class=heading-link href=#level-3><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><h2 i/;"	i
 Level 3	public/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-3><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div /;"	i
 Level 3	public/infosec/ctfs/smashthestack.org_amateria/index.html	/^<a class=heading-link href=#level-3><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><h2 i/;"	i
-Level 30	content/infosec/ctfs/overthewire_bandit.md	/^## Level 30$/;"	s	chapter:Overthewire
 Level 30	public-delete/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-30><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div/;"	i
 Level 30	public/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-30><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div/;"	i
-Level 31	content/infosec/ctfs/overthewire_bandit.md	/^## Level 31$/;"	s	chapter:Overthewire
 Level 31	public-delete/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-31><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div/;"	i
 Level 31	public/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-31><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div/;"	i
-Level 32	content/infosec/ctfs/overthewire_bandit.md	/^## Level 32$/;"	s	chapter:Overthewire
 Level 32	public-delete/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-32><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div/;"	i
 Level 32	public/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-32><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div/;"	i
-Level 33	content/infosec/ctfs/overthewire_bandit.md	/^## Level 33$/;"	s	chapter:Overthewire
 Level 33	public-delete/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-33><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><p>T/;"	i
 Level 33	public/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-33><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><p>T/;"	i
-Level 4	content/infosec/ctfs/overthewire_bandit.md	/^## Level 4$/;"	s	chapter:Overthewire
-Level 4	content/infosec/ctfs/smashthestack.org_amateria.md	/^## Level 4$/;"	s	chapter:Amateria
 Level 4	public-delete/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-4><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div /;"	i
 Level 4	public-delete/infosec/ctfs/smashthestack.org_amateria/index.html	/^<a class=heading-link href=#level-4><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><h2 i/;"	i
 Level 4	public/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-4><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div /;"	i
 Level 4	public/infosec/ctfs/smashthestack.org_amateria/index.html	/^<a class=heading-link href=#level-4><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><h2 i/;"	i
-Level 5	content/infosec/ctfs/overthewire_bandit.md	/^## Level 5$/;"	s	chapter:Overthewire
-Level 5	content/infosec/ctfs/smashthestack.org_amateria.md	/^## Level 5$/;"	s	chapter:Amateria
 Level 5	public-delete/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-5><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div /;"	i
 Level 5	public-delete/infosec/ctfs/smashthestack.org_amateria/index.html	/^<a class=heading-link href=#level-5><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><h2 i/;"	i
 Level 5	public/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-5><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div /;"	i
 Level 5	public/infosec/ctfs/smashthestack.org_amateria/index.html	/^<a class=heading-link href=#level-5><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><h2 i/;"	i
-Level 6	content/infosec/ctfs/overthewire_bandit.md	/^## Level 6$/;"	s	chapter:Overthewire
-Level 6	content/infosec/ctfs/smashthestack.org_amateria.md	/^## Level 6$/;"	s	chapter:Amateria
 Level 6	public-delete/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-6><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div /;"	i
 Level 6	public-delete/infosec/ctfs/smashthestack.org_amateria/index.html	/^<a class=heading-link href=#level-6><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><h2 i/;"	i
 Level 6	public/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-6><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div /;"	i
 Level 6	public/infosec/ctfs/smashthestack.org_amateria/index.html	/^<a class=heading-link href=#level-6><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><h2 i/;"	i
-Level 7	content/infosec/ctfs/overthewire_bandit.md	/^## Level 7$/;"	s	chapter:Overthewire
-Level 7	content/infosec/ctfs/smashthestack.org_amateria.md	/^## Level 7$/;"	s	chapter:Amateria
 Level 7	public-delete/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-7><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div /;"	i
 Level 7	public-delete/infosec/ctfs/smashthestack.org_amateria/index.html	/^<a class=heading-link href=#level-7><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><h2 i/;"	i
 Level 7	public/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-7><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div /;"	i
 Level 7	public/infosec/ctfs/smashthestack.org_amateria/index.html	/^<a class=heading-link href=#level-7><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><h2 i/;"	i
-Level 8	content/infosec/ctfs/overthewire_bandit.md	/^## Level 8$/;"	s	chapter:Overthewire
-Level 8	content/infosec/ctfs/smashthestack.org_amateria.md	/^## Level 8$/;"	s	chapter:Amateria
 Level 8	public-delete/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-8><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div /;"	i
 Level 8	public-delete/infosec/ctfs/smashthestack.org_amateria/index.html	/^<a class=heading-link href=#level-8><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><h2 i/;"	i
 Level 8	public/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-8><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div /;"	i
 Level 8	public/infosec/ctfs/smashthestack.org_amateria/index.html	/^<a class=heading-link href=#level-8><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><h2 i/;"	i
-Level 9	content/infosec/ctfs/overthewire_bandit.md	/^## Level 9$/;"	s	chapter:Overthewire
-Level 9	content/infosec/ctfs/smashthestack.org_amateria.md	/^## Level 9$/;"	s	chapter:Amateria
 Level 9	public-delete/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-9><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div /;"	i
 Level 9	public-delete/infosec/ctfs/smashthestack.org_amateria/index.html	/^<a class=heading-link href=#level-9><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><h2 i/;"	i
 Level 9	public/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#level-9><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div /;"	i
@@ -5235,7 +5212,6 @@ NALCs	public/devops/aws/aws-sa-assoc/vpc/index.html	/^<a class=heading-link href
 NAT Gateways	content/devops/aws/aws-sa-assoc/vpc.md	/^## NAT Gateways$/;"	s	chapter:VPC
 NAT Gateways	public-delete/devops/aws/aws-sa-assoc/vpc/index.html	/^<a class=heading-link href=#nat-gateways><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2>/;"	i
 NAT Gateways	public/devops/aws/aws-sa-assoc/vpc/index.html	/^<a class=heading-link href=#nat-gateways><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2>/;"	i
-Natas challenges	content/infosec/ctfs/overthewire_natas.md	/^# Natas challenges$/;"	c
 Natas challenges	public-delete/infosec/ctfs/overthewire_natas/index.html	/^<a class=heading-link href=#natas-challenges><i class="fa fa-link" aria-hidden=true><\/i><\/a><\//;"	h
 Natas challenges	public-delete/infosec/ctfs/overthewire_natas/index.html	/^level 3 ~» curl -s -u natas3:sJIJNW6ucpu6HPZ1ZAchaDtwd7oGrD14 http:\/\/natas3.natas.labs.overth/;"	j
 Natas challenges	public/infosec/ctfs/overthewire_natas/index.html	/^<a class=heading-link href=#natas-challenges><i class="fa fa-link" aria-hidden=true><\/i><\/a><\//;"	h
@@ -5383,12 +5359,10 @@ Otra escapada de finde!	public/posts/otra-escapada-de-finde/index.html	/^Existen
 Otros	content/misc/movies.md	/^### Otros$/;"	S	section:Movies""Pending Movies To Watch (Ignore this!)
 Otros	public-delete/misc/movies/index.html	/^<a class=heading-link href=#otros><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h3><ul><li/;"	j
 Otros	public/misc/movies/index.html	/^<a class=heading-link href=#otros><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h3><ul><li/;"	j
-Overthewire	content/infosec/ctfs/overthewire_bandit.md	/^# Overthewire$/;"	c
 Overthewire	public-delete/infosec/ctfs/overthewire_bandit/index.html	/^<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device/;"	j
 Overthewire	public-delete/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#overthewire><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h1></;"	h
 Overthewire	public/infosec/ctfs/overthewire_bandit/index.html	/^<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device/;"	j
 Overthewire	public/infosec/ctfs/overthewire_bandit/index.html	/^<a class=heading-link href=#overthewire><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h1></;"	h
-Overthewire Leviathan	content/infosec/ctfs/overthewire_leviathan.md	/^# Overthewire Leviathan$/;"	c
 Overthewire Leviathan	public-delete/infosec/ctfs/overthewire_leviathan/index.html	/^0->1 leviathan0@leviathan:~$ grep -i pass .backup\/bookmarks.html <DT><A HREF=&#34;http:\/\/www./;"	j
 Overthewire Leviathan	public-delete/infosec/ctfs/overthewire_leviathan/index.html	/^<a class=heading-link href=#overthewire-leviathan><i class="fa fa-link" aria-hidden=true><\/i><\//;"	h
 Overthewire Leviathan	public/infosec/ctfs/overthewire_leviathan/index.html	/^0->1 leviathan0@leviathan:~$ grep -i pass .backup\/bookmarks.html <DT><A HREF=&#34;http:\/\/www./;"	j
@@ -5413,6 +5387,8 @@ PCAPs	public/infosec/pentesterlabs/02-pcap/index.html	/^the capture has an email
 PHP	content/infosec/local-file-inclusion.md	/^## PHP$/;"	s	chapter:Local File Inclusion examples
 PHP	public-delete/infosec/local-file-inclusion/index.html	/^<a class=heading-link href=#php><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><ul><li></;"	i
 PHP	public/infosec/local-file-inclusion/index.html	/^<a class=heading-link href=#php><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><ul><li></;"	i
+PREPARATION_MINUTES_PER_LAYER	content/coding/exercism/javascript/lasagna.js	/^const PREPARATION_MINUTES_PER_LAYER = 2;$/;"	C
+PREPARATION_MINUTES_PER_LAYER	public/coding/exercism/javascript/lasagna.js	/^const PREPARATION_MINUTES_PER_LAYER = 2;$/;"	C
 PROGRAM	content/coding/runner.py	/^PROGRAM      = sys.argv[1]$/;"	v
 PROGRAM	public-delete/coding/runner.py	/^PROGRAM      = sys.argv[1]$/;"	v
 PROGRAM	public/coding/runner.py	/^PROGRAM      = sys.argv[1]$/;"	v
@@ -7028,6 +7004,8 @@ add_song	public-delete/coding/python/python-tutorial/lab07.py	/^        def add_
 add_song	public/coding/python/python-tutorial/lab07.py	/^        def add_song(self, song):$/;"	m	class:ex02.Singer
 ai	content/coding/python/python-crash-course/game/alien_invasion.py	/^    ai = AlienInvasion()$/;"	v
 ai	public/coding/python/python-crash-course/game/alien_invasion.py	/^    ai = AlienInvasion()$/;"	v
+alarm	content/coding/exercism/php/Lasagna.php	/^    public function alarm()$/;"	f	class:Lasagna
+alarm	public/coding/exercism/php/Lasagna.php	/^    public function alarm()$/;"	f	class:Lasagna
 alt-bg-color	themes/hugo-coder/assets/scss/_variables.scss	/^$alt-bg-color: #e0e0e0 !default;$/;"	v
 alt-bg-color-dark	themes/hugo-coder/assets/scss/_variables.scss	/^$alt-bg-color-dark: #424242 !default;$/;"	v
 alt-fg-color	themes/hugo-coder/assets/scss/_variables.scss	/^$alt-fg-color: #000 !default;$/;"	v
@@ -7515,8 +7493,6 @@ body.colorscheme-dark td	public/css/coder-dark.min.39e41a7f16bdf8cb16e43cae7d714
 body.colorscheme-dark th	public-delete/css/coder-dark.min.39e41a7f16bdf8cb16e43cae7d714fa1016f1d2d2898a5b3f27f42c9979204e2.css	/^body.colorscheme-dark{color:#dadada;background-color:#212121}body.colorscheme-dark a{color:#42a5/;"	s
 body.colorscheme-dark th	public/css/coder-dark.min.39e41a7f16bdf8cb16e43cae7d714fa1016f1d2d2898a5b3f27f42c9979204e2.css	/^body.colorscheme-dark{color:#dadada;background-color:#212121}body.colorscheme-dark a{color:#42a5/;"	s
 breadcrumbs	layouts/partials/breadcrumbs.html	/^<ul id="breadcrumbs">$/;"	I
-bugbounty/io-netgarage-org	content/infosec/ctfs/io.netgarage.org_8064.md	/^#bugbounty\/io-netgarage-org$/;"	h	chapter:IO Netgarage
-bugbounty/smashthestack	content/infosec/ctfs/smashthestack.org_blackbox.md	/^#bugbounty\/smashthestack$/;"	h	chapter:smashthestack.org blackbox
 bugs	content/devops/talks/jenkins-lab/varto/package.json	/^  "bugs": {$/;"	o
 bugs	public-delete/devops/talks/jenkins-lab/varto/package.json	/^  "bugs": {$/;"	o
 bugs	public/devops/talks/jenkins-lab/varto/package.json	/^  "bugs": {$/;"	o
@@ -7561,15 +7537,19 @@ button:hover	public/devops/k8s/labs/jobs-cronjobs/frontend/styles.css	/^button:h
 call_cmd	content/coding/runner.py	/^def call_cmd(cmd):$/;"	f
 call_cmd	public-delete/coding/runner.py	/^def call_cmd(cmd):$/;"	f
 call_cmd	public/coding/runner.py	/^def call_cmd(cmd):$/;"	f
+can_double_down	content/coding/exercism/python/black_jack.py	/^def can_double_down(card_one, card_two):$/;"	f
+can_double_down	public/coding/exercism/python/black_jack.py	/^def can_double_down(card_one, card_two):$/;"	f
+can_split_pairs	content/coding/exercism/python/black_jack.py	/^def can_split_pairs(card_one, card_two):$/;"	f
+can_split_pairs	public/coding/exercism/python/black_jack.py	/^def can_split_pairs(card_one, card_two):$/;"	f
 categories	themes/hugo-coder/assets/scss/_content_rtl.scss	/^      .categories {$/;"	c
-category	recents.json	/^    "category": "coding"$/;"	s	object:0
 category	recents.json	/^    "category": "coding"$/;"	s	object:1
+category	recents.json	/^    "category": "coding"$/;"	s	object:2
 category	recents.json	/^    "category": "coding"$/;"	s	object:4
 category	recents.json	/^    "category": "coding"$/;"	s	object:5
 category	recents.json	/^    "category": "coding"$/;"	s	object:6
 category	recents.json	/^    "category": "coding"$/;"	s	object:7
-category	recents.json	/^    "category": "devops"$/;"	s	object:3
-category	recents.json	/^    "category": "digital"$/;"	s	object:2
+category	recents.json	/^    "category": "devops"$/;"	s	object:0
+category	recents.json	/^    "category": "digital"$/;"	s	object:3
 category	recents.json	/^    "category": "posts"$/;"	s	object:8
 center_ship	content/coding/python/python-crash-course/game/ship.py	/^    def center_ship(self):$/;"	m	class:Ship
 center_ship	public/coding/python/python-crash-course/game/ship.py	/^    def center_ship(self):$/;"	m	class:Ship
@@ -8017,6 +7997,8 @@ example-pod-with-init-container	public/devops/k8s2/k8s-doc/manifests/02.lab01.ya
 exercism	content/coding/exercism/readme.md	/^# exercism/;"	c
 exercism	public/coding/exercism/readme/index.html	/^<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device/;"	j
 exercism	public/coding/exercism/readme/index.html	/^<a class=heading-link href=#exercism><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h1><\/a/;"	h
+expectedCookTime	content/coding/exercism/php/Lasagna.php	/^    public function expectedCookTime()$/;"	f	class:Lasagna
+expectedCookTime	public/coding/exercism/php/Lasagna.php	/^    public function expectedCookTime()$/;"	f	class:Lasagna
 express	content/devops/k8s/labs/daemonset/backend/app.js	/^const express = require('express');$/;"	C
 express	content/devops/k8s/labs/daemonset/backend/package.json	/^    "express": "^4.17.1",$/;"	s	object:dependencies
 express	content/devops/k8s/labs/deployment/bapp/app.js	/^const express = require('express');$/;"	C
@@ -9033,13 +9015,13 @@ figure a	public-delete/css/hugo-easy-gallery.css	/^figure a {$/;"	s
 figure a	public/css/hugo-easy-gallery.css	/^figure a {$/;"	s
 figure a	static/css/hugo-easy-gallery.css	/^figure a {$/;"	s
 filename	recents.json	/^    "filename": "\/coding\/codeforces\/readme",$/;"	s	object:7
-filename	recents.json	/^    "filename": "\/coding\/codewars\/readme",$/;"	s	object:1
-filename	recents.json	/^    "filename": "\/coding\/exercism\/readme",$/;"	s	object:0
+filename	recents.json	/^    "filename": "\/coding\/codewars\/readme",$/;"	s	object:2
+filename	recents.json	/^    "filename": "\/coding\/exercism\/readme",$/;"	s	object:1
 filename	recents.json	/^    "filename": "\/coding\/python\/python-crash-course\/notes",$/;"	s	object:4
 filename	recents.json	/^    "filename": "\/coding\/python\/readme",$/;"	s	object:6
 filename	recents.json	/^    "filename": "\/coding\/python\/violent-python\/violent-python",$/;"	s	object:5
-filename	recents.json	/^    "filename": "\/devops\/linux\/archlinux",$/;"	s	object:3
-filename	recents.json	/^    "filename": "\/digital\/digital-tooling",$/;"	s	object:2
+filename	recents.json	/^    "filename": "\/devops\/linux\/archlinux",$/;"	s	object:0
+filename	recents.json	/^    "filename": "\/digital\/digital-tooling",$/;"	s	object:3
 filename	recents.json	/^    "filename": "\/posts\/comfort-disconfort",$/;"	s	object:8
 first and foremost	content/books/business/4-hour-week.md	/^## first and foremost$/;"	s	chapter:Book: 4 hour week work
 first and foremost	public-delete/books/business/4-hour-week/index.html	/^<a class=heading-link href=#first-and-foremost><i class="fa fa-link" aria-hidden=true><\/i><\/a>/;"	i
@@ -9236,6 +9218,8 @@ hello	public/coding/python/python-tutorial/lab04.py	/^def hello():$/;"	f
 hidden	public-delete/css/coder.min.a1a7e7e7bd8b6629931805334fd6cf056ee6f154702847e6d597bbfe80446a0d.css	/^@charset "UTF-8";\/*!normalize.css v8.0.1 | MIT License | github.com\/necolas\/normalize.css*\/h/;"	s
 hidden	public/css/coder.min.a1a7e7e7bd8b6629931805334fd6cf056ee6f154702847e6d597bbfe80446a0d.css	/^@charset "UTF-8";\/*!normalize.css v8.0.1 | MIT License | github.com\/necolas\/normalize.css*\/h/;"	s
 hidden	themes/hugo-coder/assets/scss/css/normalize.css	/^  [hidden] {$/;"	s
+higher_card	content/coding/exercism/python/black_jack.py	/^def higher_card(card_one, card_two):$/;"	f
+higher_card	public/coding/exercism/python/black_jack.py	/^def higher_card(card_one, card_two):$/;"	f
 highlight	themes/hugo-coder/assets/scss/_base.scss	/^.highlight>div,$/;"	c
 highlight	themes/hugo-coder/assets/scss/_base.scss	/^.highlight>pre {$/;"	c
 highlight	themes/hugo-coder/assets/scss/_base_dark.scss	/^  .highlight {$/;"	c
@@ -9337,7 +9321,6 @@ increase_speed	public/coding/python/python-crash-course/game/settings.py	/^    d
 index	public-delete/js/load-photoswipe.js	/^				index: index, $/;"	p	variable:anonymousFunctionbbf19b490400.options
 index	public/js/load-photoswipe.js	/^				index: index, $/;"	p	variable:anonymousFunctiondbaef6290400.options
 index	static/js/load-photoswipe.js	/^				index: index, $/;"	p	variable:anonymousFunction81a9c1f20400.options
-info	content/infosec/ctfs/overthewire_leviathan.md	/^## info$/;"	s	chapter:Overthewire Leviathan
 info	public-delete/infosec/ctfs/overthewire_leviathan/index.html	/^<a class=heading-link href=#info><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><p>SSH: /;"	i
 info	public/infosec/ctfs/overthewire_leviathan/index.html	/^<a class=heading-link href=#info><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><p>SSH: /;"	i
 info	themes/hugo-coder/assets/scss/_notices.scss	/^.notice.info {$/;"	c
@@ -9355,6 +9338,8 @@ input_ids	public-delete/coding/pytorch/labs/lab01.py	/^input_ids = tokenizer.enc
 input_ids	public/coding/pytorch/labs/lab01.py	/^input_ids = tokenizer.encode('Hey, how are you today? what', return_tensors='pt')$/;"	v
 is_armstrong_number	content/coding/exercism/python/armstrong_numbers.py	/^def is_armstrong_number(number):$/;"	f
 is_armstrong_number	public/coding/exercism/python/armstrong_numbers.py	/^def is_armstrong_number(number):$/;"	f
+is_blackjack	content/coding/exercism/python/black_jack.py	/^def is_blackjack(card_one, card_two):$/;"	f
+is_blackjack	public/coding/exercism/python/black_jack.py	/^def is_blackjack(card_one, card_two):$/;"	f
 is_millonaire	content/coding/python/python-tutorial/lab07.py	/^        def is_millonaire(self):$/;"	m	class:ex02.Singer
 is_millonaire	public-delete/coding/python/python-tutorial/lab07.py	/^        def is_millonaire(self):$/;"	m	class:ex02.Singer
 is_millonaire	public/coding/python/python-tutorial/lab07.py	/^        def is_millonaire(self):$/;"	m	class:ex02.Singer
@@ -9381,69 +9366,51 @@ last chapter	public-delete/books/business/4-hour-week/index.html	/^<a class=head
 last chapter	public/books/business/4-hour-week/index.html	/^<a class=heading-link href=#last-chapter><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2>/;"	i
 later-training	bookmarks-13-11-2022.html	/^        <DT><H3 ADD_DATE="1585189073" LAST_MODIFIED="1665785315">later-training<\/H3>$/;"	j
 later-training	bookmarks.html	/^        <DT><H3 ADD_DATE="1585189073" LAST_MODIFIED="1657632949">later-training<\/H3>$/;"	j
+leap_year	content/coding/exercism/c/leap.c	/^bool leap_year(int year){$/;"	f	typeref:typename:bool
+leap_year	public/coding/exercism/c/leap.c	/^bool leap_year(int year){$/;"	f	typeref:typename:bool
 legend	public-delete/css/coder.min.a1a7e7e7bd8b6629931805334fd6cf056ee6f154702847e6d597bbfe80446a0d.css	/^@charset "UTF-8";\/*!normalize.css v8.0.1 | MIT License | github.com\/necolas\/normalize.css*\/h/;"	s
 legend	public/css/coder.min.a1a7e7e7bd8b6629931805334fd6cf056ee6f154702847e6d597bbfe80446a0d.css	/^@charset "UTF-8";\/*!normalize.css v8.0.1 | MIT License | github.com\/necolas\/normalize.css*\/h/;"	s
 legend	themes/hugo-coder/assets/scss/css/normalize.css	/^  legend {$/;"	s
-level 0	content/infosec/ctfs/overthewire_natas.md	/^## level 0$/;"	s	chapter:Natas challenges
 level 0	public-delete/infosec/ctfs/overthewire_natas/index.html	/^<a class=heading-link href=#level-0><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><p>~»/;"	i
 level 0	public/infosec/ctfs/overthewire_natas/index.html	/^<a class=heading-link href=#level-0><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><p>~»/;"	i
-level 1	content/infosec/ctfs/io.netgarage.org.md	/^## level 1$/;"	s	chapter:IO NetGarage 2
-level 1	content/infosec/ctfs/overthewire_natas.md	/^## level 1$/;"	s	chapter:Natas challenges
 level 1	public-delete/infosec/ctfs/io.netgarage.org/index.html	/^<a class=heading-link href=#level-1><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><p><c/;"	i
 level 1	public-delete/infosec/ctfs/overthewire_natas/index.html	/^<a class=heading-link href=#level-1><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><p>~»/;"	i
 level 1	public/infosec/ctfs/io.netgarage.org/index.html	/^<a class=heading-link href=#level-1><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><p><c/;"	i
 level 1	public/infosec/ctfs/overthewire_natas/index.html	/^<a class=heading-link href=#level-1><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><p>~»/;"	i
-level 10	content/infosec/ctfs/overthewire_natas.md	/^## level 10$/;"	s	chapter:username:password
 level 10	public-delete/infosec/ctfs/overthewire_natas/index.html	/^<a class=heading-link href=#level-10><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><p>~/;"	i
 level 10	public/infosec/ctfs/overthewire_natas/index.html	/^<a class=heading-link href=#level-10><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><p>~/;"	i
-level 11	content/infosec/ctfs/overthewire_natas.md	/^## level 11$/;"	s	chapter:username:password
 level 11	public-delete/infosec/ctfs/overthewire_natas/index.html	/^<a class=heading-link href=#level-11><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><p>~/;"	i
 level 11	public/infosec/ctfs/overthewire_natas/index.html	/^<a class=heading-link href=#level-11><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><p>~/;"	i
-level 2	content/infosec/ctfs/io.netgarage.org.md	/^## level 2$/;"	s	chapter:IO NetGarage 2
-level 2	content/infosec/ctfs/overthewire_natas.md	/^## level 2$/;"	s	chapter:Natas challenges
 level 2	public-delete/infosec/ctfs/io.netgarage.org/index.html	/^<a class=heading-link href=#level-2><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><p><c/;"	i
 level 2	public-delete/infosec/ctfs/overthewire_natas/index.html	/^<a class=heading-link href=#level-2><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><p>~»/;"	i
 level 2	public/infosec/ctfs/io.netgarage.org/index.html	/^<a class=heading-link href=#level-2><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><p><c/;"	i
 level 2	public/infosec/ctfs/overthewire_natas/index.html	/^<a class=heading-link href=#level-2><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><p>~»/;"	i
-level 3	content/infosec/ctfs/io.netgarage.org.md	/^## level 3$/;"	s	chapter:IO NetGarage 2
-level 3	content/infosec/ctfs/overthewire_natas.md	/^## level 3$/;"	s	chapter:username:password
 level 3	public-delete/infosec/ctfs/io.netgarage.org/index.html	/^<a class=heading-link href=#level-3><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div /;"	i
 level 3	public-delete/infosec/ctfs/overthewire_natas/index.html	/^<a class=heading-link href=#level-3><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><p>~»/;"	i
 level 3	public/infosec/ctfs/io.netgarage.org/index.html	/^<a class=heading-link href=#level-3><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div /;"	i
 level 3	public/infosec/ctfs/overthewire_natas/index.html	/^<a class=heading-link href=#level-3><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><p>~»/;"	i
-level 4	content/infosec/ctfs/io.netgarage.org.md	/^## level 4$/;"	s	chapter:IO NetGarage 2
-level 4	content/infosec/ctfs/overthewire_natas.md	/^## level 4$/;"	s	chapter:username:password
 level 4	public-delete/infosec/ctfs/io.netgarage.org/index.html	/^<a class=heading-link href=#level-4><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div /;"	i
 level 4	public-delete/infosec/ctfs/overthewire_natas/index.html	/^<a class=heading-link href=#level-4><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><p>~»/;"	i
 level 4	public/infosec/ctfs/io.netgarage.org/index.html	/^<a class=heading-link href=#level-4><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div /;"	i
 level 4	public/infosec/ctfs/overthewire_natas/index.html	/^<a class=heading-link href=#level-4><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><p>~»/;"	i
-level 5	content/infosec/ctfs/io.netgarage.org.md	/^## level 5$/;"	s	chapter:IO NetGarage 2
-level 5	content/infosec/ctfs/overthewire_natas.md	/^## level 5$/;"	s	chapter:username:password
 level 5	public-delete/infosec/ctfs/io.netgarage.org/index.html	/^<a class=heading-link href=#level-5><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div /;"	i
 level 5	public-delete/infosec/ctfs/overthewire_natas/index.html	/^<a class=heading-link href=#level-5><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><p>~»/;"	i
 level 5	public/infosec/ctfs/io.netgarage.org/index.html	/^<a class=heading-link href=#level-5><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div /;"	i
 level 5	public/infosec/ctfs/overthewire_natas/index.html	/^<a class=heading-link href=#level-5><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><p>~»/;"	i
-level 6	content/infosec/ctfs/io.netgarage.org.md	/^## level 6$/;"	s	chapter:IO NetGarage 2
-level 6	content/infosec/ctfs/overthewire_natas.md	/^## level 6$/;"	s	chapter:username:password
 level 6	public-delete/infosec/ctfs/io.netgarage.org/index.html	/^<a class=heading-link href=#level-6><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><h2 i/;"	i
 level 6	public-delete/infosec/ctfs/overthewire_natas/index.html	/^<a class=heading-link href=#level-6><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><p>~»/;"	i
 level 6	public/infosec/ctfs/io.netgarage.org/index.html	/^<a class=heading-link href=#level-6><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><h2 i/;"	i
 level 6	public/infosec/ctfs/overthewire_natas/index.html	/^<a class=heading-link href=#level-6><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><p>~»/;"	i
-level 7	content/infosec/ctfs/io.netgarage.org.md	/^## level 7$/;"	s	chapter:IO NetGarage 2
-level 7	content/infosec/ctfs/overthewire_natas.md	/^## level 7$/;"	s	chapter:username:password
 level 7	public-delete/infosec/ctfs/io.netgarage.org/index.html	/^<a class=heading-link href=#level-7><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><h2 i/;"	i
 level 7	public-delete/infosec/ctfs/overthewire_natas/index.html	/^<a class=heading-link href=#level-7-1><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><p>/;"	i
 level 7	public-delete/infosec/ctfs/overthewire_natas/index.html	/^<a class=heading-link href=#level-7><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><p>~»/;"	i
 level 7	public/infosec/ctfs/io.netgarage.org/index.html	/^<a class=heading-link href=#level-7><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><h2 i/;"	i
 level 7	public/infosec/ctfs/overthewire_natas/index.html	/^<a class=heading-link href=#level-7-1><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><p>/;"	i
 level 7	public/infosec/ctfs/overthewire_natas/index.html	/^<a class=heading-link href=#level-7><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><p>~»/;"	i
-level 8	content/infosec/ctfs/io.netgarage.org.md	/^## level 8$/;"	s	chapter:IO NetGarage 2
-level 8	content/infosec/ctfs/overthewire_natas.md	/^## level 8$/;"	s	chapter:username:password
 level 8	public-delete/infosec/ctfs/io.netgarage.org/index.html	/^<a class=heading-link href=#level-8><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><\/ar/;"	i
 level 8	public-delete/infosec/ctfs/overthewire_natas/index.html	/^<a class=heading-link href=#level-8><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><p>~»/;"	i
 level 8	public/infosec/ctfs/io.netgarage.org/index.html	/^<a class=heading-link href=#level-8><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><\/ar/;"	i
 level 8	public/infosec/ctfs/overthewire_natas/index.html	/^<a class=heading-link href=#level-8><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><p>~»/;"	i
-level 9	content/infosec/ctfs/overthewire_natas.md	/^## level 9$/;"	s	chapter:username:password
 level 9	public-delete/infosec/ctfs/overthewire_natas/index.html	/^<a class=heading-link href=#level-9><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><p>~»/;"	i
 level 9	public/infosec/ctfs/overthewire_natas/index.html	/^<a class=heading-link href=#level-9><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><p>~»/;"	i
 license	content/devops/talks/jenkins-lab/varto/package.json	/^  "license": "ISC",$/;"	s
@@ -9603,10 +9570,10 @@ modtime	recents.json	/^    "modtime": "05-14-2024 10:21",$/;"	s	object:7
 modtime	recents.json	/^    "modtime": "05-14-2024 12:21",$/;"	s	object:5
 modtime	recents.json	/^    "modtime": "05-14-2024 12:21",$/;"	s	object:6
 modtime	recents.json	/^    "modtime": "05-16-2024 20:09",$/;"	s	object:4
-modtime	recents.json	/^    "modtime": "05-21-2024 12:57",$/;"	s	object:3
-modtime	recents.json	/^    "modtime": "05-23-2024 19:35",$/;"	s	object:2
-modtime	recents.json	/^    "modtime": "05-27-2024 16:44",$/;"	s	object:1
-modtime	recents.json	/^    "modtime": "05-27-2024 16:55",$/;"	s	object:0
+modtime	recents.json	/^    "modtime": "05-23-2024 19:35",$/;"	s	object:3
+modtime	recents.json	/^    "modtime": "05-27-2024 16:44",$/;"	s	object:2
+modtime	recents.json	/^    "modtime": "05-27-2024 16:55",$/;"	s	object:1
+modtime	recents.json	/^    "modtime": "06-13-2024 11:58",$/;"	s	object:0
 motivation	public-delete/tags/motivation/index.html	/^<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device/;"	j
 motivation	public/tags/motivation/index.html	/^<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device/;"	j
 movies	public-delete/tags/movies/index.html	/^<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device/;"	j
@@ -9858,6 +9825,8 @@ p8-cybersec	bookmarks-13-11-2022.html	/^        <DT><H3 ADD_DATE="1576520612" LA
 p8-cybersec	bookmarks-23-01-2023.html	/^        <DT><H3 ADD_DATE="1576520612" LAST_MODIFIED="1669996544">p8-cybersec<\/H3>$/;"	j
 p8-cybersec	bookmarks.html	/^        <DT><H3 ADD_DATE="1576520612" LAST_MODIFIED="1658234562">p8-cybersec<\/H3>$/;"	j
 pagination	themes/hugo-coder/assets/scss/_pagination.scss	/^.pagination {$/;"	c
+parse	content/coding/exercism/python/markdown.py	/^def parse(markdown):$/;"	f
+parse	public/coding/exercism/python/markdown.py	/^def parse(markdown):$/;"	f
 parsedData	content/devops/k8s/labs/deployment/fapp/index.js	/^      const parsedData = JSON.parse(data);$/;"	C
 parsedData	public-delete/devops/k8s/labs/deployment/fapp/index.js	/^      const parsedData = JSON.parse(data);$/;"	C
 parsedData	public/devops/k8s/labs/deployment/fapp/index.js	/^      const parsedData = JSON.parse(data);$/;"	C
@@ -9931,6 +9900,8 @@ prep_score	content/coding/python/python-crash-course/game/scoreboard.py	/^    de
 prep_score	public/coding/python/python-crash-course/game/scoreboard.py	/^    def prep_score(self):$/;"	m	class:ScoreBoard
 prep_ships	content/coding/python/python-crash-course/game/scoreboard.py	/^    def prep_ships(self):$/;"	m	class:ScoreBoard
 prep_ships	public/coding/python/python-crash-course/game/scoreboard.py	/^    def prep_ships(self):$/;"	m	class:ScoreBoard
+preparationTimeInMinutes	content/coding/exercism/javascript/lasagna.js	/^export function preparationTimeInMinutes(numberOfLayers) {$/;"	f
+preparationTimeInMinutes	public/coding/exercism/javascript/lasagna.js	/^export function preparationTimeInMinutes(numberOfLayers) {$/;"	f
 pricing	content/devops/aws/aws-sa-assoc/elastic-transcoder.md	/^## pricing$/;"	s	chapter:Elastic Encoder
 pricing	content/devops/aws/aws-sa-assoc/sns.md	/^## pricing$/;"	s	chapter:SNS Simple notification service
 pricing	public-delete/devops/aws/aws-sa-assoc/elastic-transcoder/index.html	/^<a class=heading-link href=#pricing><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><ul></;"	i
@@ -9972,6 +9943,10 @@ recruiting	bookmarks-13-11-2022.html	/^            <DT><H3 ADD_DATE="1642125678"
 recruiting	bookmarks-23-01-2023.html	/^            <DT><H3 ADD_DATE="1642125678" LAST_MODIFIED="1669996544">recruiting<\/H3>$/;"	j
 recruiting	bookmarks.html	/^        <DT><H3 ADD_DATE="1642125678" LAST_MODIFIED="1657632949">recruiting<\/H3>$/;"	j
 release	themes/hugo-coder/Makefile	/^release: build$/;"	t
+remainingCookTime	content/coding/exercism/php/Lasagna.php	/^    public function remainingCookTime($elapsed_minutes)$/;"	f	class:Lasagna
+remainingCookTime	public/coding/exercism/php/Lasagna.php	/^    public function remainingCookTime($elapsed_minutes)$/;"	f	class:Lasagna
+remainingMinutesInOven	content/coding/exercism/javascript/lasagna.js	/^export function remainingMinutesInOven(actualMinutesInOven) {$/;"	f
+remainingMinutesInOven	public/coding/exercism/javascript/lasagna.js	/^export function remainingMinutesInOven(actualMinutesInOven) {$/;"	f
 rememberTheme	public-delete/js/coder.min.236049395dc3682fb2719640872958e12f1f24067bb09c327b233e6290c7edac.js	/^const body=document.body,darkModeToggle=document.getElementById("dark-mode-toggle"),darkModeMedi/;"	f
 rememberTheme	public/js/coder.min.236049395dc3682fb2719640872958e12f1f24067bb09c327b233e6290c7edac.js	/^const body=document.body,darkModeToggle=document.getElementById("dark-mode-toggle"),darkModeMedi/;"	f
 rememberTheme	themes/hugo-coder/assets/js/coder.js	/^function rememberTheme(theme) {$/;"	f
@@ -10120,14 +10095,12 @@ small	public-delete/css/coder.min.a1a7e7e7bd8b6629931805334fd6cf056ee6f154702847
 small	public/css/coder.min.a1a7e7e7bd8b6629931805334fd6cf056ee6f154702847e6d597bbfe80446a0d.css	/^@charset "UTF-8";\/*!normalize.css v8.0.1 | MIT License | github.com\/necolas\/normalize.css*\/h/;"	s
 small	themes/hugo-coder/assets/scss/css/normalize.css	/^  small {$/;"	s
 smarthop	bookmarks-13-11-2022.html	/^            <DT><H3 ADD_DATE="1664287079" LAST_MODIFIED="1665785315">smarthop<\/H3>$/;"	j
-smashthestack.org blackbox	content/infosec/ctfs/smashthestack.org_blackbox.md	/^# smashthestack.org blackbox$/;"	c
 smashthestack.org blackbox	public-delete/infosec/ctfs/smashthestack.org_blackbox/index.html	/^<a class=heading-link href=#smashthestackorg-blackbox><i class="fa fa-link" aria-hidden=true><\//;"	h
 smashthestack.org blackbox	public/infosec/ctfs/smashthestack.org_blackbox/index.html	/^<a class=heading-link href=#smashthestackorg-blackbox><i class="fa fa-link" aria-hidden=true><\//;"	h
 solve	content/coding/codeforces/1971/c.cpp	/^void solve(){$/;"	f	typeref:typename:void
 solve	content/coding/codeforces/1971/d.cpp	/^void solve(){$/;"	f	typeref:typename:void
 solve	public/coding/codeforces/1971/c.cpp	/^void solve(){$/;"	f	typeref:typename:void
 solve	public/coding/codeforces/1971/d.cpp	/^void solve(){$/;"	f	typeref:typename:void
-source code	content/infosec/ctfs/smashthestack.org_amateria.md	/^### source code$/;"	S	section:Amateria""Level 0
 source code	public-delete/infosec/ctfs/smashthestack.org_amateria/index.html	/^<a class=heading-link href=#source-code><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h3></;"	j
 source code	public/infosec/ctfs/smashthestack.org_amateria/index.html	/^<a class=heading-link href=#source-code><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h3></;"	j
 sql	content/devops/k8s/labs/daemonset/backend/app.js	/^  const sql = 'INSERT INTO clicks (clicked) VALUES (?)';$/;"	C
@@ -10317,14 +10290,14 @@ tip	themes/hugo-coder/assets/scss/_notices.scss	/^.notice.tip {$/;"	c
 title	public-delete/js/load-photoswipe.js	/^				title 	: $title,$/;"	p	variable:anonymousFunctionbbf19b490200.item
 title	public/js/load-photoswipe.js	/^				title 	: $title,$/;"	p	variable:anonymousFunctiondbaef6290200.item
 title	recents.json	/^    "title": " Comfort through discomfort",$/;"	s	object:8
-title	recents.json	/^    "title": "Arch Linux Notes",$/;"	s	object:3
+title	recents.json	/^    "title": "Arch Linux Notes",$/;"	s	object:0
 title	recents.json	/^    "title": "Book - Violent Python",$/;"	s	object:5
 title	recents.json	/^    "title": "Codeforces practice!",$/;"	s	object:7
-title	recents.json	/^    "title": "Digital Tooling",$/;"	s	object:2
+title	recents.json	/^    "title": "Digital Tooling",$/;"	s	object:3
 title	recents.json	/^    "title": "Python Crash Course Notes",$/;"	s	object:4
 title	recents.json	/^    "title": "Python notes index",$/;"	s	object:6
-title	recents.json	/^    "title": "codewars practice",$/;"	s	object:1
-title	recents.json	/^    "title": "exercism",$/;"	s	object:0
+title	recents.json	/^    "title": "codewars practice",$/;"	s	object:2
+title	recents.json	/^    "title": "exercism",$/;"	s	object:1
 title	static/js/load-photoswipe.js	/^				title 	: $title,$/;"	p	variable:anonymousFunction81a9c1f20200.item
 title	themes/hugo-coder/assets/scss/_content.scss	/^      .title {$/;"	c
 title	themes/hugo-coder/assets/scss/_content_dark.scss	/^          .title {$/;"	c
@@ -10351,6 +10324,12 @@ tools	bookmarks.html	/^        <DT><H3 ADD_DATE="1576520612" LAST_MODIFIED="1659
 topics	content/devops/aws/aws-sa-assoc/sns.md	/^## topics$/;"	s	chapter:SNS Simple notification service
 topics	public-delete/devops/aws/aws-sa-assoc/sns/index.html	/^<a class=heading-link href=#topics><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><ul><l/;"	i
 topics	public/devops/aws/aws-sa-assoc/sns/index.html	/^<a class=heading-link href=#topics><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><ul><l/;"	i
+totalElapsedTime	content/coding/exercism/php/Lasagna.php	/^    public function totalElapsedTime($layers_to_prep, $elapsed_minutes)$/;"	f	class:Lasagna
+totalElapsedTime	public/coding/exercism/php/Lasagna.php	/^    public function totalElapsedTime($layers_to_prep, $elapsed_minutes)$/;"	f	class:Lasagna
+totalPreparationTime	content/coding/exercism/php/Lasagna.php	/^    public function totalPreparationTime($layers_to_prep)$/;"	f	class:Lasagna
+totalPreparationTime	public/coding/exercism/php/Lasagna.php	/^    public function totalPreparationTime($layers_to_prep)$/;"	f	class:Lasagna
+totalTimeInMinutes	content/coding/exercism/javascript/lasagna.js	/^export function totalTimeInMinutes(numberOfLayers, actualMinutesInOven) {$/;"	f
+totalTimeInMinutes	public/coding/exercism/javascript/lasagna.js	/^export function totalTimeInMinutes(numberOfLayers, actualMinutesInOven) {$/;"	f
 traefik-gateway	content/devops/k8s/labs/network/08.yaml	/^  name: traefik-gateway$/;"	p
 traefik-gateway	public-delete/devops/k8s/labs/network/08.yaml	/^  name: traefik-gateway$/;"	p
 traefik-gateway	public/devops/k8s/labs/network/08.yaml	/^  name: traefik-gateway$/;"	p
@@ -10482,7 +10461,6 @@ user	public-delete/devops/k8s/labs/statefulset/bapp/app.js	/^  user: process.env
 user	public/devops/k8s/labs/daemonset/backend/app.js	/^  user: process.env.MYSQL_USER || 'root',$/;"	p	variable:anonymousObject9f30c0db0105
 user	public/devops/k8s/labs/jobs-cronjobs/backend/app.js	/^  user: process.env.MYSQL_USER || 'root',$/;"	p	variable:anonymousObject7f1eb3560105
 user	public/devops/k8s/labs/statefulset/bapp/app.js	/^  user: process.env.MYSQL_USER || 'root',$/;"	p	variable:anonymousObject9684498a0105
-username:password	content/infosec/ctfs/overthewire_natas.md	/^# username:password$/;"	c
 username:password	public-delete/infosec/ctfs/overthewire_natas/index.html	/^<a class=heading-link href=#usernamepassword><i class="fa fa-link" aria-hidden=true><\/i><\/a><\//;"	h
 username:password	public/infosec/ctfs/overthewire_natas/index.html	/^<a class=heading-link href=#usernamepassword><i class="fa fa-link" aria-hidden=true><\/i><\/a><\//;"	h
 value	content/devops/k8s/labs/daemonset/backend/app.js	/^  const value = req.query.value;$/;"	C
@@ -10491,6 +10469,10 @@ value	public-delete/devops/k8s/labs/daemonset/backend/app.js	/^  const value = r
 value	public-delete/devops/k8s/labs/jobs-cronjobs/backend/app.js	/^  const value = req.query.value;$/;"	C
 value	public/devops/k8s/labs/daemonset/backend/app.js	/^  const value = req.query.value;$/;"	C
 value	public/devops/k8s/labs/jobs-cronjobs/backend/app.js	/^  const value = req.query.value;$/;"	C
+value_of_ace	content/coding/exercism/python/black_jack.py	/^def value_of_ace(card_one, card_two):$/;"	f
+value_of_ace	public/coding/exercism/python/black_jack.py	/^def value_of_ace(card_one, card_two):$/;"	f
+value_of_card	content/coding/exercism/python/black_jack.py	/^def value_of_card(card):$/;"	f
+value_of_card	public/coding/exercism/python/black_jack.py	/^def value_of_card(card):$/;"	f
 vector	bookmarks-13-11-2022.html	/^            <DT><H3 ADD_DATE="1652903182" LAST_MODIFIED="1665785315">vector<\/H3>$/;"	j
 vector	bookmarks.html	/^            <DT><H3 ADD_DATE="1652903182" LAST_MODIFIED="1661285586">vector<\/H3>$/;"	j
 version	content/devops/k8s/labs/daemonset/backend/package.json	/^  "version": "1.0.0",$/;"	s
