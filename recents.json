@@ -1,5 +1,17 @@
 [
   {
+    "modtime": "06-19-2024 13:10",
+    "filename": "/posts/keep-going-on",
+    "title": " Keep Going On",
+    "category": "posts"
+  },
+  {
+    "modtime": "06-19-2024 12:56",
+    "filename": "/posts/comfort-disconfort",
+    "title": " Comfort through discomfort",
+    "category": "posts"
+  },
+  {
     "modtime": "06-13-2024 20:48",
     "filename": "/devops/aws-notes/ec2",
     "title": "EC2 Notes",
@@ -40,17 +52,5 @@
     "filename": "/digital/digital-tooling",
     "title": "Digital Tooling",
     "category": "digital"
-  },
-  {
-    "modtime": "05-16-2024 20:09",
-    "filename": "/coding/python/python-crash-course/notes",
-    "title": "Python Crash Course Notes",
-    "category": "coding"
-  },
-  {
-    "modtime": "05-14-2024 12:21",
-    "filename": "/coding/python/violent-python/violent-python",
-    "title": "Book - Violent Python",
-    "category": "coding"
   }
 ]
