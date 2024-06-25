@@ -4034,7 +4034,6 @@ Effect	public/devops/aws/iam/console-readonly.json	/^        "Effect": "Allow",$
 Effect	public/devops/aws/iam/sns-permissions.json	/^            "Effect": "Allow",$/;"	s	object:Statement.0
 Effect	public/devops/aws/policies/s3-bucket-cross-aws-access.json	/^            "Effect": "Allow",$/;"	s	object:Statement.0
 Effect	public/devops/aws/policies/s3-bucket-cross-aws-access.json	/^            "Effect": "Allow",$/;"	s	object:Statement.1
-El Arrivo	content/posts/primera-carrera-autopista-ceja.md	/^### El Arrivo$/;"	S
 El Arrivo	public/2024/06/entrenamiento-en-la-autopista-de-el-alto/index.html	/^<a class=heading-link href=#el-arrivo><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h3><p>/;"	j
 El encuentro	content/posts/primera-carrera-autopista-ceja.md	/^### El encuentro$/;"	S
 El encuentro	public/2024/06/entrenamiento-en-la-autopista-de-el-alto/index.html	/^<a class=heading-link href=#el-encuentro><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h3>/;"	j
@@ -4627,6 +4626,7 @@ La buena vida	public/2022/08/la-buena-vida/index.html	/^Darse un break y continu
 La famille	content/lang/fr/french-basic-roadmap.md	/^### La famille$/;"	S	section:Bases de la feuille de route française""Vocabulary
 La famille	public-delete/lang/fr/french-basic-roadmap/index.html	/^<a class=heading-link href=#la-famille><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h3><p/;"	j
 La famille	public/lang/fr/french-basic-roadmap/index.html	/^<a class=heading-link href=#la-famille><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h3><p/;"	j
+La llegada	content/posts/primera-carrera-autopista-ceja.md	/^### La llegada$/;"	S
 La luna de queso	content/books/readings.md	/^## La luna de queso$/;"	s	chapter:Kids Readings
 La luna de queso	public-delete/books/readings/index.html	/^<a class=heading-link href=#la-luna-de-queso><i class="fa fa-link" aria-hidden=true><\/i><\/a><\//;"	i
 La luna de queso	public/books/readings/index.html	/^<a class=heading-link href=#la-luna-de-queso><i class="fa fa-link" aria-hidden=true><\/i><\/a><\//;"	i
@@ -8752,10 +8752,10 @@ filename	recents.json	/^    "filename": "\/coding\/architecture",$/;"	s	object:2
 filename	recents.json	/^    "filename": "\/posts\/2nd-quarter-objs",$/;"	s	object:5
 filename	recents.json	/^    "filename": "\/posts\/another-trip-to-coroico",$/;"	s	object:7
 filename	recents.json	/^    "filename": "\/posts\/cambio-a-español",$/;"	s	object:3
-filename	recents.json	/^    "filename": "\/posts\/carrera-policia-boliviana",$/;"	s	object:1
+filename	recents.json	/^    "filename": "\/posts\/carrera-policia-boliviana",$/;"	s	object:0
 filename	recents.json	/^    "filename": "\/posts\/comfort-disconfort",$/;"	s	object:6
 filename	recents.json	/^    "filename": "\/posts\/extrano-viajar-estos-dias",$/;"	s	object:4
-filename	recents.json	/^    "filename": "\/posts\/primera-carrera-autopista-ceja",$/;"	s	object:0
+filename	recents.json	/^    "filename": "\/posts\/primera-carrera-autopista-ceja",$/;"	s	object:1
 filename	recents.json	/^    "filename": "\/posts\/un-viajecito-rapidito-nomas",$/;"	s	object:8
 filename	recents.json	/^    "filename": "\/posts\/yutaka-15teen-night",$/;"	s	object:9
 first and foremost	content/books/business/4-hour-week.md	/^## first and foremost$/;"	s	chapter:Book: 4 hour week work
@@ -9277,8 +9277,8 @@ modtime	recents.json	/^    "modtime": "06-20-2024 10:50",$/;"	s	object:4
 modtime	recents.json	/^    "modtime": "06-20-2024 10:50",$/;"	s	object:5
 modtime	recents.json	/^    "modtime": "06-20-2024 11:01",$/;"	s	object:3
 modtime	recents.json	/^    "modtime": "06-20-2024 23:15",$/;"	s	object:2
-modtime	recents.json	/^    "modtime": "06-25-2024 09:03",$/;"	s	object:1
-modtime	recents.json	/^    "modtime": "06-25-2024 09:21",$/;"	s	object:0
+modtime	recents.json	/^    "modtime": "06-25-2024 09:21",$/;"	s	object:1
+modtime	recents.json	/^    "modtime": "06-25-2024 09:25",$/;"	s	object:0
 motivation	public-delete/tags/motivation/index.html	/^<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device/;"	j
 movies	public-delete/tags/movies/index.html	/^<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device/;"	j
 msrc	public-delete/js/load-photoswipe.js	/^				msrc	: $msrc$/;"	p	variable:anonymousFunctionbbf19b490200.item
@@ -9989,9 +9989,9 @@ title	public/js/load-photoswipe.js	/^				title 	: $title,$/;"	p	variable:anonymo
 title	recents.json	/^    "title": " Another trip to Coroico",$/;"	s	object:7
 title	recents.json	/^    "title": " Cambio a Español",$/;"	s	object:3
 title	recents.json	/^    "title": " Comfort through discomfort",$/;"	s	object:6
-title	recents.json	/^    "title": " Entrenamiento en la Autopista de El Alto",$/;"	s	object:0
+title	recents.json	/^    "title": " Entrenamiento en la Autopista de El Alto",$/;"	s	object:1
 title	recents.json	/^    "title": " Extrañando viajar...",$/;"	s	object:4
-title	recents.json	/^    "title": " Guerreros de Altura Bolivia",$/;"	s	object:1
+title	recents.json	/^    "title": " Guerreros de Altura Bolivia",$/;"	s	object:0
 title	recents.json	/^    "title": " Objetives for the 2nd Quarter!",$/;"	s	object:5
 title	recents.json	/^    "title": " Un viajecito rapidito nomás",$/;"	s	object:8
 title	recents.json	/^    "title": " Yutaka Ozaki 15 Teens Night",$/;"	s	object:9

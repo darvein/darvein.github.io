@@ -19,7 +19,7 @@ Ya por media autopista me empezé a rendir, ya estaba cansado, empeze a caminar 
 
 {{< limg "../../i/20240610_100743.jpg" "A punto de rendirme en la subida" >}}
 
-### El Arrivo
+### La llegada
 Me aleje un buen tramo de mi amigo, nos comunicamos por Whatsapp para animarnos también a seguir hasta llegar al final de la Autopista. De repente empezé a ver el Illimani y ya sabía que estaba muy cerca del Peaje de la ceja. Pude llegar hasta la ceja, muy feliz de mi logro, muy emocionado de haberme controlado y seguir trotando hasta llegar al final, me quedé parado en medio de la avenida sintiendo los rayos del sol y el frio helado de El Alto testigos de mi esfuerzo.
 
 {{< limg "../../i/20240610_091245.jpg" "Llegada a la Ceja" >}}
