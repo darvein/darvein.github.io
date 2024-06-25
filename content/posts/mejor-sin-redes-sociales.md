@@ -1,6 +1,7 @@
 +++
 title = "Mejor sin redes sociales"
-categories = ["Life", ]
+categories = ["Mente", ]
+tags = ["Motivación"]
 date = "2023-05-16"
 +++
 

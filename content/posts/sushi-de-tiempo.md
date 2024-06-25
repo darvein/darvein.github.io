@@ -1,7 +1,7 @@
 +++
 title = "Sushi de tiempo!"
-categories = ["Health",]
-tags = ["food"]
+categories = ["Cuerpo",]
+tags = ["Alimentación"]
 date = "2022-08-29"
 +++
 

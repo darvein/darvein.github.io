@@ -1,7 +1,7 @@
 +++
 title = "Journey to Martial Arts"
-categories = ["Martial-Arts"]
-tags = ["muaythai"]
+categories = ["Cuerpo"]
+tags = ["Artes Marciales"]
 date = "2023-12-20"
 +++
 

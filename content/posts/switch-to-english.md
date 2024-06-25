@@ -1,6 +1,7 @@
 +++
 title = "Switch to English"
-categories = ["Life"]
+categories = ["Mente"]
+tags = ["Motivación"]
 date = "2023-07-26"
 +++
 

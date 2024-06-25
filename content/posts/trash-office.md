@@ -1,6 +1,7 @@
 +++
 title = "Trash in the office!"
-categories = ["Work", ]
+categories = ["Vida", ]
+tags = ["Vivencias"]
 date = "2022-08-29"
 +++
 

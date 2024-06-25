@@ -1,7 +1,7 @@
 +++
 title = "Improving Everyday"
-categories = ["Life"]
-tags = ["motivation"]
+categories = ["Mente"]
+tags = ["Motivación"]
 date = "2024-01-30"
 +++
 

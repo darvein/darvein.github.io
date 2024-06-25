@@ -1,7 +1,7 @@
 +++
 title = "Comfort through discomfort"
-categories = ["Life"]
-tags = ["life"]
+categories = ["Mente"]
+tags = ["Motivación"]
 date = "2024-04-29"
 thumbnail = "/i/2024-04-29_14-41.png"
 +++

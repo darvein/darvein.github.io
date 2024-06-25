@@ -4,7 +4,7 @@
         {{ $src := .Destination }}
         <img width="{{ with .Text }}{{ . }}%{{ else }}100%{{ end }}" src="../{{ $src }}" alt="{{ .Text }}" />
     </a>
-    {{ with .Title }}
+    {{ with .Text }}
         <figcaption>&#x2015; {{ . }} &#x2015;</figcaption>
     {{ end }}
 </figure>

@@ -1,0 +1,23 @@
+# Cuerpo
+- Alimentación
+- Artes Marciales
+- Carreras
+
+# Mente
+- Creatividad
+  - Peliculas
+  - Musica
+- Razonamiento
+  - Matematicas
+  - Juegos de Mesa
+  - Tecnología
+- Lenguaje
+  - Idiomas
+  - Cultura gral
+- Libros
+- Motivacion
+
+# Vida
+- Espiritualidad
+- Vivencias: Familia, Amigos
+- Turismo

@@ -1,7 +1,7 @@
 +++
 title = "Los descanzos son importantes"
-categories = [ "Life",]
-date = "2022-08-21"
+categories = [ "Mente",]
+tags = ["Motivación"]
 +++
 
 No sé donde dijeron que uno trabajaba 11 meses del año para poder tomar vacaciones un par de semanas, o que muchos trabajaban 5 días a la semana para descanzar dos, o que muchos trabajaban 8 horas al día para poder disfrutar de 3 o 4 horas solamente. Talvez sólo es un tema de percepción, pero igual, siento que ahora es el momento de dejar de trabajar tanto como lo hacía antes y disfrutar mas de la vida.

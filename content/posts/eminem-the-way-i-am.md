@@ -1,7 +1,7 @@
 +++
 title = "Eminem The Way I am"
-categories = ["Music"]
-tags = ["music"]
+categories = ["Mente"]
+tags = ["Música"]
 date = "2024-02-02"
 +++
 

@@ -1,7 +1,7 @@
 +++
 title = "The Labyrinth"
-categories = ["Movies"]
-tags = ["movies"]
+categories = ["Mente"]
+tags = ["Creatividad", "Peliculas"]
 date = "2024-02-02"
 +++
 

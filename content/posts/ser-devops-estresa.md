@@ -1,6 +1,7 @@
 +++
 title = "Ser Devops estresa un poco"
-categories = ["Tech", ]
+categories = ["Mente", ]
+tags = ["Tecnología"]
 date = "2023-05-22"
 +++
 

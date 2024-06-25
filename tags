@@ -110,12 +110,6 @@
 !_TAG_KIND_DESCRIPTION!Sh	f,function	/functions/
 !_TAG_KIND_DESCRIPTION!Sh	h,heredoc	/label for here document/
 !_TAG_KIND_DESCRIPTION!Sh	s,script	/script files/
-!_TAG_KIND_DESCRIPTION!Terraform	d,data	/data/
-!_TAG_KIND_DESCRIPTION!Terraform	m,module	/modules/
-!_TAG_KIND_DESCRIPTION!Terraform	o,output	/output/
-!_TAG_KIND_DESCRIPTION!Terraform	p,provider	/providers/
-!_TAG_KIND_DESCRIPTION!Terraform	r,resource	/resources/
-!_TAG_KIND_DESCRIPTION!Terraform	v,variable	/variables/
 !_TAG_KIND_DESCRIPTION!XML	i,id	/id attributes/
 !_TAG_KIND_DESCRIPTION!XML	n,nsprefix	/namespace prefixes/
 !_TAG_KIND_DESCRIPTION!XML	r,root	/root elements/
@@ -139,7 +133,6 @@
 !_TAG_PARSER_VERSION!SCSS	0.0	/current.age/
 !_TAG_PARSER_VERSION!SVG	0.0	/current.age/
 !_TAG_PARSER_VERSION!Sh	0.0	/current.age/
-!_TAG_PARSER_VERSION!Terraform	0.0	/current.age/
 !_TAG_PARSER_VERSION!XML	0.0	/current.age/
 !_TAG_PARSER_VERSION!Yaml	0.0	/current.age/
 !_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
@@ -174,7 +167,6 @@
 !_TAG_ROLE_DESCRIPTION!Python!unknown	indirectlyImported	/classes\/variables\/functions\/modules imported in alternative name/
 !_TAG_ROLE_DESCRIPTION!Sh!heredoc	endmarker	/end marker/
 !_TAG_ROLE_DESCRIPTION!Sh!script	loaded	/loaded/
-!_TAG_ROLE_DESCRIPTION!Terraform!variable	assigned	/assigned in Variable Definitions (.tfvars) files/
 !_TAG_ROLE_DESCRIPTION!Yaml!anchor	alias	/alias/
 #clickable-image	content/devops/k8s/labs/daemonset/frontend/styles.css	/^#clickable-image {$/;"	i
 #clickable-image	content/devops/k8s/labs/jobs-cronjobs/frontend/styles.css	/^#clickable-image {$/;"	i
@@ -2732,7 +2724,6 @@
 1	content/devops/aws/iam/sns-permissions.json	/^                "sns:DeleteTopic",$/;"	s	array:Statement.0.Action
 1	content/devops/aws/policies/s3-bucket-cross-aws-access.json	/^                "s3:GetObjectVersion"$/;"	s	array:Statement.0.Action
 1	content/devops/aws/policies/s3-bucket-cross-aws-access.json	/^        {$/;"	o	array:Statement
-1	content/posts/markdown-syntax.md	/^[^1]: The above quote is excerpted from Rob Pike's [talk](https:\/\/www.youtube.com\/watch?v=PAA/;"	n	subsubsection:H1""Blockquotes""Blockquote with attribution
 1	public-delete/devops/aws/ecr/policy-push-pull.json	/^                "ecr:GetDownloadUrlForLayer",$/;"	s	array:Statement.2.Action
 1	public-delete/devops/aws/ecr/policy-push-pull.json	/^      {$/;"	o	array:Statement
 1	public-delete/devops/aws/iam/console-readonly.json	/^            "iam:List*"$/;"	s	array:Statement.Action
@@ -2918,6 +2909,7 @@
 9	public-delete/devops/aws/iam/sns-permissions.json	/^                "sns:ListEndpointsByPlatformApplication",$/;"	s	array:Statement.0.Action
 9	public/devops/aws/ecr/policy-push-pull.json	/^                "ecr:CompleteLayerUpload",$/;"	s	array:Statement.2.Action
 9	public/devops/aws/iam/sns-permissions.json	/^                "sns:ListEndpointsByPlatformApplication",$/;"	s	array:Statement.0.Action
+9	recents.json	/^  {$/;"	o
 :-moz-focusring	public-delete/css/coder.min.a1a7e7e7bd8b6629931805334fd6cf056ee6f154702847e6d597bbfe80446a0d.css	/^@charset "UTF-8";\/*!normalize.css v8.0.1 | MIT License | github.com\/necolas\/normalize.css*\/h/;"	s
 :-moz-focusring	public/css/coder.min.a1a7e7e7bd8b6629931805334fd6cf056ee6f154702847e6d597bbfe80446a0d.css	/^@charset "UTF-8";\/*!normalize.css v8.0.1 | MIT License | github.com\/necolas\/normalize.css*\/h/;"	s
 :-moz-focusring	themes/hugo-coder/assets/scss/css/normalize.css	/^  [type="button"]:-moz-focusring,$/;"	s
@@ -3136,6 +3128,7 @@ Argentian books	public/books/books_todos/index.html	/^<a class=heading-link href
 Argentina	content/travel/travel_todos.md	/^### Argentina$/;"	S	section:Travel TODOs""Places to visit
 Argentina	public-delete/travel/travel_todos/index.html	/^<a class=heading-link href=#argentina><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h3><ul/;"	j
 Argentina	public/travel/travel_todos/index.html	/^<a class=heading-link href=#argentina><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h3><ul/;"	j
+Arquitectura de Software	content/coding/architecture.md	/^# Arquitectura de Software$/;"	c
 Arrays	content/devops/talks/bash-vs-zsh/bash-zsh.md	/^## Arrays$/;"	s	chapter:Bash vz ZSH
 Arrays	public-delete/devops/talks/bash-vs-zsh/bash-zsh/index.html	/^<a class=heading-link href=#arrays><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div c/;"	i
 Arrays	public/devops/talks/bash-vs-zsh/bash-zsh/index.html	/^<a class=heading-link href=#arrays><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><div c/;"	i
@@ -3227,7 +3220,6 @@ Bash vz ZSH	public-delete/devops/talks/bash-vs-zsh/bash-zsh/index.html	/^\/etc\/
 Bash vz ZSH	public/devops/talks/bash-vs-zsh/bash-zsh/index.html	/^<a class=heading-link href=#bash-vz-zsh><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h1></;"	h
 Bash vz ZSH	public/devops/talks/bash-vs-zsh/bash-zsh/index.html	/^\/etc\/zsh\/zshenv ~\/.zshenv \/etc\/zsh\/zprofile ~\/.zprofile \/etc\/zsh\/zshrc ~\/.zshrc \/et/;"	j
 Basic Usage	themes/hugo-coder/docs/home.md	/^## Basic Usage$/;"	s	chapter:Welcome to the hugo-coder docs!
-Basic shortcodes	content/posts/html-and-css-only-tabs.md	/^## Basic shortcodes$/;"	s
 Basics	content/coding/python/python-crash-course/notes.md	/^## Basics$/;"	s	chapter:Content
 Basics	content/coding/pytorch/pytorch-tutorials/00-basics.md	/^# Basics$/;"	c
 Basics	content/devops/aws/aws-sa-assoc/api-gateway.md	/^## Basics$/;"	s	chapter:AWS API Gateway
@@ -3299,9 +3291,6 @@ Blockchain Resources	public/coding/00-coding_todos/index.html	/^<a class=heading
 Blockchain TODOs	content/coding/00-coding_todos.md	/^## Blockchain TODOs$/;"	s	chapter:Coding TODOS
 Blockchain TODOs	public-delete/coding/00-coding_todos/index.html	/^<a class=heading-link href=#blockchain-todos><i class="fa fa-link" aria-hidden=true><\/i><\/a><\//;"	i
 Blockchain TODOs	public/coding/00-coding_todos/index.html	/^<a class=heading-link href=#blockchain-todos><i class="fa fa-link" aria-hidden=true><\/i><\/a><\//;"	i
-Blockquote with attribution	content/posts/markdown-syntax.md	/^#### Blockquote with attribution$/;"	t	section:H1""Blockquotes
-Blockquote without attribution	content/posts/markdown-syntax.md	/^#### Blockquote without attribution$/;"	t	section:H1""Blockquotes
-Blockquotes	content/posts/markdown-syntax.md	/^## Blockquotes$/;"	s	chapter:H1
 Blueprints	content/lang/_index.md	/^## Blueprints$/;"	s	chapter:Languages 2023
 Blueprints	public-delete/lang/index.html	/^<a class=heading-link href=#blueprints><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><p/;"	i
 Blueprints	public/lang/index.html	/^<a class=heading-link href=#blueprints><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><p/;"	i
@@ -3476,14 +3465,14 @@ Capture the flag CTFs	public/infosec/ctfs/index.html	/^<a class=heading-link hre
 Castigo	content/self/self/bible/proverbs.md	/^### Castigo$/;"	S	section:Content""Summary
 Castigo	public-delete/self/self/bible/proverbs/index.html	/^<a class=heading-link href=#castigo><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h3><ul></;"	j
 Castigo	public/self/self/bible/proverbs/index.html	/^<a class=heading-link href=#castigo><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h3><ul></;"	j
-Categories	layouts/partials/home-blog.html	/^      <h3>Categories<\/h3>$/;"	j
 Categories	layouts/shortcodes/recent-posts.html	/^        <h3>Categories<\/h3>$/;"	j
 Categories	public-delete/blog/index.html	/^<span class=blog-post-date>January 14, 2024<\/span><\/li><li><a href=\/posts>[ Ver todos los pos/;"	j
 Categories	public-delete/categories/index.html	/^<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device/;"	j
 Categories	public-delete/index.html	/^<a href=\/categories\/life\/>Life<\/a><\/div><\/div><p class=post-summary>Long ago I realized I /;"	j
-Categories	public/blog/index.html	/^<span class=blog-post-date>January 14, 2024<\/span><\/li><li><a href=\/posts>[ Ver todos los pos/;"	j
+Categories	public/blog/index.html	/^<span class=blog-post-date>January 30, 2024<\/span><\/li><li><a href=\/posts>[ Ver todos los pos/;"	j
 Categories	public/categories/index.html	/^<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device/;"	j
-Categories	public/index.html	/^<a href=\/categories\/life\/>Life<\/a><\/div><\/div><p class=post-summary>Long ago I realized I /;"	j
+Categories	public/index.html	/^I&amp;rsquo;m loving difficult and challenging days. I&amp;rsquo;ve realized I had just few easy/;"	j
+Categorías	layouts/partials/home-blog.html	/^      <h3>Categorías<\/h3>$/;"	j
 Chapter 1	content/books/infosec/the-web-application-hackers-handbook.md	/^## Chapter 1$/;"	s	chapter:The web application Hackers Handbook
 Chapter 1	public-delete/books/infosec/the-web-application-hackers-handbook/index.html	/^<a class=heading-link href=#chapter-1><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><p>/;"	i
 Chapter 1	public/books/infosec/the-web-application-hackers-handbook/index.html	/^<a class=heading-link href=#chapter-1><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><p>/;"	i
@@ -3613,10 +3602,6 @@ Cocina	public/self/rural/cocina/index.html	/^<a class=heading-link href=#cocina>
 Coco y la luna	content/books/readings.md	/^## Coco y la luna$/;"	s	chapter:Kids Readings
 Coco y la luna	public-delete/books/readings/index.html	/^<a class=heading-link href=#coco-y-la-luna><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h/;"	i
 Coco y la luna	public/books/readings/index.html	/^<a class=heading-link href=#coco-y-la-luna><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h/;"	i
-Code Blocks	content/posts/markdown-syntax.md	/^## Code Blocks$/;"	s	chapter:H1
-Code block indented with four spaces	content/posts/markdown-syntax.md	/^#### Code block indented with four spaces$/;"	t	section:H1""Code Blocks
-Code block with Hugo's internal highlight shortcode	content/posts/markdown-syntax.md	/^#### Code block with Hugo's internal highlight shortcode$/;"	t	section:H1""Code Blocks
-Code block with backticks	content/posts/markdown-syntax.md	/^#### Code block with backticks$/;"	t	section:H1""Code Blocks
 Code execution	public-delete/infosec/pentesterlabs/01-essential-badge/index.html	/^<a class=heading-link href=#code-execution><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h/;"	i
 Codeforces practice!	content/coding/codeforces/readme.md	/^# Codeforces practice!$/;"	c
 Codeforces practice!	public/coding/codeforces/readme/index.html	/^<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device/;"	j
@@ -3656,7 +3641,6 @@ Comentarios	public-delete/books/business/zero-to-one/index.html	/^<a class=headi
 Comentarios	public/books/business/zero-to-one/index.html	/^<a class=heading-link href=#comentarios><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2></;"	i
 Comfort through discomfort	public-delete/blog/index.html	/^Read one single book every day until I finish it Study one single topic every day for a month. T/;"	j
 Comfort through discomfort	public-delete/posts/comfort-disconfort/index.html	/^Read one single book every day until I finish it Study one single topic every day for a month. T/;"	j
-Comfort through discomfort	public/blog/index.html	/^Read one single book every day until I finish it Study one single topic every day for a month. T/;"	j
 Comfort through discomfort	public/posts/comfort-disconfort/index.html	/^Read one single book every day until I finish it Study one single topic every day for a month. T/;"	j
 Command executions	public-delete/infosec/pentesterlabs/01-essential-badge/index.html	/^<a class=heading-link href=#command-executions><i class="fa fa-link" aria-hidden=true><\/i><\/a>/;"	i
 Commands	content/devops/others/vim.md	/^## Commands$/;"	s	chapter:Content
@@ -4042,6 +4026,8 @@ Effect	public/devops/aws/iam/console-readonly.json	/^        "Effect": "Allow",$
 Effect	public/devops/aws/iam/sns-permissions.json	/^            "Effect": "Allow",$/;"	s	object:Statement.0
 Effect	public/devops/aws/policies/s3-bucket-cross-aws-access.json	/^            "Effect": "Allow",$/;"	s	object:Statement.0
 Effect	public/devops/aws/policies/s3-bucket-cross-aws-access.json	/^            "Effect": "Allow",$/;"	s	object:Statement.1
+El Arrivo	content/posts/primera-carrera-autopista-ceja.md	/^### El Arrivo$/;"	S
+El encuentro	content/posts/primera-carrera-autopista-ceja.md	/^### El encuentro$/;"	S
 El orgullo de la familia	public-delete/posts/el-orgullo-de-la-familia/index.html	/^Uno a veces se complica tanto con las cosas y es bien fácil salir huyendo por la puerta que dic/;"	j
 El orgullo de la familia	public/posts/el-orgullo-de-la-familia/index.html	/^Uno a veces se complica tanto con las cosas y es bien fácil salir huyendo por la puerta que dic/;"	j
 El perro y la cometa magica	content/books/readings.md	/^## El perro y la cometa magica$/;"	s	chapter:Kids Readings
@@ -4049,6 +4035,7 @@ El perro y la cometa magica	public-delete/books/readings/index.html	/^<a class=h
 El perro y la cometa magica	public/books/readings/index.html	/^<a class=heading-link href=#el-perro-y-la-cometa-magica><i class="fa fa-link" aria-hidden=true></;"	i
 El proceso de cambio	public-delete/posts/el-proces-de-cambio/index.html	/^El proceso de cambio toma tiempo y no siempre es perfecto, ¡pero llega! &#x1f60b;"><meta proper/;"	j
 El proceso de cambio	public/posts/el-proces-de-cambio/index.html	/^El proceso de cambio toma tiempo y no siempre es perfecto, ¡pero llega! &#x1f60b;"><meta proper/;"	j
+El trayecto	content/posts/primera-carrera-autopista-ceja.md	/^### El trayecto$/;"	S
 Elastic Encoder	content/devops/aws/aws-sa-assoc/elastic-transcoder.md	/^# Elastic Encoder$/;"	c
 Elastic Encoder	public-delete/devops/aws/aws-sa-assoc/elastic-transcoder/index.html	/^<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device/;"	j
 Elastic Encoder	public-delete/devops/aws/aws-sa-assoc/elastic-transcoder/index.html	/^<a class=heading-link href=#elastic-encoder><i class="fa fa-link" aria-hidden=true><\/i><\/a><\//;"	h
@@ -4128,6 +4115,7 @@ Essential tools you need to know	public/coding/bash/training/day1/index.html	/^<
 Essential tools you need to know Part 2	content/coding/bash/training/day2.md	/^## Essential tools you need to know Part 2$/;"	s	chapter:Bash training - Day 2
 Essential tools you need to know Part 2	public-delete/coding/bash/training/day2/index.html	/^<a class=heading-link href=#essential-tools-you-need-to-know-part-2><i class="fa fa-link" aria-h/;"	i
 Essential tools you need to know Part 2	public/coding/bash/training/day2/index.html	/^<a class=heading-link href=#essential-tools-you-need-to-know-part-2><i class="fa fa-link" aria-h/;"	i
+Etiquetas	layouts/partials/home-blog.html	/^      <h3>Etiquetas<\/h3>$/;"	j
 Exploitation mitigations	content/infosec/chromium/intro.md	/^## Exploitation mitigations$/;"	s	chapter:Introduction to Google Chrome
 Exploitation mitigations	public-delete/infosec/chromium/intro/index.html	/^<a class=heading-link href=#exploitation-mitigations><i class="fa fa-link" aria-hidden=true><\/i/;"	i
 Exploitation mitigations	public/infosec/chromium/intro/index.html	/^<a class=heading-link href=#exploitation-mitigations><i class="fa fa-link" aria-hidden=true><\/i/;"	i
@@ -4350,19 +4338,12 @@ Guitar	public-delete/misc/music/index.html	/^<a class=heading-link href=#guitar>
 Guitar	public/misc/guitar/index.html	/^<a class=heading-link href=#guitar><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h1><p>Fav/;"	h
 Guitar	public/misc/guitar/index.html	/^Title Song Casita URL MISSING "><meta property="og:type" content="article"><meta property="og:ur/;"	j
 Guitar	public/misc/music/index.html	/^<a class=heading-link href=#guitar><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h3><ul><l/;"	j
-H1	content/posts/markdown-syntax.md	/^# H1$/;"	c
-H2	content/posts/markdown-syntax.md	/^## H2$/;"	s	chapter:H1
-H3	content/posts/markdown-syntax.md	/^### H3$/;"	S	section:H1""H2
-H4	content/posts/markdown-syntax.md	/^#### H4$/;"	t	subsection:H1""H2""H3
-H5	content/posts/markdown-syntax.md	/^##### H5$/;"	T	subsubsection:H1""H2""H3""H4
-H6	content/posts/markdown-syntax.md	/^###### H6$/;"	u	l4subsection:H1""H2""H3""H4""H5
 HTB	content/infosec/ctfs.md	/^## HTB$/;"	s	chapter:Capture the flag CTFs
 HTB	public/infosec/ctfs/index.html	/^<a class=heading-link href=#htb><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><script s/;"	i
 HTML Review	content/infosec/htb/machines/hard/snoopy.md	/^### HTML Review$/;"	S	section:hard - snoopy""User Flag
 HTML Review	public-delete/infosec/htb/machines/hard/snoopy/index.html	/^<a class=heading-link href=#html-review><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h3></;"	j
 HTML Review	public/infosec/htb/machines/hard/snoopy/index.html	/^<a class=heading-link href=#html-review><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h3></;"	j
 HUGO_BIN	themes/hugo-coder/Makefile	/^HUGO_BIN=hugo$/;"	m
-Headings	content/posts/markdown-syntax.md	/^## Headings$/;"	s
 Health	content/self/self/health.md	/^# Health$/;"	c
 Health	public-delete/categories/health/index.html	/^<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device/;"	j
 Health	public-delete/self/self/health/index.html	/^<a class=heading-link href=#health><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h1><h1 id/;"	h
@@ -4487,7 +4468,6 @@ Ingress	public/devops/k8s/network/index.html	/^<a class=heading-link href=#ingre
 Init	content/books/devops/unix-linux-system-admin/ch2.md	/^### Init$/;"	S	section:Chapter 2""Boot process
 Init	public-delete/books/devops/unix-linux-system-admin/ch2/index.html	/^<a class=heading-link href=#init><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h3><p>Varia/;"	j
 Init	public/books/devops/unix-linux-system-admin/ch2/index.html	/^<a class=heading-link href=#init><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h3><p>Varia/;"	j
-Inline Markdown within tables	content/posts/markdown-syntax.md	/^#### Inline Markdown within tables$/;"	t	section:H1""Tables
 Input and Output	content/coding/python/python-tutorial/python-tutorial.md	/^## Input and Output$/;"	s	chapter:Python Tutorial
 Input and Output	public-delete/coding/python/python-tutorial/python-tutorial/index.html	/^<a class=heading-link href=#input-and-output><i class="fa fa-link" aria-hidden=true><\/i><\/a><\//;"	i
 Input and Output	public/coding/python/python-tutorial/python-tutorial/index.html	/^<a class=heading-link href=#input-and-output><i class="fa fa-link" aria-hidden=true><\/i><\/a><\//;"	i
@@ -4569,6 +4549,8 @@ Journey to Martial Arts	public/posts/journey-martial-arts/index.html	/^Now I&rsq
 Justicia	content/self/self/bible/proverbs.md	/^### Justicia$/;"	S	section:Content""Summary
 Justicia	public-delete/self/self/bible/proverbs/index.html	/^<a class=heading-link href=#justicia><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h3><ul>/;"	j
 Justicia	public/self/self/bible/proverbs/index.html	/^<a class=heading-link href=#justicia><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h3><ul>/;"	j
+Keep Going On	public/blog/index.html	/^<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device/;"	j
+Keep Going On	public/posts/keep-going-on/index.html	/^<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device/;"	j
 Keeping it up!	public-delete/posts/keeping-up/index.html	/^Being at computer until 3AM Skipping Lunch?&mldr; well not anymore, but eating non-healthy food /;"	j
 Keeping it up!	public/posts/keeping-up/index.html	/^Being at computer until 3AM Skipping Lunch?&mldr; well not anymore, but eating non-healthy food /;"	j
 Keywords to research clarify:	content/books/tech/staring-into-the-singularity.md	/^## Keywords to research clarify:$/;"	s	chapter:Staring into the singularity 1.2.5 by Eliezer Yudkowsky (article)
@@ -4763,7 +4745,6 @@ Linux capabilities	public/books/devops/unix-linux-system-admin/ch3/index.html	/^
 Linux namespaces	content/books/devops/unix-linux-system-admin/ch3.md	/^## Linux namespaces$/;"	s	chapter:Chapter 3
 Linux namespaces	public-delete/books/devops/unix-linux-system-admin/ch3/index.html	/^<a class=heading-link href=#linux-namespaces><i class="fa fa-link" aria-hidden=true><\/i><\/a><\//;"	i
 Linux namespaces	public/books/devops/unix-linux-system-admin/ch3/index.html	/^<a class=heading-link href=#linux-namespaces><i class="fa fa-link" aria-hidden=true><\/i><\/a><\//;"	i
-List Types	content/posts/markdown-syntax.md	/^## List Types$/;"	s	chapter:H1
 List of Tech Events	content/p82.md	/^## List of Tech Events$/;"	s	chapter:Priv82
 List of Tech Events	public-delete/p82/index.html	/^<a class=heading-link href=#list-of-tech-events><i class="fa fa-link" aria-hidden=true><\/i><\/a/;"	i
 List of Tech Events	public/p82/index.html	/^<a class=heading-link href=#list-of-tech-events><i class="fa fa-link" aria-hidden=true><\/i><\/a/;"	i
@@ -4771,6 +4752,7 @@ List of commands	content/coding/bash/training/day1.md	/^### List of commands$/;"
 List of commands	public-delete/coding/bash/training/day1/index.html	/^<a class=heading-link href=#list-of-commands><i class="fa fa-link" aria-hidden=true><\/i><\/a><\//;"	j
 List of commands	public/coding/bash/training/day1/index.html	/^<a class=heading-link href=#list-of-commands><i class="fa fa-link" aria-hidden=true><\/i><\/a><\//;"	j
 Live Demo	themes/hugo-coder/README.md	/^## Live Demo$/;"	s
+Lo mas común...	content/coding/architecture.md	/^## Lo mas común...$/;"	s	chapter:Arquitectura de Software
 Load Balancer	content/devops/aws/aws-sa-assoc/load-balancer.md	/^# Load Balancer$/;"	c
 Load Balancer	public-delete/devops/aws/aws-sa-assoc/load-balancer/index.html	/^<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device/;"	j
 Load Balancer	public-delete/devops/aws/aws-sa-assoc/load-balancer/index.html	/^<a class=heading-link href=#load-balancer><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h1/;"	h
@@ -4818,7 +4800,6 @@ Maintenance	themes/hugo-coder/README.md	/^## Maintenance$/;"	s
 Man	content/self/self/wellbeing.md	/^## Man$/;"	s	chapter:Wellbeing
 Man	public-delete/self/self/wellbeing/index.html	/^<a class=heading-link href=#man><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><ul><li>P/;"	i
 Man	public/self/self/wellbeing/index.html	/^<a class=heading-link href=#man><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><ul><li>P/;"	i
-Markdown content	content/posts/html-and-css-only-tabs.md	/^## Markdown content$/;"	s
 Martial Arts	content/self/urban/fight.md	/^# Martial Arts$/;"	c
 Martial Arts	public-delete/self/urban/fight/index.html	/^<a class=heading-link href=#martial-arts><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h1>/;"	h
 Martial Arts	public-delete/self/urban/fight/index.html	/^Don&rsquo;t knee or kick the opponent while he is on the ground Don&rsquo;t hit the spine back o/;"	j
@@ -5004,7 +4985,6 @@ Natural Medicine	public-delete/self/self/health/index.html	/^<a class=heading-li
 Natural Medicine	public/self/self/health/index.html	/^<a class=heading-link href=#natural-medicine><i class="fa fa-link" aria-hidden=true><\/i><\/a><\//;"	i
 Need to check all the queries in live mode?:	content/devops/mysql/mysql.md	/^#### Need to check all the queries in live mode?:$/;"	t	chapter:Mysql tips
 Need to order all of these	content/devops/others/git_basics.md	/^## Need to order all of these$/;"	s	chapter:Content
-Nested list	content/posts/markdown-syntax.md	/^#### Nested list$/;"	t	section:H1""List Types
 Netflix	content/misc/movies.md	/^### Netflix$/;"	S	section:Movies""Pending Movies To Watch (Ignore this!)
 Netflix	public-delete/misc/movies/index.html	/^<a class=heading-link href=#netflix><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h3><ul></;"	j
 Netflix	public/misc/movies/index.html	/^<a class=heading-link href=#netflix><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h3><ul></;"	j
@@ -5112,7 +5092,6 @@ Openings	content/misc/board-games.md	/^#### Openings$/;"	t	section:Board Games""
 Options	content/devops/aws/aws-sa-assoc/ec2.md	/^### Options$/;"	S	section:EC2""Basics
 Options	public-delete/devops/aws/aws-sa-assoc/ec2/index.html	/^<a class=heading-link href=#options><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h3><ul></;"	j
 Options	public/devops/aws/aws-sa-assoc/ec2/index.html	/^<a class=heading-link href=#options><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h3><ul></;"	j
-Ordered List	content/posts/markdown-syntax.md	/^#### Ordered List$/;"	t	section:H1""List Types
 Origamis	content/misc/origamis.md	/^# Origamis$/;"	c
 Origamis	public-delete/misc/origamis/index.html	/^<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device/;"	j
 Origamis	public-delete/misc/origamis/index.html	/^<a class=heading-link href=#origamis><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h1><h2 /;"	h
@@ -5121,7 +5100,6 @@ Origamis	public/misc/origamis/index.html	/^<a class=heading-link href=#origamis>
 Other Bookmarks	bookmarks-13-11-2022.html	/^    <DT><H3 ADD_DATE="1665785257" LAST_MODIFIED="1668021505" UNFILED_BOOKMARKS_FOLDER="true">Oth/;"	j
 Other Bookmarks	bookmarks-23-01-2023.html	/^    <DT><H3 ADD_DATE="1669996456" LAST_MODIFIED="1669996456" UNFILED_BOOKMARKS_FOLDER="true">Oth/;"	j
 Other Bookmarks	bookmarks.html	/^    <DT><H3 ADD_DATE="1657632884" LAST_MODIFIED="1657632884" UNFILED_BOOKMARKS_FOLDER="true">Oth/;"	j
-Other Elements — abbr, sub, sup, kbd, mark	content/posts/markdown-syntax.md	/^## Other Elements — abbr, sub, sup, kbd, mark$/;"	s	chapter:H1
 Other useful tools	content/devops/others/others-tools.md	/^# Other useful tools$/;"	c
 Other useful tools	public-delete/devops/others/others-tools/index.html	/^<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device/;"	j
 Other useful tools	public-delete/devops/others/others-tools/index.html	/^<a class=heading-link href=#other-useful-tools><i class="fa fa-link" aria-hidden=true><\/i><\/a>/;"	h
@@ -5175,7 +5153,6 @@ Padres e hijos	public-delete/self/self/bible/proverbs/index.html	/^<a class=head
 Padres e hijos	public/self/self/bible/proverbs/index.html	/^<a class=heading-link href=#padres-e-hijos><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h/;"	j
 Page Not Found	public-delete/404.html	/^<label class="menu-button float-right" for=menu-toggle><i class="fa fa-bars fa-fw" aria-hidden=t/;"	i
 Page Not Found	public/404.html	/^<label class="menu-button float-right" for=menu-toggle><i class="fa fa-bars fa-fw" aria-hidden=t/;"	i
-Paragraph	content/posts/markdown-syntax.md	/^## Paragraph$/;"	s	chapter:H1
 Parques	content/travel/bo/lapaz/lapaz.md	/^### Parques$/;"	S	chapter:La Paz
 Parques	public-delete/travel/bo/lapaz/lapaz/index.html	/^<a class=heading-link href=#parques><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h3><ul></;"	j
 Parques	public/travel/bo/lapaz/lapaz/index.html	/^<a class=heading-link href=#parques><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h3><ul></;"	j
@@ -5464,7 +5441,7 @@ Readings	public/lang/fr/french-notes/index.html	/^<a class=heading-link href=#re
 Readings	public/lang/jp/basic-japanese/index.html	/^<a class=heading-link href=#readings><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><ul>/;"	i
 Recent Posts	layouts/shortcodes/recent-posts.html	/^        <h3>Recent Posts<\/h3>$/;"	j
 Recent Posts	public-delete/blog/index.html	/^<span class=tag><a href=\/tags\/motivation\/>motivation<\/a><\/span><\/div><\/div><\/header><div/;"	j
-Recent Posts	public/blog/index.html	/^<span class=tag><a href=\/tags\/motivation\/>motivation<\/a><\/span><\/div><\/div><\/header><div/;"	j
+Recent Posts	public/blog/index.html	/^<span class=tag><a href=\/tags\/planning\/>planning<\/a><\/span><\/div><\/div><\/header><div><p>/;"	j
 Redirections	content/coding/bash/training/day3.md	/^## Redirections$/;"	s	chapter:Bash training - Day 3
 Redirections	public-delete/coding/bash/training/day3/index.html	/^<a class=heading-link href=#redirections><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2>/;"	i
 Redirections	public/coding/bash/training/day3/index.html	/^<a class=heading-link href=#redirections><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2>/;"	i
@@ -5612,7 +5589,7 @@ Review music	public/misc/music/index.html	/^<a class=heading-link href=#review-m
 Reviewing HTML source code	content/infosec/htb/machines/easy/analytics.md	/^### Reviewing HTML source code$/;"	S	section:easy - Analytics""User
 Reviewing HTML source code	public-delete/infosec/htb/machines/easy/analytics/index.html	/^<a class=heading-link href=#reviewing-html-source-code><i class="fa fa-link" aria-hidden=true><\//;"	j
 Reviewing HTML source code	public/infosec/htb/machines/easy/analytics/index.html	/^<a class=heading-link href=#reviewing-html-source-code><i class="fa fa-link" aria-hidden=true><\//;"	j
-Right alighment	content/posts/html-and-css-only-tabs.md	/^## Right alighment$/;"	s
+Revisando resultados	content/posts/primera-carrera-autopista-ceja.md	/^### Revisando resultados$/;"	S
 Riquezas	content/self/self/bible/proverbs.md	/^### Riquezas$/;"	S	section:Content""Summary
 Riquezas	public-delete/self/self/bible/proverbs/index.html	/^<a class=heading-link href=#riquezas><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h3><ul>/;"	j
 Riquezas	public/self/self/bible/proverbs/index.html	/^<a class=heading-link href=#riquezas><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h3><ul>/;"	j
@@ -5734,6 +5711,7 @@ S3 Bucket	public/devops/aws/s3/index.html	/^<a class=heading-link href=#s3-bucke
 S3 Consistency	content/devops/aws/aws-sa-assoc/s3.md	/^### S3 Consistency$/;"	S	section:Simple Storage Service S3""Objects
 S3 Consistency	public-delete/devops/aws/aws-sa-assoc/s3/index.html	/^<a class=heading-link href=#s3-consistency><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h/;"	j
 S3 Consistency	public/devops/aws/aws-sa-assoc/s3/index.html	/^<a class=heading-link href=#s3-consistency><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h/;"	j
+SAAS mas populares	content/coding/architecture.md	/^## SAAS mas populares$/;"	s	chapter:Arquitectura de Software
 SGs	content/devops/aws/aws-sa-prof/vpc.md	/^### SGs$/;"	S	chapter:VPC
 SGs	public-delete/devops/aws/aws-sa-prof/vpc/index.html	/^<a class=heading-link href=#sgs><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h3><ul><li>A/;"	j
 SGs	public/devops/aws/aws-sa-prof/vpc/index.html	/^<a class=heading-link href=#sgs><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h3><ul><li>A/;"	j
@@ -5870,7 +5848,6 @@ Shellcodes notes	public/infosec/shellcodes/shellcodes-notes/index.html	/^<a clas
 Shellcodes notes	public/infosec/shellcodes/shellcodes-notes/index.html	/^\/usr\/include\/linux\/net.h Encoding shellcode By Adding 0x02 to each char ... popl %ebx \/* ge/;"	j
 Ship	content/coding/python/python-crash-course/game/ship.py	/^class Ship(Sprite):$/;"	c
 Ship	public/coding/python/python-crash-course/game/ship.py	/^class Ship(Sprite):$/;"	c
-Shortcodes Avisos	content/posts/more-rich-content.md	/^## Shortcodes Avisos$/;"	s
 Sid	content/devops/aws/ecr/policy-push-pull.json	/^         "Sid":"GetAuthorizationToken",$/;"	s	object:Statement.1
 Sid	content/devops/aws/ecr/policy-push-pull.json	/^         "Sid":"ListImagesInRepository",$/;"	s	object:Statement.0
 Sid	content/devops/aws/ecr/policy-push-pull.json	/^         "Sid":"ManageRepositoryContents",$/;"	s	object:Statement.2
@@ -6175,7 +6152,6 @@ Table of Content	public/devops/others/others-tools/index.html	/^<a class=heading
 Table of Content	public/infosec/htb/machines/easy/soccer/index.html	/^<a class=heading-link href=#table-of-content><i class="fa fa-link" aria-hidden=true><\/i><\/a><\//;"	h
 Table of Content	public/infosec/htb/machines/easy/topology/index.html	/^<a class=heading-link href=#table-of-content><i class="fa fa-link" aria-hidden=true><\/i><\/a><\//;"	h
 Table of Content	public/infosec/shellcodes/shellcodes-notes/index.html	/^<a class=heading-link href=#table-of-content><i class="fa fa-link" aria-hidden=true><\/i><\/a><\//;"	h
-Tables	content/posts/markdown-syntax.md	/^## Tables$/;"	s	chapter:H1
 Tags	public-delete/tags/index.html	/^<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device/;"	j
 Tags	public/tags/index.html	/^<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device/;"	j
 Tales	content/misc/movies.md	/^### Tales$/;"	S	section:Movies""Movies
@@ -6354,7 +6330,6 @@ Trivial question	public/devops/talks/intro-linux-shell/intro-linux-shell/index.h
 Trying to get into joshua home dir	content/infosec/htb-notes/machines/easy/codify.md	/^### Trying to get into joshua home dir$/;"	S	section:Easy - Codify (machine)""User flag
 Trying to get into joshua home dir	public-delete/infosec/htb-notes/machines/easy/codify/index.html	/^<a class=heading-link href=#trying-to-get-into-joshua-home-dir><i class="fa fa-link" aria-hidden/;"	j
 Trying to get into joshua home dir	public/infosec/htb-notes/machines/easy/codify/index.html	/^<a class=heading-link href=#trying-to-get-into-joshua-home-dir><i class="fa fa-link" aria-hidden/;"	j
-Twitter Simple Shortcode	content/posts/rich-content.md	/^## Twitter Simple Shortcode$/;"	s
 Types	content/devops/aws/aws-sa-assoc/ebs.md	/^## Types$/;"	s	chapter:Virtual hard disk. Block based storage.
 Types	content/devops/aws/aws-sa-assoc/storage-gateway.md	/^## Types$/;"	s	chapter:AWS Storage Gateway
 Types	public-delete/devops/aws/aws-sa-assoc/ebs/index.html	/^<a class=heading-link href=#types><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><ul><li/;"	i
@@ -6373,7 +6348,6 @@ Un viajecito rapidito nomás	public-delete/posts/un-viajecito-rapidito-nomas/ind
 Un viajecito rapidito nomás	public/posts/un-viajecito-rapidito-nomas/index.html	/^&#8213; Practicando fotografía &#8213; &#8213; Nada mejor que un buen dia soleado &#8213; Yo me/;"	j
 Unix badge	public-delete/infosec/pentesterlabs/02-unix/index.html	/^<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device/;"	j
 Unix badge	public-delete/infosec/pentesterlabs/02-unix/index.html	/^<a class=heading-link href=#unix-badge><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h1><p/;"	h
-Unordered List	content/posts/markdown-syntax.md	/^#### Unordered List$/;"	t	section:H1""List Types
 Use cases?	content/coding/solidity/solidity.md	/^## Use cases?$/;"	s	chapter:Solidity notes
 Use cases?	public-delete/coding/solidity/solidity/index.html	/^<a class=heading-link href=#use-cases><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><ul/;"	i
 Use cases?	public/coding/solidity/solidity/index.html	/^<a class=heading-link href=#use-cases><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><ul/;"	i
@@ -6489,6 +6463,7 @@ VPN	public-delete/devops/aws/aws-sa-prof/vpn/index.html	/^<a class=heading-link 
 VPN	public/devops/aws/aws-sa-assoc/vpc/index.html	/^<a class=heading-link href=#vpn><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h2><ul><li>r/;"	i
 VPN	public/devops/aws/aws-sa-prof/vpn/index.html	/^<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device/;"	j
 VPN	public/devops/aws/aws-sa-prof/vpn/index.html	/^<a class=heading-link href=#vpn><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h1><h3 id=si/;"	h
+Vamos por mas bro!	content/posts/primera-carrera-autopista-ceja.md	/^### Vamos por mas bro!$/;"	S
 Variable types	content/coding/python/python-crash-course/notes.md	/^### Variable types$/;"	S	section:Content""Basics
 Variable types	public/coding/python/python-crash-course/notes/index.html	/^<a class=heading-link href=#variable-types><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h/;"	j
 Variables	content/coding/bash/training/day2.md	/^### Variables$/;"	S	section:Bash training - Day 2""Bash variables and programming structures
@@ -6523,7 +6498,6 @@ Vim tips	public-delete/devops/others/vim/index.html	/^<!doctype html><html lang=
 Vim tips	public-delete/devops/others/vim/index.html	/^<a class=heading-link href=#vim-tips><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h1><h1 /;"	h
 Vim tips	public/devops/others/vim/index.html	/^<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device/;"	j
 Vim tips	public/devops/others/vim/index.html	/^<a class=heading-link href=#vim-tips><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h1><h1 /;"	h
-Vimeo Simple Shortcode	content/posts/rich-content.md	/^## Vimeo Simple Shortcode$/;"	s
 Violent Python - O-connor	content/books/coding/python/violent-python.md	/^# Violent Python - O-connor$/;"	c
 Violent Python - O-connor	public-delete/books/coding/python/violent-python/index.html	/^<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device/;"	j
 Violent Python - O-connor	public-delete/books/coding/python/violent-python/index.html	/^<a class=heading-link href=#violent-python---o-connor><i class="fa fa-link" aria-hidden=true><\//;"	h
@@ -6650,7 +6624,6 @@ Yanacachi	public-delete/travel/bo/lapaz/yanacachi/index.html	/^<!doctype html><h
 Yanacachi	public-delete/travel/bo/lapaz/yanacachi/index.html	/^<a class=heading-link href=#yanacachi><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h1><h2/;"	h
 Yanacachi	public/travel/bo/lapaz/yanacachi/index.html	/^<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device/;"	j
 Yanacachi	public/travel/bo/lapaz/yanacachi/index.html	/^<a class=heading-link href=#yanacachi><i class="fa fa-link" aria-hidden=true><\/i><\/a><\/h1><h2/;"	h
-YouTube Privacy Enhanced Shortcode	content/posts/rich-content.md	/^## YouTube Privacy Enhanced Shortcode$/;"	s
 Your introduction	content/devops/devops-interviews.md	/^## Your introduction$/;"	s	chapter:Devops Interviews
 Your introduction	public-delete/devops/devops-interviews/index.html	/^<a class=heading-link href=#your-introduction><i class="fa fa-link" aria-hidden=true><\/i><\/a></;"	i
 Your introduction	public/devops/devops-interviews/index.html	/^<a class=heading-link href=#your-introduction><i class="fa fa-link" aria-hidden=true><\/i><\/a></;"	i
@@ -7295,15 +7268,16 @@ can_double_down	public/coding/exercism/python/black_jack.py	/^def can_double_dow
 can_split_pairs	content/coding/exercism/python/black_jack.py	/^def can_split_pairs(card_one, card_two):$/;"	f
 can_split_pairs	public/coding/exercism/python/black_jack.py	/^def can_split_pairs(card_one, card_two):$/;"	f
 categories	themes/hugo-coder/assets/scss/_content_rtl.scss	/^      .categories {$/;"	c
-category	recents.json	/^    "category": "coding"$/;"	s	object:4
-category	recents.json	/^    "category": "coding"$/;"	s	object:5
-category	recents.json	/^    "category": "coding"$/;"	s	object:7
-category	recents.json	/^    "category": "coding"$/;"	s	object:8
-category	recents.json	/^    "category": "devops"$/;"	s	object:0
-category	recents.json	/^    "category": "devops"$/;"	s	object:3
-category	recents.json	/^    "category": "digital"$/;"	s	object:6
-category	recents.json	/^    "category": "infosec"$/;"	s	object:1
-category	recents.json	/^    "category": "infosec"$/;"	s	object:2
+category	recents.json	/^    "category": "coding"$/;"	s	object:2
+category	recents.json	/^    "category": "posts"$/;"	s	object:0
+category	recents.json	/^    "category": "posts"$/;"	s	object:1
+category	recents.json	/^    "category": "posts"$/;"	s	object:3
+category	recents.json	/^    "category": "posts"$/;"	s	object:4
+category	recents.json	/^    "category": "posts"$/;"	s	object:5
+category	recents.json	/^    "category": "posts"$/;"	s	object:6
+category	recents.json	/^    "category": "posts"$/;"	s	object:7
+category	recents.json	/^    "category": "posts"$/;"	s	object:8
+category	recents.json	/^    "category": "posts"$/;"	s	object:9
 center_ship	content/coding/python/python-crash-course/game/ship.py	/^    def center_ship(self):$/;"	m	class:Ship
 center_ship	public/coding/python/python-crash-course/game/ship.py	/^    def center_ship(self):$/;"	m	class:Ship
 centered	themes/hugo-coder/assets/scss/_content.scss	/^.centered {$/;"	c
@@ -7355,7 +7329,6 @@ childList	themes/hugo-coder/assets/js/coder.js	/^                childList: true
 chrome possible cves from 2021	content/infosec/chromium/intro.md	/^## chrome possible cves from 2021$/;"	s	chapter:Introduction to Google Chrome
 chrome possible cves from 2021	public-delete/infosec/chromium/intro/index.html	/^<a class=heading-link href=#chrome-possible-cves-from-2021><i class="fa fa-link" aria-hidden=tru/;"	i
 chrome possible cves from 2021	public/infosec/chromium/intro/index.html	/^<a class=heading-link href=#chrome-possible-cves-from-2021><i class="fa fa-link" aria-hidden=tru/;"	i
-cidr_block	public/devops/aws-notes/tf/vpc/vpc-mod/variables.tf	/^variable "cidr_block" {$/;"	v
 classes	content/coding/pytorch/pytorch-tutorials/labs/01.py	/^classes = [$/;"	v
 classes	public-delete/coding/pytorch/pytorch-tutorials/labs/01.py	/^classes = [$/;"	v
 classes	public/coding/pytorch/pytorch-tutorials/labs/01.py	/^classes = [$/;"	v
@@ -8768,15 +8741,16 @@ figure	static/css/hugo-easy-gallery.css	/^figure {$/;"	s
 figure a	public-delete/css/hugo-easy-gallery.css	/^figure a {$/;"	s
 figure a	public/css/hugo-easy-gallery.css	/^figure a {$/;"	s
 figure a	static/css/hugo-easy-gallery.css	/^figure a {$/;"	s
-filename	recents.json	/^    "filename": "\/coding\/codewars\/readme",$/;"	s	object:5
-filename	recents.json	/^    "filename": "\/coding\/exercism\/readme",$/;"	s	object:4
-filename	recents.json	/^    "filename": "\/coding\/python\/python-crash-course\/notes",$/;"	s	object:7
-filename	recents.json	/^    "filename": "\/coding\/python\/violent-python\/violent-python",$/;"	s	object:8
-filename	recents.json	/^    "filename": "\/devops\/aws-notes\/ec2",$/;"	s	object:0
-filename	recents.json	/^    "filename": "\/devops\/linux\/archlinux",$/;"	s	object:3
-filename	recents.json	/^    "filename": "\/digital\/digital-tooling",$/;"	s	object:6
-filename	recents.json	/^    "filename": "\/infosec\/ctf-notes\/readme",$/;"	s	object:1
-filename	recents.json	/^    "filename": "\/infosec\/ctfs",$/;"	s	object:2
+filename	recents.json	/^    "filename": "\/coding\/architecture",$/;"	s	object:2
+filename	recents.json	/^    "filename": "\/posts\/2nd-quarter-objs",$/;"	s	object:5
+filename	recents.json	/^    "filename": "\/posts\/another-trip-to-coroico",$/;"	s	object:7
+filename	recents.json	/^    "filename": "\/posts\/cambio-a-español",$/;"	s	object:3
+filename	recents.json	/^    "filename": "\/posts\/carrera-policia-boliviana",$/;"	s	object:0
+filename	recents.json	/^    "filename": "\/posts\/comfort-disconfort",$/;"	s	object:6
+filename	recents.json	/^    "filename": "\/posts\/extrano-viajar-estos-dias",$/;"	s	object:4
+filename	recents.json	/^    "filename": "\/posts\/primera-carrera-autopista-ceja",$/;"	s	object:1
+filename	recents.json	/^    "filename": "\/posts\/un-viajecito-rapidito-nomas",$/;"	s	object:8
+filename	recents.json	/^    "filename": "\/posts\/yutaka-15teen-night",$/;"	s	object:9
 first and foremost	content/books/business/4-hour-week.md	/^## first and foremost$/;"	s	chapter:Book: 4 hour week work
 first and foremost	public-delete/books/business/4-hour-week/index.html	/^<a class=heading-link href=#first-and-foremost><i class="fa fa-link" aria-hidden=true><\/i><\/a>/;"	i
 first and foremost	public/books/business/4-hour-week/index.html	/^<a class=heading-link href=#first-and-foremost><i class="fa fa-link" aria-hidden=true><\/i><\/a>/;"	i
@@ -9297,15 +9271,16 @@ model	public-delete/coding/pytorch/labs/lab01.py	/^model = GPT2LMHeadModel.from_
 model	public-delete/coding/pytorch/pytorch-tutorials/labs/01.py	/^model = NeuralNetwork().to(device)$/;"	v
 model	public/coding/pytorch/labs/lab01.py	/^model = GPT2LMHeadModel.from_pretrained('distilgpt2')$/;"	v
 model	public/coding/pytorch/pytorch-tutorials/labs/01.py	/^model = NeuralNetwork().to(device)$/;"	v
-modtime	recents.json	/^    "modtime": "05-14-2024 12:21",$/;"	s	object:8
-modtime	recents.json	/^    "modtime": "05-16-2024 20:09",$/;"	s	object:7
-modtime	recents.json	/^    "modtime": "05-23-2024 19:35",$/;"	s	object:6
-modtime	recents.json	/^    "modtime": "05-27-2024 16:44",$/;"	s	object:5
-modtime	recents.json	/^    "modtime": "05-27-2024 16:55",$/;"	s	object:4
-modtime	recents.json	/^    "modtime": "06-13-2024 11:58",$/;"	s	object:3
-modtime	recents.json	/^    "modtime": "06-13-2024 18:55",$/;"	s	object:2
-modtime	recents.json	/^    "modtime": "06-13-2024 19:36",$/;"	s	object:1
-modtime	recents.json	/^    "modtime": "06-13-2024 20:48",$/;"	s	object:0
+modtime	recents.json	/^    "modtime": "06-20-2024 10:47",$/;"	s	object:9
+modtime	recents.json	/^    "modtime": "06-20-2024 10:48",$/;"	s	object:8
+modtime	recents.json	/^    "modtime": "06-20-2024 10:49",$/;"	s	object:6
+modtime	recents.json	/^    "modtime": "06-20-2024 10:49",$/;"	s	object:7
+modtime	recents.json	/^    "modtime": "06-20-2024 10:50",$/;"	s	object:4
+modtime	recents.json	/^    "modtime": "06-20-2024 10:50",$/;"	s	object:5
+modtime	recents.json	/^    "modtime": "06-20-2024 11:01",$/;"	s	object:3
+modtime	recents.json	/^    "modtime": "06-20-2024 23:15",$/;"	s	object:2
+modtime	recents.json	/^    "modtime": "06-24-2024 21:23",$/;"	s	object:0
+modtime	recents.json	/^    "modtime": "06-24-2024 21:23",$/;"	s	object:1
 motivation	public-delete/tags/motivation/index.html	/^<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device/;"	j
 motivation	public/tags/motivation/index.html	/^<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device/;"	j
 movies	public-delete/tags/movies/index.html	/^<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device/;"	j
@@ -10013,22 +9988,22 @@ theme: Copenhagen	content/devops/talks/intro-linux-shell/intro-linux-shell.md	/^
 theme: Copenhagen	content/devops/talks/productivity/productivity-talk-darvein.md	/^theme: Copenhagen$/;"	s	chapter:Questions & Answers
 thinking	public-delete/tags/thinking/index.html	/^<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device/;"	j
 thinking	public/tags/thinking/index.html	/^<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device/;"	j
-this	public/devops/aws-notes/tf/vpc/vpc-mod/main.tf	/^resource "aws_vpc" "this" {$/;"	r
 tiny changes make a big difference	content/books/life/atomic-habits.md	/^## tiny changes make a big difference$/;"	s	chapter:Atomic Habits
 tiny changes make a big difference	public-delete/books/life/atomic-habits/index.html	/^<a class=heading-link href=#tiny-changes-make-a-big-difference><i class="fa fa-link" aria-hidden/;"	i
 tiny changes make a big difference	public/books/life/atomic-habits/index.html	/^<a class=heading-link href=#tiny-changes-make-a-big-difference><i class="fa fa-link" aria-hidden/;"	i
 tip	themes/hugo-coder/assets/scss/_notices.scss	/^.notice.tip {$/;"	c
 title	public-delete/js/load-photoswipe.js	/^				title 	: $title,$/;"	p	variable:anonymousFunctionbbf19b490200.item
 title	public/js/load-photoswipe.js	/^				title 	: $title,$/;"	p	variable:anonymousFunctiondbaef6290200.item
-title	recents.json	/^    "title": "Arch Linux Notes",$/;"	s	object:3
-title	recents.json	/^    "title": "Book - Violent Python",$/;"	s	object:8
-title	recents.json	/^    "title": "CTFs Notes",$/;"	s	object:1
-title	recents.json	/^    "title": "Capture the flag CTFs",$/;"	s	object:2
-title	recents.json	/^    "title": "Digital Tooling",$/;"	s	object:6
-title	recents.json	/^    "title": "EC2 Notes",$/;"	s	object:0
-title	recents.json	/^    "title": "Python Crash Course Notes",$/;"	s	object:7
-title	recents.json	/^    "title": "codewars practice",$/;"	s	object:5
-title	recents.json	/^    "title": "exercism",$/;"	s	object:4
+title	recents.json	/^    "title": " Another trip to Coroico",$/;"	s	object:7
+title	recents.json	/^    "title": " Cambio a Español",$/;"	s	object:3
+title	recents.json	/^    "title": " Comfort through discomfort",$/;"	s	object:6
+title	recents.json	/^    "title": " Entrenamiento en la Autopista de El Alto",$/;"	s	object:1
+title	recents.json	/^    "title": " Extrañando viajar...",$/;"	s	object:4
+title	recents.json	/^    "title": " Guerreros de Altura Bolivia",$/;"	s	object:0
+title	recents.json	/^    "title": " Objetives for the 2nd Quarter!",$/;"	s	object:5
+title	recents.json	/^    "title": " Un viajecito rapidito nomás",$/;"	s	object:8
+title	recents.json	/^    "title": " Yutaka Ozaki 15 Teens Night",$/;"	s	object:9
+title	recents.json	/^    "title": "Arquitectura de Software",$/;"	s	object:2
 title	static/js/load-photoswipe.js	/^				title 	: $title,$/;"	p	variable:anonymousFunction81a9c1f20200.item
 title	themes/hugo-coder/assets/scss/_content.scss	/^      .title {$/;"	c
 title	themes/hugo-coder/assets/scss/_content_dark.scss	/^          .title {$/;"	c
@@ -10193,8 +10168,6 @@ video	public/css/custom.min.7cf8a329bb485491ed5be45bd286916c655bf66e11e3fe4d8264
 video-training	bookmarks-13-11-2022.html	/^            <DT><H3 ADD_DATE="1638991087" LAST_MODIFIED="1667513853">video-training<\/H3>$/;"	j
 video-training	bookmarks-23-01-2023.html	/^            <DT><H3 ADD_DATE="1638991087" LAST_MODIFIED="1669996544">video-training<\/H3>$/;"	j
 video-training	bookmarks.html	/^            <DT><H3 ADD_DATE="1638991087" LAST_MODIFIED="1657632949">video-training<\/H3>$/;"	j
-vpc	public/devops/aws-notes/tf/vpc/main.tf	/^module "vpc" {$/;"	m
-vpc_id	public/devops/aws-notes/tf/vpc/vpc-mod/outputs.tf	/^output "vpc_id" {$/;"	o
 w	public-delete/js/load-photoswipe.js	/^				w		: $size[0],$/;"	p	variable:anonymousFunctionbbf19b490200.item
 w	public-delete/js/load-photoswipe.js	/^				w		: 800, \/\/ temp default size$/;"	p	variable:anonymousFunctionbbf19b490200.item
 w	public/js/load-photoswipe.js	/^				w		: $size[0],$/;"	p	variable:anonymousFunctiondbaef6290200.item

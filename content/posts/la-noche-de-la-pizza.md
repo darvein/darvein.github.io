@@ -1,7 +1,7 @@
 +++
 title = "La noche de la Pizza"
-categories = ["Health",]
-tags = ["food"]
+categories = ["Cuerpo",]
+tags = ["Alimentación"]
 date = "2022-07-15"
 +++
 

@@ -1,7 +1,7 @@
 +++
 title = "Yutaka Ozaki 15 Teens Night"
-categories = ["Music"]
-tags = ["music"]
+categories = ["Mente"]
+tags = ["Música", "Creatividad"]
 date = "2024-02-02"
 +++
 

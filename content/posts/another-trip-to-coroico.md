@@ -1,7 +1,7 @@
 +++
 title = "Another trip to Coroico"
-categories = ["Life", "Travel"]
-tags = ["coroico"]
+categories = ["Vida"]
+tags = ["Turismo"]
 date = "2023-08-25"
 +++
 

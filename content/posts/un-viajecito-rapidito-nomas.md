@@ -1,7 +1,7 @@
 +++
 title = "Un viajecito rapidito nomás"
-categories = ["Life", "Travel"]
-tags = ["cotaña"]
+categories = ["Vida"]
+tags = ["Turismo"]
 date = "2023-05-28"
 +++
 

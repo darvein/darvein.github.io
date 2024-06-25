@@ -1,7 +1,7 @@
 +++
 title = "Keep Going On"
-categories = ["Life"]
-tags = ["life"]
+categories = ["Mente"]
+tags = ["Motivación"]
 date = "2024-06-19"
 thumbnail = "/i/2024-06-19_12-57.png"
 +++

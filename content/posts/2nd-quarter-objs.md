@@ -1,7 +1,7 @@
 +++
 title = "Objetives for the 2nd Quarter!"
-categories = ["Planning"]
-tags = ["planning"]
+categories = ["Mente"]
+tags = ["Motivación"]
 date = "2024-03-21"
 thumbnail = "/i/imageworkking.jpg"
 +++

@@ -25,9 +25,15 @@
       {{ end }}
     </div>
     <div class="sidebar">
-      <h3>Categories</h3>
+      <h3>Categorías</h3>
       <ul>
         {{ range .Site.Taxonomies.categories }}
+        <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
+        {{ end }}
+      </ul>
+      <h3>Etiquetas</h3>
+      <ul>
+        {{ range .Site.Taxonomies.tags }}
         <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
         {{ end }}
       </ul>

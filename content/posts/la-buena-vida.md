@@ -1,7 +1,7 @@
 +++
 title = "La buena vida"
-categories = ["Health",]
-tags = ["food"]
+categories = ["Cuerpo"]
+tags = ["Alimentación"]
 date = "2022-08-06"
 +++
 

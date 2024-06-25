@@ -1,6 +1,7 @@
 +++
 title = "Momentos con la naturaleza"
-categories = ["Life", ]
+categories = ["Mente", ]
+tags = ["Motivación"]
 date = "2022-08-21"
 +++
 

@@ -1,7 +1,7 @@
 +++
 title = "Wu Tang Clan CREAM"
-categories = ["Music"]
-tags = ["music"]
+categories = ["Mente"]
+tags = ["Creatividad", "Música"]
 date = "2024-02-02"
 +++
 

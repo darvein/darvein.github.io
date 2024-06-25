@@ -1,6 +1,7 @@
 +++
 title = "NONO Here she comes now now"
-categories = ["Life", ]
+categories = ["Vida", ]
+tags = ["Vivencias"]
 date = "2022-07-15"
 draft = true
 +++

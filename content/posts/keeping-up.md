@@ -1,7 +1,7 @@
 +++
 title = "Keeping it up!"
-categories = ["Life"]
-tags = ["motivation"]
+categories = ["Mente"]
+tags = ["Motivación"]
 date = "2024-02-21"
 thumbnail = "/i/2024-02-21_16-42.png"
 +++

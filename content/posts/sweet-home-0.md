@@ -1,6 +1,7 @@
 +++
 title = "Hogar dulce hogar"
-categories = ["Life", ]
+categories = ["Vida", ]
+tags = ["Vivencias"]
 date = "2023-04-23"
 +++
 

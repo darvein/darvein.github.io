@@ -1,6 +1,7 @@
 +++
 title = "¡A bajar de peso!"
-categories = ["Health", ]
+categories = ["Cuerpo", ]
+tags = ["Alimentación"]
 date = "2022-07-10"
 +++
 

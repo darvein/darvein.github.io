@@ -1,6 +1,7 @@
 +++
 title = "Cualquiera de estos libros esta bien"
-categories = ["Books", ]
+categories = ["Mente", ]
+tags = ["Libros"]
 date = "2022-07-16"
 +++
 

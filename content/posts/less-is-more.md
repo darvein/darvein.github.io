@@ -1,7 +1,7 @@
 +++
 title = "Less is more"
-categories = ["Life"]
-tags = ["thinking"]
+categories = ["Mente"]
+tags = ["Motivación"]
 date = "2024-01-14"
 +++
 
