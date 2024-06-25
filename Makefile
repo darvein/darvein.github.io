@@ -26,4 +26,5 @@ publish: build
 	cd content/infosec/htb-notes; git add -A . ; git commit -m 'Updating notes'; git push origin main; cd -
 	cd content/infosec/ctf-notes; git add -A . ; git commit -m 'Updating notes'; git push origin main; cd -
 	git add -A . ; git commit -m 'Updating blog'; git push origin main
-	cd public && rsync -avz . darveinnet-static:/var/www/darvein.net/html/
+	#cd public && rsync -avz . darveinnet-static:/var/www/darvein.net/html/
+	aws s3 cp public/ s3://nextbrave-darvein/ --recursive --acl public-read

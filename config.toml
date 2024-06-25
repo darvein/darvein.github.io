@@ -32,9 +32,9 @@ rtl = false
 # "light" (light background, dark foreground) (default)
 colorScheme = "dark"
 # Hide the toggle button, along with the associated vertical divider
-hideColorSchemeToggle = true
+hideColorSchemeToggle = false
 # Series see also post count
-maxSeeAlsoItems = 5
+maxSeeAlsoItems = 15
 # Custom CSS
 customCSS = ["css/custom.css"]
 # Custom SCSS, file path is relative to Hugo's asset folder (default: {your project root}/assets)
@@ -42,6 +42,7 @@ customSCSS = []
 # Custom JS
 #customJS = ["js/custom.js"]
 customJS = []
+#mainSections = ["2024"]
 
 [permalinks]
 posts = "/:year/:month/:title/"
@@ -151,4 +152,3 @@ weight = 30
 name = "Digital"
 url = "digital/"
 weight = 40
-
