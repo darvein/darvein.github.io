@@ -1,6 +1,7 @@
 run:
 	@echo "Running hugo server"
 	bash recents.sh
+	./hugo --cleanDestinationDir
 	./hugo serve --watch --noHTTPCache --disableFastRender -c content -D -E -F -v -s .
 	#./hugo serve --watch  --ignoreCache  --noHTTPCache --disableFastRender -c content -D -E -F -v -s .
 
@@ -8,6 +9,7 @@ build:
 	@echo "Generating build into public dir"
 	rm -rvf public
 	bash recents.sh
+	./hugo --cleanDestinationDir
 	./hugo --minify --config config.toml,prod.toml --noTimes -s .
 
 publish: build

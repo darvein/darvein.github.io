@@ -43,6 +43,9 @@ customSCSS = []
 #customJS = ["js/custom.js"]
 customJS = []
 
+[permalinks]
+posts = "/:year/:month/:title/"
+
 # If you want to use fathom(https://usefathom.com) for analytics, add this section
 # [params.fathomAnalytics]
 # siteID = "ABCDE"
