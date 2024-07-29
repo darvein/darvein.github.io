@@ -1,0 +1,48 @@
+<head>
+  {{ partial "head/meta-tags.html" . }}
+
+  <!-- 
+<title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+<title>{{ if .IsHome }}Home - {{ else }}{{ if .Page.Title }}{{ .Page.Title }} - {{ end }}{{ end }}{{ .Site.Title }}</title>
+-->
+
+  {{ $headers := findRE "<h1.*?>(.|\n)*?</h1>" .Content }}
+  {{ $headerTitle := index $headers 0 }}
+
+  {{ with $headerTitle | default .Page.Title }}
+    <title>{{ . | plainify }}</title>
+  {{ end }}
+
+  {{ if .Permalink }}
+  <link rel="canonical" href="{{ .Permalink }}">
+  {{ end }}
+
+  {{ partialCached "head/theme-styles.html" . }}
+
+  {{ partialCached "head/color-scheme.html" . }}
+
+  {{ partialCached "head/custom-styles.html" . }}
+
+  {{ partialCached "head/custom-icons.html" . }}
+
+  {{ partial "head/alternative-output-formats.html" . }}
+
+  {{ partialCached "head/hugo-generator.html" . }}
+
+  {{ partial "head/extensions.html" . }}
+
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="{{ .Title }}" />
+  <meta property="og:description" content="{{ .Params.description }}" />
+  <meta property="og:image" content="{{ .Params.thumbnail | absURL }}" />
+  <meta property="og:url" content="{{ .Permalink }}" />
+  <meta property="og:type" content="article" />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ .Title }}" />
+  <meta name="twitter:description" content="{{ .Params.description }}" />
+  <meta name="twitter:image" content="{{ .Params.image | absURL }}" />
+  <meta name="twitter:url" content="{{ .Permalink }}" />
+</head>

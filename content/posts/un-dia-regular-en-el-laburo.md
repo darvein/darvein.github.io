@@ -1,6 +1,6 @@
 +++
 title = "Un dia regular en el trabajo"
-categories = ["Vida", ]
+categories = ["Mundo", ]
 tags = ["Vivencias"]
 date = "2022-07-15"
 +++

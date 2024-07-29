@@ -19,5 +19,7 @@
 
 # Vida
 - Espiritualidad
-- Vivencias: Familia, Amigos
+
+# Mundo
 - Turismo
+- Vivencias: Familia, Amigos

@@ -24,8 +24,9 @@
       <div>No posts found.</div>
       {{ end }}
     </div>
+
     <div class="sidebar">
-      <h3>Categorías</h3>
+      <h2>Categorías</h2>
       <ul>
         {{ range .Site.Taxonomies.categories }}
         <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>

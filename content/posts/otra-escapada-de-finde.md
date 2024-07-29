@@ -1,6 +1,6 @@
 +++
 title = "Otra escapada de finde!"
-categories = ["Vida", ]
+categories = ["Mundo"]
 tags = ["Turismo"]
 date = "2022-08-21"
 +++

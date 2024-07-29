@@ -94,6 +94,7 @@ connectsrc = ["'self'", "https://www.google-analytics.com", "https://links.servi
 
 [taxonomies]
 category = "categories"
+subcategory = "subcategories"
 series = "series"
 tag = "tags"
 author = "autores"
@@ -133,22 +134,22 @@ type = "application/rss+xml"
 [languages.en]
 languageName = ":us:"
 
-[[languages.en.menu.main]]
-name = "Infosec"
-url = "infosec/"
-weight = 10
+#[[languages.en.menu.main]]
+#name = "Infosec"
+#url = "infosec/"
+#weight = 10
 
-[[languages.en.menu.main]]
-name = "Coding"
-url = "coding/"
-weight = 20
+#[[languages.en.menu.main]]
+#name = "Coding"
+#url = "coding/"
+#weight = 20
 
-[[languages.en.menu.main]]
-name = "Devops"
-url = "devops/"
-weight = 30
+#[[languages.en.menu.main]]
+#name = "Devops"
+#url = "devops/"
+#weight = 30
 
-[[languages.en.menu.main]]
-name = "Digital"
-url = "digital/"
-weight = 40
+#[[languages.en.menu.main]]
+#name = "Digital"
+#url = "digital/"
+#weight = 40

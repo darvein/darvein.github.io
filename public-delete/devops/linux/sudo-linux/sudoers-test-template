@@ -1,6 +1,0 @@
-Host_Alias      SERVERS = shine
-User_Alias      OPS     = foobar
-Runas_Alias     ADMINS  = n0kt, root
-Cmnd_Alias      CMDS    = /home/n0kt/talks/sudo-linux/demo.sh
-
-OPS     SERVERS = (ADMINS) CMDS

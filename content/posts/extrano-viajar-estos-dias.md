@@ -1,6 +1,6 @@
 +++
 title = "Extrañando viajar..."
-categories = ["Vida", ]
+categories = ["Mundo" ]
 tags = ["Turismo"]
 date = "2023-05-14"
 +++

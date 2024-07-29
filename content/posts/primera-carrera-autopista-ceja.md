@@ -1,6 +1,7 @@
 +++
 title = "Entrenamiento en la Autopista de El Alto"
 categories = ["Cuerpo"]
+subcategories = ["Carrera"]
 tags = ["Carrera"]
 date = "2024-06-10"
 thumbnail = "/i/2024-06-24_20-51.png"

@@ -1,6 +1,6 @@
 +++
 title = "Family Bonds"
-categories = ["Vida"]
+categories = ["Mundo"]
 tags = ["Vivencias"]
 date = "2024-02-12"
 +++
