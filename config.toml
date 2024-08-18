@@ -77,7 +77,7 @@ defaultsrc = ["'self'", "https://www.dropbox.com", "https://*.dl.dropboxusercont
 childsrc = ["'self'"]
 fontsrc = ["'self'", "https://fonts.gstatic.com", "https://cdn.jsdelivr.net/"]
 formaction = ["'self'"]
-framesrc = ["'self'", "https://w.soundcloud.com", "https://www.youtube.com", "https://www.youtube-nocookie.com", "https://www.dropbox.com", "http://localhost", "https://www.dropbox.com", "http://darvein.local", "https://disqus.com"]
+framesrc = ["'self'", "https://w.soundcloud.com", "https://www.youtube.com", "https://www.youtube-nocookie.com", "https://www.dropbox.com", "http://localhost", "https://www.dropbox.com", "http://halley.int", "https://disqus.com"]
 imgsrc = ["'self'", "https://photos.google.com", "https://lh3.googleusercontent.com", "https://www.dropbox.com", "https://*.dl.dropboxusercontent.com", "https://*.disqus.com", "https://c.disquscdn.com"]
 objectsrc = ["https://lh3.googleusercontent.com"]
 stylesrc = [
@@ -87,7 +87,7 @@ stylesrc = [
   "https://cdn.jsdelivr.net/",
   "https://c.disquscdn.com"
 ]
-scriptsrc = ["'self'", "'unsafe-inline'", "https://www.google-analytics.com", "https://cdnjs.cloudflare.com", "https://www.googletagmanager.com", "https://www.dropbox.com", "http://localhost", "http://darvein.local", "https://drv21.disqus.com", "https://c.disquscdn.com"]
+scriptsrc = ["'self'", "'unsafe-inline'", "https://www.google-analytics.com", "https://cdnjs.cloudflare.com", "https://www.googletagmanager.com", "https://www.dropbox.com", "http://localhost", "http://halley.int", "https://drv21.disqus.com", "https://c.disquscdn.com"]
 prefetchsrc = ["'self'", "https://youtube.googleapis.com"]
 # connect-src directive – defines valid targets for to XMLHttpRequest (AJAX), WebSockets or EventSource
 connectsrc = ["'self'", "https://www.google-analytics.com", "https://links.services.disqus.com"]
