@@ -28,3 +28,6 @@
 [submodule "content/coding/exercism"]
 	path = content/coding/exercism
 	url = git@github.com:darvein/exercism.git
+[submodule "themes/hugo-coder"]
+	path = themes/hugo-coder
+	url = https://github.com/luizdepra/hugo-coder.git
