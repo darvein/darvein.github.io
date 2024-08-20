@@ -15,7 +15,7 @@
                 </time>
               </span>
             </div>
-            {{ with .Page.Params.Categories }}{{ partial "taxonomy/categories.html" . }}{{ end }}
+            {{ with .GetTerms "categories" }}{{ partial "taxonomy/categories.html" . }}{{ end }}
           </div>
           <p class="post-summary">{{ .Summary | plainify | truncate 150 }}</p>
         </div>

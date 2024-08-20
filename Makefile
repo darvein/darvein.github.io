@@ -1,21 +1,20 @@
 run:
 	@echo "Running hugo server"
-	bash recents.sh
+	#bash recents.sh
 	hugo --cleanDestinationDir
-	hugo serve --watch --noHTTPCache --disableFastRender -c content -D -E -F -v -s .
-	#./hugo serve --watch  --ignoreCache  --noHTTPCache --disableFastRender -c content -D -E -F -v -s .
+	hugo server --watch --noHTTPCache --disableFastRender -c content -D -E -F -s . -p 1313
 
 build:
 	@echo "Generating build into public dir"
 	rm -rvf public
-	bash recents.sh
-	./hugo --cleanDestinationDir
-	./hugo --minify --config config.toml,prod.toml --noTimes -s .
+	#bash recents.sh
+	hugo --cleanDestinationDir
+	hugo --minify --config config.toml,prod.toml --noTimes -s .
 
 publish: build
 	@echo "Uploading files to server"
-	#git submodule init
-	#git submodule update
+	#git submodule --init --update
+	#git submodule update --remote --merge
 	cd content/coding/python; git add -A . ; git commit -m 'Updating notes'; git push origin main; cd -
 	cd content/devops/k8s2; git add -A . ; git commit -m 'Updating notes'; git push origin main; cd -
 	cd content/devops/aws-notes; git add -A . ; git commit -m 'Updating notes'; git push origin main; cd -

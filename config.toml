@@ -3,7 +3,7 @@ title = "Darvein"
 theme = "hugo-coder"
 languageCode = "en"
 defaultContentLanguage = "en"
-paginate = 20
+paginate = 5
 pygmentsStyle = "fruity"
 pygmentsCodeFences = true
 pygmentsCodeFencesGuessSyntax = true
@@ -11,6 +11,9 @@ pygmentsOptions = "tabWidth=2"
 enableEmoji = true
 #disqusShortname = "drv21"
 ignorefiles = [ "venv", ".git" ]
+
+[markup.highlight]
+noClasses = false
 
 [params]
 author = "Dennis Ruiz"
@@ -30,7 +33,7 @@ rtl = false
 # "auto" (use preference set by browser)
 # "dark" (dark background, light foreground)
 # "light" (light background, dark foreground) (default)
-colorScheme = "dark"
+colorScheme = "auto"
 # Hide the toggle button, along with the associated vertical divider
 hideColorSchemeToggle = false
 # Series see also post count
