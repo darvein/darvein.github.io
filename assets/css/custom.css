@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=PT+Serif:wght@400;700&display=swap');
 
 body {
-  font-family: 'Merriweather', serif;
+  font-family: 'PT Serif', serif;
   line-height: 1.8;
-  font-size: 1.6rem;
+  font-size: 18px; /* Tamaño ajustado para mejorar la legibilidad */
   margin: 0;
   padding: 0;
   background-color: #121212;
@@ -39,26 +39,33 @@ hr {
   color: #bbbbbb;
 }
 
+
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 2rem 0 1rem 0;
+  line-height: 1.4;
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 2.8em;
   border-bottom: 5px solid #0984e3;
   display: inline-block;
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 2.4em;
   border-bottom: 2px solid #0984e3;
   padding-bottom: 0.2rem;
   margin-bottom: 1.5rem;
 }
 
 h3 {
-  font-size: 1.75em;
+  font-size: 2em;
+}
+
+.post-content p {
+  white-space: normal;
+  word-wrap: break-word;
 }
 
 .header,
@@ -171,8 +178,8 @@ h3 {
 
 .post-meta,
 .date {
-  font-size: 0.9em;
-  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif;
   color: #888;
 }
 
@@ -291,6 +298,20 @@ section.container tbody {
     margin-bottom: 20px;
     max-width: 100%;
   }
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 3px solid #1e272e;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-container img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4), 0 12px 30px rgba(0, 0, 0, 0.3);
 }
 
 /* Audio */

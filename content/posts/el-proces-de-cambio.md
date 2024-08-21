@@ -1,6 +1,6 @@
 +++
 title = "El proceso de cambio"
-categories = [ "Mundo",]
+categories = [ "Alma",]
 tags = ["Vivencias"]
 date = "2022-08-21"
 +++

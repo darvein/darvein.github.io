@@ -1,6 +1,6 @@
 +++
 title = "Gracias Toptal!"
-categories = ["Mundo"]
+categories = ["Alma"]
 tags = ["Trabajo"]
 date = "2022-08-29"
 +++

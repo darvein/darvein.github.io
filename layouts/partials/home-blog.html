@@ -1,7 +1,7 @@
 <section class="container page">
   <div class="blog-container">
     <div class="blog-posts">
-      {{ range first 10 .Site.RegularPages.ByDate.Reverse }}
+      {{ range first 5 .Site.RegularPages.ByDate.Reverse }}
       <article class="post-item">
         <img class="post-thumbnail" src="{{ with .Params.thumbnail }}{{ . }}{{ else }}/i/default-thumbnail.png{{ end }}" alt="{{ .Title }}">
         <div class="post-details">

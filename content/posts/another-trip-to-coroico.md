@@ -1,6 +1,6 @@
 +++
 title = "Another trip to Coroico"
-categories = ["Mundo"]
+categories = ["Alma"]
 tags = ["Turismo"]
 date = "2023-08-25"
 +++
