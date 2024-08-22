@@ -176,6 +176,8 @@ Integridad pensamientos, dichos y acciones
     - Ella abre su boca con sabiduría, su marido y sus hijos le alaban
 
 
+![Rey Salomón en la antiguedad](/i/rey-salomon-001.png)
+
 ### Asi que...
 Ha sido un post bastante largo de leer si lo leíste. Hay tantos libros de superación y auto-ayuda o desarrollo personal, algunos los leí, otros solo leí resúmenes, también escuché podcasts y miré videos buscando un norte de como vivir una vida plena. Hubiera empezado por leer el libro de Proverbios hace muchos años, hubiera sido un excelente punto de partida, pero bueno, nunca es tarde.
 
