@@ -27,3 +27,6 @@
 * Where is the restroom?: Где туалет? (Gde tualet?)
 * How much does this cost?: Сколько это стоит? (Skol'ko eto stoit?)
 * Do you speak English?: Вы говорите по-английски? (Vy govorite po-angliyski?)
+
+### Some resources
+* https://www.tiktok.com/@befluentinrussian
