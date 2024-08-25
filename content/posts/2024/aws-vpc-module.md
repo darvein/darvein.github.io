@@ -3,7 +3,7 @@ title: "AWS VPC Module"
 categories: ["Mente"]
 tags: ["Tecnología"]
 date: "2024-06-25"
-thumbnail: "/i/aws-vpc-mod.jpg"
+thumbnail: "/s/aws-vpc-mod.jpg"
 draft: true
 ---
 

@@ -3,7 +3,7 @@ title: "Rankeando en HackTheBox"
 categories: ["Mente"]
 tags: ["Tecnología"]
 date: "2024-06-27"
-thumbnail: "/i/2024-06-27_08-36.png"
+thumbnail: "/s/2024-06-27_08-36.png"
 draft: true
 ---
 

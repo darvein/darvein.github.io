@@ -1,8 +1,9 @@
 <!-- layouts/_default/_markup/render-image.html -->
+
 <figure class="image-container">
     <a href="../../../{{ .Destination }}">
-        {{ $src := .Destination }}
-        <img width="{{ with .Text }}{{ . }}%{{ else }}100%{{ end }}" src="../../../{{ $src }}" alt="{{ .Text }}" />
+        {{ $src := .Destination | replaceRE "i/" "s/" }}
+        <img width="{{ with .Text }}{{ . }}%{{ else }}100%{{ end }}" src='../../../{{ $src }}' alt="{{ .Text }}" />
     </a>
     {{ with .Text }}
         <figcaption>&#x2015; {{ . }} &#x2015;</figcaption>

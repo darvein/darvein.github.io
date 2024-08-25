@@ -3,7 +3,7 @@ title: "Sajama Carrera por Montaña"
 categories: ["Cuerpo"]
 tags: ["Carrera"]
 date: "2024-06-22"
-thumbnail: "/i/2024-07-01_12-38.png"
+thumbnail: "/s/2024-07-01_12-38.png"
 draft: true
 description: "Primer trail, primer 23K, primera sacada de mugre"
 ---

@@ -3,7 +3,7 @@ title: "Can't Hurt Me"
 categories: ["Mente"]
 tags: ["Libros"]
 date: "2024-07-29"
-thumbnail: "/i/2024-07-29_10-05.png"
+thumbnail: "/s/2024-07-29_10-05.png"
 description: "No puedes lastimarme o herirme por David Goggins"
 draft: true
 ---
