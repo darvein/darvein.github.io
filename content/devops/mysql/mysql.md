@@ -1,7 +1,5 @@
 # Mysql tips
 
-
-
 **Create user in AWS RDS and grant permissions like a master**
 
 ```bash
@@ -12,10 +10,7 @@ GRANT SELECT,INSERT,UPDATE,DELETE,DROP on synapbox_qa.* TO 'jacob'@'%';
 or
 
 GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, RELOAD, PROCESS, REFERENCES, INDEX, ALTER, SHOW DATABASES, CREATE TEMPORARY TABLES, LOCK TABLES, EXECUTE, REPLICATION SLAVE, REPLICATION CLIENT, CREATE VIEW, SHOW VIEW, CREATE ROUTINE, ALTER ROUTINE, CREATE USER, EVENT, TRIGGER, LOAD FROM S3, SELECT INTO S3, INVOKE LAMBDA ON synapbox_qa.* TO 'jacob'@'%' IDENTIFIED BY PASSWORD WITH GRANT OPTION
-
 ```
-
-
 
 #### Need to check all the queries in live mode?:
 
@@ -59,18 +54,12 @@ SHOW VARIABLES LIKE '%collation%';
 ```
 
 
-
 #### Others
 
 ```mysql
 # check how to create an existing table
 show create table serpTermStrategy
 ```
-
-
-
-
-
 ## Good to know
 
 - `mysqldump` can dump data and compress it with different algorithms and levels of preset.

@@ -21,6 +21,19 @@ Some more stuff:
 | [Travel](/travel) | Notes on my traveling experience                                  |
 | [Misc](/misc)     | Anything. What is inspirational, what helps to develop creativity |
 
+Things to add:
+- mind
+    - creativity
+        - Music (guitar, piano)
+    - analytical thinking
+        - Problem solving
+        - gameboards
+    - comms
+        - langs (en, ru, jp)
+- body
+    - mma, kick, bjj
+    - running
+
 ## Me online
 - HTB :bolivia: https://app.hackthebox.com/rankings/country/BO
 - Some pics: https://photos.app.goo.gl/ENavra2ZBJk9EvKr6

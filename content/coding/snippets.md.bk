@@ -1,6 +1,0 @@
-# Snippets
-
-{{< shortlist regexp=".py$" 
-   path="/content/coding/python/snippets" 
-   pathURL="/coding/python/snippets" 
->}}

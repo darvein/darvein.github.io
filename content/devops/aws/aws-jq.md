@@ -141,5 +141,4 @@ aws secretsmanager list-secrets | jq '.SecretList[] | [.Name, .Tags]'
 ```
 
 ### More examples
-
 - https://gist.github.com/lukeplausin/b64c10f8b524bb310e0083756c42caf6
