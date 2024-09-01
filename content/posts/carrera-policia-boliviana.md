@@ -1,7 +1,7 @@
 +++
 title = "Guerreros de Altura Bolivia"
 categories = ["Cuerpo"]
-tags = ["Carrera"]
+tags = ["Carreras"]
 date = "2024-06-15"
 thumbnail = "/i/2024-06-24_20-13.png"
 +++

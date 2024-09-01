@@ -1,11 +1,11 @@
 ---
-title: "Quime Año Nuevo"
-categories: ["Alma"]
-tags: ["Emociones"]
+title: "Sin titulo"
+categories: ["Mundo"]
+tags: ["Turismo"]
 date: "2024-08-26"
 thumbnail: "/s/2024-07-01_12-38.png"
 draft: true
-description: "Las palabras mas grandes en mi vida por mi pequeña retoño."
+description: "Año nuevo acampando"
 ---
 
 ![A punto de empezar la carrera](i/2024-07-01_12-42.png)

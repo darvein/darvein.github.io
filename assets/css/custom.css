@@ -94,6 +94,106 @@ h3 {
   flex-direction: column;
 }
 
+/* Featured Post Styles */
+.featured-post {
+  background: #1c1c1c;
+  margin-bottom: 40px;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featured-post:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.featured-thumbnail {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.featured-title {
+  font-size: 2.4em;
+  margin: 0 0 15px 0;
+}
+
+.featured-meta {
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif;
+  color: #888;
+  margin-bottom: 15px;
+}
+
+.featured-summary {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.read-more {
+  align-self: flex-start;
+  background-color: #0984e3;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+  background-color: #74b9ff;
+  color: #1c1c1c;
+}
+
+/* Compact Posts Styles */
+.compact-posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.compact-post-item {
+  background: #1c1c1c;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.compact-post-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.compact-thumbnail {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.compact-details {
+  padding: 15px;
+}
+
+.compact-title {
+  font-size: 1.2em;
+  margin: 0 0 10px 0;
+  line-height: 1.4;
+}
+
+.compact-meta {
+  font-size: 0.9em;
+  color: #888;
+  display: flex;
+  justify-content: space-between;
+}
+
 .sidebar {
   flex: 1;
   margin-left: 20px;
@@ -297,6 +397,18 @@ section.container tbody {
   .post-thumbnail {
     margin-bottom: 20px;
     max-width: 100%;
+  }
+
+  .featured-post {
+    padding: 20px;
+  }
+
+  .featured-thumbnail {
+    height: 200px;
+  }
+
+  .compact-posts {
+    grid-template-columns: 1fr;
   }
 }
 

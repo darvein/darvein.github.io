@@ -1,40 +1,58 @@
 <section class="container page">
   <div class="blog-container">
     <div class="blog-posts">
-      {{ range first 5 .Site.RegularPages.ByDate.Reverse }}
-      <article class="post-item">
-        <img class="post-thumbnail" src="{{ with .Params.thumbnail }}{{ . }}{{ else }}/i/default-thumbnail.png{{ end }}" alt="{{ .Title }}">
-        <div class="post-details">
-          <h1 class="post-title"><a class="title-link" href="{{ .Permalink }}">{{ .Title }}</a></h1>
-          <div class="post-meta">
-            <div class="date">
-              <span class="posted-on">
-                <i class="fa fa-calendar" aria-hidden="true"></i>
-                <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
-                  {{ .Date | time.Format (.Site.Params.dateFormat | default "January 2, 2006") }}
-                </time>
-              </span>
-            </div>
-            {{ with .GetTerms "categories" }}{{ partial "taxonomy/categories.html" . }}{{ end }}
+      {{ $pages := .Site.RegularPages.ByDate.Reverse }}
+      {{ $firstPost := index $pages 0 }}
+      {{ if $firstPost }}
+      <article class="featured-post">
+        <a href="{{ $firstPost.Permalink }}">
+          <img class="featured-thumbnail" src="{{ with $firstPost.Params.thumbnail }}{{ . }}{{ else }}/i/default-thumbnail.png{{ end }}" alt="{{ $firstPost.Title }}">
+        </a>
+        <div class="featured-details">
+          <h1 class="featured-title"><a class="title-link" href="{{ $firstPost.Permalink }}">{{ $firstPost.Title }}</a></h1>
+          <div class="featured-meta">
+            <span class="date">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="{{ $firstPost.Date.Format "2006-01-02T15:04:05Z07:00" }}">
+                {{ $firstPost.Date | time.Format (.Site.Params.dateFormat | default "January 2, 2006") }}
+              </time>
+            </span>
+            {{ with $firstPost.GetTerms "categories" }}{{ partial "taxonomy/categories.html" . }}{{ end }}
           </div>
-          <p class="post-summary">{{ .Summary | plainify | truncate 150 }}</p>
+          <p class="featured-summary">{{ $firstPost.Summary | plainify | truncate 300 }}</p>
         </div>
       </article>
-      {{ else }}
-      <div>No posts found.</div>
       {{ end }}
-    </div>
-
-    <div class="sidebar">
-      <h3>Etiquetas</h3>
-      <ul>
-        {{ range .Site.Taxonomies.tags }}
-        <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
+      
+      <div class="compact-posts">
+        {{ range after 1 (first 15 $pages) }}
+        <article class="compact-post-item">
+          <a href="{{ .Permalink }}">
+            <img class="compact-thumbnail" src="{{ with .Params.thumbnail }}{{ . }}{{ else }}/i/default-thumbnail.png{{ end }}" alt="{{ .Title }}">
+          </a>
+          <div class="compact-details">
+            <h2 class="compact-title"><a class="title-link" href="{{ .Permalink }}">{{ .Title }}</a></h2>
+            <div class="compact-meta">
+              <span class="date">
+                <i class="fa fa-calendar" aria-hidden="true"></i>
+                {{ .Date | time.Format (.Site.Params.dateFormat | default "Jan 2, 2006") }}
+              </span>
+            </div>
+          </div>
+        </article>
         {{ end }}
-      </ul>
+      </div>
+    </div>
+    <div class="sidebar">
       <h3>Categorías</h3>
       <ul>
         {{ range .Site.Taxonomies.categories }}
+        <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
+        {{ end }}
+      </ul>
+      <h3>Etiquetas</h3>
+      <ul>
+        {{ range .Site.Taxonomies.tags }}
         <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
         {{ end }}
       </ul>
