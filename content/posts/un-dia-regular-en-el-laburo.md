@@ -1,7 +1,7 @@
 +++
 title = "Un dia regular en el trabajo"
 categories = ["Alma", ]
-tags = ["Vivencias"]
+tags = ["Trabajo"]
 date = "2022-07-15"
 +++
 

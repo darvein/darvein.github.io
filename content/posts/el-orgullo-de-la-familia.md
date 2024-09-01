@@ -1,7 +1,7 @@
 +++
 title = "El orgullo de la familia"
 categories = [ "Alma",]
-tags = ["Vivencias", "Familia"]
+tags = ["Familia"]
 date = "2022-08-21"
 +++
 

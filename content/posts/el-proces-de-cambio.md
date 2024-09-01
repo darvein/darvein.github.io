@@ -1,7 +1,7 @@
 +++
 title = "El proceso de cambio"
 categories = [ "Alma",]
-tags = ["Vivencias"]
+tags = ["Motivación"]
 date = "2022-08-21"
 +++
 

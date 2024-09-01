@@ -25,7 +25,7 @@
       {{ end }}
       
       <div class="compact-posts">
-        {{ range after 1 (first 15 $pages) }}
+        {{ range after 1 (first 10 $pages) }}
         <article class="compact-post-item">
           <a href="{{ .Permalink }}">
             <img class="compact-thumbnail" src="{{ with .Params.thumbnail }}{{ . }}{{ else }}/i/default-thumbnail.png{{ end }}" alt="{{ .Title }}">
@@ -44,13 +44,13 @@
       </div>
     </div>
     <div class="sidebar">
-      <h3>Categorías</h3>
+      <h4>Categorías</h4>
       <ul>
         {{ range .Site.Taxonomies.categories }}
         <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
         {{ end }}
       </ul>
-      <h3>Etiquetas</h3>
+      <h4>Etiquetas</h4>
       <ul>
         {{ range .Site.Taxonomies.tags }}
         <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
