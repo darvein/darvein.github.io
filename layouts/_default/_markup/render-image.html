@@ -1,9 +1,13 @@
-<!-- layouts/_default/_markup/render-image.html -->
+{{ $destination := .Destination }}
+{{ $src := .Destination }}
+{{ if not (in .Destination "/static/") }}
+    {{ $destination = printf "../../../%s" .Destination }}
+    {{ $src = replaceRE "i/" "s/" $destination }}
+{{ end }}
 
 <figure class="image-container">
-    <a href="../../../{{ .Destination }}">
-        {{ $src := .Destination | replaceRE "i/" "s/" }}
-        <img width="{{ with .Text }}{{ . }}%{{ else }}100%{{ end }}" src='../../../{{ $src }}' alt="{{ .Text }}" />
+    <a href="{{ $destination }}">
+        <img width="{{ with .Text }}{{ . }}%{{ else }}100%{{ end }}" src='{{ $src }}' alt="{{ .Text }}" />
     </a>
     {{ with .Text }}
         <figcaption>&#x2015; {{ . }} &#x2015;</figcaption>
