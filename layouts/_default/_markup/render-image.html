@@ -1,6 +1,10 @@
 {{ $destination := .Destination }}
 {{ $src := .Destination }}
-{{ if not (in .Destination "/static/") }}
+
+{{ if in .Destination "/static/" }}
+    {{ $destination = printf "../%s" .Destination }}
+    {{ $src = $destination }}
+{{ else }}
     {{ $destination = printf "../../../%s" .Destination }}
     {{ $src = replaceRE "i/" "s/" $destination }}
 {{ end }}
