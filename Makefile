@@ -22,4 +22,8 @@ publish: build
 	cd content/infosec/htb-notes; git add -A . ; git commit -m 'Updating notes'; git push origin main; cd -
 	cd content/infosec/ctf-notes; git add -A . ; git commit -m 'Updating notes'; git push origin main; cd -
 	git add -A . ; git commit -m 'Updating blog'; git push origin main
-	#scp -rv public/* halley:~/src/darvein.net/
+
+upload: build
+	ssh halley rm -rfv ~/src/darvein.net/
+	ssh halley mkdir -p ~/src/darvein.net/
+	scp -rv public/* halley:~/src/darvein.net/
