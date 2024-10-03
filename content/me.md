@@ -13,13 +13,15 @@ Some technical notes:
 | [Digital](/digital) | Notes about software related to Ads and Marketing    |
 
 Some more stuff:
-| Link              | Topic                                                             |
-|-------------------|-------------------------------------------------------------------|
-| [Self](/self)     | All related to oneself: mind, physical and spiritual              |
-| [Books](/books)   | All my read books in one single place                             |
-| [Langs](/lang)    | My roadmap into becoming Polyglot                                 |
-| [Travel](/travel) | Notes on my traveling experience                                  |
-| [Misc](/misc)     | Anything. What is inspirational, what helps to develop creativity |
+| Link                | Topic                                                             |
+|---------------------|-------------------------------------------------------------------|
+| [Self](/self)       | All related to oneself: mind, physical and spiritual              |
+| [Warrior](/warrior) | Fighter and Warrior in life!                                      |
+| [Capital](/capital) | Money, business, capital, wealth!                                 |
+| [Books](/books)     | All my read books in one  single place                            |
+| [Langs](/lang)      | My roadmap into becoming Polyglot                                 |
+| [Travel](/travel)   | Notes on my traveling experience                                  |
+| [Misc](/misc)       | Anything. What is inspirational, what helps to develop creativity |
 
 Things to add:
 - mind

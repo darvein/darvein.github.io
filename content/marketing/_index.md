@@ -6,4 +6,4 @@ layout="section"
 My notes on digitalizating small and medium businesses.
 
 ## Files
-{{< directoryindex pathURL="/digital" notIn="others p8" >}}
+{{< directoryindex pathURL="/marketing" notIn="others p8" >}}
