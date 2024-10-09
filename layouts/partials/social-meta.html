@@ -3,15 +3,25 @@
 <meta property="og:url" content="{{ .Permalink }}" />
 <meta property="og:title" content="{{ .Title }}" />
 {{ with .Description }}<meta property="og:description" content="{{ . }}" />{{ else }}{{ with .Summary }}<meta property="og:description" content="{{ . }}" />{{ end }}{{ end }}
-{{ with .Params.thumbnail }}<meta property="og:image" content="{{ . | absURL }}" />{{ end }}
+{{ with .Params.thumbnail }}
+<meta property="og:image" content="{{ . | absURL }}" />
+<meta property="og:image:secure_url" content="{{ . | absURL }}" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+{{ end }}
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@darvein" />
+<meta name="twitter:creator" content="@darvein" />
 <meta name="twitter:url" content="{{ .Permalink }}" />
 <meta name="twitter:title" content="{{ .Title }}" />
 {{ with .Description }}<meta name="twitter:description" content="{{ . }}" />{{ else }}{{ with .Summary }}<meta name="twitter:description" content="{{ . }}" />{{ end }}{{ end }}
-{{ with .Params.thumbnail }}<meta name="twitter:image" content="{{ . | absURL }}" />{{ end }}
+{{ with .Params.thumbnail }}
+<meta name="twitter:image" content="{{ . | absURL }}" />
+<meta name="twitter:image:src" content="{{ . | absURL }}" />
+{{ end }}
 
-<!-- Optional: Add your Twitter username -->
-<meta name="twitter:site" content="@darvein" />
-<meta name="twitter:creator" content="@darvein" />
+<!-- Additional tags for better compatibility -->
+<meta property="og:site_name" content="{{ .Site.Title }}" />
+<meta name="twitter:domain" content="{{ .Site.BaseURL | replaceRE "^https?://([^/]+).*" "$1" }}" />

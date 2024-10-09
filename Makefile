@@ -12,7 +12,7 @@ build:
 	hugo --minify --config config.toml,prod.toml --noTimes -s .
 	cd static; bash compressimages.sh
 
-publish: build
+github:
 	@echo "Uploading files to server"
 	#git submodule --init --update
 	#git submodule update --remote --merge
@@ -23,7 +23,28 @@ publish: build
 	cd content/infosec/ctf-notes; git add -A . ; git commit -m 'Updating notes'; git push origin main; cd -
 	git add -A . ; git commit -m 'Updating blog'; git push origin main
 
-upload: build
+publish: build
 	ssh halley rm -rfv ~/src/darvein.net/
 	ssh halley mkdir -p ~/src/darvein.net/
-	scp -rv public/* halley:~/src/darvein.net/
+	#scp -rv public/* halley:~/src/darvein.net/
+	scp -rv Makefile halley:~/src/darvein.net/
+	scp -rv prompts.txt opt3.py halley:~/tmp/test-st/
+	rsync -avz --delete \
+		--exclude='.DS_Store' \
+		--exclude='*.swp' \
+		public/ halley:~/src/darvein.net/
+
+web:
+	#sudo rm -rfv /var/www/blog/*
+	#sudo cp -rf ~/src/darvein.net/* /var/www/blog/
+	sudo chown -R http:http /var/www/blog/
+	#rm -rf ~/src/darvein.net/*
+	sudo rsync -avz --delete \
+		--exclude='.DS_Store' \
+		--exclude='*.swp' \
+		public/ /var/www/blog/
+
+getimages:
+	ssh halley "source /opt/miniconda3/etc/profile.d/conda.sh ; conda activate sd3_env ; cd ~/tmp/test-st ; python opt3.py"
+	scp halley:~/tmp/test-st/*.png static/i/
+	scp halley:~/tmp/test-st/*.png static/s/
