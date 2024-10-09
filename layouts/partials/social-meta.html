@@ -1,0 +1,17 @@
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="article" />
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:title" content="{{ .Title }}" />
+{{ with .Description }}<meta property="og:description" content="{{ . }}" />{{ else }}{{ with .Summary }}<meta property="og:description" content="{{ . }}" />{{ end }}{{ end }}
+{{ with .Params.thumbnail }}<meta property="og:image" content="{{ . | absURL }}" />{{ end }}
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:url" content="{{ .Permalink }}" />
+<meta name="twitter:title" content="{{ .Title }}" />
+{{ with .Description }}<meta name="twitter:description" content="{{ . }}" />{{ else }}{{ with .Summary }}<meta name="twitter:description" content="{{ . }}" />{{ end }}{{ end }}
+{{ with .Params.thumbnail }}<meta name="twitter:image" content="{{ . | absURL }}" />{{ end }}
+
+<!-- Optional: Add your Twitter username -->
+<meta name="twitter:site" content="@darvein" />
+<meta name="twitter:creator" content="@darvein" />

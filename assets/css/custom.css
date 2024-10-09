@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=PT+Serif:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=PT+Serif:wght@400;700&display=swap');
 
 :root {
   --bg-primary: #0a0b0e;
@@ -466,4 +467,52 @@ audio {
   margin: 30px auto;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+}
+ 
+
+
+:root {
+  --bg-primary: #0a0b0e;
+  --bg-secondary: #1a1b1f;
+  --accent-1: #00a8ff;
+  --accent-2: #8a2be2;
+  --accent-3: #ff6b6b;
+  --text-primary: #e0e0e0;
+  --text-secondary: #b0b0b0;
+}
+
+/* ... (existing CSS) ... */
+
+/* Share Buttons Styles */
+.share-buttons {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 2rem;
+}
+
+.share-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+  border-radius: 4px;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.share-button:hover {
+  opacity: 0.9;
+}
+
+.share-button.twitter {
+  background-color: #1DA1F2;
+}
+
+.share-button.facebook {
+  background-color: #4267B2;
+}
+
+.share-button i {
+  margin-right: 0.5rem;
 }
