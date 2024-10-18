@@ -28,7 +28,6 @@ publish: build
 	ssh halley mkdir -p ~/src/darvein.net/
 	#scp -rv public/* halley:~/src/darvein.net/
 	scp -rv Makefile halley:~/src/darvein.net/
-	scp -rv prompts.txt opt3.py halley:~/tmp/test-st/
 	rsync -avz --delete \
 		--exclude='.DS_Store' \
 		--exclude='*.swp' \
@@ -45,6 +44,8 @@ web:
 		public/ /var/www/blog/
 
 getimages:
+	scp -rv prompts.txt opt3.py halley:~/tmp/test-st/
+	ssh halley "rm -rfv ~/tmp/test-st/*.png"
 	ssh halley "source /opt/miniconda3/etc/profile.d/conda.sh ; conda activate sd3_env ; cd ~/tmp/test-st ; python opt3.py"
 	scp halley:~/tmp/test-st/*.png static/i/
 	scp halley:~/tmp/test-st/*.png static/s/

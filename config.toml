@@ -9,7 +9,7 @@ pygmentsCodeFences = true
 pygmentsCodeFencesGuessSyntax = true
 pygmentsOptions = "tabWidth=2"
 enableEmoji = true
-disqusShortname = "drv21"
+disqusShortname = ""
 ignorefiles = [ "venv", ".git" ]
 
 [markup.highlight]
