@@ -24,24 +24,20 @@ github:
 	git add -A . ; git commit -m 'Updating blog'; git push origin main
 
 publish: build
-	ssh halley rm -rfv ~/src/darvein.net/
-	ssh halley mkdir -p ~/src/darvein.net/
-	#scp -rv public/* halley:~/src/darvein.net/
-	scp -rv Makefile halley:~/src/darvein.net/
 	rsync -avz --delete \
 		--exclude='.DS_Store' \
 		--exclude='*.swp' \
 		public/ halley:~/src/darvein.net/
+	scp -rv Makefile halley:~/src/darvein.net/
 
 web:
-	#sudo rm -rfv /var/www/blog/*
-	#sudo cp -rf ~/src/darvein.net/* /var/www/blog/
+	sudo rm -rfv /var/www/blog/*
+	sudo cp -rf ~/src/darvein.net/* /var/www/blog/
 	sudo chown -R http:http /var/www/blog/
-	#rm -rf ~/src/darvein.net/*
-	sudo rsync -avz --delete \
-		--exclude='.DS_Store' \
-		--exclude='*.swp' \
-		public/ /var/www/blog/
+	#sudo rsync -avz --delete \
+		#--exclude='.DS_Store' \
+		#--exclude='*.swp' \
+		#public/ /var/www/blog/
 
 getimages:
 	scp -rv prompts.txt opt3.py halley:~/tmp/test-st/
